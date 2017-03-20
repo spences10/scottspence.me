@@ -1,0 +1,17 @@
+body {
+  background: -webkit-linear-gradient(left, #6e77cf 0, #ffea00 100%);
+  background: linear-gradient(90deg, #6e77cf 0, #ffea00 100%);
+}
+font-family: verdana {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.header {
+  background: #fff;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 2rem;
+  border: 2px solid #000;
+}
