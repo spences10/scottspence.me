@@ -6,9 +6,9 @@ class Header extends React.Component {
 	render () {
 		return (
 			<div id='home' className='header'>
-        <div className='nameLogo'>
+        <div className='name'>
           <h1>Scott Spence</h1>
-          <p>Front-End Web Developer<span> |</span></p>
+          <p>Software Developer<span> |</span></p>
         </div>
 			</div>
 		);
