@@ -8,9 +8,15 @@ class Header extends React.Component {
 		return (
 			<Headroom className='headroom'>
 				<ul>
-					<li>About</li>
-					<li>Portfolio</li>
-					<li>Contact</li>
+					<li>
+					  <a href='#about'>About</a>
+					</li>
+					<li>
+					  <a href='#portfolio'>Portfolio</a>
+				  </li>
+					<li>
+					  <a href='#contact'>Contact</a>
+				  </li>
 				</ul>
 			</Headroom>
 		);
