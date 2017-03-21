@@ -1,16 +1,18 @@
 import React from 'react';
+import Headroom from 'react-headroom'; // Headroom is header that hides on scroll
 
 //Home Page Title Header
 class Header extends React.Component {
 	
 	render () {
 		return (
-			<div id='home' className='header'>
-        <div className='name'>
-          <h1>Scott Spence</h1>
-          <p>Software Developer<span> |</span></p>
-        </div>
-			</div>
+			<Headroom className='headroom'>
+				<ul>
+					<li>About</li>
+					<li>Portfolio</li>
+					<li>Contact</li>
+				</ul>
+			</Headroom>
 		);
 	}
 }
