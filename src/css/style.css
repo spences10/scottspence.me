@@ -46,29 +46,8 @@ h6 {
 body {
   background: -webkit-linear-gradient(left, #6e77cf 0, #ffea00 100%);
   background: linear-gradient(90deg, #6e77cf 0, #ffea00 100%);
+  font-family: Kanit;
 }
-font-family: Kanit,
 .parallaxHeader {
-  background: #fff;
-  max-width: 500px;
-  margin: 50px auto;
-  padding: 2rem;
-  border: 2px solid #000;
-  height: 1000px;
-}
-.headroom {
-  background: -webkit-linear-gradient(left, #6e77cf 0, #ffea00 100%);
-  background: linear-gradient(90deg, #6e77cf 0, #ffea00 100%);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  font-weight: 300;
-}
-.headroom ul {
-  width: 100%;
-}
-.headroom li {
-  display: inline-block;
-  width: 33.333333333333336%;
+  border: #f00;
 }
