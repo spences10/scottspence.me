@@ -3,7 +3,7 @@ import React from 'react'
 class Portfolio extends React.Component {
   render() {
     return (
-      <div>
+      <div id="portfolio" className="portfolio">
         Et do culpa mollit ea aliqua ipsum.
       </div>
     )

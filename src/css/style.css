@@ -26,7 +26,7 @@ body {
   background: #6e27c5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nova Mono', sans-serif;
   font-size: 2rem;
 }
 h1 {
@@ -50,13 +50,30 @@ body {
   margin: 0 0;
 }
 .headroom {
-  background: #ff0198;
+  color: #fff;
+  background: #6e27c5;
+  padding: 10px 10px 10px 10px;
+}
+.headroom ul {
+  width: 90%;
 }
 .headroom li {
   display: inline-block;
   width: 33.333333333333336%;
-  margin-bottom: 10rem;
 }
 .parallaxHeader {
   background: #6e27c5;
+  height: 1000px;
+}
+.about {
+  height: 1000px;
+  background: #ff0198;
+}
+.portfolio {
+  height: 1000px;
+  background: #ffb617;
+}
+.contact {
+  height: 1000px;
+  background: #2e2e86;
 }

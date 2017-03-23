@@ -20,7 +20,7 @@ class Header extends React.Component {
         </ul>
       </Headroom>
     )
-	}
+  }
 }
 
 export default Header
