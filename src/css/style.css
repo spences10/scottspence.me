@@ -59,7 +59,7 @@ body {
 }
 .headroom li {
   display: inline-block;
-  width: 33.333333333333336%;
+  width: 25%;
 }
 .parallaxHeader {
   background: #6e27c5;
@@ -76,4 +76,7 @@ body {
 .contact {
   height: 1000px;
   background: #2e2e86;
+}
+.App-logo {
+  height: 40px;
 }

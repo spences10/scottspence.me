@@ -5,7 +5,7 @@ class ParallaxHeader extends React.Component {
 
   render() {
     return (
-      <div id="home" className="parallaxHeader">
+      <div id="parallaxHeader" className="parallaxHeader">
         <div className="name">
           <h1>Scott Spence</h1>
           <p>Software Developer<span> |</span></p>
