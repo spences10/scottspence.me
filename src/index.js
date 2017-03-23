@@ -4,4 +4,4 @@ import './css/style.css'
 
 import App from './components/App'
 
-render(<App/>, document.querySelector('#main'))
+render(<App />, document.querySelector('#main'))

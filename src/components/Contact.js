@@ -1,47 +1,16 @@
-import React from 'react';
+import React from 'react'
 
 class Contact extends React.Component {
-	
-	render () {
-		return (
-			<div className='contact'>
-        <div className=''>
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
-          Voluptate quis exercitation cillum ea cillum enim.
-          Cupidatat aliqua mollit ad pariatur irure excepteur exercitation non. Ullamco occaecat velit duis duis mollit eiusmod irure laboris cillum qui duis amet. Laboris et duis est labore reprehenderit. Consectetur reprehenderit aliqua ut nostrud ex ea velit laborum consequat. Irure qui cupidatat nostrud excepteur aute cillum commodo. Ea magna non consectetur labore ad occaecat irure amet.
+
+  render() {
+    return (
+      <div className="contact">
+        <div className="">
+          Eu ipsum do aliquip anim minim incididunt mollit cupidatat. Nisi et cupidatat velit elit. Duis deserunt aliquip pariatur amet cillum exercitation. Reprehenderit nisi proident amet et dolor exercitation voluptate est commodo minim Lorem exercitation id ex.
         </div>
-			</div>
-		);
-	}
+      </div>
+    )
+  }
 }
 
-export default Contact;
+export default Contact

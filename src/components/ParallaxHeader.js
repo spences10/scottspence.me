@@ -1,18 +1,18 @@
-import React from 'react';
+import React from 'react'
 
-//Home Page Title Header
+// Home Page Title Header
 class ParallaxHeader extends React.Component {
 
   render() {
-  return (
-      <div id='home' className='parallaxHeader'>
-        <div className='name'>
+    return (
+      <div id="home" className="parallaxHeader">
+        <div className="name">
           <h1>Scott Spence</h1>
           <p>Software Developer<span> |</span></p>
-          </div>
-	  </div>
-    );
+        </div>
+      </div>
+    )
   }
 }
 
-export default ParallaxHeader;
+export default ParallaxHeader
