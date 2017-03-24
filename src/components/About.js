@@ -4,7 +4,8 @@ class About extends React.Component {
   render() {
     return (
       <div id="about" className="about">
-        Id in labore cupidatat deserunt ipsum velit anim id.
+        <h1>About</h1>
+        <p>Id in labore cupidatat deserunt ipsum velit anim id.</p>
       </div>
     )
   }
