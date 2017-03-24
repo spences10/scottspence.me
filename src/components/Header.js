@@ -10,7 +10,7 @@ class Header extends React.Component {
       <Headroom id="home" className="headroom">
         <ul>
           <li>
-            <a href="#home"><img src={logo} className="App-logo" alt="logo" /></a>
+            <a href="#home"><img src={logo} className="logo" alt="logo" /></a>
           </li>
           <li>
             <a href="#about">About</a>
