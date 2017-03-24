@@ -1,4 +1,5 @@
 import React from 'react'
+import FaHand from 'react-icons/lib/fa/hand-paper-o'
 
 // Home Page Title Header
 class ParallaxHeader extends React.Component {
@@ -8,7 +9,7 @@ class ParallaxHeader extends React.Component {
       <div id="parallaxHeader" className="parallaxHeader">
         <div className="name">
           <h1>Scott Spence</h1>
-          <p>Software Developer<span> |</span></p>
+          <p>Hello <FaHand /></p>
         </div>
       </div>
     )
