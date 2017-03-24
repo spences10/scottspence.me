@@ -79,6 +79,9 @@ body {
   height: 1000px;
   background: #2e2e86;
 }
+.social {
+  height: 1000px;
+}
 .social ul {
   list-style: none;
   display: -webkit-box;

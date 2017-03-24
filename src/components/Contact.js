@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaEnvelope, FaTwitter, FaGithub, FaMedium, FaFire, FaCodepen } from 'react-icons/lib/fa'
+import { FaEnvelope, FaTwitter, FaGithub, FaMedium, 
+  FaFire, FaCodepen, FaLinkedin } from 'react-icons/lib/fa'
 
 class Contact extends React.Component {
 
@@ -15,6 +16,7 @@ class Contact extends React.Component {
             <li><FaMedium /></li>
             <li><FaFire /></li>
             <li><FaCodepen /></li>
+            <li><FaLinkedin /></li>
           </ul>
         </ul>
       </div>
