@@ -51,19 +51,22 @@ body {
   color: #fff;
   margin: 0 0;
 }
-.headroom {
+.nav {
   color: #fff;
   background: #6e27c5;
-  padding: 10px 10px 10px 10px;
 }
-.headroom ul {
-  width: 90%;
+.links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.headroom li {
-  display: inline-block;
-  width: 25%;
+.links li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
-.parallaxHeader {
+.header {
   background: #6e27c5;
   height: 1000px;
 }
@@ -81,8 +84,6 @@ body {
 }
 .social {
   height: 1000px;
-}
-.social ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;

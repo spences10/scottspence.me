@@ -1,30 +1,19 @@
 import React from 'react'
-import Headroom from 'react-headroom' // Headroom is header that hides on scroll
-import logo from '../css/images/logo.svg'
+import FaHand from 'react-icons/lib/fa/hand-paper-o'
 
 // Home Page Title Header
-class Header extends React.Component {
+class ParallaxHeader extends React.Component {
 
   render() {
     return (
-      <Headroom id="home" className="headroom">
-        <ul>
-          <li>
-            <a href="#home"><img src={logo} className="logo" alt="logo" /></a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </Headroom>
+      <div id="header" className="parallaxHeader">
+        <div className="name">
+          <h1>Scott Spence</h1>
+          <p>Hello <FaHand /></p>
+        </div>
+      </div>
     )
   }
 }
 
-export default Header
+export default ParallaxHeader
