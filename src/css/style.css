@@ -28,6 +28,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Nova Mono', sans-serif;
   font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+  background: #6e27c5;
+  font-family: Kanit;
+  color: #fff;
+  margin: 0 0;
 }
 h1 {
   font-family: 'Orbitron', sans-serif;
@@ -45,7 +58,25 @@ h6 {
   font-family: 'Kanit', sans-serif;
   text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
 }
+ul,
+menu,
+dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
 body {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
   background: #6e27c5;
   font-family: Kanit;
   color: #fff;
@@ -68,22 +99,17 @@ body {
 }
 .header {
   background: #6e27c5;
-  height: 1000px;
 }
 .about {
-  height: 1000px;
   background: #ff0198;
 }
 .portfolio {
-  height: 1000px;
   background: #ffb617;
 }
 .contact {
-  height: 1000px;
   background: #2e2e86;
 }
 .social {
-  height: 1000px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
