@@ -1,14 +1,13 @@
 // Import all partials
 @require './_*.styl'
 
-ul, menu, dir
-  display: block;
-  list-style-type: disc;
-  -webkit-margin-before: 0px;
-  -webkit-margin-after: 0px;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px;
+// ul, menu, dir
+//   display: block
+//   -webkit-margin-before: 0px
+//   -webkit-margin-after: 0px
+//   -webkit-margin-start: 0px
+//   -webkit-margin-end: 0px
+//   -webkit-padding-start: 0px
 
 // random styling so there's no weird gaps between divs
 // the height @150% to not show gaps between divs
@@ -25,6 +24,14 @@ ul, menu, dir
   display: flex
   li
     flex: 1
+  a:link
+    color: white
+  a:visited
+    color: white
+  a:hover
+    color: pink
+  a:active
+    color: yellow
 
 .header
   background: purple
@@ -48,12 +55,31 @@ ul, menu, dir
   border 2px solid minsk
 
 .social
-  list-style:none
+  padding: 75% 30px 0px 30px
+  list-style: none
   display:flex
   border 2px solid minsk
+  ul
+    justify-content: space-between
   li
-    flex:1
+    flex: 1
+    text-align: center
+  a:link
+    color: white
+  a:visited
+    color: white
+  a:hover
+    color: pink
+  a:active
+    color: yellow
 
 .logo
   height: 40px
 
+// effin default ul!! gah!!
+ul, menu, dir
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
