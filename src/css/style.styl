@@ -10,44 +10,50 @@ ul, menu, dir
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px;
 
+// random styling so there's no weird gaps between divs
+// the height @150% to not show gaps between divs
+// the border needs to go around divs too as this 
+// affects the view height is not set for some reason
+
 .nav
   color: white
   background: purple
+  border 2px solid purple
 
 .links
-  list-style:none
-  display:flex
+  list-style: none
+  display: flex
   li
-    flex:1
+    flex: 1
 
 .header
   background: purple
-  // height: 1000px
-  // padding 2rem
-//   max-width 500px
-//   margin 50px auto
-//   border 2px solid black
-//   height: 1000px
+  display: block
+  height: 150%
+  border 2px solid purple
 
 .about
-  // height: 1000px
+  height: 150%
   background: pink
+  border 2px solid pink
 
 .portfolio
-  // height: 1000px
+  height: 150%
   background: yellow
+  border 2px solid yellow
 
 .contact
-  // height: 1000px
+  height: 150%
   background: minsk
+  border 2px solid minsk
 
 .social
-  // height: 1000px
   list-style:none
   display:flex
+  border 2px solid minsk
   li
     flex:1
-    
+
 .logo
   height: 40px
 

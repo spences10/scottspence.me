@@ -28,25 +28,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Nova Mono', sans-serif;
   font-size: 2rem;
-  width: 100%;
-  height: 100%;
-  display: block;
-  list-style-type: disc;
-  -webkit-margin-before: 0px;
-  -webkit-margin-after: 0px;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px;
   background: #6e27c5;
   font-family: Kanit;
   color: #fff;
   margin: 0 0;
+  padding: 0 0;
 }
 h1 {
   font-family: 'Orbitron', sans-serif;
   text-align: center;
   font-weight: normal;
-  margin: 0;
   text-shadow: 6px 6px 0 rgba(0,0,0,0.1);
 }
 h2,
@@ -69,22 +60,10 @@ dir {
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px;
 }
-body {
-  display: block;
-  list-style-type: disc;
-  -webkit-margin-before: 0px;
-  -webkit-margin-after: 0px;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px;
-  background: #6e27c5;
-  font-family: Kanit;
-  color: #fff;
-  margin: 0 0;
-}
 .nav {
   color: #fff;
   background: #6e27c5;
+  border: 2px solid #6e27c5;
 }
 .links {
   list-style: none;
@@ -99,21 +78,31 @@ body {
 }
 .header {
   background: #6e27c5;
+  display: block;
+  height: 150%;
+  border: 2px solid #6e27c5;
 }
 .about {
+  height: 150%;
   background: #ff0198;
+  border: 2px solid #ff0198;
 }
 .portfolio {
+  height: 150%;
   background: #ffb617;
+  border: 2px solid #ffb617;
 }
 .contact {
+  height: 150%;
   background: #2e2e86;
+  border: 2px solid #2e2e86;
 }
 .social {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 2px solid #2e2e86;
 }
 .social li {
   -webkit-box-flex: 1;
