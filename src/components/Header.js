@@ -2,7 +2,7 @@ import React from 'react'
 import FaHand from 'react-icons/lib/fa/hand-paper-o'
 
 // Home Page Title Header
-class ParallaxHeader extends React.Component {
+class Header extends React.Component {
 
   render() {
     return (
@@ -16,4 +16,4 @@ class ParallaxHeader extends React.Component {
   }
 }
 
-export default ParallaxHeader
+export default Header

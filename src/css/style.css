@@ -19,8 +19,128 @@
   src: local('NovaMono'), url("https://fonts.gstatic.com/s/novamono/v7/pN6VVBY03b9QLz-7i6Kl0VtXRa8TVwTICgirnJhmVJw.woff2") format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-html {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
   font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 body {
   background: #6e27c5;
@@ -31,13 +151,12 @@ body {
   background: #6e27c5;
   font-family: Kanit;
   color: #fff;
-  margin: 0 0;
-  padding: 0 0;
 }
 h1 {
   font-family: 'Orbitron', sans-serif;
   text-align: center;
   font-weight: normal;
+  font-size: 1em;
   text-shadow: 6px 6px 0 rgba(0,0,0,0.1);
 }
 h2,
@@ -47,6 +166,7 @@ h5,
 h6 {
   font-weight: normal;
   font-family: 'Kanit', sans-serif;
+  font-size: 0.8em;
   text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
 }
 .nav {
@@ -99,7 +219,7 @@ h6 {
   border: 2px solid #2e2e86;
 }
 .social {
-  padding: 75% 30px 0px 30px;
+  padding: 30% 30px 0px 30px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,13 +251,4 @@ h6 {
 }
 .logo {
   height: 40px;
-}
-ul,
-menu,
-dir {
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px;
 }

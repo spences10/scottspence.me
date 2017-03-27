@@ -12,11 +12,6 @@ class App extends React.Component {
       <div>
         <Parallax ref="parallax" pages={4}>
 
-          <Parallax.Layer offset={0} speed={1} />
-          <Parallax.Layer offset={1} speed={1} />
-          <Parallax.Layer offset={2} speed={1} />
-          <Parallax.Layer offset={3} speed={1} />
-
           <Parallax.Layer
             offset={0}
             speed={0.5}

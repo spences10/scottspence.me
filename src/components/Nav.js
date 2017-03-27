@@ -1,15 +1,14 @@
 import React from 'react'
 import logo from '../css/images/logo.svg'
 
-// Home Page Title Header
-class Header extends React.Component {
+class Nav extends React.Component {
 
   render() {
     return (
       <div className="nav">
         <ul className="links">
           <li>
-            <a href="#home"><img src={logo} className="logo" alt="logo" /></a>
+            <a href="#nav"><img src={logo} className="logo" alt="logo" /></a>
           </li>
           <li>
             <a href="#about">About</a>
@@ -26,4 +25,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header
+export default Nav
