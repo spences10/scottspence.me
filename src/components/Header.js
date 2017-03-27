@@ -9,6 +9,7 @@ class Header extends React.Component {
       <div id="header" className="header">
         <div className="name">
           <h1>Scott Spence</h1>
+          <span className="nameSpan" />
           <p>Hello <FaHand /></p>
         </div>
       </div>

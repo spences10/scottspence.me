@@ -156,7 +156,7 @@ h1 {
   font-family: 'Orbitron', sans-serif;
   text-align: center;
   font-weight: normal;
-  font-size: 1em;
+  font-size: 2em;
   text-shadow: 6px 6px 0 rgba(0,0,0,0.1);
 }
 h2,
@@ -166,19 +166,30 @@ h5,
 h6 {
   font-weight: normal;
   font-family: 'Kanit', sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
   text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+}
+h1 {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 .nav {
   color: #fff;
   background: #6e27c5;
   border: 2px solid #6e27c5;
+  font-size: 0.6em;
+  text-decoration: none;
 }
 .links {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .links li {
   -webkit-box-flex: 1;
@@ -197,11 +208,17 @@ h6 {
 .links a:active {
   color: #ffb617;
 }
+.logo {
+  height: 30px;
+}
 .header {
   background: #6e27c5;
   display: block;
   height: 150%;
   border: 2px solid #6e27c5;
+}
+.header p {
+  text-align: center;
 }
 .about {
   height: 150%;
@@ -248,7 +265,4 @@ h6 {
 }
 .social a:active {
   color: #ffb617;
-}
-.logo {
-  height: 40px;
 }

@@ -7,10 +7,14 @@ import Portfolio from './Portfolio'
 import Contact from './Contact'
 
 class App extends React.Component {
+  constructor() {
+    super()
+    this.ref = 'parallax'
+  }
   render() {
     return (
       <div>
-        <Parallax ref="parallax" pages={4}>
+        <Parallax ref={this.ref} pages={4}>
 
           <Parallax.Layer
             offset={0}
