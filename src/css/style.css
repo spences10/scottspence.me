@@ -253,7 +253,7 @@ h1 {
   border: 2px solid #2e2e86;
 }
 .social {
-  padding: 30% 30px 0px 30px;
+  padding: 30% 30px 30px 30px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;

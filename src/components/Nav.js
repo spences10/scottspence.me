@@ -2,8 +2,12 @@ import React from 'react'
 import logo from '../css/images/logo.svg'
 
 class Nav extends React.Component {
-
+  
   render() {
+    function handleClick(e) {
+      e.preventDefault()
+      console.log(e)
+    }
     return (
       <div className="nav">
         <ul className="links">
@@ -11,7 +15,12 @@ class Nav extends React.Component {
             <a href="#nav"><img src={logo} className="logo" alt="logo" /></a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a
+              href="#"
+              onClick={handleClick}
+            >
+              About
+            </a>
           </li>
           <li>
             <a href="#portfolio">Portfolio</a>
