@@ -26,14 +26,18 @@ h1
   text-decoration: none 
 
 .links
-  display: flex
+  // display: flex
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
   list-style: none
-  padding-top: 20px
-  padding-bottom: 20px
   align-items: center
   li
-    flex: 
+    padding: 20px
+    // flex: 1
   a:link
+    text-decoration: none
     color: white
   a:visited
     color: white
@@ -44,6 +48,14 @@ h1
 
 .logo
   height: 30px
+
+@media all and (max-width: 800px)
+  .links
+    justify-content space-around
+
+@media all and (max-width: 500px)
+  .links
+    flex-direction column
 
 .header
   background: purple
