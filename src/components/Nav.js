@@ -7,21 +7,36 @@ class Nav extends React.Component {
       <div className="nav">
         <ul className="links">
           <li>
-            <a href="#nav"><img src={logo} className="logo" alt="logo" /></a>
+            <a
+              href=""
+              onClick={this.context.parallax.scrollTo(0)}
+            >
+              <img src={logo} className="logo" alt="logo" />
+            </a>
           </li>
           <li>
             <a
-              href="#"
-              onClick={this.context.parallax.scrollTo(3)}
+              href=""
+              onClick={this.context.parallax.scrollTo(1)}
             >
               About
             </a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a
+              href=""
+              onClick={this.context.parallax.scrollTo(2)}
+            >
+              Portfolio
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a
+              href=""
+              onClick={this.context.parallax.scrollTo(3)}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>
