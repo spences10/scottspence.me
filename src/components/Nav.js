@@ -2,12 +2,7 @@ import React from 'react'
 import logo from '../css/images/logo.svg'
 
 class Nav extends React.Component {
-  
   render() {
-    function handleClick(e) {
-      e.preventDefault()
-      console.log(e)
-    }
     return (
       <div className="nav">
         <ul className="links">
@@ -17,7 +12,7 @@ class Nav extends React.Component {
           <li>
             <a
               href="#"
-              onClick={handleClick}
+              onClick={this.context.parallax.scrollTo(3)}
             >
               About
             </a>
@@ -33,5 +28,7 @@ class Nav extends React.Component {
     )
   }
 }
+
+Nav.contextTypes = { parallax: React.PropTypes.object }
 
 export default Nav
