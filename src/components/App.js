@@ -4,12 +4,26 @@ import Header from './Header'
 import About from './About'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
+import projectsList from '../projects-list'
 
 class App extends React.Component {
   constructor(props) {
     super(props)
+    // this was added in to pass `handleScroll` to the Nav component for clicking
     this.handleScroll = value => this.parallax && this.parallax.scrollTo(value)
+
+    // get initialState
+    this.state = {
+      projects: {},
+    }
   }
+
+  loadProjects() {
+    this.setState({
+      projects: projectsList,
+    })
+  }
+
   render() {
     return (
       <div>
