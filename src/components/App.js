@@ -14,13 +14,13 @@ class App extends React.Component {
 
     // get initialState
     this.state = {
-      projects: {},
+      projects: {}
     }
   }
 
   loadProjects() {
     this.setState({
-      projects: projectsList,
+      projects: projectsList
     })
   }
 

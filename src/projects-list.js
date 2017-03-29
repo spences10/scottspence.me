@@ -5,41 +5,41 @@ module.exports = {
     desc: '',
     github: '',
     preview: '',
-    image: '',
+    image: ''
   },
   project2: {
     name: '',
     desc: '',
     github: '',
     preview: '',
-    image: '',
+    image: ''
   },
   project3: {
     name: '',
     desc: '',
     github: '',
     preview: '',
-    image: '',
+    image: ''
   },
   project4: {
     name: '',
     desc: '',
     github: '',
     preview: '',
-    image: '',
+    image: ''
   },
   project5: {
     name: '',
     desc: '',
     github: '',
     preview: '',
-    image: '',
+    image: ''
   },
   project6: {
     name: '',
     desc: '',
     github: '',
     preview: '',
-    image: '',
-  },
+    image: ''
+  }
 }
