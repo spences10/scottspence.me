@@ -1,5 +1,6 @@
 import React from 'react'
 import FaHand from 'react-icons/lib/fa/hand-paper-o'
+import FaMousePointer from 'react-icons/lib/fa/mouse-pointer'
 
 // Home Page Title Header
 class Header extends React.Component {
@@ -10,7 +11,9 @@ class Header extends React.Component {
         <div className="name">
           <h1>Scott Spence</h1>
           <span className="nameSpan" />
-          <p>Hello <FaHand /></p>
+          <h2>Hello <FaHand /></h2>
+          <span />
+          <h2>Click to navigate through the pages <FaMousePointer /></h2>
         </div>
       </div>
     )
