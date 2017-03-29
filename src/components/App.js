@@ -1,12 +1,15 @@
 import React from 'react'
 import Parallax from 'react-springy-parallax'
-import Nav from './Nav'
 import Header from './Header'
 import About from './About'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
 
 class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.handleScroll = value => this.parallax && this.parallax.scrollTo(value)
+  }
   render() {
     return (
       <div>
@@ -20,7 +23,6 @@ class App extends React.Component {
             speed={0.5}
             onClick={() => this.parallax.scrollTo(1)}
           >
-            <Nav />
             <Header />
           </Parallax.Layer>
 
