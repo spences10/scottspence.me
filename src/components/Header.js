@@ -13,7 +13,7 @@ class Header extends React.Component {
           <span className="nameSpan" />
           <h2>Hello <FaHand /></h2>
           <span />
-          <h2>Click to navigate through the pages <FaMousePointer /></h2>
+          <h2><FaMousePointer /></h2>
         </div>
       </div>
     )

@@ -3,7 +3,7 @@ import React from 'react'
 class Project extends React.Component {
   createProject(event) {
     event.preventDefault()
-    console.log('gonnam make a project')
+    console.log('add project')
   }
   render() {
     return (
@@ -23,7 +23,7 @@ class Project extends React.Component {
         <div className="image">
           Image
         </div>
-        <button type="submit" onSubmit={e => this.createProject(e)}>Add Project</button>
+        <button type="submit" onClick={e => this.createProject(e)}>Add Project</button>
       </div>
     )
   }

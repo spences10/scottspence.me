@@ -173,17 +173,72 @@ h1 {
   padding-top: 10%;
   padding-bottom: 10%;
 }
+.nav {
+  color: #fff;
+  background: #6e27c5;
+  border: 2px solid #6e27c5;
+  font-size: 0.6em;
+  text-decoration: none;
+}
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+/* This aligns items to the end line on main-axis */
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.links li {
+  padding: 20px;
+}
+.links a:link {
+  text-decoration: none;
+  color: #fff;
+}
+.links a:visited {
+  color: #fff;
+}
+.links a:hover {
+  color: #ff0198;
+}
+.links a:active {
+  color: #ffb617;
+}
+.logo {
+  height: 30px;
+}
+@media all and (max-width: 800px) {
+  .links {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media all and (max-width: 500px) {
+  .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .header {
   background: #6e27c5;
   display: block;
-  height: 150%;
+  height: 100vh;
   border: 2px solid #6e27c5;
 }
 .header h2 {
   text-align: center;
 }
 .about {
-  height: 150%;
+  height: 100vh;
   background: #ff0198;
   border: 2px solid #ff0198;
 }
@@ -191,12 +246,12 @@ h1 {
   text-align: center;
 }
 .portfolio {
-  height: 150%;
+  height: 100vh;
   background: #ffb617;
   border: 2px solid #ffb617;
 }
 .contact {
-  height: 150%;
+  height: 100vh;
   background: #2e2e86;
   border: 2px solid #2e2e86;
 }

@@ -1,14 +1,6 @@
 // Import all partials
 @require './_*.styl'
 
-// ul, menu, dir
-//   display: block
-//   -webkit-margin-before: 0px
-//   -webkit-margin-after: 0px
-//   -webkit-margin-start: 0px
-//   -webkit-margin-end: 0px
-//   -webkit-padding-start: 0px
-
 // random styling so there's no weird gaps between divs
 // the height @150% to not show gaps between divs
 // the border needs to go around divs too as this 
@@ -18,28 +10,67 @@ h1
   padding-top: 10%
   padding-bottom: 10%
 
+.nav
+    color: white
+    background: purple
+    border 2px solid purple
+    font-size: 0.6em
+    text-decoration: none
+
+  .links
+    // display: flex
+    display: flex;
+    flex-flow: row wrap;
+    /* This aligns items to the end line on main-axis */
+    justify-content: flex-end;
+    list-style: none
+    align-items: center
+    li
+      padding: 20px
+      // flex: 1
+    a:link
+      text-decoration: none
+      color: white
+    a:visited
+      color: white
+    a:hover
+      color: pink
+    a:active
+      color: yellow
+
+  .logo
+    height: 30px
+
+  @media all and (max-width: 800px)
+    .links
+      justify-content space-around
+
+  @media all and (max-width: 500px)
+    .links
+      flex-direction column
+
 .header
   background: purple
   display: block
-  height: 150%
+  height: 100vh
   border 2px solid purple
   h2
     text-align: center
 
 .about
-  height: 150%
+  height: 100vh
   background: pink
   border 2px solid pink
   h2
     text-align: center
 
 .portfolio
-  height: 150%
+  height: 100vh
   background: yellow
   border 2px solid yellow
 
 .contact
-  height: 150%
+  height: 100vh
   background: minsk
   border 2px solid minsk
 

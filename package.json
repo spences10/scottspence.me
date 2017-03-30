@@ -17,8 +17,7 @@
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-icons": "^2.2.3",
-    "react-springy-parallax": "^1.0.6"
+    "react-icons": "^2.2.3"
   },
   "devDependencies": {
     "autoprefixer-stylus": "^0.13.0",
