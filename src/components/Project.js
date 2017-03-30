@@ -7,7 +7,7 @@ class Project extends React.Component {
   }
   render() {
     return (
-      <div className="projects" >
+      <div className="project-container" >
         <div className="name">
           Name
         </div>
@@ -23,7 +23,7 @@ class Project extends React.Component {
         <div className="image">
           Image
         </div>
-        <button type="submit" onSubmit={e => this.createProject(e)}>Add Project</button>
+        <a onClick={e => this.createProject(e)}>Add Project</a>
       </div>
     )
   }

@@ -195,6 +195,20 @@ h1 {
   background: #ffb617;
   border: 2px solid #ffb617;
 }
+.project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.project-container .name,
+.project-container .desc,
+.project-container github,
+.project-container .preview,
+.project-container .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
 .contact {
   height: 150%;
   background: #2e2e86;
