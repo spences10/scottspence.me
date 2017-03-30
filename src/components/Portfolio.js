@@ -1,4 +1,5 @@
 import React from 'react'
+import Project from './Project'
 
 class Portfolio extends React.Component {
   render() {
@@ -6,6 +7,7 @@ class Portfolio extends React.Component {
       <div id="portfolio" className="portfolio">
         <h1>Portfolio</h1>
         <p>Et do culpa mollit ea aliqua ipsum.</p>
+        <Project />
       </div>
     )
   }

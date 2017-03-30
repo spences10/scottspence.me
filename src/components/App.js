@@ -12,6 +12,8 @@ class App extends React.Component {
     // this was added in to pass `handleScroll` to the Nav component for clicking
     this.handleScroll = value => this.parallax && this.parallax.scrollTo(value)
 
+    this.loadProjects = this.loadProjects.bind(this)
+
     // get initialState
     this.state = {
       projects: {}
@@ -53,7 +55,7 @@ class App extends React.Component {
             speed={0.5}
             onClick={() => this.parallax.scrollTo(3)}
           >
-            <Portfolio />
+            <Portfolio loadProjects={this.loadProjects} />
           </Parallax.Layer>
 
           <Parallax.Layer
