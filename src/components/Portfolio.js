@@ -2,6 +2,11 @@ import React from 'react'
 import Project from './Project'
 
 class Portfolio extends React.Component {
+
+  componentWillMount() {
+    this.props.loadProjects
+  }
+
   render() {
     return (
       <div id="portfolio" className="portfolio">

@@ -1,10 +1,6 @@
 import React from 'react'
 
 class Project extends React.Component {
-  createProject(event) {
-    event.preventDefault()
-    console.log('add project')
-  }
   render() {
     return (
       <div className="projects" >
@@ -23,7 +19,6 @@ class Project extends React.Component {
         <div className="image">
           Image
         </div>
-        <button type="submit" onClick={e => this.createProject(e)}>Add Project</button>
       </div>
     )
   }
