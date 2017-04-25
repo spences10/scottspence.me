@@ -3,7 +3,7 @@ import Headroom from 'react-headroom'
 import Header from './Header'
 import Nav from './Nav'
 import About from './About'
-import Portfolio from './Portfolio'
+import { Portfolio } from './Portfolio'
 import Contact from './Contact'
 
 class App extends React.Component {
@@ -26,7 +26,7 @@ class App extends React.Component {
         </Headroom>
         <Header />
         <About />
-        <Portfolio projects={this.state.projects} />
+        <Portfolio projectsArr={this.state.projects} />
         <Contact />
       </div>
     )

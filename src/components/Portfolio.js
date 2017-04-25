@@ -7,8 +7,8 @@ export const Portfolio = (props) => {
     <div id="portfolio" className="portfolio">
       <h1>Portfolio</h1>
       <p>Et do culpa mollit ea aliqua ipsum.</p>
-      <div>
-        {props.projects.map(project => <Project key={project.id} {...project} />)}
+      <div className="projects-container">
+        {props.projectsArr.map(project => <Project key={project.id} {...project} />)}
       </div>
       <Project />
     </div>
@@ -16,7 +16,7 @@ export const Portfolio = (props) => {
 }
 
 Portfolio.propTypes = {
-  projects: PropTypes.array.isRequired
+  projectsArr: PropTypes.array.isRequired
 }
 
 export default Portfolio

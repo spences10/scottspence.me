@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 export const Project = (props) => {
   return (
-    <div>
+    <div className="project">
       {props.name}
       {props.desc}
       {props.github}

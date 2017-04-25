@@ -250,6 +250,22 @@ h1 {
   background: #ffb617;
   border: 2px solid #ffb617;
 }
+.projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.project {
+  height: 20vh;
+  width: 20vh;
+  background: #ee362c;
+  border: #000;
+  outline: #000;
+}
 .contact {
   height: 100vh;
   background: #2e2e86;
