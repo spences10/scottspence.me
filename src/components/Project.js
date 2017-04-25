@@ -1,27 +1,25 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-class Project extends React.Component {
-  render() {
-    return (
-      <div className="projects" >
-        <div className="name">
-          Name
-        </div>
-        <div className="desc">
-          Desc
-        </div>
-        <div className="github">
-          GitHub
-        </div>
-        <div className="preview">
-          Preview
-        </div>
-        <div className="image">
-          Image
-        </div>
-      </div>
-    )
-  }
+export const Project = (props) => {
+  return (
+    <div>
+      {props.name}
+      {props.desc}
+      {props.github}
+      {props.preview}
+      {props.image}
+    </div>
+  )
+}
+
+Project.propTypes = {
+  name: PropTypes.string,
+  desc: PropTypes.string,
+  github: PropTypes.string,
+  preview: PropTypes.string,
+  image: PropTypes.string
 }
 
 export default Project
+
