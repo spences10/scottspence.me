@@ -10,7 +10,6 @@ export const Portfolio = (props) => {
       <div className="projects-container">
         {props.projectsArr.map(project => <Project key={project.id} {...project} />)}
       </div>
-      <Project />
     </div>
   )
 }
