@@ -22,7 +22,7 @@
     "react-icons": "^2.2.3"
   },
   "devDependencies": {
-    "autoprefixer-stylus": "^0.13.0",
+    "autoprefixer-stylus": "^0.14.0",
     "eslint": "^3.18.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-flowtype": "^2.30.3",
