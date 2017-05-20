@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaFire } from 'react-icons/lib/fa'
 
+
 class About extends React.Component {
   render() {
     return (
@@ -18,3 +19,4 @@ class About extends React.Component {
 }
 
 export default About
+

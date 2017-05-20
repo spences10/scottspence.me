@@ -19,17 +19,20 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-headroom": "^2.1.5",
-    "react-icons": "^2.2.3"
+    "react-icons": "^2.2.3",
+    "styled-components": "1.4.6"
   },
   "devDependencies": {
     "autoprefixer-stylus": "^0.14.0",
     "eslint": "^3.18.0",
-    "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-standard": "^10.2.1",
     "eslint-plugin-flowtype": "^2.30.3",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.0.1",
-    "react-scripts": "^0.9.5",
+    "eslint-plugin-standard": "^3.0.1",
+    "react-scripts": "^1.0.0",
     "stylus": "^0.54.5"
   }
 }
