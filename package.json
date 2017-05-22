@@ -24,7 +24,7 @@
   "devDependencies": {
     "autoprefixer-stylus": "^0.14.0",
     "eslint": "^3.18.0",
-    "react-scripts": "^1.0.3",
+    "react-scripts": "^1.0.5",
     "stylus": "^0.54.5"
   }
 }
