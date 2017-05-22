@@ -7,9 +7,10 @@
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && yarn copy",
     "eject": "react-scripts eject",
-    "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css"
+    "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
+    "copy": "cp -r src/.well-known/ build/"
   },
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/.eslintrc"
