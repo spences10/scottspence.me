@@ -8,11 +8,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && yarn copy",
-    "eject": "react-scripts eject",
-    "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
     "copy": "cp -r src/.well-known/ build/"
   },
-  "eslintConfig": {
+    "eslintConfig": {
     "extends": "./node_modules/react-scripts/.eslintrc"
   },
   "dependencies": {
@@ -26,13 +24,6 @@
   "devDependencies": {
     "autoprefixer-stylus": "^0.14.0",
     "eslint": "^3.18.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-flowtype": "^2.30.3",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-node": "^4.2.2",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^7.0.1",
-    "eslint-plugin-standard": "^3.0.1",
     "react-scripts": "^1.0.3",
     "stylus": "^0.54.5"
   }
