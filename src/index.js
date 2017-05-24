@@ -38,26 +38,26 @@ const DefaultLayout = ({ children }) => (
     <p>Main layout</p>
     {children}
   </div>
-);
+)
 
 const AltLayout = ({ children }) => (
   <div>
     <p>Alternate layout</p>
     {children}
   </div>
-);
+)
 
 const Home = () => (
   <span>Home</span>
-);
+)
 
 const Work = () => (
   <span>Work</span>
-);
+)
 
 const Blog = () => (
   <span>Blog</span>
-);
+)
 
 const Root = () => {
   return (
@@ -71,9 +71,9 @@ const Root = () => {
 
         <p>The rendered route component:{' '}
           <Switch>
-            <Route exact path="/" render={() => <DefaultLayout><Home /></DefaultLayout>}/>
-            <Route path="/work" render={() => <DefaultLayout><Work /></DefaultLayout>}/>
-            <Route path="/blog" render={() => <AltLayout><Blog /></AltLayout>}/>
+            <Route exact path="/" render={() => <DefaultLayout><Home /></DefaultLayout>} />
+            <Route path="/work" render={() => <DefaultLayout><Work /></DefaultLayout>} />
+            <Route path="/blog" render={() => <AltLayout><Blog /></AltLayout>} />
           </Switch>
         </p>
       </div>
