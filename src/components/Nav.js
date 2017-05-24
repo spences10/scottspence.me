@@ -1,5 +1,10 @@
 import React from 'react'
-import logo from '../css/images/logo.svg'
+import logo from '../styles/images/logo.svg'
+import styled from 'styled-components'
+
+const StyledLogo = styled.image`
+  height: 30px
+`
 
 class Nav extends React.Component {
   render() {
@@ -10,7 +15,7 @@ class Nav extends React.Component {
               <a
                 href="#home"
               >
-                <img src={logo} className="logo" alt="logo" />
+                <StyledLogo img src={logo} className="logo" alt="logo" />
               </a>
             </li>
             <li>

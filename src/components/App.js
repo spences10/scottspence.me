@@ -1,10 +1,17 @@
 import React from 'react'
-import Headroom from 'react-headroom'
+// import Headroom from 'react-headroom'
+import styled from 'styled-components'
+
 import Header from './Header'
-import Nav from './Nav'
+// import Nav from './Nav'
 import About from './About'
-import { Portfolio } from './Portfolio'
-import Contact from './Contact'
+// import { Portfolio } from './Portfolio'
+// import Contact from './Contact'
+
+const background = styled.body`
+  background-color: yellow;
+  font: consolas
+`
 
 class App extends React.Component {
   constructor() {
@@ -21,13 +28,15 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <Headroom>
+        <background>
+        {/*<Headroom>
           <Nav />
-        </Headroom>
+        </Headroom>*/}
         <Header />
         <About />
-        <Portfolio projectsArr={this.state.projects} />
-        <Contact />
+        {/*<Portfolio projectsArr={this.state.projects} />*/}
+        {/*<Contact />*/}
+        </background>
       </div>
     )
   }
