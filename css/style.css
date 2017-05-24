@@ -184,8 +184,10 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 /* This aligns items to the end line on main-axis */
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -237,14 +239,6 @@ h1 {
 .header h2 {
   text-align: center;
 }
-.about {
-  height: 100vh;
-  background: #ff0198;
-  border: 2px solid #ff0198;
-}
-.about h2 {
-  text-align: center;
-}
 .portfolio {
   height: 100vh;
   background: #ffb617;
@@ -254,8 +248,10 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
