@@ -1,7 +1,4 @@
-/* eslint-disable no-unused-vars */
 import React from 'react'
-/* eslint-enable no-unused-vars */
-import PropTypes from 'prop-types'
 import { Project } from './Project'
 
 this.state = {
@@ -13,20 +10,14 @@ this.state = {
   ]
 }
 
-export const Portfolio = (props) => {
-  return (
-    <div id="portfolio" className="portfolio">
-      <h1>Portfolio</h1>
-      <p>Et do culpa mollit ea aliqua ipsum.</p>
-      <div className="projects-container">
-        {this.state.projects.map(project => <Project key={project.id} {...project} />)}
-      </div>
+export const Portfolio = () => (
+  <div id="portfolio" className="portfolio">
+    <h1>Portfolio</h1>
+    <p>Et do culpa mollit ea aliqua ipsum.</p>
+    <div className="projects-container">
+      {this.state.projects.map(project => <Project key={project.id} {...project} />)}
     </div>
-  )
-}
-
-Portfolio.propTypes = {
-  projectsArr: PropTypes.array.isRequired
-}
+  </div>
+)
 
 export default Portfolio
