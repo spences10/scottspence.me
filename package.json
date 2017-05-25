@@ -22,12 +22,8 @@
   "devDependencies": {
     "autoprefixer-stylus": "^0.14.0",
     "eslint": "^3.18.0",
-<<<<<<< HEAD
     "eslint-config-spences10": "^0.0.5",
-    "react-scripts": "^1.0.3",
-=======
     "react-scripts": "^1.0.5",
->>>>>>> 4c6cf5144b053eb6e89857dea120e13688e3d0c7
     "stylus": "^0.54.5"
   }
 }

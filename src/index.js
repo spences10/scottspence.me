@@ -15,7 +15,8 @@ import {
 
 import App from './components/App'
 import About from './components/About'
-import Header from './components/Header'
+import Portfolio from './components/Portfolio'
+import Contact from './components/Contact'
 
 /*const Root = () => {
   return (
@@ -64,16 +65,18 @@ const Root = () => {
     <HashRouter>
       <div>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/work">Work</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/">Hi</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/portfolio">Portfolio</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
 
         <p>The rendered route component:{' '}
           <Switch>
-            <Route exact path="/" render={() => <DefaultLayout><Home /></DefaultLayout>} />
-            <Route path="/work" render={() => <DefaultLayout><Work /></DefaultLayout>} />
-            <Route path="/blog" render={() => <AltLayout><Blog /></AltLayout>} />
+            <Route exact path="/" render={() => <DefaultLayout><About /></DefaultLayout>} />
+            <Route exact path="/about" render={() => <DefaultLayout><About /></DefaultLayout>} />
+            {/*<Route path="/portfolio" render={() => <DefaultLayout><Portfolio projectsArr={this.state.projects} /></DefaultLayout>} />*/}
+            <Route path="/contact" render={() => <AltLayout><Contact /></AltLayout>} />
           </Switch>
         </p>
       </div>
