@@ -3,8 +3,7 @@ import { FaEnvelope, FaTwitter, FaGithub, FaMedium,
   FaFire, FaCodepen, FaLinkedin } from 'react-icons/lib/fa'
 
 class Contact extends React.Component {
-
-  render() {
+  render () {
     return (
       <div id='contact' className='contact'>
         <h1>Contact</h1>

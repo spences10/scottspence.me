@@ -1,8 +1,10 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
+/* eslint-enable no-unused-vars */
 import { render } from 'react-dom'
 
 import {
-  HashRouter,
+  BrowserRouter,
   Route,
   Switch,
   Link,
@@ -13,7 +15,7 @@ import {
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import 'font-awesome/css/font-awesome.min.css'
 
-import App from './components/App'
+import Hi from './components/Hi'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
@@ -62,7 +64,7 @@ const Blog = () => (
 
 const Root = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div>
         <ul>
           <li><Link to="/">Hi</Link></li>
@@ -73,14 +75,14 @@ const Root = () => {
 
         <p>The rendered route component:{' '}
           <Switch>
-            <Route exact path="/" render={() => <DefaultLayout><About /></DefaultLayout>} />
+            <Route exact path="/" render={() => <DefaultLayout><Hi /></DefaultLayout>} />
             <Route exact path="/about" render={() => <DefaultLayout><About /></DefaultLayout>} />
-            {/*<Route path="/portfolio" render={() => <DefaultLayout><Portfolio projectsArr={this.state.projects} /></DefaultLayout>} />*/}
+            <Route path="/portfolio" render={() => <DefaultLayout><Portfolio /></DefaultLayout>} />
             <Route path="/contact" render={() => <AltLayout><Contact /></AltLayout>} />
           </Switch>
         </p>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 

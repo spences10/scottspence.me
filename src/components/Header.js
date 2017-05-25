@@ -10,10 +10,9 @@ const background = styled.body`
 
 // Home Page Title Header
 class Header extends React.Component {
-
-  render() {
+  render () {
     return (
-      <div id="header" className="header">
+      <div id='header' className='header'>
         <background>
         <div className="name">
           <h1>Scott Spence</h1>

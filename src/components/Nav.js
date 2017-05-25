@@ -1,13 +1,14 @@
 import React from 'react'
-import logo from '../styles/images/logo.svg'
 import styled from 'styled-components'
 
-const StyledLogo = styled.image`
+import logo from '../styles/images/logo.svg'
+
+const StyledLogo = styled.img`
   height: 30px
 `
 
 class Nav extends React.Component {
-  render() {
+  render () {
     return (
       <div className="nav">
           <ul className="links">
