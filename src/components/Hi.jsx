@@ -1,6 +1,6 @@
-/* eslint-disable no-unused-vars */
 import React from 'react'
-/* eslint-enable no-unused-vars */
+
+/* eslint arrow-body-style: ["error", "always"]*/
 
 export const Hi = () => {
   return (

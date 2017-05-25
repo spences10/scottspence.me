@@ -20,14 +20,8 @@
     "styled-components": "1.4.6"
   },
   "devDependencies": {
-    "autoprefixer-stylus": "^0.14.0",
     "eslint": "^3.18.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-node": "^4.2.2",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "react-scripts": "^1.0.5",
-    "stylus": "^0.54.5"
+    "eslint-config-airbnb": "^15.0.1",
+    "react-scripts": "^1.0.5"
   }
 }
