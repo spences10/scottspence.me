@@ -7,8 +7,6 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "start": "react-scripts start",
-    "build": "react-scripts build && yarn copy",
     "copy": "cp -r src/.well-known/ build/"
   },
   "dependencies": {

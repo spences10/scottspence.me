@@ -1,8 +1,9 @@
 import React from 'react'
-import Layout from '../components/Layout.js'
+import Layout from '../components/Layout'
+import Contact from '../components/Contact'
 
 export default () => (
   <Layout>
-    <p>Contact</p>
+    <Contact />
   </Layout>
 )
