@@ -6,23 +6,22 @@
   "author": "Scott Spence",
   "license": "MIT",
   "scripts": {
+    "dev": "next",
     "start": "react-scripts start",
     "build": "react-scripts build && yarn copy",
     "copy": "cp -r src/.well-known/ build/"
   },
   "dependencies": {
-    "normalize.css": "^7.0.0",
+    "next": "^2.4.0",
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-headroom": "^2.1.5",
     "react-icons": "^2.2.3",
-    "react-router-dom": "^4.1.1",
-    "styled-components": "1.4.6"
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "eslint": "^3.18.0",
-    "eslint-config-airbnb": "^15.0.1",
-    "react-scripts": "^1.0.5"
+    "eslint-config-spences10": "^0.0.8"
   }
 }
