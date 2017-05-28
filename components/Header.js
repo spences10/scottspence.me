@@ -1,15 +1,17 @@
 import React from 'react'
 import Link from 'next/link'
+import { aStyle } from '../styles/styles'
 
 const linkStyle = {
-  marginRight: 15
+  marginRight: 15,
+  fontFamily: 'Monoid'
 }
 
 const Header = () => (
   <div>
-    <Link href="/">
+    <aStyle><Link href="/">
       <a style={linkStyle}>Home</a>
-    </Link>
+    </Link></aStyle>
     <Link href="/about">
       <a style={linkStyle}>About</a>
     </Link>

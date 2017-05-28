@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "glamor": "2.20.25",
-    "glamorous": "3.19.0",
     "next": "2.4.0",
     "react": "15.5.4",
     "react-dom": "15.5.4",
     "react-headroom": "2.1.5",
-    "react-icons": "2.2.5"
+    "react-icons": "2.2.5",
+    "styled-jsx": "1.0.0"
   },
   "devDependencies": {
     "eslint": "3.19.0",
