@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 
 const layoutStyle = {
+  font: 'Comic Sans',
   margin: 20,
   padding: 20,
   border: '1px solid #DDD'

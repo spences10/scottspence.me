@@ -1,8 +1,9 @@
 import React from 'react'
 import Layout from '../components/Layout.js'
+import { MyStyledP } from '../styles/styles'
 
 export default () => (
   <Layout>
-    <p>Hello Next.js</p>
+    <MyStyledP>Hello Next.js</MyStyledP>
   </Layout>
 )
