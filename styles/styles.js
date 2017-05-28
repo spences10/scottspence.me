@@ -1,24 +1,16 @@
-// import glamorous from 'glamorous'
+import { pink } from './colours'
 
-// export const aStyle = glamorous.a({
-//   fontFamily: 'Arial',
-//   color: 'yellow',
-//   marginRight: 15
-// })
-
-// export const MyStyledP = glamorous.p({
-//   color: 'yellow'
-// })
-
-// below is styled-jsx which at the time of writing this
-// method wasn't supported, so glamorous
 export const button = `
   button { color: hotpink; }
   `
 
+console.log('COLOUR IS: ', pink)
+
 export default `
-      h1, a, p {
+      h1, a, p, div {
+        size: 50px;
         font-family: "Monoid";
+        color: pink;
       }
 
       ul {

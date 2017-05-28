@@ -1,0 +1,14 @@
+export const pink = '#FF0198' // Hollywood Cerise
+export const yellow = '#FFB617' // My Sin
+export const purple = '#6E27C5' // Purple Heart
+export const orange = '#FF6600' // Blaze Orange
+export const blue = '#01C1D6' // Robin's Egg Blue
+export const java = '#1CBCD2' // Java
+export const sun = '#FAB319' // Sun
+export const affair = '#69479E' // Affair
+export const flamingo = '#F16623' // Flamingo
+export const minsk = '#2E2E86' // Minsk
+export const pomegranate = '#EE362C' // Pomegranate
+export const redViolet = '#EB238E' // Red Violet
+export const sushi = '#7CC142' // Sushi
+export const bombay = '#ADADAF' // Bombay

@@ -1,9 +1,12 @@
 import React from 'react'
-import Layout from '../components/Layout.js'
+
+import Layout from '../components/Layout'
 import Project from '../components/Project'
+import styles from '../styles/styles'
 
 const Index = (props) => (
   <Layout>
+    <style jsx>{styles}</style>
     <p>Portfolio</p>
     <div>
       {props.projects.map(project => <Project key={project.id} {...project} />)}
