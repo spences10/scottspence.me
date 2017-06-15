@@ -2,10 +2,10 @@ import React from 'react'
 import Header from './Header'
 
 const layoutStyle = {
-  font: 'Comic Sans',
   margin: 20,
   padding: 20,
-  border: '1px solid #DDD'
+  border: '1px solid #DDD',
+  height: '90vh'
 }
 
 const Layout = (props) => (

@@ -4,19 +4,19 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "next": "2.4.0",
+    "next": "2.4.3",
     "react": "15.5.4",
     "react-dom": "15.5.4",
     "react-headroom": "2.1.5",
     "react-icons": "2.2.5",
-    "styled-jsx": "1.0.0"
+    "styled-jsx": "1.0.4"
   },
   "devDependencies": {
     "eslint": "3.19.0",
     "eslint-config-spences10": "0.0.8"
   },
   "scripts": {
-    "dev": "next",
+    "start": "next",
     "copy": "cp -r .well-known/ .next/dist/"
   },
   "repository": {
