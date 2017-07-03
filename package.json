@@ -18,10 +18,10 @@
     "react-headroom": "^2.1.5",
     "react-icons": "^2.2.3",
     "react-router-dom": "^4.1.1",
-    "styled-components": "1.4.6"
+    "styled-components": "2.1.0"
   },
   "devDependencies": {
-    "eslint": "^3.18.0",
+    "eslint": "^4.1.1",
     "eslint-config-airbnb": "^15.0.1",
     "react-scripts": "^1.0.5"
   }
