@@ -9,10 +9,10 @@
     "react-dom": "15.5.4",
     "react-headroom": "2.1.5",
     "react-icons": "2.2.5",
-    "styled-jsx": "1.0.4"
+    "styled-jsx": "1.0.10"
   },
   "devDependencies": {
-    "eslint": "3.19.0",
+    "eslint": "4.4.1",
     "eslint-config-spences10": "0.0.8"
   },
   "scripts": {
