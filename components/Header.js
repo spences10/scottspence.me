@@ -9,16 +9,16 @@ const linkStyle = {
 
 const Header = () => (
   <div>
-    <Link href="/">
+    <Link href='/'>
       <a style={linkStyle}>Home</a>
     </Link>
-    <Link href="/about">
+    <Link href='/about'>
       <a style={linkStyle}>About</a>
     </Link>
-    <Link href="/portfolio">
+    <Link href='/portfolio'>
       <a style={linkStyle}>Portfolio</a>
     </Link>
-    <Link href="/contact">
+    <Link href='/contact'>
       <a style={linkStyle}>Contact</a>
     </Link>
   </div>

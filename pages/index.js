@@ -7,6 +7,5 @@ export default () => (
     <style jsx>{styles}</style>
 
     <p>Hello Next.js</p>
-
   </Layout>
 )

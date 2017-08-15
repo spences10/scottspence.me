@@ -8,13 +8,11 @@ const Index = (props) => (
   <Layout>
     <style jsx>{styles}</style>
     <p>Portfolio</p>
-    <div>
-      {props.projects.map(project => <Project key={project.id} {...project} />)}
-    </div>
+    <div>{props.projects.map((project) => <Project key={project.id} {...project} />)}</div>
   </Layout>
 )
 
-Index.getInitialProps = function () {
+Index.getInitialProps = () => {
   const projects = [
     { id: 1, name: 'Project 1', desc: 'Project description: Project 1', github: '', preview: '', image: '' },
     { id: 2, name: 'Project 2', desc: 'Project description: Project 2', github: '', preview: '', image: '' },
