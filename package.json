@@ -18,7 +18,7 @@
     "react-headroom": "^2.1.5",
     "react-icons": "^2.2.3",
     "react-router-dom": "^4.1.1",
-    "styled-components": "2.1.2"
+    "styled-components": "2.2.0"
   },
   "devDependencies": {
     "eslint": "^4.1.1",
