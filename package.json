@@ -14,7 +14,7 @@
     "normalize.css": "^7.0.0",
     "prop-types": "^15.5.8",
     "react": "^16.0.0",
-    "react-dom": "^15.5.4",
+    "react-dom": "^16.0.0",
     "react-headroom": "^2.1.5",
     "react-icons": "^2.2.3",
     "react-router-dom": "^4.1.1",
