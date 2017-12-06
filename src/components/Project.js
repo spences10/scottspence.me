@@ -8,15 +8,27 @@ const Name = styled.h2`
   margin-bottom: 0.75rem;
 `
 
+const Desc = styled.p`
+  margin-top: 0;
+  line-height: 1.5;
+`
+
+const Card = styled.div`
+  padding: 1.75rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+  color: white;
+  background: ${props => (props.id % 2 === 0 ? '#44bccc' : '#f973bc')};
+`
+
 export const Project = props => {
   return (
-    <div className="project">
-      <Name> {props.name}</Name>
-      {props.desc}
+    <Card id={props.id}>
+      <Name>{props.name}</Name>
+      <Desc>{props.desc}</Desc>
       {props.github}
-      {props.preview}
       {props.image}
-    </div>
+    </Card>
   )
 }
 
