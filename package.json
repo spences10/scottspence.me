@@ -12,17 +12,17 @@
   },
   "dependencies": {
     "normalize.css": "^7.0.0",
-    "prop-types": "^15.5.8",
+    "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-headroom": "^2.1.5",
-    "react-icons": "^2.2.3",
-    "react-router-dom": "^4.1.1",
+    "react-headroom": "^2.2.2",
+    "react-icons": "^2.2.7",
+    "react-router-dom": "^4.2.2",
     "styled-components": "2.2.4"
   },
   "devDependencies": {
-    "eslint": "^4.1.1",
+    "eslint": "^4.12.1",
     "eslint-config-airbnb": "^16.0.0",
-    "react-scripts": "^1.0.5"
+    "react-scripts": "^1.0.17"
   }
 }
