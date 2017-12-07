@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && yarn copy",
+    "build": "react-scripts build && npm run copy",
     "copy": "cp -r src/.well-known/ build/"
   },
   "dependencies": {
@@ -26,5 +26,14 @@
     "eslint": "^4.12.1",
     "eslint-config-airbnb": "^16.0.0",
     "react-scripts": "^1.0.17"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spences10/scottspence.me.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/spences10/scottspence.me/issues"
+  },
+  "homepage": "https://github.com/spences10/scottspence.me#readme"
 }
