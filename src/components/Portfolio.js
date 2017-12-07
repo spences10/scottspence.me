@@ -1,5 +1,7 @@
 import React from 'react'
 import { Project } from './Project'
+import { Grid } from 'grid-styled'
+
 import faker from 'faker'
 
 this.state = {
@@ -31,6 +33,20 @@ this.state = {
       desc: faker.company.catchPhraseDescriptor(),
       github: faker.internet.url(),
       image: faker.image.imageUrl()
+    },
+    {
+      id: 5,
+      name: faker.commerce.productName(),
+      desc: faker.company.catchPhraseDescriptor(),
+      github: faker.internet.url(),
+      image: faker.image.imageUrl()
+    },
+    {
+      id: 6,
+      name: faker.commerce.productName(),
+      desc: faker.company.catchPhraseDescriptor(),
+      github: faker.internet.url(),
+      image: faker.image.imageUrl()
     }
   ]
 }
@@ -39,12 +55,35 @@ export const Portfolio = () => (
   <div id="portfolio" className="portfolio">
     <h1>Portfolio</h1>
     <p>List of projects here:</p>
-    <div className="projects-container">
-      {this.state.projects.map(project => (
+    {this.state.projects.map(project => (
+      <Grid p={2} width={[1, 1 / 2, 1 / 4]}>
         <Project key={project.id} {...project} />
-      ))}
-    </div>
+      </Grid>
+    ))}
   </div>
 )
 
 export default Portfolio
+
+{
+  /* <div>
+	<Grid p={3} width={[ 1, 1/2, 1/4 ]}>
+		<h2 className='h1 xh0'>Inline</h2>
+		<Bar />
+	</Grid>
+	<Grid p={3} width={[ 1, 1/2, 1/4 ]}>
+		<h2 className='h1 xh0'>Block</h2>
+		<Bar />
+	</Grid>
+		<Grid p={3} width={[ 1, 1/2, 1/4 ]}>
+		<h2 className='h1 xh0'>Block</h2>
+		<Bar />
+	</Grid>
+	<Grid p={3} width={[ 1, 1/2, 1/4 ]}>
+		<h2 className='h1 xh0'>Block</h2>
+		<Bar />
+	</Grid>
+
+
+</div> */
+}

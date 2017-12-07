@@ -2,7 +2,6 @@ import React from 'react'
 import styled, { injectGlobal } from 'styled-components'
 import 'normalize.css'
 
-
 // eslint-disable-next-line no-unused-expressions
 injectGlobal`
   html {
