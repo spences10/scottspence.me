@@ -6,5 +6,4 @@ export const Hi = () => (
   </div>
 )
 
-
 export default Hi
