@@ -21,12 +21,20 @@ const Card = styled.div`
   background: ${props => (props.id % 2 === 0 ? '#44bccc' : '#f973bc')};
 `
 
+const Link = styled.a`
+  color: blue;
+`
+
 export const Project = props => {
   return (
     <Card id={props.id}>
       <Name>{props.name}</Name>
       <Desc>{props.desc}</Desc>
-      {props.github}
+      <Link>
+        <a target="_blank" href={props.github}>
+          {props.github}{' '}
+        </a>
+      </Link>
       {props.image}
     </Card>
   )
