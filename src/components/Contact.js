@@ -53,24 +53,6 @@ class Contact extends React.Component {
           </li>
           <li>
             <a
-              href="https://forum.freecodecamp.com/users/spences10/summary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFire />
-            </a>
-          </li>
-          <li>
-            <a
-              href="http://codepen.io/spences10/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaCodepen />
-            </a>
-          </li>
-          <li>
-            <a
               href="https://uk.linkedin.com/in/linkedinscottspence"
               target="_blank"
               rel="noopener noreferrer"
