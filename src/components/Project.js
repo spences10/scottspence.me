@@ -34,14 +34,10 @@ const Image = styled.div`
 
 export const Project = props => {
   return (
-    <Card id={props.id}>
+    <Card key={props.id} id={props.id}>
       <Name>{props.name}</Name>
       <Desc>{props.desc}</Desc>
-      <Link>
-        <a target="_blank" href={props.github}>
-          {props.github}{' '}
-        </a>
-      </Link>
+      <Link>{props.github} </Link>
       <Image>{props.image}</Image>
     </Card>
   )
