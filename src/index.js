@@ -10,7 +10,7 @@ import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 
 // import Wrapper from './components/Wrapper'
-import './app'
+// import './app'
 
 const UlStyle = styled.ul`
   margin: 0, 0;
