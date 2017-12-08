@@ -25,6 +25,13 @@ const Link = styled.a`
   color: blue;
 `
 
+const Image = styled.div`
+  padding: 1.75rem;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background-size: 100px;
+`
+
 export const Project = props => {
   return (
     <Card id={props.id}>
@@ -35,7 +42,7 @@ export const Project = props => {
           {props.github}{' '}
         </a>
       </Link>
-      {props.image}
+      <Image>{props.image}</Image>
     </Card>
   )
 }
