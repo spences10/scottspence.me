@@ -44,7 +44,6 @@ Project.propTypes = {
   name: PropTypes.string,
   desc: PropTypes.string,
   github: PropTypes.string,
-  preview: PropTypes.string,
   image: PropTypes.string
 }
 
