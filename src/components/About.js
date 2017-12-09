@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFire } from 'react-icons/lib/fa'
+// import { FaFire } from 'react-icons/lib/fa'
 import styled from 'styled-components'
 
 const Body = styled.body`
@@ -23,7 +23,7 @@ class About extends React.Component {
           <div className="about-start">
             Here you can view the various projects I have made using a range of
             frameworks and libraries whilst continuing my full stack developer
-            certification with freeCodeCamp(<FaFire />)
+            certification with freeCodeCamp()
           </div>
           <div className="">This page was made with React</div>
         </Body>

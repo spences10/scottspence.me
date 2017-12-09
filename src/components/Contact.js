@@ -1,11 +1,11 @@
 import React from 'react'
-import {
-  FaEnvelope,
-  FaTwitter,
-  FaGithub,
-  FaMedium,
-  FaLinkedin
-} from 'react-icons/lib/fa'
+// import {
+//   FaEnvelope,
+//   FaTwitter,
+//   FaGithub,
+//   FaMedium,
+//   FaLinkedin
+// } from 'react-icons/lib/fa'
 
 class Contact extends React.Component {
   render() {
@@ -19,7 +19,7 @@ class Contact extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaEnvelope />
+              {/* <FaEnvelope /> */}
             </a>
           </li>
           <li>
@@ -28,7 +28,7 @@ class Contact extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaTwitter />
+              {/* <FaTwitter /> */}
             </a>
           </li>
           <li>
@@ -37,7 +37,7 @@ class Contact extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub />
+              {/* <FaGithub /> */}
             </a>
           </li>
           <li>
@@ -46,7 +46,7 @@ class Contact extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaMedium />
+              {/* <FaMedium /> */}
             </a>
           </li>
           <li>
@@ -55,7 +55,7 @@ class Contact extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin />
+              {/* <FaLinkedin /> */}
             </a>
           </li>
         </ul>

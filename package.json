@@ -4,7 +4,12 @@
   "description": "My portfolio page in React",
   "main": "index.js",
   "dependencies": {
-    "faker": "^4.1.0"
+    "faker": "^4.1.0",
+    "grid-styled": "^2.0.0-11",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "react-scripts": "^1.0.17"
