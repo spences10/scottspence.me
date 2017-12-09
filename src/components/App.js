@@ -4,7 +4,7 @@ import { injectGlobal } from 'styled-components'
 import Nav from './Nav'
 import Main from './Main'
 
-injectGlobal`
+/* injectGlobal`
   html {
     color: #292f33;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -36,7 +36,7 @@ injectGlobal`
       font-size: 16px;
     }
   }
-`
+` */
 
 const App = () => (
   <div>
