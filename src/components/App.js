@@ -1,7 +1,7 @@
 import React from 'react'
-import { injectGlobal } from 'styled-components'
+// import { injectGlobal } from 'styled-components'
 
-import Nav from './Nav'
+import Navbar from './Navbar'
 import Main from './Main'
 
 /* injectGlobal`
@@ -40,7 +40,7 @@ import Main from './Main'
 
 const App = () => (
   <div>
-    <Nav />
+    <Navbar />
     <Main />
   </div>
 )

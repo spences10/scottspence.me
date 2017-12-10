@@ -9,25 +9,29 @@ const StyledLogo = styled.img`
   height: 30px;
 `
 
-const Nav = () => (
-  <header>
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/portfolio">Portfolio</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
-    </nav>
-  </header>
+const List = styled.ul`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+`
+
+const Navbar = () => (
+  <nav>
+    <List>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/about">About</Link>
+      </li>
+      <li>
+        <Link to="/portfolio">Portfolio</Link>
+      </li>
+      <li>
+        <Link to="/contact">Contact</Link>
+      </li>
+    </List>
+  </nav>
 )
 
 // class Nav extends React.Component {
@@ -55,4 +59,4 @@ const Nav = () => (
 //   }
 // }
 
-export default Nav
+export default Navbar
