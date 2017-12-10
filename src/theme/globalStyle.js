@@ -1,15 +1,11 @@
-import { injectGlobal } from 'styled-components'
+import styled, { injectGlobal } from 'styled-components'
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|VT323');
 
-  /* body {
-    font-family: 'Roboto';
-    font-size: 20px
-  } */
-
   body {
-    color: purple;
+    padding: 0;
+    margin: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 20px;
     line-height: 1.3125;
@@ -21,7 +17,6 @@ injectGlobal`
 
   ul {
     margin: 0 auto;
-    
   }
 
   /* svg {
@@ -40,4 +35,30 @@ injectGlobal`
       font-size: 16px;
     }
   }
+`
+
+export const StyledH1 = styled.h1`
+  padding: 1.75rem;
+  margin: 0.5rem;
+`
+
+export const StyledP = styled.p`
+  padding: 1.75rem;
+  margin: 0.5rem;
+`
+
+export const StyledUl = styled.ul`
+  padding: 1.75rem;
+  margin: 0.5rem;
+`
+
+export const StyledLi = styled.li`
+  padding: 1.75rem;
+  margin: 0.5rem;
+  text-decoration: none;
+`
+
+export const StyledA = styled.a`
+  padding: 1.75rem;
+  margin: 0.5rem;
 `

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Box, Flex } from 'grid-styled'
 
 import styled from 'styled-components'
 
@@ -11,25 +12,27 @@ const StyledLogo = styled.img`
 
 const List = styled.ul`
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  padding: 1.75rem;
+  margin: 0.5rem;
 `
 
 const Navbar = () => (
   <nav>
     <List>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-      <li>
-        <Link to="/portfolio">Portfolio</Link>
-      </li>
-      <li>
-        <Link to="/contact">Contact</Link>
-      </li>
+      <Flex>
+        <Box flex="1 1 auto">
+          <Link to="/">Home</Link>
+        </Box>
+        <Box flex="1 1 auto">
+          <Link to="/about">About</Link>
+        </Box>
+        <Box flex="1 1 auto">
+          <Link to="/portfolio">Portfolio</Link>
+        </Box>
+        <Box flex="1 1 auto">
+          <Link to="/contact">Contact</Link>
+        </Box>
+      </Flex>
     </List>
   </nav>
 )

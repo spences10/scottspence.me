@@ -4,6 +4,8 @@ import { Grid } from 'grid-styled'
 
 import faker from 'faker'
 
+import { StyledH1, StyledP } from '../theme/globalStyle'
+
 this.state = {
   projects: [
     {
@@ -52,9 +54,9 @@ this.state = {
 }
 
 export const Portfolio = () => (
-  <div id="portfolio" className="portfolio">
-    <h1>Portfolio</h1>
-    <p>List of projects here:</p>
+  <div>
+    <StyledH1>Portfolio</StyledH1>
+    <StyledP>List of projects here:</StyledP>
     {this.state.projects.map(project => (
       <Grid p={2} width={[1, 1 / 2, 1 / 4]}>
         <Project key={project.id} {...project} />
