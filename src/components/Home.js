@@ -8,7 +8,7 @@ const Image = styled.img`
   width: 100%;
 `
 
-export const Hi = () => (
+export const Home = () => (
   <div>
     <h1>Hi</h1>
     <Image src={require('../images/city_skyline.jpeg')} alt="city_skyline" />
@@ -18,4 +18,4 @@ export const Hi = () => (
   </div>
 )
 
-export default Hi
+export default Home
