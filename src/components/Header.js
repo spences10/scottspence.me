@@ -1,6 +1,6 @@
 import React from 'react'
-import FaHand from 'react-icons/lib/fa/hand-paper-o'
-import FaMousePointer from 'react-icons/lib/fa/mouse-pointer'
+// import FaHand from 'react-icons/lib/fa/hand-paper-o'
+// import FaMousePointer from 'react-icons/lib/fa/mouse-pointer'
 import styled from 'styled-components'
 
 const background = styled.body`
@@ -17,13 +17,9 @@ class Header extends React.Component {
           <div className="name">
             <h1>Scott Spence</h1>
             <span className="nameSpan" />
-            <h2>
-              Hello <FaHand />
-            </h2>
+            <h2>{/* Hello <FaHand /> */}</h2>
             <span />
-            <h2>
-              <FaMousePointer />
-            </h2>
+            <h2>{/* <FaMousePointer /> */}</h2>
           </div>
         </background>
       </div>
