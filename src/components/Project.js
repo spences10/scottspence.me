@@ -25,11 +25,11 @@ const Link = styled.a`
   color: blue;
 `
 
-const Image = styled.div`
-  padding: 1.75rem;
+const Image = styled.img`
   border-radius: 8px;
   border: 1px solid #000;
-  background-size: 100px;
+  max-width: 100%;
+  max-height: 100%;
 `
 
 export const Project = props => {
@@ -38,7 +38,7 @@ export const Project = props => {
       <Name>{props.name}</Name>
       <Desc>{props.desc}</Desc>
       <Link>{props.github} </Link>
-      <Image>{props.image}</Image>
+      <Image src={props.image} alt={props.name} />
     </Card>
   )
 }
