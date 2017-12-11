@@ -1,11 +1,7 @@
 import React from 'react'
-// import {
-//   FaEnvelope,
-//   FaTwitter,
-//   FaGithub,
-//   FaMedium,
-//   FaLinkedin
-// } from 'react-icons/lib/fa'
+
+import Icon from '../theme/icons'
+import { ICONS } from '../theme/constants'
 
 import { StyledH1, StyledLi, StyledUl, StyledA } from '../theme/globalStyle'
 
@@ -15,49 +11,44 @@ class Contact extends React.Component {
       <div>
         <StyledH1>Contact</StyledH1>
 
-        <StyledA
+        <a
           href="mailTo:spences10apps@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          email
-          {/* <FaEnvelope /> */}
-        </StyledA>
-        <StyledA
+          <Icon icon={ICONS.EMAIL} size={64} />
+        </a>
+        <a
           href="https://twitter.com/ScottDevTweets"
           target="_blank"
           rel="noopener noreferrer"
         >
-          twitter
-          {/* <FaTwitter /> */}
-        </StyledA>
+          <Icon icon={ICONS.TWITTER} size={64} />
+        </a>
 
-        <StyledA
+        <a
           href="https://github.com/spences10"
           target="_blank"
           rel="noopener noreferrer"
         >
-          github
-          {/* <FaGithub /> */}
-        </StyledA>
+          <Icon icon={ICONS.GITHUB} size={64} />
+        </a>
 
-        <StyledA
+        <a
           href="https://medium.com/@spences10"
           target="_blank"
           rel="noopener noreferrer"
         >
-          medium
-          {/* <FaMedium /> */}
-        </StyledA>
+          <Icon icon={ICONS.MEDIUM} size={64} />
+        </a>
 
-        <StyledA
+        <a
           href="https://uk.linkedin.com/in/linkedinscottspence"
           target="_blank"
           rel="noopener noreferrer"
         >
-          linkedin
-          {/* <FaLinkedin /> */}
-        </StyledA>
+          <Icon icon={ICONS.LINKEDIN} size={64} />
+        </a>
       </div>
     )
   }
