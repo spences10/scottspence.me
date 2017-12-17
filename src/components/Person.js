@@ -46,7 +46,7 @@ class Person extends React.Component {
   render() {
     return (
       <Wrapper>
-        <Image src={this.props.img} />
+        <Image src={this.props.img} alt={this.props.title} />
         <Text>
           <CardTitle>{this.props.title}</CardTitle>
           <CardText>{this.props.text}</CardText>
