@@ -1,16 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
-const Name = styled.h2`
+import { StyledH3, StyledP, ColorPalette as CP } from '../theme/globalStyle'
+import { ButtonSmall } from '../components/Button'
+
+const Name = StyledH3.extend`
   margin-top: 0;
-  font-weight: 900;
-  margin-bottom: 0.75rem;
+  /* font-weight: 900; */
+  color: ${CP.white};
+  margin: 0.05rem;
+  padding: 0rem;
 `
 
-const Desc = styled.p`
-  margin-top: 0;
-  line-height: 1.5;
+const Desc = StyledP.extend`
+  color: ${CP.white};
+  margin: 0.05rem;
+  padding: 0rem;
 `
 
 const Card = styled.div`
@@ -21,7 +28,7 @@ const Card = styled.div`
   background: ${props => (props.id % 2 === 0 ? '#44bccc' : '#f973bc')};
 `
 
-const Link = styled.a`
+const StyledLink = styled(Link)`
   color: blue;
 `
 
@@ -37,7 +44,7 @@ export const Project = props => {
     <Card key={props.id} id={props.id}>
       <Name>{props.name}</Name>
       <Desc>{props.desc}</Desc>
-      <Link>{props.github} </Link>
+      <Link to={props.github}>{props.github}</Link>
       <Image src={props.image} alt={props.name} />
     </Card>
   )
