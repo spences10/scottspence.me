@@ -10,11 +10,20 @@ import './theme/globalStyle'
 
 ReactDOM.render(
   <div>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>Scott Spence</title>
-      <link rel="canonical" href="http://scottspence/me" />
-    </Helmet>
+    <Helmet
+      title="Scott Spence - portfolio"
+      meta={[
+        {
+          name: 'description',
+          content: 'The portfolio site of Scott Spence - developer'
+        },
+        {
+          name: 'keywords',
+          content:
+            'developer, JavaScript, js, learning, 100daysofcode, ScottDevTweets'
+        }
+      ]}
+    />
     <BrowserRouter>
       <App />
     </BrowserRouter>
