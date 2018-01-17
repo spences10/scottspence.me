@@ -21,4 +21,16 @@ export const theme = {
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|VT323');
 
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    color: hsla(0, 0%, 0%, 0.8);
+    font-family: Roboto, georgia, serif;
+    font-weight: normal;
+    word-wrap: break-word;
+  }
+
 `
