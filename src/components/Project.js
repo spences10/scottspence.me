@@ -3,7 +3,11 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-import { StyledH3, StyledP, ColorPalette as CP } from '../theme/globalStyle'
+import {
+  StyledH3,
+  StyledP,
+  ColorPalette as CP
+} from '../theme/globalStyle'
 import { ButtonSmall } from '../components/Button'
 
 const Name = StyledH3.extend`
@@ -25,7 +29,8 @@ const Card = styled.div`
   margin: 0.5rem;
   border-radius: 4px;
   color: white;
-  background: ${props => (props.id % 2 === 0 ? '#44bccc' : '#f973bc')};
+  background: ${props =>
+    props.id % 2 === 0 ? '#44bccc' : '#f973bc'};
 `
 
 const StyledLink = styled(Link)`
