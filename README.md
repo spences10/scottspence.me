@@ -1,7 +1,12 @@
-# spences10.github.io.react
+# scottspence.me
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/spences10/scottspence.me.svg)](https://greenkeeper.io/)
 
-My personal portfolio in React
+My personal portfolio
 
-One day I will have at least one branch to use here
+Uses:
+
+* all teh badges!
+* Gatsby
+* styled-components
+* Prettier

@@ -1,94 +1,6 @@
-import styled, { injectGlobal } from 'styled-components'
+import { injectGlobal } from 'styled-components'
 
-injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|VT323');
-
-  body {
-    padding: 0;
-    margin: 0;
-    font-family: Roboto, Arial, sans-serif;
-    font-size: 20px;
-    line-height: 1.3125;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  ul {
-    margin: 0 auto;
-  }
-
-  /* svg {
-    fill: currentColor;
-    height: 1.25em;
-  } */
-  
-  @media screen and (min-width: 360px) {
-    html {
-      font-size: 15px;
-    }
-  }
-
-  @media screen and (min-width: 600px) {
-    html {
-      font-size: 16px;
-    }
-  }
-`
-
-export const StyledH1 = styled.h1`
-  padding: 1.75rem;
-  margin: 0.5rem;
-  font-family: Open Sans;
-`
-export const StyledH2 = styled.h2`
-  padding: 1.75rem;
-  margin: 0.5rem;
-`
-
-export const StyledH3 = styled.h3`
-  padding: 1.75rem;
-  margin: 0.5rem;
-`
-
-export const StyledH4 = styled.h4`
-  padding: 1.75rem;
-  margin: 0.5rem;
-`
-
-export const StyledH5 = styled.h5`
-  padding: 1.75rem;
-  margin: 0.5rem;
-`
-
-export const StyledH6 = styled.h6`
-  padding: 1.75rem;
-  margin: 0.5rem;
-`
-
-export const StyledP = styled.p`
-  padding: 1.75rem;
-  margin: 0.5rem;
-`
-
-export const StyledUl = styled.ul`
-  padding: 1.75rem;
-  margin: 0.5rem;
-`
-
-export const StyledLi = styled.li`
-  padding: 1.75rem;
-  margin: 0.5rem;
-  text-decoration: none;
-`
-
-export const StyledA = styled.a`
-  padding: 1.75rem;
-  margin: 0.5rem;
-`
-
-export const ColorPalette = {
+export const theme = {
   text: '#333',
   white: '#fff',
   primary: {
@@ -98,9 +10,41 @@ export const ColorPalette = {
   secondary: {
     green: '#8ac3a9',
     yellow: '#fcdeb6',
-    red: '#ff8463'
+    red: '#ff8463',
+    pink: '#ff0198', // hollywood cerise
+    yellow: '#ffb617', // my sin
+    purple: '#6e27c5', // purple heart
+    orange: '#ff6600', // blaze orange
+    blue: '#01c1d6', // robin's egg blue
+    java: '#1cbcd2', // java
+    sun: '#fab319', // sun
+    affair: '#69479e', // affair
+    flamingo: '#f16623', // flamingo
+    minsk: '#2e2e86', // minsk
+    pomegranate: '#ee362c', // pomegranate
+    redviolet: '#eb238e', // red violet
+    sushi: '#7cc142', // sushi
+    bombay: '#adadaf' // Bombay
   },
   shades: {
-    //add shades with progress
+    dark: 'rgba(69, 52, 99, 0.5)',
+    offWhite: 'rgb(244, 254, 254)'
   }
 }
+
+injectGlobal`
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|VT323');
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    color: hsla(0, 0%, 0%, 0.8);
+    font-family: Roboto, georgia, serif;
+    font-weight: normal;
+    word-wrap: break-word;
+  }
+
+`
