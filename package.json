@@ -1,28 +1,37 @@
 {
-  "name": "spences10.github.io",
+  "name": "scottspence.me",
   "version": "0.0.1",
   "description": "My portfolio page in React",
   "main": "index.js",
-  "author": "Scott Spence",
-  "license": "MIT",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && yarn copy",
-    "copy": "cp -r src/.well-known/ build/"
-  },
   "dependencies": {
-    "normalize.css": "^7.0.0",
-    "prop-types": "^15.5.8",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-headroom": "^2.1.5",
-    "react-icons": "^2.2.3",
-    "react-router-dom": "^4.1.1",
-    "styled-components": "1.4.6"
+    "faker": "^4.1.0",
+    "grid-styled": "^2.0.0-11",
+    "polished": "^1.9.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
-    "eslint": "^3.18.0",
-    "eslint-config-airbnb": "^15.0.1",
-    "react-scripts": "^1.0.5"
-  }
+    "react-scripts": "^1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && npm run copy",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "copy": "cp -r src/.well-known/ build/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spences10/scottspence.me.git"
+  },
+  "keywords": [],
+  "author": "Scott Spence",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spences10/scottspence.me/issues"
+  },
+  "homepage": "https://github.com/spences10/scottspence.me#readme"
 }
