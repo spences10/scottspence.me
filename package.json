@@ -12,9 +12,14 @@
   "keywords": ["gatsby", "portfolio"],
   "license": "MIT",
   "main": "n/a",
+  "now": {
+    "name": "scottportfolio"
+  },
   "scripts": {
-    "build": "gatsby build",
-    "dev": "gatsby develop",
+    "clean":
+      "rm -rf .cache/ && rm -rf scottportfolio/ && rm -rf public/",
+    "build": "gatsby build && mv public scottportfolio",
+    "dev": "npm run clean && gatsby develop",
     "format":
       "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
