@@ -6,8 +6,6 @@ import styled, { ThemeProvider } from 'styled-components'
 import Header from '../components/Header'
 import { theme } from '../theme/globalStyle'
 
-import './index.css'
-
 const PageContainer = styled.div``
 
 const TemplateWrapper = ({ children }) => (
