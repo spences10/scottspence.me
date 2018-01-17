@@ -10,7 +10,21 @@ export const theme = {
   secondary: {
     green: '#8ac3a9',
     yellow: '#fcdeb6',
-    red: '#ff8463'
+    red: '#ff8463',
+    pink: '#ff0198', // hollywood cerise
+    yellow: '#ffb617', // my sin
+    purple: '#6e27c5', // purple heart
+    orange: '#ff6600', // blaze orange
+    blue: '#01c1d6', // robin's egg blue
+    java: '#1cbcd2', // java
+    sun: '#fab319', // sun
+    affair: '#69479e', // affair
+    flamingo: '#f16623', // flamingo
+    minsk: '#2e2e86', // minsk
+    pomegranate: '#ee362c', // pomegranate
+    redviolet: '#eb238e', // red violet
+    sushi: '#7cc142', // sushi
+    bombay: '#adadaf' // Bombay
   },
   shades: {
     dark: 'rgba(69, 52, 99, 0.5)',
