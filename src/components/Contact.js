@@ -1,36 +1,54 @@
 import React from 'react'
-import { FaEnvelope, FaTwitter, FaGithub, FaMedium,
-  FaFire, FaCodepen, FaLinkedin } from 'react-icons/lib/fa'
+
+import Icon from '../theme/icons'
+import { ICONS } from '../theme/constants'
+
+import { StyledH1, StyledLi, StyledUl, StyledA } from '../theme/globalStyle'
 
 class Contact extends React.Component {
-
   render() {
     return (
-      <div id="contact" className="contact">
-        <h1>Contact</h1>
-        <ul className="social">
-          <li>
-            <a href="mailTo:spences10apps@gmail.com" target="_blank"><FaEnvelope /></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/ScottDevTweets" target="_blank"><FaTwitter /></a>
-          </li>
-          <li>
-            <a href="https://github.com/spences10" target="_blank"><FaGithub /></a>
-          </li>
-          <li>
-            <a href="https://medium.com/@spences10" target="_blank"><FaMedium /></a>
-          </li>
-          <li>
-            <a href="https://forum.freecodecamp.com/users/spences10/summary" target="_blank"><FaFire /></a>
-          </li>
-          <li>
-            <a href="http://codepen.io/spences10/" target="_blank"><FaCodepen /></a>
-          </li>
-          <li>
-            <a href="https://uk.linkedin.com/in/linkedinscottspence" target="_blank"><FaLinkedin /></a>
-          </li>
-        </ul>
+      <div>
+        <StyledH1>Contact</StyledH1>
+
+        <a
+          href="mailTo:spences10apps@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon icon={ICONS.EMAIL} size={64} />
+        </a>
+        <a
+          href="https://twitter.com/ScottDevTweets"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon icon={ICONS.TWITTER} size={64} />
+        </a>
+
+        <a
+          href="https://github.com/spences10"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon icon={ICONS.GITHUB} size={64} />
+        </a>
+
+        <a
+          href="https://medium.com/@spences10"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon icon={ICONS.MEDIUM} size={64} />
+        </a>
+
+        <a
+          href="https://uk.linkedin.com/in/linkedinscottspence"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon icon={ICONS.LINKEDIN} size={64} />
+        </a>
       </div>
     )
   }

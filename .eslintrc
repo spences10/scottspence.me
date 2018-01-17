@@ -1,5 +1,5 @@
 {
-  "env":{
+  "env": {
     "es6": true,
     "browser": true
   },
@@ -7,8 +7,14 @@
   "rules": {
     "semi": [2, "never"],
     "no-unexpected-multiline": 2,
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
-    "comma-dangle": ["error", "never"]
+    "no-console": 0,
+    "react/prefer-stateless-function": [
+      0,
+      {
+        "ignorePureComponents": true
+      }
+    ],
+    "comma-dangle": ["error", "never"],
+    "arrow-body-style": ["error", "as-needed"]
   }
 }

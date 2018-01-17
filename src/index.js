@@ -1,9 +1,33 @@
 import React from 'react'
-import { render } from 'react-dom'
-import './css/style.css'
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import 'font-awesome/css/font-awesome.min.css'
+import ReactDOM from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
+
+import registerServiceWorker from './registerServiceWorker'
 
 import App from './components/App'
+import './theme/globalStyle'
 
-render(<App />, document.querySelector('#main'))
+ReactDOM.render(
+  <div>
+    <Helmet
+      title="Scott Spence - portfolio"
+      meta={[
+        {
+          name: 'description',
+          content: 'The portfolio site of Scott Spence - developer'
+        },
+        {
+          name: 'keywords',
+          content:
+            'developer, JavaScript, js, learning, 100daysofcode, ScottDevTweets'
+        }
+      ]}
+    />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </div>,
+  document.getElementById('root')
+)
+registerServiceWorker()
