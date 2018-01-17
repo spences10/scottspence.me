@@ -27,9 +27,8 @@
       "rm -rf .cache/ && rm -rf scottportfolio/ && rm -rf public/",
     "build": "gatsby build && mv public scottportfolio",
     "dev": "npm run clean && gatsby develop",
-    "format":
-      "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "pretty-quick",
+    "precommit": "pretty-quick --staged"
   },
   "repository": {
     "type": "git",
