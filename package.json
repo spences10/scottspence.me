@@ -1,38 +1,37 @@
 {
-  "name": "spences10.github.io.react",
+  "name": "scottspence.me",
   "version": "0.0.1",
-  "description": "",
+  "description": "My portfolio page in React",
   "main": "index.js",
   "dependencies": {
-    "next": "2.4.3",
-    "react": "15.5.4",
-    "react-dom": "15.5.4",
-    "react-headroom": "2.1.5",
-    "react-icons": "2.2.5",
-    "styled-jsx": "1.0.10"
+    "faker": "^4.1.0",
+    "grid-styled": "^2.0.0-11",
+    "polished": "^1.9.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
-    "eslint": "4.4.1",
-    "eslint-config-spences10": "0.0.8"
+    "react-scripts": "^1.0.17"
   },
   "scripts": {
-    "start": "next",
-    "copy": "cp -r .well-known/ .next/dist/"
+    "start": "react-scripts start",
+    "build": "react-scripts build && npm run copy",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "copy": "cp -r src/.well-known/ build/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spences10/spences10.github.io.react.git"
+    "url": "git+https://github.com/spences10/scottspence.me.git"
   },
-  "keywords": [
-    "personal",
-    "portfolio",
-    "react",
-    "nextjs"
-  ],
-  "author": "Scott Spence <spences10apps@gmail.com> (https://spences10.github.io/)",
+  "keywords": [],
+  "author": "Scott Spence",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/spences10/spences10.github.io.react/issues"
+    "url": "https://github.com/spences10/scottspence.me/issues"
   },
-  "homepage": "https://github.com/spences10/spences10.github.io.react#readme"
+  "homepage": "https://github.com/spences10/scottspence.me#readme"
 }
