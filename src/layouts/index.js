@@ -14,6 +14,7 @@ const TemplateWrapper = ({ children, data }) => (
       <Helmet
         title="Scott Spence - portfolio"
         meta={[
+          // Google / Search Engine Tags
           {
             name: 'description',
             content:
@@ -25,6 +26,36 @@ const TemplateWrapper = ({ children, data }) => (
           },
           {
             name: 'image',
+            content:
+              'https://pbs.twimg.com/profile_images/697901266945646592/05jKr58e_400x400.jpg'
+          },
+          // facebook
+          { name: 'og:url', content: 'https://scottspence.me' },
+          { name: 'og:type', content: 'website' },
+          { name: 'og:title', content: 'Scott Spence - portfolio' },
+          {
+            name: 'og:description',
+            content:
+              'Portfolio site of Scott Spence - aspiring web developer'
+          },
+          {
+            name: 'og:image',
+            content:
+              'https://pbs.twimg.com/profile_images/697901266945646592/05jKr58e_400x400.jpg'
+          },
+          // twitter
+          { name: 'twitter:card', content: 'summary_large_image' },
+          {
+            name: 'twitter:title',
+            content: 'Scott Spence - portfolio'
+          },
+          {
+            name: 'twitter:description',
+            content:
+              'Portfolio site of Scott Spence - aspiring web developer'
+          },
+          {
+            name: 'twitter:image',
             content:
               'https://pbs.twimg.com/profile_images/697901266945646592/05jKr58e_400x400.jpg'
           }
