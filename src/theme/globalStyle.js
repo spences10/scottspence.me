@@ -52,4 +52,8 @@ injectGlobal`
     font-family: Open Sans;
   }
 
+  a {
+    text-decoration: none;
+  }
+
 `
