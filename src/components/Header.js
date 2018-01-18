@@ -29,35 +29,12 @@ const SiteLink = styled(Link)`
 `
 
 const Header = props => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem'
-    }}>
-    <StyledHeader>
-      <SiteTitle>
-        <SiteLink>Scott Spence</SiteLink>
-      </SiteTitle>
-      <PageNav header={true} nav={props.navItems} />
-    </StyledHeader>
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem'
-      }}>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none'
-          }}>
-          Scott Spence
-        </Link>
-      </h1>
-    </div>
-  </div>
+  <StyledHeader>
+    <SiteTitle>
+      <SiteLink to="/">Scott Spence</SiteLink>
+    </SiteTitle>
+    <PageNav header={true} nav={props.navItems} />
+  </StyledHeader>
 )
 
 Header.propTypes = {
