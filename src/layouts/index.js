@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled, { ThemeProvider } from 'styled-components'
 
-import Header from '../components/Header'
+import Header from '../components/Header.js'
 import { theme } from '../theme/globalStyle'
 
 const PageContainer = styled.div``
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children, data }) => (
   <ThemeProvider theme={theme}>
     <PageContainer>
       <Helmet
@@ -18,7 +18,7 @@ const TemplateWrapper = ({ children }) => (
           { name: 'keywords', content: 'sample, something' }
         ]}
       />
-      <Header />
+      <Header navItems={data.site.siteMetadata.pages} />
       <div
         style={{
           margin: '0 auto',
@@ -37,3 +37,13 @@ TemplateWrapper.propTypes = {
 }
 
 export default TemplateWrapper
+
+export const query = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        pages
+      }
+    }
+  }
+`
