@@ -6,7 +6,21 @@ import styled, { ThemeProvider } from 'styled-components'
 import Header from '../components/Header.js'
 import { theme } from '../theme/globalStyle'
 
-const PageContainer = styled.div``
+const PageContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  /* hd = header, ma = main, ft = footer */
+  grid-template-areas:
+    'hd hd hd hd hd hd hd hd hd hd hd hd'
+    'ma ma ma ma ma ma ma ma ma ma ma ma'
+    'ft ft ft ft ft ft ft ft ft ft ft ft';
+`
+
+const Main = styled.div`
+  grid-area: ma;
+  margin-top: 4.625rem;
+`
 
 const TemplateWrapper = ({ children, data }) => (
   <ThemeProvider theme={theme}>
@@ -63,7 +77,7 @@ const TemplateWrapper = ({ children, data }) => (
       />
       <Header navItems={data.site.siteMetadata.pages} />
 
-      <div>{children()}</div>
+      <Main>{children()}</Main>
     </PageContainer>
   </ThemeProvider>
 )
