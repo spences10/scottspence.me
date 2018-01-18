@@ -1,12 +1,25 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
 
-const Header = () => (
+const StyledHeader = styled.div`
+  margin: 0 auto;
+  background-color: ${props => props.theme.secondary.purple};
+`
+
+const StyledH1 = styled.h1`
+  margin: 0;
+`
+
+const Header = props => (
   <div
     style={{
       background: 'rebeccapurple',
       marginBottom: '1.45rem'
     }}>
+    <StyledHeader>
+      <StyledH1>Scott Spence</StyledH1>
+    </StyledHeader>
     <div
       style={{
         margin: '0 auto',
