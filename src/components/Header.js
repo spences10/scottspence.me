@@ -4,11 +4,26 @@ import styled from 'styled-components'
 
 const StyledHeader = styled.div`
   margin: 0 auto;
+  padding: 1rem;
   background-color: ${props => props.theme.secondary.purple};
 `
 
-const StyledH1 = styled.h1`
+const SiteTitle = styled.h1`
   margin: 0;
+  padding: 0;
+  color: ${props => props.theme.white};
+`
+
+const SiteLink = styled(Link)`
+  color: inherit;
+  text-decoration: none;
+  &:visited,
+  &:active {
+    color: inherit;
+  }
+  &:hover {
+    color: ${props => props.theme.secondary.yellow};
+  }
 `
 
 const Header = props => (
@@ -18,7 +33,9 @@ const Header = props => (
       marginBottom: '1.45rem'
     }}>
     <StyledHeader>
-      <StyledH1>Scott Spence</StyledH1>
+      <SiteTitle>
+        <SiteLink>Scott Spence</SiteLink>
+      </SiteTitle>
     </StyledHeader>
     <div
       style={{
