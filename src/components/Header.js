@@ -8,19 +8,19 @@ import PageNav from './PageNav'
 const StyledHeader = styled.div`
   /* margin: 0 auto; */
   /* padding: 1rem; */
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: '. brand brand . . . nav nav nav nav nav .';
-
-  background-color: ${props => props.theme.secondary.purple};
   grid-area: hd;
   display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: '. tit tit . . . nav nav nav nav nav .';
+
+  background-color: ${props => props.theme.secondary.purple};
 `
 
 const SiteTitle = styled.h1`
-  grid-area: brand;
-  margin: 0;
-  padding: 0;
+  grid-area: tit;
+  /* margin: 0; */
+  /* padding: 0; */
   color: ${props => props.theme.white};
 `
 
