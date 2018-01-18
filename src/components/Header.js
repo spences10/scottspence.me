@@ -1,6 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+
+import PageNav from './PageNav'
 
 const StyledHeader = styled.div`
   margin: 0 auto;
@@ -16,7 +19,6 @@ const SiteTitle = styled.h1`
 
 const SiteLink = styled(Link)`
   color: inherit;
-  text-decoration: none;
   &:visited,
   &:active {
     color: inherit;
@@ -36,6 +38,7 @@ const Header = props => (
       <SiteTitle>
         <SiteLink>Scott Spence</SiteLink>
       </SiteTitle>
+      <PageNav header={true} nav={props.navItems} />
     </StyledHeader>
     <div
       style={{
@@ -56,5 +59,9 @@ const Header = props => (
     </div>
   </div>
 )
+
+Header.propTypes = {
+  navItems: PropTypes.array.isRequired
+}
 
 export default Header
