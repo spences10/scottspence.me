@@ -48,4 +48,8 @@ injectGlobal`
     word-wrap: break-word;
   }
 
+  h1 {
+    font-family: Open Sans;
+  }
+
 `
