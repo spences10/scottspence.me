@@ -27,21 +27,17 @@ const NavLink = styled(Link).attrs({
     color: ${props => props.color}
 `
 
-const PageNav = props => (
+const PageNav = ({ nav }) => (
   <NavMenu>
-    <NavItem dataHeader={props.header}>
-      <NavLink to="/about" dataHeader={props.header}>
-        about
-      </NavLink>
-    </NavItem>
-    <NavItem dataHeader={props.header}>
-      <NavLink to="/portfolio">portfolio</NavLink>
-    </NavItem>
+    {nav.map((item, index) => (
+      <NavItem key={index}>
+        <NavLink to={`/${item}`}>{item}</NavLink>
+      </NavItem>
+    ))}
   </NavMenu>
 )
 
 PageNav.propTypes = {
-  header: PropTypes.bool.isRequired,
   nav: PropTypes.array.isRequired
 }
 

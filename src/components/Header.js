@@ -28,12 +28,12 @@ const SiteLink = styled(Link)`
   }
 `
 
-const Header = () => (
+const Header = props => (
   <StyledHeader>
     <SiteTitle>
       <SiteLink to="/">Scott Spence</SiteLink>
     </SiteTitle>
-    <PageNav />
+    <PageNav nav={props.navItems} />
   </StyledHeader>
 )
 
