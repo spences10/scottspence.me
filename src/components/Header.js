@@ -20,7 +20,7 @@ const StyledHeader = styled.div`
 
   ${media.giant`
     grid-template-areas:
-      '. . t t t t t n n n . .';
+      't t t t t t t n n n n .';
     background: goldenrod;
   `};
   ${media.desktop`
@@ -31,7 +31,7 @@ const StyledHeader = styled.div`
   ${media.tablet`
   grid-template-columns: repeat(9, 1fr);
   grid-template-areas:
-      '. t t t t n n n .';
+      '. t t t t t t n .';
     background: mediumseagreen;
   `};
   ${media.phone`
