@@ -16,12 +16,12 @@ const NavMenu = styled.ul`
 const NavItem = styled.li`
   text-transform: uppercase;
   list-style: none;
-  color: ${props => props.theme.primary.light};
-  padding: 0.5rem;
+  color: ${props => props.theme.white};
+  /* padding: 0.5rem; */
 `
 
 const NavLink = styled(Link).attrs({
-  color: props => props.theme.secondary.pink
+  color: props => props.theme.secondary.yellow
 })`
   color: inherit;
   &:visited, &:active {
