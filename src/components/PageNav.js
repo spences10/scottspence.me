@@ -6,6 +6,10 @@ import styled from 'styled-components'
 // import { theme } from '../theme/globalStyle'
 
 const NavMenu = styled.ul`
+  grid-area: nav;
+  display: inline-grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 10px;
   padding: 0;
 `
 
