@@ -6,11 +6,12 @@ import styled from 'styled-components'
 // import { theme } from '../theme/globalStyle'
 
 const NavMenu = styled.ul`
-  grid-area: nav;
+  grid-area: n;
   display: inline-grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, auto);
   grid-column-gap: 10px;
-  padding: 0;
+  margin: 1.5rem 0.1rem 1.5rem 0.1rem;
+  padding: 1.5rem 0.1rem 1.5rem 0.1rem;
 `
 
 const NavItem = styled.li`
