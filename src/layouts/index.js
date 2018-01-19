@@ -19,14 +19,14 @@ const PageContainer = styled.div`
       '. . h h h h h h h h . .'
       '. . m m m m m m m m . .'
       '. . f f f f f f f f . .';
-    /* background: goldenrod; */
+    background: goldenrod;
   `};
   ${media.desktop`
     grid-template-areas:
       '. . h h h h h h h h . .'
       '. . m m m m m m m m . .'
       '. . f f f f f f f f . .';
-    /* background: dodgerblue; */
+    background: dodgerblue;
   `};
   ${media.tablet`
   grid-template-columns: repeat(9, 1fr);
@@ -34,7 +34,7 @@ const PageContainer = styled.div`
       '. h h h h h h h .'
       '. m m m m m m m .'
       '. f f f f f f f .';
-    /* background: mediumseagreen; */
+    background: mediumseagreen;
   `};
   ${media.phone`
   grid-template-columns: repeat(9, 1fr);
@@ -42,67 +42,19 @@ const PageContainer = styled.div`
       'h h h h h h h h h'
       'm m m m m m m m m'
       'f f f f f f f f f';
-    /* background: palevioletred; */
+    background: palevioletred;
   `};
 `
 
 const Main = styled.div`
   grid-area: m;
 `
+import { siteMeta } from '../constants'
 
 const TemplateWrapper = ({ children, data }) => (
   <ThemeProvider theme={theme}>
     <PageContainer>
-      <Helmet
-        title="Scott Spence - portfolio"
-        meta={[
-          // Google / Search Engine Tags
-          {
-            name: 'description',
-            content:
-              'Portfolio site of Scott Spence - aspiring web developer'
-          },
-          {
-            name: 'keywords',
-            content: 'portfolio, web developer, javascript'
-          },
-          {
-            name: 'image',
-            content:
-              'https://pbs.twimg.com/profile_images/697901266945646592/05jKr58e_400x400.jpg'
-          },
-          // facebook
-          { name: 'og:url', content: 'https://scottspence.me' },
-          { name: 'og:type', content: 'website' },
-          { name: 'og:title', content: 'Scott Spence - portfolio' },
-          {
-            name: 'og:description',
-            content:
-              'Portfolio site of Scott Spence - aspiring web developer'
-          },
-          {
-            name: 'og:image',
-            content:
-              'https://pbs.twimg.com/profile_images/697901266945646592/05jKr58e_400x400.jpg'
-          },
-          // twitter
-          { name: 'twitter:card', content: 'summary_large_image' },
-          {
-            name: 'twitter:title',
-            content: 'Scott Spence - portfolio'
-          },
-          {
-            name: 'twitter:description',
-            content:
-              'Portfolio site of Scott Spence - aspiring web developer'
-          },
-          {
-            name: 'twitter:image',
-            content:
-              'https://pbs.twimg.com/profile_images/697901266945646592/05jKr58e_400x400.jpg'
-          }
-        ]}
-      />
+      <Helmet title="Scott Spence - portfolio" meta={siteMeta} />
       <Header navItems={data.site.siteMetadata.pages} />
 
       <Main>{children()}</Main>
