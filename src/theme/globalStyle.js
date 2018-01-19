@@ -1,4 +1,4 @@
-import { injectGlobal, css } from 'styled-components'
+import styled, { injectGlobal, css } from 'styled-components'
 
 export const theme = {
   text: '#333',
@@ -80,3 +80,35 @@ export const media = Object.keys(sizes).reduce(
   },
   {}
 )
+
+export const PageContainer = styled.div`
+  margin: 1rem;
+  padding: 1rem;
+  grid-area: m;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: '. . m m m m m m m m . .';
+
+  ${media.giant`
+    grid-template-areas:
+      '. . m m m m m m m m . .';
+    background: goldenrod;
+  `};
+  ${media.desktop`
+    grid-template-areas:
+      '. . m m m m m m m m . .';
+    background: dodgerblue;
+  `};
+  ${media.tablet`
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-areas:
+      '. m m m m m m m .';
+    background: mediumseagreen;
+  `};
+  ${media.phone`
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-areas:
+      'm m m m m m m m m';
+    background: palevioletred;
+  `};
+`

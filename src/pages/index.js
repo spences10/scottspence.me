@@ -2,13 +2,10 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-const PageContainer = styled.div`
-  grid-area: m;
-  display: grid;
-  grid-template-areas: '. m m m m m m m m m m .';
+import { media } from '../theme/globalStyle'
 
-  display: grid;
-`
+import { PageContainer } from '../theme/globalStyle'
+
 const IndexPage = () => (
   <PageContainer>
     <div>
