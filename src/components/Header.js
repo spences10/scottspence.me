@@ -8,7 +8,7 @@ import PageNav from './PageNav'
 const StyledHeader = styled.div`
   /* margin: 0 auto; */
   /* padding: 1rem; */
-  grid-area: hd;
+  grid-area: h;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
