@@ -28,14 +28,17 @@
   "scripts": {
     "clean":
       "rm -rf .cache/ && rm -rf scottportfolio/ && rm -rf public/",
-    "build": "gatsby build && mv public scottportfolio",
+    "build":
+      "gatsby build && mv public scottportfolio && npm run wellknown",
     "dev": "npm run clean && gatsby develop",
     "format": "pretty-quick",
     "precommit": "pretty-quick --staged",
     "deploy": "now scottportfolio/ --token $NOW_TOKEN",
     "alias:dev": "now alias scottspence.now.sh --token $NOW_TOKEN",
     "alias:prod": "now alias scottspence.me --token $NOW_TOKEN",
-    "cleanup": "now rm scottportfolio --safe --yes --token $NOW_TOKEN"
+    "cleanup":
+      "now rm scottportfolio --safe --yes --token $NOW_TOKEN",
+    "wellknown": "cp -r .well-known/ scottportfolio/"
   },
   "repository": {
     "type": "git",
