@@ -38,6 +38,7 @@
     "alias:prod": "now alias scottspence.me --token $NOW_TOKEN",
     "cleanup":
       "now rm scottportfolio --safe --yes --token $NOW_TOKEN",
+    "release": "release pre beta",
     "wellknown": "cp -r .well-known/ scottportfolio/"
   },
   "repository": {
