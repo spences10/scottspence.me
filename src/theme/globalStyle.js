@@ -86,6 +86,7 @@ export const PageContainer = styled.div`
   padding: 1rem;
   grid-area: m;
   display: grid;
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   grid-template-areas: '. . m m m m m m m m . .';
 
@@ -100,14 +101,14 @@ export const PageContainer = styled.div`
     background: dodgerblue;
   `};
   ${media.tablet`
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-areas:
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas:
       '. m m m m m m m .';
     background: mediumseagreen;
   `};
   ${media.phone`
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-areas:
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas:
       'm m m m m m m m m';
     background: palevioletred;
   `};
