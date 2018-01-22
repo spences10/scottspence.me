@@ -4,7 +4,7 @@ const descriptionContent =
   'Portfolio site of Scott Spence - aspiring web developer'
 const keywordsContent = 'portfolio, web developer, javascript'
 const imageLink =
-  'https://pbs.twimg.com/profile_images/697901266945646592/05jKr58e_400x400.jpg'
+  'https://scottspence.me/favicons/firefox_app_512x512.png'
 
 export const siteMeta = [
   // Google / Search Engine Tags
