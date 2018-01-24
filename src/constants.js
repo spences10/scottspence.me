@@ -1,7 +1,7 @@
 // SITE META ==================
 const nameContent = 'Scott Spence - portfolio'
 const descriptionContent =
-  'Portfolio site of Scott Spence - aspiring web developer'
+  'Portfolio site of Scott Spence - web developer'
 const keywordsContent = 'portfolio, web developer, javascript'
 const imageLink =
   'https://scottspence.me/favicons/firefox_app_512x512.png'
