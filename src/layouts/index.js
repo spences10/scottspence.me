@@ -5,6 +5,7 @@ import styled, { ThemeProvider } from 'styled-components'
 
 import Header from '../components/Header.js'
 import { theme, media } from '../theme/globalStyle'
+import { siteMeta } from '../constants'
 
 const PageContainer = styled.div`
   display: grid;
@@ -49,7 +50,6 @@ const PageContainer = styled.div`
 const Main = styled.div`
   grid-area: m;
 `
-import { siteMeta } from '../constants'
 
 const TemplateWrapper = ({ children, data }) => (
   <ThemeProvider theme={theme}>
