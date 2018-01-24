@@ -27,8 +27,8 @@ const NavMenu = styled.ul`
     grid-template-rows: auto;
     position: relative;
     list-style-type: none;
-    margin: 1.5rem 0.1rem 1.5rem 0.1rem;
-    padding: 1.5rem 0.1rem 1.5rem 0.1rem;
+    margin: 1.5rem 0.1rem 0.1rem 0.1rem;
+    padding: 1.5rem 0.1rem 0.1rem 0.1rem;
     &.responsive > li {
       display: block;
       text-align: left;
@@ -40,8 +40,8 @@ const NavMenu = styled.ul`
     }
   `};
   ${media.phone`
-    margin: 1.5rem 0.1rem 1.5rem 0.1rem;
-    padding: 1.5rem 0.1rem 1.5rem 0.1rem;
+    margin: 1.5rem 0.1rem;
+    padding: 1.5rem 0.1rem;
   `};
 `
 
