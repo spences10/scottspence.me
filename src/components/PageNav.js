@@ -46,9 +46,14 @@ const NavMenu = styled.ul`
 `
 
 const NavItem = styled.li`
+  transition: all 0.3s;
   text-transform: uppercase;
   list-style: none;
   color: ${props => props.theme.white};
+  &:hover {
+    letter-spacing: 0.5rem;
+    transition: all 0.3s;
+  }
   /* padding: 0.5rem; */
 `
 
