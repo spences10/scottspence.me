@@ -1,5 +1,27 @@
 import React from 'react'
 import { Project } from '../components/Project'
+import styled from 'styled-components'
+
+import { media } from '../theme/globalStyle'
+
+const ProjectWrapper = styled.div`
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+
+  ${media.giant`
+    grid-template-columns: repeat(2, 1fr);
+  `};
+  ${media.desktop`
+    grid-template-columns: repeat(2, 1fr);
+  `};
+  ${media.tablet`
+    grid-template-columns: repeat(1, 1fr);
+  `};
+  ${media.phone`
+    grid-template-columns: repeat(1, 1fr);
+  `};
+`
 
 class Portfolio extends React.Component {
   state = {
@@ -60,9 +82,11 @@ class Portfolio extends React.Component {
       <div>
         <h1>Portfolio</h1>
         <p>List of projects here:</p>
-        {this.state.projects.map(project => (
-          <Project key={project.id} {...project} />
-        ))}
+        <ProjectWrapper>
+          {this.state.projects.map(project => (
+            <Project key={project.id} {...project} />
+          ))}
+        </ProjectWrapper>
       </div>
     )
   }
