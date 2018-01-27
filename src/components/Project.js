@@ -51,6 +51,7 @@ export const Project = props => {
 }
 
 Project.propTypes = {
+  id: PropTypes.number,
   name: PropTypes.string,
   desc: PropTypes.string,
   github: PropTypes.string,
