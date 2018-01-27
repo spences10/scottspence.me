@@ -51,7 +51,7 @@ const NavItem = styled.li`
   list-style: none;
   color: ${props => props.theme.white};
   &:hover {
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.25rem;
     transition: all 0.3s;
   }
   /* padding: 0.5rem; */
@@ -61,32 +61,26 @@ const NavLink = styled(Link).attrs({
   color: props => props.theme.secondary.yellow
 })`
   color: inherit;
-  &:visited, &:active {
-     color: inherit;
+  &:visited,
+  &:active {
+    color: inherit;
   }
   &:hover {
-    color: ${props => props.color}
+    color: ${props => props.color};
+  }
+  &.activeLink {
+    color: ${props => props.theme.secondary.red};
+  }
 `
 
 const PageNav = ({ nav }) => {
-  const openNav = e => {
-    e.preventDefault()
-    const menu = document.getElementById('topnav')
-    menu.classList.toggle('responsive')
-  }
-  const closeNav = () => {
-    const width = window.innerWidth
-    if (width < 769) {
-      const menu = document.getElementById('topnav')
-      menu.classList.remove('responsive')
-    }
-  }
-
   return (
     <NavMenu>
       {nav.map((item, index) => (
         <NavItem key={index}>
-          <NavLink to={`/${item}`}>{item}</NavLink>
+          <NavLink to={`/${item}`} activeClassName="activeLink">
+            {item}
+          </NavLink>
         </NavItem>
       ))}
     </NavMenu>

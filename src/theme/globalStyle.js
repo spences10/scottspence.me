@@ -40,11 +40,9 @@ injectGlobal`
   }
 
   body {
-    font-size: 16px;
     margin: 0;
     color: hsla(0, 0%, 0%, 0.8);
     font-family: Roboto, georgia, serif;
-    font-weight: normal;
     word-wrap: break-word;
   }
 
