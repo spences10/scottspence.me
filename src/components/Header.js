@@ -15,8 +15,7 @@ const StyledHeader = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: 
-    '. . t t t . . n n n . .';
+  grid-template-areas: '. . t t t . . n n n . .';
 
   ${media.giant`
     grid-template-areas:
@@ -41,11 +40,10 @@ const StyledHeader = styled.div`
     background: palevioletred;
   `};
 
-  /* border-bottom: 1px solid ${({ theme }) =>
-    theme.primary.light}; */
+  /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [color]; */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 
   background-color: ${props => props.theme.secondary.purple};
-
 `
 
 const SiteTitle = styled.h1`
