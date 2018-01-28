@@ -23,7 +23,9 @@ const Card = styled.div`
   border-radius: 4px;
   color: white;
   background: ${props =>
-    props.id % 2 === 0 ? '#44bccc' : '#f973bc'};
+    props.id % 2 === 0
+      ? `${props.theme.secondary.pink}`
+      : `${props.theme.secondary.blue}`};
 `
 
 const StyledLink = styled(Link)`
