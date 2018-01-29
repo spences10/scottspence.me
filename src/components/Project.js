@@ -20,18 +20,7 @@ const Desc = styled.p`
   padding: 0.5rem;
 `
 
-const StyledLink = styled.a`
-  margin: 0.5rem;
-  padding: 0.5rem;
-  color: inherit;
-  &:visited,
-  &:active {
-    color: inherit;
-  }
-  &:hover {
-    color: ${({ theme }) => theme.secondary.red};
-  }
-`
+const StyledLink = styled.a``
 
 const Card = styled.div`
   padding: 1.75rem;
@@ -81,12 +70,13 @@ export const Project = props => {
     <Card key={props.id} id={props.id}>
       <Image background={props.image} title={`${props.name} image`} />
       <Name>{props.name}</Name>
-      <CardButton>Demo</CardButton>
-      <CardButton>GitHub</CardButton>
-      <Desc>{props.desc}</Desc>
-      <StyledLink target="_blank" rel="noopener" href={props.github}>
-        {props.github}
+      <StyledLink target="_blank" rel="noopener" href={props.demo}>
+        <CardButton>Demo</CardButton>
       </StyledLink>
+      <StyledLink target="_blank" rel="noopener" href={props.github}>
+        <CardButton>GitHub</CardButton>
+      </StyledLink>
+      <Desc>{props.desc}</Desc>
     </Card>
   )
 }
@@ -96,6 +86,7 @@ Project.propTypes = {
   name: PropTypes.string,
   desc: PropTypes.string,
   github: PropTypes.string,
+  demo: PropTypes.string,
   image: PropTypes.string
 }
 
