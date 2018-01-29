@@ -7,45 +7,70 @@ const Name = styled.h3`
   margin-top: 0;
   /* font-weight: 900; */
   color: ${props => props.theme.white};
-  margin: 0.05rem;
-  padding: 0rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
 `
 
 const Desc = styled.p`
   color: ${props => props.theme.white};
-  margin: 0.05rem;
-  padding: 0rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+`
+
+const StyledLink = styled.a`
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: inherit;
+  &:visited,
+  &:active {
+    color: inherit;
+  }
+  &:hover {
+    color: ${({ theme }) => theme.secondary.red};
+  }
 `
 
 const Card = styled.div`
-  padding: 1.75rem;
-  margin: 0.5rem;
-  border-radius: 4px;
-  color: white;
+  /* padding: 1.75rem; */
+  /* margin: 0.5rem; */
+  display: grid;
+  grid-template-rows: 1fr auto;
+
+  border-radius: 5px;
+  color: ${props => props.theme.white};
   background: ${props =>
-    props.id % 2 === 0 ? '#44bccc' : '#f973bc'};
+    props.id % 2 === 0
+      ? `${props.theme.secondary.pink}`
+      : `${props.theme.secondary.blue}`};
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  &:hover {
+    transform: translateY(-1px);
+  }
 `
 
-const StyledLink = styled(Link)`
-  color: blue;
-`
-
-const Image = styled.img`
-  border-radius: 8px;
-  border: 1px solid #000;
-  max-width: 100%;
-  max-height: 100%;
+const Image = styled.div`
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background: ${props => `url(${props.background})`};
+  background-size: cover;
+  background-position: center center;
+  margin-left: auto;
+  margin-right: auto;
+  /* display: block; */
 `
 
 export const Project = props => {
   return (
     <Card key={props.id} id={props.id}>
+      <Image background={props.image} title={`${props.name} image`} />
       <Name>{props.name}</Name>
       <Desc>{props.desc}</Desc>
-      <StyledLink>
-        <Link to={props.github}>{props.github}</Link>
+      <StyledLink target="_blank" rel="noopener" href={props.github}>
+        {props.github}
       </StyledLink>
-      <Image src={props.image} alt={props.name} />
     </Card>
   )
 }
