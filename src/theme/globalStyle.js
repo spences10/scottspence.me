@@ -44,6 +44,7 @@ injectGlobal`
     color: hsla(0, 0%, 0%, 0.8);
     font-family: Roboto, georgia, serif;
     word-wrap: break-word;
+    background-color: #fafafa;
   }
 
   h1 {
