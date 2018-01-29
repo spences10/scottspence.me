@@ -7,17 +7,20 @@ import { ButtonSmall } from './Button'
 import { HEROS } from '../theme/themeConstants'
 
 const Name = styled.h3`
-  margin-top: 0;
+  margin: 0.5rem;
+  padding: 0.5rem;
   /* font-weight: 900; */
   color: ${props => props.theme.white};
-  margin: 0.5rem;
-  padding: 0.5rem;
+  font-family: Roboto black;
+  text-align: center;
 `
 
-const Desc = styled.p`
-  color: ${props => props.theme.white};
+const Desc = styled.div`
   margin: 0.5rem;
   padding: 0.5rem;
+  color: ${props => props.theme.text};
+  background-color: ${props => props.theme.white};
+  text-align: center;
 `
 
 const StyledLink = styled.a``
@@ -60,9 +63,14 @@ const CardButton = ButtonSmall.extend`
   border: 2px solid ${props => props.theme.white};
   color: ${props => props.theme.white};
   font-family: Roboto medium;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  margin: 0.5rem 0.6rem 0.5rem 0.6rem;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
   border-radius: 50px;
+`
+
+const ButtonsWrapper = styled.div`
+  display: flex;
+  justify-content: center;
 `
 
 export const Project = props => {
@@ -70,12 +78,17 @@ export const Project = props => {
     <Card key={props.id} id={props.id}>
       <Image background={props.image} title={`${props.name} image`} />
       <Name>{props.name}</Name>
-      <StyledLink target="_blank" rel="noopener" href={props.demo}>
-        <CardButton>Demo</CardButton>
-      </StyledLink>
-      <StyledLink target="_blank" rel="noopener" href={props.github}>
-        <CardButton>GitHub</CardButton>
-      </StyledLink>
+      <ButtonsWrapper>
+        <StyledLink target="_blank" rel="noopener" href={props.demo}>
+          <CardButton>Demo</CardButton>
+        </StyledLink>
+        <StyledLink
+          target="_blank"
+          rel="noopener"
+          href={props.github}>
+          <CardButton>GitHub</CardButton>
+        </StyledLink>
+      </ButtonsWrapper>
       <Desc>{props.desc}</Desc>
     </Card>
   )
