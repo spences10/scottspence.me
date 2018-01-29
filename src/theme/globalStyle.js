@@ -33,7 +33,7 @@ export const theme = {
 }
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|VT323');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Titillium+Web');
 
   *, *:before, *:after {
     box-sizing: border-box;
