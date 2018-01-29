@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
-import Img from 'gatsby-image'
 
 const Name = styled.h3`
   margin-top: 0;
@@ -38,10 +37,7 @@ const Image = styled.img`
   max-height: 100%;
 `
 
-export const Project = (props, { data }) => {
-  console.log('====================')
-  console.log(data)
-  console.log('====================')
+export const Project = props => {
   return (
     <Card key={props.id} id={props.id}>
       <Name>{props.name}</Name>
@@ -50,11 +46,6 @@ export const Project = (props, { data }) => {
         <Link to={props.github}>{props.github}</Link>
       </StyledLink>
       <Image src={props.image} alt={props.name} />
-      <Img
-        src={props.image}
-        alt={props.name}
-        resolutions={data.file.childImageSharp.resolutions}
-      />
     </Card>
   )
 }
@@ -66,17 +57,5 @@ Project.propTypes = {
   github: PropTypes.string,
   image: PropTypes.string
 }
-
-export const query = graphql`
-  query GatsbyImageQuery {
-    file(relativePath: { regex: "/project/" }) {
-      childImageSharp {
-        resolutions(width: 125, height: 125) {
-          ...GatsbyImageSharpResolutions
-        }
-      }
-    }
-  }
-`
 
 export default Project
