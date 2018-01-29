@@ -33,24 +33,39 @@ const StyledLink = styled.a`
 const Card = styled.div`
   /* padding: 1.75rem; */
   /* margin: 0.5rem; */
-  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+
+  border-radius: 5px;
   color: ${props => props.theme.white};
   background: ${props =>
     props.id % 2 === 0
       ? `${props.theme.secondary.pink}`
       : `${props.theme.secondary.blue}`};
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  &:hover {
+    transform: translateY(-1px);
+  }
 `
 
-const Image = styled.img`
-  border-radius: 15px 15px 0px 0px;
-  max-width: 100%;
-  max-height: 100%;
+const Image = styled.div`
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background: ${props => `url(${props.background})`};
+  background-size: cover;
+  background-position: center center;
+  margin-left: auto;
+  margin-right: auto;
+  /* display: block; */
 `
 
 export const Project = props => {
   return (
     <Card key={props.id} id={props.id}>
-      <Image src={props.image} alt={props.name} />
+      <Image background={props.image} title={`${props.name} image`} />
       <Name>{props.name}</Name>
       <Desc>{props.desc}</Desc>
       <StyledLink target="_blank" rel="noopener" href={props.github}>
