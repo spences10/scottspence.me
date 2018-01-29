@@ -10,7 +10,7 @@ import { media } from '../theme/globalStyle'
 const StyledHeader = styled.div`
   /* margin: 0 auto; */
   /* padding: 1rem; */
-  width: 100vw;
+  width: 100%;
   grid-area: h;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
