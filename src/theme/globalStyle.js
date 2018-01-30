@@ -33,7 +33,7 @@ export const theme = {
 }
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|VT323');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Titillium+Web');
 
   *, *:before, *:after {
     box-sizing: border-box;
@@ -44,6 +44,7 @@ injectGlobal`
     color: hsla(0, 0%, 0%, 0.8);
     font-family: Roboto, georgia, serif;
     word-wrap: break-word;
+    background-color: #fafafa;
   }
 
   h1 {

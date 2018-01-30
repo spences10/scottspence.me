@@ -7,36 +7,46 @@ import { ButtonSmall } from './Button'
 import { HEROS } from '../theme/themeConstants'
 
 const Name = styled.h3`
-  margin-top: 0;
+  margin: 0.5rem;
+  padding: 0.5rem;
   /* font-weight: 900; */
   color: ${props => props.theme.white};
-  margin: 0.5rem;
-  padding: 0.5rem;
+  font-family: Roboto black;
+  text-align: center;
 `
 
-const Desc = styled.p`
-  color: ${props => props.theme.white};
-  margin: 0.5rem;
+const Desc = styled.div`
+  margin: 0rem;
   padding: 0.5rem;
+  border-radius: 0px 0px 5px 5px;
+  color: ${props => props.theme.text};
+  background-color: ${props => props.theme.white};
+  text-align: center;
 `
 
 const StyledLink = styled.a``
 
+const CardWrapper = styled.div`
+  margin: 0rem;
+  padding: 0rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+`
+
 const Card = styled.div`
   padding: 1.75rem;
-  margin: 0.5rem;
+  margin: 0rem;
 
-  border-radius: 5px;
+  border-radius: 5px 5px 0px 0px;
   color: ${props => props.theme.white};
   background-color: ${props =>
     props.id % 2 === 0
       ? `${props.theme.secondary.pink}`
       : `${props.theme.secondary.blue}`};
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.80);
-  }
   background-image: url("${HEROS.WIGGLE}");
 `
 
@@ -60,24 +70,42 @@ const CardButton = ButtonSmall.extend`
   border: 2px solid ${props => props.theme.white};
   color: ${props => props.theme.white};
   font-family: Roboto medium;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  margin: 0.5rem 0.6rem 0.5rem 0.6rem;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
   border-radius: 50px;
+`
+
+const ButtonsWrapper = styled.div`
+  display: flex;
+  justify-content: center;
 `
 
 export const Project = props => {
   return (
-    <Card key={props.id} id={props.id}>
-      <Image background={props.image} title={`${props.name} image`} />
-      <Name>{props.name}</Name>
-      <StyledLink target="_blank" rel="noopener" href={props.demo}>
-        <CardButton>Demo</CardButton>
-      </StyledLink>
-      <StyledLink target="_blank" rel="noopener" href={props.github}>
-        <CardButton>GitHub</CardButton>
-      </StyledLink>
+    <CardWrapper key={props.id} id={props.id}>
+      <Card id={props.id}>
+        <Image
+          background={props.image}
+          title={`${props.name} image`}
+        />
+        <Name>{props.name}</Name>
+        <ButtonsWrapper>
+          <StyledLink
+            target="_blank"
+            rel="noopener"
+            href={props.demo}>
+            <CardButton>Demo</CardButton>
+          </StyledLink>
+          <StyledLink
+            target="_blank"
+            rel="noopener"
+            href={props.github}>
+            <CardButton>GitHub</CardButton>
+          </StyledLink>
+        </ButtonsWrapper>
+      </Card>
       <Desc>{props.desc}</Desc>
-    </Card>
+    </CardWrapper>
   )
 }
 

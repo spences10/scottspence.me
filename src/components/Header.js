@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import PageNav from './PageNav'
 
 import { media } from '../theme/globalStyle'
+import { HEROS } from '../theme/themeConstants'
 
 const StyledHeader = styled.div`
   /* margin: 0 auto; */
@@ -44,6 +45,7 @@ const StyledHeader = styled.div`
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 
   background-color: ${props => props.theme.secondary.purple};
+  background-image: url("${HEROS.TOPOGRAPHY}");
 `
 
 const SiteTitle = styled.h1`
