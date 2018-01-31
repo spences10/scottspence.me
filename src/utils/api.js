@@ -2,34 +2,37 @@ export const projectsApi = {
   projects: [
     {
       id: 1,
-      name: 'Project 1',
-      desc: 'One line project 1 description',
-      github: 'https://someproject1.com',
-      demo: 'https://someprojectdemo1.com',
+      name: 'blog.scottspence.me',
+      desc:
+        'My personal blog made with Gatsbyjs, using styled-components 💅 and hosted on now',
+      github: 'https://github.com/spences10/blog.scottspence.me',
+      demo: 'https://blog.scottspence.me',
       image: 'project1.jpeg'
     },
     {
       id: 2,
-      name: 'Project 2',
-      desc: 'One line project 2 description',
-      github: 'https://someproject2.com',
-      demo: 'https://someprojectdemo2.com',
+      name: 'Yummers!',
+      desc:
+        'Learn node coursework 👀 🎉, an application using Node.js, Express and MongoDB',
+      github: 'https://github.com/spences10/dang-thats-delicious',
+      demo: 'https://yummers.scottspence.me',
       image: 'project2.jpeg'
     },
     {
       id: 3,
-      name: 'Project 3',
-      desc: 'One line project 3 description',
-      github: 'https://someproject3.com',
-      demo: 'https://someprojectdemo3.com',
+      name: 'c from p',
+      desc:
+        'Pick characters from password, Next.js page to pick nth character from a given',
+      github: 'https://github.com/spences10/characters-from-password',
+      demo: 'https://cfromp.scottspence.me/',
       image: 'project3.jpeg'
     },
     {
       id: 4,
-      name: 'Project 4',
-      desc: 'One line project 4 description',
-      github: 'https://someproject4.com',
-      demo: 'https://someprojectdemo4.com',
+      name: 'c-counter',
+      desc: 'Cryptocurrency ticker with react',
+      github: 'https://github.com/spences10/c-counter',
+      demo: 'https://c-counter.now.sh',
       image: 'project4.jpeg'
     },
     {
