@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import { Project } from '../components/Project'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 
 import { media } from '../theme/globalStyle'
 
@@ -30,22 +30,22 @@ const ProjectWrapper = styled.div`
 
 const PortfolioPage = ({ data }) => {
   const { edges: imgData } = data.allFile
-  console.log('====================')
-  console.log(data)
-  console.log(imgData)
-  console.log('====================')
+  // console.log('====================')
+  // console.log(data)
+  // console.log(imgData)
+  // console.log('====================')
 
-  projectsApi.projects.map(project => {
-    console.log('=====projectsApi==========')
-    console.log(project.image)
-    console.log('====================')
-  })
+  // projectsApi.projects.map(project => {
+  //   console.log('=====projectsApi==========')
+  //   console.log(project.image)
+  //   console.log('====================')
+  // })
 
-  imgData.map(property => {
-    console.log('=====imgData==========')
-    console.log(property.node.relativePath)
-    console.log('====================')
-  })
+  // imgData.map(property => {
+  //   console.log('=====imgData==========')
+  //   console.log(property.node.relativePath)
+  //   console.log('====================')
+  // })
 
   return (
     <div>
@@ -90,7 +90,7 @@ export const query = graphql`
         node {
           relativePath
           childImageSharp {
-            resolutions(width: 250, height: 250) {
+            resolutions(width: 150, height: 150) {
               ...GatsbyImageSharpResolutions
             }
           }

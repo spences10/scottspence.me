@@ -50,19 +50,9 @@ const Card = styled.div`
   background-image: url("${HEROS.WIGGLE}");
 `
 
-const Image = styled.div`
-  margin: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 50%;
-  border: 2px solid ${props => props.theme.white};
-  height: 150px;
-  width: 150px;
-  background: ${props => `url(${props.background})`};
-  background-size: cover;
-  background-position: center center;
-  margin-left: auto;
-  margin-right: auto;
-  /* display: block; */
+const ImageWrapper = styled.div`
+  display: grid;
+  justify-items: center;
 `
 
 const CardButton = ButtonSmall.extend`
@@ -81,17 +71,26 @@ const ButtonsWrapper = styled.div`
 `
 
 export const Project = props => {
-  console.log('=====props==========')
-  console.log(props.imgData.node.childImageSharp.resolutions)
-  console.log('====================')
+  // childImageSharp.resolutions as cis
+  const { resolutions: cis } = props.imgData.node.childImageSharp
+  // console.log('=====props==========')
+  // console.log(props.imgData.node.childImageSharp.resolutions)
+  // console.log(cis)
+  // console.log('====================')
   return (
     <CardWrapper key={props.id} id={props.id}>
       <Card id={props.id}>
-        <Img
-          key={props.id}
-          alt={`${props.name} image`}
-          resolutions={props.imgData.node.childImageSharp.resolutions}
-        />
+        <ImageWrapper>
+          <Img
+            style={{
+              borderRadius: '100%',
+              border: '2px solid white'
+            }}
+            key={props.id}
+            alt={`${props.name} image`}
+            resolutions={cis}
+          />
+        </ImageWrapper>
         <Name>{props.name}</Name>
         <ButtonsWrapper>
           <StyledLink
@@ -119,7 +118,8 @@ Project.propTypes = {
   desc: PropTypes.string,
   github: PropTypes.string,
   demo: PropTypes.string,
-  image: PropTypes.string
+  image: PropTypes.string,
+  imgData: PropTypes.object
 }
 
 export default Project
