@@ -30,10 +30,22 @@ const ProjectWrapper = styled.div`
 
 const PortfolioPage = ({ data }) => {
   const { edges: imgData } = data.allFile
-  // console.log('====================')
-  // console.log(data)
-  // console.log(imgData)
-  // console.log('====================')
+  console.log('====================')
+  console.log(data)
+  console.log(imgData)
+  console.log('====================')
+
+  projectsApi.projects.map(project => {
+    console.log('=====projectsApi==========')
+    console.log(project.image)
+    console.log('====================')
+  })
+
+  imgData.map(property => {
+    console.log('=====imgData==========')
+    console.log(property.node.relativePath)
+    console.log('====================')
+  })
 
   return (
     <div>
@@ -41,18 +53,26 @@ const PortfolioPage = ({ data }) => {
 
       <h1>Portfolio</h1>
       <p>List of projects here:</p>
-      {/* {this.props.imgData.map((property, index) => (
-          <Img
-            key={index}
-            alt={property.node.relativePath}
-            resolutions={property.node.childImageSharp.resolutions}
-          />
-        ))} */}
+      {/* {imgData.map((property, index) => (
+        <Img
+          key={index}
+          alt={property.node.relativePath}
+          resolutions={property.node.childImageSharp.resolutions}
+        />
+      ))} */}
 
       <ProjectWrapper>
+        {/* {imgData.map(property => {
+          property.node.relativePath
+          property.node.childImageSharp.resolutions
+        })}
         {projectsApi.projects.map(project => (
           <Project key={project.id} {...project} />
-        ))}
+        ))} */}
+        {projectsApi.projects.map((project, index) => {
+          project.imgData = imgData[index]
+          return <Project key={project.id} {...project} />
+        })}
       </ProjectWrapper>
 
       <Link to="/">Go home</Link>
@@ -62,12 +82,15 @@ const PortfolioPage = ({ data }) => {
 
 export const query = graphql`
   query GatsbyImageQuery {
-    allFile(filter: { relativePath: { regex: "/project/" } }) {
+    allFile(
+      sort: { order: ASC, fields: [absolutePath] }
+      filter: { relativePath: { regex: "/project/" } }
+    ) {
       edges {
         node {
           relativePath
           childImageSharp {
-            resolutions(width: 125, height: 125) {
+            resolutions(width: 250, height: 250) {
               ...GatsbyImageSharpResolutions
             }
           }

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
+import Img from 'gatsby-image'
 
 import { ButtonSmall } from './Button'
 import { HEROS } from '../theme/themeConstants'
@@ -81,12 +81,16 @@ const ButtonsWrapper = styled.div`
 `
 
 export const Project = props => {
+  console.log('=====props==========')
+  console.log(props.imgData.node.childImageSharp.resolutions)
+  console.log('====================')
   return (
     <CardWrapper key={props.id} id={props.id}>
       <Card id={props.id}>
-        <Image
-          background={props.image}
-          title={`${props.name} image`}
+        <Img
+          key={props.id}
+          alt={`${props.name} image`}
+          resolutions={props.imgData.node.childImageSharp.resolutions}
         />
         <Name>{props.name}</Name>
         <ButtonsWrapper>
