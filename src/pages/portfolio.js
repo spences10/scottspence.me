@@ -90,7 +90,7 @@ export const query = graphql`
         node {
           relativePath
           childImageSharp {
-            resolutions(width: 150, height: 150) {
+            resolutions(width: 200, height: 200) {
               ...GatsbyImageSharpResolutions
             }
           }
