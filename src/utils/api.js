@@ -9,7 +9,7 @@ export const projectsApi = {
       image: 'project1.jpeg'
     },
     {
-      id: 2000,
+      id: 2,
       name: 'Project 2',
       desc: 'One line project 2 description',
       github: 'https://someproject2.com',
