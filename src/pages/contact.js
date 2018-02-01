@@ -1,14 +1,15 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styled from 'styled-components'
+
+import { PageWrapper } from '../theme/globalStyle'
 
 const ContactPage = () => (
-  <div>
+  <PageWrapper>
     <h1>Get in touch</h1>
     <p>
       <Link to="/">Go home</Link>
     </p>
-  </div>
+  </PageWrapper>
 )
 
 export default ContactPage

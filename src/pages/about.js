@@ -2,12 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-const PageWrapper = styled.div`
-  margin: 1rem;
-  padding: 1rem;
-  font-family: 'Titillium Web' bold;
-  line-height: 150%;
-`
+import { PageWrapper } from '../theme/globalStyle'
 
 const StyledLink = styled.a`
   color: ${props => props.theme.secondary.purple};
@@ -65,7 +60,7 @@ const AboutPage = () => (
         target="_blank"
         rel="noopener"
         href={'https://calendly.com/spences10apps/5min'}>
-        10-15 minute call
+        5 minute call
       </StyledLink>{' '}
       with you if you would like to know more about me.
     </p>
