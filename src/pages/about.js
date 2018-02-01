@@ -1,8 +1,16 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
+
+const PageWrapper = styled.div`
+  margin: 1rem;
+  padding: 1rem;
+  font-family: 'Titillium Web' bold;
+  line-height: 150%;
+`
 
 const AboutPage = () => (
-  <div>
+  <PageWrapper>
     <h1>Hi from the about page</h1>
     <p>Currently page 2</p>
 
@@ -30,7 +38,7 @@ const AboutPage = () => (
     <p>All the best.</p>
 
     <Link to="/">Go back to the homepage</Link>
-  </div>
+  </PageWrapper>
 )
 
 export default AboutPage
