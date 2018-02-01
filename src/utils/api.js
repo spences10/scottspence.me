@@ -22,7 +22,7 @@ export const projectsApi = {
       id: 3,
       name: 'c from p',
       desc:
-        'Pick characters from password, Next.js page to pick nth character from a given',
+        'Pick characters from password, Next.js page to pick nth character from a given password',
       github: 'https://github.com/spences10/characters-from-password',
       demo: 'https://cfromp.scottspence.me/',
       image: 'project3.jpeg'

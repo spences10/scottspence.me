@@ -17,24 +17,27 @@ const Name = styled.h3`
 
 const Desc = styled.div`
   margin: 0rem;
-  padding: 0.5rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
   border-radius: 0px 0px 5px 5px;
   color: ${props => props.theme.text};
   background-color: ${props => props.theme.white};
   text-align: center;
+  font-family: 'Titillium Web' bold;
+  line-height: 150%;
 `
 
 const StyledLink = styled.a``
 
 const CardWrapper = styled.div`
-  margin: 0rem;
-  padding: 0rem;
+  margin: 1rem;
+  padding: 1rem;
   border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
   }
+  background-color: ${props => props.theme.white};
 `
 
 const Card = styled.div`
