@@ -29,8 +29,8 @@ const Desc = styled.div`
 const StyledLink = styled.a``
 
 const CardWrapper = styled.div`
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0rem;
+  padding: 0rem;
   border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   &:hover {

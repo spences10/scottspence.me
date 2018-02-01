@@ -51,5 +51,8 @@ export const projectsApi = {
       demo: 'https://someprojectdemo6.com',
       image: 'project6.jpeg'
     }
-  ]
+  ],
+  about: 'about',
+  now: '',
+  uses: ''
 }
