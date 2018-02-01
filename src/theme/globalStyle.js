@@ -94,35 +94,9 @@ export const media = Object.keys(sizes).reduce(
   {}
 )
 
-export const PageContainer = styled.div`
+export const PageWrapper = styled.div`
   margin: 1rem;
   padding: 1rem;
-  grid-area: m;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: '. . m m m m m m m m . .';
-
-  ${media.giant`
-    grid-template-areas:
-      '. . m m m m m m m m . .';
-    /* background: goldenrod; */
-  `};
-  ${media.desktop`
-    grid-template-areas:
-      '. . m m m m m m m m . .';
-    /* background: dodgerblue; */
-  `};
-  ${media.tablet`
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-areas:
-      '. m m m m m m m .';
-    /* background: mediumseagreen; */
-  `};
-  ${media.phone`
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-areas:
-      'm m m m m m m m m';
-    /* background: palevioletred; */
-  `};
+  font-family: 'Titillium Web' bold;
+  line-height: 150%;
 `

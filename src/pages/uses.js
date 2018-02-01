@@ -2,12 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-const PageWrapper = styled.div`
-  margin: 1rem;
-  padding: 1rem;
-  font-family: 'Titillium Web' bold;
-  line-height: 150%;
-`
+import { PageWrapper } from '../theme/globalStyle'
 
 const StyledLi = styled.li`
   margin: 1rem;
