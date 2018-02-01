@@ -106,23 +106,23 @@ export const PageContainer = styled.div`
   ${media.giant`
     grid-template-areas:
       '. . m m m m m m m m . .';
-    background: goldenrod;
+    /* background: goldenrod; */
   `};
   ${media.desktop`
     grid-template-areas:
       '. . m m m m m m m m . .';
-    background: dodgerblue;
+    /* background: dodgerblue; */
   `};
   ${media.tablet`
     grid-template-columns: repeat(9, 1fr);
     grid-template-areas:
       '. m m m m m m m .';
-    background: mediumseagreen;
+    /* background: mediumseagreen; */
   `};
   ${media.phone`
     grid-template-columns: repeat(9, 1fr);
     grid-template-areas:
       'm m m m m m m m m';
-    background: palevioletred;
+    /* background: palevioletred; */
   `};
 `
