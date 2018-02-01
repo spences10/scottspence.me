@@ -2,8 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import { media } from '../theme/globalStyle'
-
 import { PageContainer } from '../theme/globalStyle'
 
 const Span = styled.div`

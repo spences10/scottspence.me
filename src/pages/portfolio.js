@@ -9,6 +9,11 @@ import { media } from '../theme/globalStyle'
 
 import { projectsApi } from '../utils/api'
 
+const PageWrapper = styled.div`
+  margin: 1rem;
+  padding: 1rem;
+`
+
 const ProjectWrapper = styled.div`
   display: grid;
   grid-gap: 20px;
@@ -48,9 +53,7 @@ const PortfolioPage = ({ data }) => {
   // })
 
   return (
-    <div>
-      <p>portfolio things</p>
-
+    <PageWrapper>
       <h1>Portfolio</h1>
       <p>List of projects here:</p>
       {/* {imgData.map((property, index) => (
@@ -76,7 +79,7 @@ const PortfolioPage = ({ data }) => {
       </ProjectWrapper>
 
       <Link to="/">Go home</Link>
-    </div>
+    </PageWrapper>
   )
 }
 

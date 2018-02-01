@@ -1,11 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
+
+const PageWrapper = styled.div`
+  margin: 1rem;
+  padding: 1rem;
+  font-family: 'Titillium Web' bold;
+  line-height: 150%;
+`
 
 const UsesPage = () => (
-  <div>
-    uses things
+  <PageWrapper>
+    <p>uses things</p>
     <Link to="/">Go home</Link>
-  </div>
+  </PageWrapper>
 )
 
 export default UsesPage
