@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import PageNav from './PageNav'
+import Branding from './Branding'
 
 import { media } from '../theme/globalStyle'
 import { HEROS } from '../theme/themeConstants'
@@ -21,24 +22,24 @@ const StyledHeader = styled.div`
   ${media.giant`
     grid-template-areas:
       '. . t t t t t n n n . .';
-    background: goldenrod;
+    /* background: goldenrod; */
   `};
   ${media.desktop`
     grid-template-areas:
       '. . t t t t t n n n . .';
-    background: dodgerblue;
+    /* background: dodgerblue; */
   `};
   ${media.tablet`
   grid-template-columns: repeat(9, 1fr);
   grid-template-areas:
       '. t t t t t t n .';
-    background: mediumseagreen;
+    /* background: mediumseagreen; */
   `};
   ${media.phone`
   grid-template-columns: repeat(9, 1fr);
   grid-template-areas:
       't t t t t t n n n';
-    background: palevioletred;
+    /* background: palevioletred; */
   `};
 
   /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [color]; */
@@ -69,7 +70,9 @@ const SiteLink = styled(Link)`
 const Header = props => (
   <StyledHeader>
     <SiteTitle>
-      <SiteLink to="/">Scott Spence</SiteLink>
+      <SiteLink to="/">
+        <Branding size={4} />
+      </SiteLink>
     </SiteTitle>
     <PageNav nav={props.navItems} />
   </StyledHeader>
