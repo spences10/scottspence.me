@@ -12,7 +12,7 @@ export const theme = {
     yellow: '#fcdeb6',
     red: '#ff8463',
     pink: '#ff0198', // hollywood cerise
-    yellow: '#ffb617', // my sin
+    mySinYellow: '#ffb617', // my sin
     purple: '#6e27c5', // purple heart
     orange: '#ff6600', // blaze orange
     blue: '#01c1d6', // robin's egg blue
@@ -24,7 +24,8 @@ export const theme = {
     pomegranate: '#ee362c', // pomegranate
     redviolet: '#eb238e', // red violet
     sushi: '#7cc142', // sushi
-    bombay: '#adadaf' // Bombay
+    bombay: '#adadaf', // Bombay
+    jsYellow: '#f7e018' // JS yellow
   },
   shades: {
     dark: 'rgba(69, 52, 99, 0.5)',
@@ -94,35 +95,9 @@ export const media = Object.keys(sizes).reduce(
   {}
 )
 
-export const PageContainer = styled.div`
+export const PageWrapper = styled.div`
   margin: 1rem;
   padding: 1rem;
-  grid-area: m;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: '. . m m m m m m m m . .';
-
-  ${media.giant`
-    grid-template-areas:
-      '. . m m m m m m m m . .';
-    background: goldenrod;
-  `};
-  ${media.desktop`
-    grid-template-areas:
-      '. . m m m m m m m m . .';
-    background: dodgerblue;
-  `};
-  ${media.tablet`
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-areas:
-      '. m m m m m m m .';
-    background: mediumseagreen;
-  `};
-  ${media.phone`
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-areas:
-      'm m m m m m m m m';
-    background: palevioletred;
-  `};
+  font-family: 'Titillium Web' bold;
+  line-height: 150%;
 `

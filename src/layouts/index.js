@@ -17,14 +17,14 @@ const PageContainer = styled.div`
     'f f f f f f f f f f f f';
   ${media.giant`
     grid-template-areas:
-      '. . h h h h h h h h . .'
+      'h h h h h h h h h h h h'
       '. . m m m m m m m m . .'
       '. . f f f f f f f f . .';
     background: goldenrod;
   `};
   ${media.desktop`
     grid-template-areas:
-      '. . h h h h h h h h . .'
+      'h h h h h h h h h h h h'
       '. . m m m m m m m m . .'
       '. . f f f f f f f f . .';
     background: dodgerblue;

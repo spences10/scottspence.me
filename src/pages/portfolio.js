@@ -9,10 +9,7 @@ import { media } from '../theme/globalStyle'
 
 import { projectsApi } from '../utils/api'
 
-const PageWrapper = styled.div`
-  margin: 1rem;
-  padding: 1rem;
-`
+import { PageWrapper } from '../theme/globalStyle'
 
 const ProjectWrapper = styled.div`
   display: grid;

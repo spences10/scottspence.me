@@ -2,17 +2,40 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-const PageWrapper = styled.div`
-  margin: 1rem;
-  padding: 1rem;
-  font-family: 'Titillium Web' bold;
-  line-height: 150%;
+import { PageWrapper } from '../theme/globalStyle'
+
+const StyledLink = styled.a`
+  color: ${props => props.theme.secondary.purple};
+  &:hover {
+    &:hover {
+      animation: halftone 1s forwards;
+      border-radius: 4px;
+      padding: 0.2rem;
+      background: radial-gradient(
+            circle,
+            ${({ theme }) => theme.secondary.purple} 0.2em,
+            transparent 0.25em
+          )
+          0 0 / 1.25em 1.25em,
+        radial-gradient(
+            circle,
+            ${({ theme }) => theme.secondary.purple} 0.2em,
+            transparent 0.25em
+          )
+          6.25em 6.25em / 1.25em 1.25em;
+      color: ${({ theme }) => theme.secondary.red};
+    }
+    @keyframes halftone {
+      100% {
+        background-size: 2.375em 2.375em, 0.1em 0.1em;
+      }
+    }
+  }
 `
 
 const AboutPage = () => (
   <PageWrapper>
     <h1>Hi from the about page</h1>
-    <p>Currently page 2</p>
 
     <p>Hi I&#39;m Scott,</p>
 
@@ -32,10 +55,16 @@ const AboutPage = () => (
     </p>
     <p>
       If you&#39;d like to have a chat I&#39;ll be more than happy to
-      have a 10-15minute call with you if you would like to know more
-      about me.
+      have a{' '}
+      <StyledLink
+        target="_blank"
+        rel="noopener"
+        href={'https://calendly.com/spences10apps/5min'}>
+        5 minute call
+      </StyledLink>{' '}
+      with you if you would like to know more about me.
     </p>
-    <p>All the best.</p>
+    <p>All the best. 👍</p>
 
     <Link to="/">Go back to the homepage</Link>
   </PageWrapper>
