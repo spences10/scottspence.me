@@ -13,7 +13,7 @@ const NavMenu = styled.ul`
   margin: 1.5rem 0.1rem 1.5rem 0.1rem;
   padding: 1.5rem 0.1rem 1.5rem 0.1rem;
   ${media.giant`
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
     margin: 1.5rem 0.1rem 1.5rem 0.1rem;
     padding: 1.5rem 0.1rem 1.5rem 0.1rem;
   `};
