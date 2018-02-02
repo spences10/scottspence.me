@@ -22,24 +22,24 @@ const StyledHeader = styled.div`
   ${media.giant`
     grid-template-areas:
       '. . t t t t t n n n . .';
-    background: goldenrod;
+    /* background: goldenrod; */
   `};
   ${media.desktop`
     grid-template-areas:
       '. . t t t t t n n n . .';
-    background: dodgerblue;
+    /* background: dodgerblue; */
   `};
   ${media.tablet`
   grid-template-columns: repeat(9, 1fr);
   grid-template-areas:
       '. t t t t t t n .';
-    background: mediumseagreen;
+    /* background: mediumseagreen; */
   `};
   ${media.phone`
   grid-template-columns: repeat(9, 1fr);
   grid-template-areas:
       't t t t t t n n n';
-    background: palevioletred;
+    /* background: palevioletred; */
   `};
 
   /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [color]; */
