@@ -12,21 +12,23 @@ const IconWrapper = styled.div`
   justify-items: center;
   align-items: center;
   grid-template-columns: repeat(12 1fr);
-  grid-template-rows: 100px 500px 100px;
+  grid-template-rows: 100px 400px 100px;
   grid-template-areas:
     '. . . . . . . . . . . .'
     '. . g g t t e e l l . .'
     '. . . . . . . . . . . .';
   ${media.giant`
   grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 100px 400px 100px;
   grid-template-areas:
       '. . . . . . . . . .'
-      '. . . g t e l . . .'
+      '. g g t t e e l l .'
       '. . . . . . . . . .';
     /* background: goldenrod; */
   `};
   ${media.desktop`
   grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 90px 300px 90px;
   grid-template-areas:
       '. . . . . . . . . .'
       '. . . g t e l . . .'
@@ -35,6 +37,7 @@ const IconWrapper = styled.div`
   `};
   ${media.tablet`
   grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 50px 200px 50px;
   grid-template-areas:
       '. . . . . . . . . .'
       '. . . g t e l . . .'
@@ -43,6 +46,7 @@ const IconWrapper = styled.div`
   `};
   ${media.phone`
   grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 20px 100px 20px;
   grid-template-areas:
       '. . . . . .'
       '. g t e l .'
@@ -81,7 +85,7 @@ const ContactPage = () => (
           target="_blank"
           rel="noopener"
           href="https://github.com/spences10">
-          <Icon icon={ICONS.GITHUB} size={30} color="#453463" />
+          <Icon icon={ICONS.GITHUB} size={40} color="#453463" />
         </IconLink>
       </StyledIcon>
       <StyledIcon area={'t'}>
@@ -91,7 +95,7 @@ const ContactPage = () => (
           href="https://twitter.com/ScottDevTweets">
           <Icon
             viewbox="0 0 32 32"
-            size={30}
+            size={40}
             color="#453463"
             icon={ICONS.TWITTER}
           />
@@ -104,7 +108,7 @@ const ContactPage = () => (
           href="mailto:spences10apps@gmail.com?subject=Hi Scott 👋">
           <Icon
             viewbox="0 0 32 32"
-            size={30}
+            size={40}
             color="#453463"
             icon={ICONS.EMAIL}
           />
@@ -117,7 +121,7 @@ const ContactPage = () => (
           href="https://www.linkedin.com/in/linkedinscottspence/">
           <Icon
             viewbox="0 0 32 32"
-            size={30}
+            size={40}
             color="#453463"
             icon={ICONS.LINKEDIN}
           />
