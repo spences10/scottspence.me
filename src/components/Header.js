@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import PageNav from './PageNav'
+import Branding from './Branding'
 
 import { media } from '../theme/globalStyle'
 import { HEROS } from '../theme/themeConstants'
@@ -69,7 +70,9 @@ const SiteLink = styled(Link)`
 const Header = props => (
   <StyledHeader>
     <SiteTitle>
-      <SiteLink to="/">Scott Spence</SiteLink>
+      <SiteLink to="/">
+        <Branding size={4} />
+      </SiteLink>
     </SiteTitle>
     <PageNav nav={props.navItems} />
   </StyledHeader>
