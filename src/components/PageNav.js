@@ -18,6 +18,7 @@ const NavMenu = styled.ul`
     padding: 1.5rem 0.1rem 1.5rem 0.1rem;
   `};
   ${media.desktop`
+    grid-template-columns: repeat(5, auto);
     margin: 1.5rem 0.1rem 1.5rem 0.1rem;
     padding: 1.5rem 0.1rem 1.5rem 0.1rem;
   `};
