@@ -30,14 +30,14 @@ const StyledHeader = styled.div`
     /* background: dodgerblue; */
   `};
   ${media.tablet`
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-areas:
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas:
       '. t t t t t t n .';
     /* background: mediumseagreen; */
   `};
   ${media.phone`
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-areas:
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas:
       't t t t t t n n n';
     /* background: palevioletred; */
   `};
