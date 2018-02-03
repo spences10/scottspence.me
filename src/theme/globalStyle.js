@@ -153,9 +153,11 @@ export const StyledLink = styled.a`
 `
 
 export const ShinyButton = styled.button`
-  padding: 0.75em 2em;
+  margin: 0rem 0rem;
+  padding: 0.5rem 1rem;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   color: #2194e0;
   border: 2px solid #2194e0;
   font-size: 24px;
