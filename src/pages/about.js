@@ -2,36 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import { PageWrapper } from '../theme/globalStyle'
-
-const StyledLink = styled.a`
-  color: ${props => props.theme.secondary.purple};
-  &:hover {
-    &:hover {
-      animation: halftone 1s forwards;
-      border-radius: 4px;
-      padding: 0.2rem;
-      background: radial-gradient(
-            circle,
-            ${({ theme }) => theme.secondary.purple} 0.2em,
-            transparent 0.25em
-          )
-          0 0 / 1.25em 1.25em,
-        radial-gradient(
-            circle,
-            ${({ theme }) => theme.secondary.purple} 0.2em,
-            transparent 0.25em
-          )
-          6.25em 6.25em / 1.25em 1.25em;
-      color: ${({ theme }) => theme.secondary.red};
-    }
-    @keyframes halftone {
-      100% {
-        background-size: 2.375em 2.375em, 0.1em 0.1em;
-      }
-    }
-  }
-`
+import { PageWrapper, StyledLink } from '../theme/globalStyle'
 
 const StyledLi = styled.li`
   margin: 1rem;
@@ -106,7 +77,10 @@ const AboutPage = () => (
     <StyledLi>JavaScript learning all teh things!</StyledLi>
 
     <StyledLi>
-      React - check the <Link to="/portfolio">portfolio page</Link>{' '}
+      React - check the{' '}
+      <StyledLink>
+        <Link to="/portfolio">portfolio page</Link>{' '}
+      </StyledLink>
       for details
     </StyledLi>
 

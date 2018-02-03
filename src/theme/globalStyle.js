@@ -99,13 +99,6 @@ export const media = Object.keys(sizes).reduce(
   {}
 )
 
-export const PageWrapper = styled.div`
-  margin: 1rem;
-  padding: 1rem;
-  font-family: 'Titillium Web' bold;
-  line-height: 150%;
-`
-
 /*
 * https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
 */
@@ -122,5 +115,39 @@ export const animateShake = keyframes`
   }
   40%, 60% {
     transform: translate3d(5px, 0, 0);
+  }
+`
+
+export const PageWrapper = styled.div`
+  margin: 1rem;
+  padding: 1rem;
+  font-family: 'Titillium Web' bold;
+  line-height: 150%;
+`
+
+export const StyledLink = styled.a`
+  color: ${props => props.theme.secondary.purple};
+  &:hover {
+    animation: halftone 1s forwards;
+    border-radius: 4px;
+    padding: 0.2rem;
+    background: radial-gradient(
+          circle,
+          ${({ theme }) => theme.secondary.purple} 0.2em,
+          transparent 0.25em
+        )
+        0 0 / 1.25em 1.25em,
+      radial-gradient(
+          circle,
+          ${({ theme }) => theme.secondary.purple} 0.2em,
+          transparent 0.25em
+        )
+        6.25em 6.25em / 1.25em 1.25em;
+    color: ${({ theme }) => theme.secondary.red};
+  }
+  @keyframes halftone {
+    100% {
+      background-size: 2.375em 2.375em, 0.1em 0.1em;
+    }
   }
 `
