@@ -158,17 +158,17 @@ export const ShinyButton = styled.button`
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #2194e0;
-  border: 2px solid #2194e0;
-  font-size: 24px;
+  color: ${props => props.theme.secondary.purple};
+  border: 2px solid ${props => props.theme.secondary.purple};
+  font-size: 1rem;
   display: inline-block;
-  border-radius: 0.3em;
+  border-radius: 50px;
   transition: all 0.2s ease-in-out;
   position: relative;
   overflow: hidden;
   &:before {
     content: '';
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: ${props => props.theme.secondary.purple};
     height: 100%;
     width: 3em;
     display: block;
@@ -179,9 +179,11 @@ export const ShinyButton = styled.button`
     transition: none;
   }
   &:hover {
-    background-color: #2194e0;
-    color: #fff;
-    border-bottom: 4px solid #1977b5;
+    /* background-color: #2194e0; */
+    color: ${props => props.theme.secondary.red};
+    /* border-bottom: 4px solid #1977b5; */
+    transform: translateY(1px);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
   }
   &:hover&:before {
     transform: skewX(-45deg) translateX(13.5em);
