@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
-    "gatsby": "1.9.175",
+    "gatsby": "1.9.178",
     "gatsby-image": "1.0.34",
     "gatsby-link": "1.6.36",
     "gatsby-plugin-favicon": "2.1.1",
@@ -18,7 +18,7 @@
     "styled-components": "3.1.5"
   },
   "devDependencies": {
-    "eslint": "4.16.0",
+    "eslint": "4.17.0",
     "eslint-plugin-react": "7.6.1",
     "husky": "0.14.3",
     "prettier": "1.10.2",

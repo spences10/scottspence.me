@@ -18,6 +18,7 @@ const NavMenu = styled.ul`
     padding: 1.5rem 0.1rem 1.5rem 0.1rem;
   `};
   ${media.desktop`
+    grid-template-columns: repeat(5, auto);
     margin: 1.5rem 0.1rem 1.5rem 0.1rem;
     padding: 1.5rem 0.1rem 1.5rem 0.1rem;
   `};
@@ -39,8 +40,21 @@ const NavMenu = styled.ul`
     }
   `};
   ${media.phone`
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    position: relative;
+    list-style-type: none;
     margin: 1rem 1rem 1rem 0.1rem;
     padding: 1rem 1rem 1rem 0.1rem;
+    &.responsive > li {
+      display: block;
+      text-align: left;
+      padding: 0.5rem;
+      justify-self: end;
+      &:first-child {
+        padding: 0.8rem 0rem;
+      }
+    }
   `};
 `
 
