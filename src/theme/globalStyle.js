@@ -158,6 +158,7 @@ export const ShinyButton = styled.button`
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  background: #fafafa;
   color: ${props => props.theme.secondary.purple};
   border: 2px solid ${props => props.theme.secondary.purple};
   font-size: 1rem;

@@ -2,10 +2,18 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import { PageWrapper, StyledLink } from '../theme/globalStyle'
+import {
+  PageWrapper,
+  StyledLink,
+  ShinyButton as SB
+} from '../theme/globalStyle'
 
 const StyledLi = styled.li`
   margin: 1rem;
+`
+
+const ShinyButton = SB.extend`
+  margin: 2rem 0rem;
 `
 
 const AboutPage = () => (
@@ -138,7 +146,9 @@ const AboutPage = () => (
       with you if you would like to know more about me.
     </p>
     <p>All the best. 👍</p>
-    <Link to="/">Go back to the homepage</Link>
+    <Link to="/">
+      <ShinyButton>homepage</ShinyButton>
+    </Link>
   </PageWrapper>
 )
 

@@ -5,8 +5,7 @@ import styled from 'styled-components'
 import {
   PageWrapper,
   animateShake,
-  media,
-  ShinyButton
+  media
 } from '../theme/globalStyle'
 
 const Hi = styled.h1`
@@ -99,22 +98,6 @@ const IndexPage = () => (
     <Hi>Hi people 👋</Hi>
     <p>Welcome to my personal portfolio site.</p>
     <p>Built with Gatsby and Styled Components 💅</p>
-
-    <Link to="/about/">
-      <ShinyButton>about</ShinyButton>
-    </Link>
-    <Link to="/portfolio/">
-      <ShinyButton>portfolio</ShinyButton>
-    </Link>
-    <Link to="/now/">
-      <ShinyButton>now</ShinyButton>
-    </Link>
-    <Link to="/uses/">
-      <ShinyButton>uses</ShinyButton>
-    </Link>
-    <Link to="/contact/">
-      <ShinyButton>contact</ShinyButton>
-    </Link>
   </PageWrapper>
 )
 
