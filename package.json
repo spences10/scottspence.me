@@ -18,7 +18,7 @@
     "styled-components": "3.1.5"
   },
   "devDependencies": {
-    "eslint": "4.16.0",
+    "eslint": "4.17.0",
     "eslint-plugin-react": "7.6.1",
     "husky": "0.14.3",
     "prettier": "1.10.2",
