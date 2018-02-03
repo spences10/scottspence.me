@@ -30,7 +30,7 @@ const Branding = props => (
 )
 
 Branding.propTypes = {
-  size: PropTypes.string.isRequired
+  size: PropTypes.number.isRequired
 }
 
 export default Branding

@@ -99,13 +99,6 @@ export const media = Object.keys(sizes).reduce(
   {}
 )
 
-export const PageWrapper = styled.div`
-  margin: 1rem;
-  padding: 1rem;
-  font-family: 'Titillium Web' bold;
-  line-height: 150%;
-`
-
 /*
 * https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
 */
@@ -122,5 +115,76 @@ export const animateShake = keyframes`
   }
   40%, 60% {
     transform: translate3d(5px, 0, 0);
+  }
+`
+
+export const PageWrapper = styled.div`
+  margin: 1rem;
+  padding: 1rem;
+  font-family: 'Titillium Web' bold;
+  line-height: 150%;
+`
+
+export const StyledLink = styled.a`
+  color: ${props => props.theme.secondary.purple};
+  &:hover {
+    animation: halftone 1s forwards;
+    border-radius: 4px;
+    padding: 0.2rem;
+    background: radial-gradient(
+          circle,
+          ${({ theme }) => theme.secondary.purple} 0.2em,
+          transparent 0.25em
+        )
+        0 0 / 1.25em 1.25em,
+      radial-gradient(
+          circle,
+          ${({ theme }) => theme.secondary.purple} 0.2em,
+          transparent 0.25em
+        )
+        6.25em 6.25em / 1.25em 1.25em;
+    color: ${({ theme }) => theme.secondary.red};
+  }
+  @keyframes halftone {
+    100% {
+      background-size: 2.375em 2.375em, 0.1em 0.1em;
+    }
+  }
+`
+
+export const ShinyButton = styled.button`
+  margin: 0rem 0rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2194e0;
+  border: 2px solid #2194e0;
+  font-size: 24px;
+  display: inline-block;
+  border-radius: 0.3em;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: '';
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+  }
+  &:hover {
+    background-color: #2194e0;
+    color: #fff;
+    border-bottom: 4px solid #1977b5;
+  }
+  &:hover&:before {
+    transform: skewX(-45deg) translateX(13.5em);
+    transition: all 0.5s ease-in-out;
   }
 `
