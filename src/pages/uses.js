@@ -2,7 +2,11 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import { PageWrapper, StyledLink } from '../theme/globalStyle'
+import {
+  PageWrapper,
+  StyledLink,
+  ShinyButton
+} from '../theme/globalStyle'
 
 const StyledLi = styled.li`
   margin: 1rem;
@@ -41,7 +45,9 @@ const UsesPage = () => (
     </StyledLi>
     <StyledLi>For gif capture I use LICEcap</StyledLi>
     <p>
-      <Link to="/">Go home</Link>
+      <Link to="/">
+        <ShinyButton>homepage</ShinyButton>
+      </Link>
     </p>
   </PageWrapper>
 )

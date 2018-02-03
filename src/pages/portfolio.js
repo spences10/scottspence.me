@@ -9,7 +9,7 @@ import { media } from '../theme/globalStyle'
 
 import { projectsApi } from '../utils/api'
 
-import { PageWrapper } from '../theme/globalStyle'
+import { PageWrapper, ShinyButton } from '../theme/globalStyle'
 
 const ProjectWrapper = styled.div`
   display: grid;
@@ -75,7 +75,11 @@ const PortfolioPage = ({ data }) => {
         })}
       </ProjectWrapper>
 
-      <Link to="/">Go home</Link>
+      <p>
+        <Link to="/">
+          <ShinyButton>homepage</ShinyButton>
+        </Link>
+      </p>
     </PageWrapper>
   )
 }

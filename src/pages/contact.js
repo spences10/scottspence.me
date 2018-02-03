@@ -3,9 +3,9 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import { media } from '../theme/globalStyle'
-import Icon from './Icon'
+import Icon from '../components/Icon'
 import { ICONS } from '../theme/themeConstants'
-import { PageWrapper } from '../theme/globalStyle'
+import { PageWrapper, ShinyButton } from '../theme/globalStyle'
 
 const IconWrapper = styled.div`
   display: grid;
@@ -129,7 +129,9 @@ const ContactPage = () => (
       </StyledIcon>
     </IconWrapper>
     <p>
-      <Link to="/">Go home</Link>
+      <Link to="/">
+        <ShinyButton>homepage</ShinyButton>
+      </Link>
     </p>
   </PageWrapper>
 )

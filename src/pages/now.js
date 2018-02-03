@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import { PageWrapper } from '../theme/globalStyle'
+import { PageWrapper, ShinyButton } from '../theme/globalStyle'
 
 const NowPage = () => (
   <PageWrapper>
@@ -28,7 +28,9 @@ const NowPage = () => (
       focus more on conditioning and cardio work for a while.
     </p>
     <p>
-      <Link to="/">Go home</Link>
+      <Link to="/">
+        <ShinyButton>homepage</ShinyButton>
+      </Link>
     </p>
   </PageWrapper>
 )
