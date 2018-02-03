@@ -2,10 +2,29 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import { PageWrapper, animateShake } from '../theme/globalStyle'
+import {
+  PageWrapper,
+  animateShake,
+  media
+} from '../theme/globalStyle'
+
+const Hi = styled.h1`
+  margin-top: 5rem;
+  ${media.giant`
+    margin-top: 5rem;
+  `};
+  ${media.desktop`
+    margin-top: 5rem;
+  `};
+  ${media.tablet`
+    margin-top: 3rem;
+  `};
+  ${media.phone`
+    margin-top: 2rem;
+  `};
+`
 
 const Name = styled.h1`
-  padding: 0rem 0rem;
   margin: 0rem 0rem;
   display: flex;
   flex-wrap: wrap;
@@ -14,6 +33,7 @@ const Name = styled.h1`
   font-weight: 700;
   align-items: center;
   transition: font-size 250ms ease-in-out, padding 150ms ease-in;
+  background-color: ${props => props.theme.secondary.jsYellow};
   color: ${props => props.theme.text};
   width: auto;
   user-select: text;
@@ -23,10 +43,11 @@ const Name = styled.h1`
   }
   @media only screen and (min-width: 375px) {
     font-size: 2.5rem;
+    padding: 2.5rem 0rem;
   }
   @media only screen and (min-width: 768px) {
     font-size: 4.5rem;
-    padding: 1rem 0rem;
+    padding: 5rem 0rem;
   }
 `
 
@@ -74,7 +95,7 @@ const IndexPage = () => (
         </Last>
       </StyledLink>
     </Name>
-    <h1>Hi people 👋</h1>
+    <Hi>Hi people 👋</Hi>
     <p>Welcome to my personal portfolio site.</p>
     <p>Built with Gatsby and Styled Components 💅</p>
     <Link to="/about/">Go to about page</Link>
