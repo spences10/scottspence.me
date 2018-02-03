@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import styled, { ThemeProvider } from 'styled-components'
 
 import Header from '../components/Header.js'
+
 import { theme, media } from '../theme/globalStyle'
 import { siteMeta } from '../constants'
 
@@ -63,7 +64,8 @@ const TemplateWrapper = ({ children, data }) => (
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.func,
+  data: PropTypes.object
 }
 
 export default TemplateWrapper
