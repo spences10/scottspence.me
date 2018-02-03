@@ -2,49 +2,81 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import { PageWrapper, media } from '../theme/globalStyle'
+import { PageWrapper, animateShake } from '../theme/globalStyle'
 
-const StyledBrand = styled.span`
-  margin: 5rem 0rem 5rem 0rem;
-  font-family: Roboto black;
-  font-size: 5rem;
-  color: ${props => props.theme.secondary.java};
+const Name = styled.h1`
+  padding: 0rem 0rem;
+  margin: 0rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  align-items: center;
+  transition: font-size 250ms ease-in-out, padding 150ms ease-in;
+  color: ${props => props.theme.text};
+  width: auto;
+  user-select: text;
   text-shadow: 8px 8px 3px rgba(0, 0, 0, 0.1);
-  ${media.giant`
-    font-size: 5rem;
-    background: goldenrod;
-  `};
-  ${media.desktop`
-    font-size: 4rem;
-    background: dodgerblue;
-  `};
-  ${media.tablet`
-    font-size: 2rem;
-    background: mediumseagreen;
-  `};
-  ${media.phone`
-    font-size: 2rem;
-    background: palevioletred;
-  `};
+  .wf-active & {
+    font-family: Roboto bold, sans-serif;
+  }
+  @media only screen and (min-width: 375px) {
+    font-size: 2.5rem;
+  }
+  @media only screen and (min-width: 768px) {
+    font-size: 4.5rem;
+    padding: 1rem 0rem;
+  }
+`
+
+const Letter = styled.span`
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+  &:hover {
+    animation: ${animateShake} 1000ms ease-in-out;
+  }
+`
+
+const StyledLink = styled(Link)`
+  color: inherit;
+`
+
+const First = styled.span`
+  padding-right: 2vw;
+  font-weight: 700;
+  white-space: nowrap;
+`
+
+const Last = styled.span`
+  font-weight: 400;
+  white-space: nowrap;
 `
 
 const IndexPage = () => (
   <PageWrapper>
-    <StyledBrand>S</StyledBrand>
-    <StyledBrand>c</StyledBrand>
-    <StyledBrand>o</StyledBrand>
-    <StyledBrand>t</StyledBrand>
-    <StyledBrand>t</StyledBrand>
-    <StyledBrand> </StyledBrand>
-    <StyledBrand>S</StyledBrand>
-    <StyledBrand>p</StyledBrand>
-    <StyledBrand>e</StyledBrand>
-    <StyledBrand>n</StyledBrand>
-    <StyledBrand>c</StyledBrand>
-    <StyledBrand>e</StyledBrand>
+    <Name className="name">
+      <StyledLink to="/">
+        <First>
+          {'Scott'
+            .split('')
+            .map((letter, index) => (
+              <Letter key={`${letter}-${index}`}>{letter}</Letter>
+            ))}
+        </First>
+        <Last>
+          {'Spence'
+            .split('')
+            .map((letter, index) => (
+              <Letter key={`${letter}-${index}`}>{letter}</Letter>
+            ))}
+        </Last>
+      </StyledLink>
+    </Name>
     <h1>Hi people 👋</h1>
-    <p>Welcome to my new Gatsby portfolio site.</p>
-    <p>watch this space whilst I develop this. 👍</p>
+    <p>Welcome to my personal portfolio site.</p>
+    <p>Built with Gatsby and Styled Components 💅</p>
     <Link to="/about/">Go to about page</Link>
   </PageWrapper>
 )

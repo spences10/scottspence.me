@@ -1,7 +1,11 @@
-import styled, { injectGlobal, css } from 'styled-components'
+import styled, {
+  injectGlobal,
+  css,
+  keyframes
+} from 'styled-components'
 
 export const theme = {
-  text: '#333',
+  text: '#272727',
   white: '#fff',
   primary: {
     dark: '#453463',
@@ -100,4 +104,23 @@ export const PageWrapper = styled.div`
   padding: 1rem;
   font-family: 'Titillium Web' bold;
   line-height: 150%;
+`
+
+/*
+* https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
+*/
+export const animateShake = keyframes`
+  10%, 90% {
+    transform: translate3d(-3px, 0, 0) rotate(8deg);
+  }
+  
+  20%, 80% {
+    transform: translate3d(5px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-5px, 0, 0) rotate(-8deg);
+  }
+  40%, 60% {
+    transform: translate3d(5px, 0, 0);
+  }
 `
