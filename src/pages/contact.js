@@ -18,36 +18,36 @@ const IconWrapper = styled.div`
     '. . g g t t e e l l . .'
     '. . . . . . . . . . . .';
   ${media.giant`
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 100px 400px 100px;
-  grid-template-areas:
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 100px 400px 100px;
+    grid-template-areas:
       '. . . . . . . . . .'
       '. g g t t e e l l .'
       '. . . . . . . . . .';
     /* background: goldenrod; */
   `};
   ${media.desktop`
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 90px 300px 90px;
-  grid-template-areas:
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 90px 300px 90px;
+    grid-template-areas:
       '. . . . . . . . . .'
       '. . . g t e l . . .'
       '. . . . . . . . . .';
     /* background: dodgerblue; */
   `};
   ${media.tablet`
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 50px 200px 50px;
-  grid-template-areas:
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 50px 200px 50px;
+    grid-template-areas:
       '. . . . . . . . . .'
       '. . . g t e l . . .'
       '. . . . . . . . . .';
     /* background: mediumseagreen; */
   `};
   ${media.phone`
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 20px 100px 20px;
-  grid-template-areas:
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20px 100px 20px;
+    grid-template-areas:
       '. . . . . .'
       '. g t e l .'
       '. . . . . .';
