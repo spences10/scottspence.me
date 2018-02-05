@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
-    "gatsby": "1.9.178",
+    "gatsby": "1.9.179",
     "gatsby-image": "1.0.34",
     "gatsby-link": "1.6.36",
     "gatsby-plugin-favicon": "2.1.1",
@@ -12,7 +12,7 @@
     "gatsby-plugin-react-helmet": "2.0.4",
     "gatsby-plugin-sharp": "1.6.27",
     "gatsby-plugin-styled-components": "2.0.5",
-    "gatsby-source-filesystem": "1.5.16",
+    "gatsby-source-filesystem": "1.5.17",
     "gatsby-transformer-sharp": "1.6.17",
     "react-helmet": "^5.2.0",
     "styled-components": "3.1.6"
