@@ -37,18 +37,18 @@ export const projectsApi = {
     },
     {
       id: 5,
-      name: 'Project 5',
-      desc: 'One line project 5 description',
-      github: 'https://someproject5.com',
-      demo: 'https://someprojectdemo5.com',
+      name: 'Framework of the Day',
+      desc: 'Get your fresh JavaScript frameworks here!',
+      github: 'https://github.com/spences10/framework-of-the-day',
+      demo: 'https://fotd.scottspence.me',
       image: 'project5.jpeg'
     },
     {
       id: 6,
-      name: 'Project 6',
-      desc: 'One line project 6 description',
-      github: 'https://someproject6.com',
-      demo: 'https://someprojectdemo6.com',
+      name: 'React Stopwatch',
+      desc: 'Stopwatch to demonstrate how to use state in React',
+      github: 'https://github.com/spences10/react-stopwatch',
+      demo: 'https://stopwatch.scottspence.me/',
       image: 'project6.jpeg'
     }
   ],
