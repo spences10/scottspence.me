@@ -6,7 +6,7 @@
   "dependencies": {
     "gatsby": "1.9.192",
     "gatsby-image": "1.0.35",
-    "gatsby-link": "1.6.36",
+    "gatsby-link": "1.6.37",
     "gatsby-plugin-favicon": "2.1.1",
     "gatsby-plugin-google-analytics": "1.0.17",
     "gatsby-plugin-react-helmet": "2.0.4",
