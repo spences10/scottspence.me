@@ -34,7 +34,7 @@ const UsesPage = () => (
     <h2>Desk Setup</h2>
     <StyledLi>My computer is an ASUS Transformer Pro T304UA</StyledLi>
     <StyledLi>
-      I run two HP HP EliteDisplay E232 58,4 cm (23&#34;) Monitors
+      I run two HP EliteDisplay&#39;s E232 58,4 cm (23&#34;) Monitors
       through a Dell 452-BBOO USB 3.0 Ultra HD Triple Video Docking
       Station.
     </StyledLi>
