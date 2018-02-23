@@ -12,7 +12,7 @@
     "gatsby-plugin-react-helmet": "2.0.5",
     "gatsby-plugin-sharp": "1.6.32",
     "gatsby-plugin-styled-components": "2.0.7",
-    "gatsby-source-filesystem": "1.5.21",
+    "gatsby-source-filesystem": "1.5.23",
     "gatsby-transformer-sharp": "1.6.20",
     "react-helmet": "^5.2.0",
     "styled-components": "3.1.6"
