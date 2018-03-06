@@ -47,7 +47,7 @@ injectGlobal`
   body {
     margin: 0;
     color: hsla(0, 0%, 0%, 0.8);
-    font-family: Roboto, georgia, serif;
+    font-family: Roboto, sans-serif;
     word-wrap: break-word;
     background-color: #fafafa;
   }
