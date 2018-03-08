@@ -18,7 +18,8 @@ const Text = styled.h1`
   margin: 0rem 1rem 0.2rem 1.2rem;
   grid-column-start: 3;
   grid-row-start: 3;
-  font-family: Roboto black;
+  font-family: Roboto;
+  font-weight: 900;
   color: ${props => props.theme.text};
   font-size: ${props => `${props.size / 2}rem`};
 `
