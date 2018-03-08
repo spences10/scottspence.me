@@ -38,7 +38,7 @@ export const theme = {
 }
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Titillium+Web');
+  @import url('https://fonts.googleapis.com/css?family=Roboto:400,900|Titillium+Web:200,400,700');
 
   *, *:before, *:after {
     box-sizing: border-box;
@@ -47,14 +47,19 @@ injectGlobal`
   body {
     margin: 0;
     color: hsla(0, 0%, 0%, 0.8);
-    font-family: Roboto, georgia, serif;
+    font-family: Roboto, sans-serif;
     word-wrap: break-word;
     background-color: #fafafa;
   }
 
   h1 {
-    font-family: Open Sans;
+    font-family: 'Titillium Web';
+    font-weight: 700;
   }
+
+  /* h1, h2 { */
+    /* letter-spacing: 0.15rem; */
+  /* } */
 
   a {
     text-decoration: none;
