@@ -46,7 +46,7 @@ const AboutPage = () => (
 
     <p>
       I&#39;m an analyst developer in the financial sector working in
-      the City of London, I&#39;m marriwed with a beautiful wife and
+      the City of London, I&#39;m married with a beautiful wife and
       daughter.
     </p>
     <h3>Coding history</h3>
@@ -109,7 +109,7 @@ const AboutPage = () => (
       I try to get to the gym three times a week to weight lift, that
       took up quite a bit of my time over the last 3 years or so. I
       have focused on the compound lifts bench, press, squat and my
-      favorite,{' '}
+      favourite,{' '}
       <StyledLink
         target="_blank"
         rel="noopener"

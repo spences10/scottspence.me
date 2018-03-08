@@ -9,9 +9,9 @@ import { HEROS } from '../theme/themeConstants'
 const Name = styled.h3`
   margin: 0.5rem;
   padding: 0.5rem;
-  /* font-weight: 900; */
   color: ${props => props.theme.white};
-  font-family: Roboto black;
+  font-family: Roboto;
+  font-weight: 900;
   text-align: center;
 `
 
