@@ -38,7 +38,7 @@ export const theme = {
 }
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Roboto|Titillium+Web:200,400,700');
+  @import url('https://fonts.googleapis.com/css?family=Roboto:400,900|Titillium+Web:200,400,700');
 
   *, *:before, *:after {
     box-sizing: border-box;
@@ -56,6 +56,10 @@ injectGlobal`
     font-family: 'Titillium Web';
     font-weight: 700;
   }
+
+  /* h1, h2 { */
+    /* letter-spacing: 0.15rem; */
+  /* } */
 
   a {
     text-decoration: none;
