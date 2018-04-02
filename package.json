@@ -15,7 +15,7 @@
     "gatsby-source-filesystem": "1.5.27",
     "gatsby-transformer-sharp": "1.6.22",
     "react-helmet": "^5.2.0",
-    "styled-components": "3.2.4"
+    "styled-components": "3.2.5"
   },
   "devDependencies": {
     "eslint": "4.19.1",
