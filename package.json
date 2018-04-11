@@ -5,7 +5,7 @@
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
     "gatsby": "1.9.246",
-    "gatsby-image": "1.0.42",
+    "gatsby-image": "1.0.43",
     "gatsby-link": "1.6.40",
     "gatsby-plugin-favicon": "2.1.1",
     "gatsby-plugin-react-helmet": "2.0.10",
