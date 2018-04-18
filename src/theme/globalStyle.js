@@ -172,6 +172,7 @@ export const ShinyButton = styled.button`
   transition: all 0.2s ease-in-out;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   &:before {
     content: '';
     background-color: ${props => props.theme.secondary.purple};
