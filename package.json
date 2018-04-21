@@ -5,10 +5,10 @@
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
     "gatsby": "1.9.248",
-    "gatsby-image": "1.0.45",
+    "gatsby-image": "1.0.47",
     "gatsby-link": "1.6.40",
     "gatsby-plugin-favicon": "2.1.1",
-    "gatsby-plugin-google-analytics": "1.0.28",
+    "gatsby-plugin-google-analytics": "1.0.31",
     "gatsby-plugin-react-helmet": "2.0.10",
     "gatsby-plugin-sharp": "1.6.42",
     "gatsby-plugin-styled-components": "2.0.11",
