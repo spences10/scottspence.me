@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
-    "gatsby": "1.9.248",
+    "gatsby": "1.9.254",
     "gatsby-image": "1.0.45",
     "gatsby-link": "1.6.40",
     "gatsby-plugin-favicon": "2.1.1",
