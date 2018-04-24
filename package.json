@@ -5,45 +5,45 @@
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
     "gatsby": "1.9.248",
-    "gatsby-image": "1.0.45",
+    "gatsby-image": "1.0.47",
     "gatsby-link": "1.6.40",
     "gatsby-plugin-favicon": "2.1.1",
+    "gatsby-plugin-google-analytics": "1.0.31",
     "gatsby-plugin-react-helmet": "2.0.10",
-    "gatsby-plugin-google-analytics": "1.0.28",
     "gatsby-plugin-sharp": "1.6.42",
     "gatsby-plugin-styled-components": "2.0.11",
-    "gatsby-source-filesystem": "1.5.29",
+    "gatsby-source-filesystem": "1.5.30",
     "gatsby-transformer-sharp": "1.6.22",
     "react-helmet": "^5.2.0",
     "styled-components": "3.2.6"
   },
   "devDependencies": {
     "eslint": "4.19.1",
-    "eslint-plugin-graphql": "1.5.0",
+    "eslint-plugin-graphql": "2.1.0",
     "eslint-plugin-react": "7.7.0",
     "husky": "0.14.3",
-    "prettier": "1.11.1",
+    "prettier": "1.12.1",
     "pretty-quick": "1.4.1"
   },
-  "keywords": ["gatsby", "portfolio"],
+  "keywords": [
+    "gatsby",
+    "portfolio"
+  ],
   "license": "MIT",
   "main": "n/a",
   "now": {
     "name": "scottportfolio"
   },
   "scripts": {
-    "clean":
-      "rm -rf .cache/ && rm -rf scottportfolio/ && rm -rf public/",
-    "build":
-      "gatsby build && mv public scottportfolio && npm run wellknown",
+    "clean": "rm -rf .cache/ && rm -rf scottportfolio/ && rm -rf public/",
+    "build": "gatsby build && mv public scottportfolio && npm run wellknown",
     "dev": "npm run clean && gatsby develop",
     "format": "pretty-quick",
     "precommit": "pretty-quick --staged",
     "deploy": "now scottportfolio/ --token $NOW_TOKEN",
     "alias:dev": "now alias scottspence.now.sh --token $NOW_TOKEN",
     "alias:prod": "now alias scottspence.me --token $NOW_TOKEN",
-    "cleanup":
-      "now rm scottportfolio --safe --yes --token $NOW_TOKEN",
+    "cleanup": "now rm scottportfolio --safe --yes --token $NOW_TOKEN",
     "release": "release pre beta",
     "wellknown": "cp -r .well-known/ scottportfolio/"
   },
