@@ -82,8 +82,8 @@ const FaqPage = () => (
         </StyledLink>
       </FaqListItem>
       <FaqListItem>
-        For CMS I'd like the opportunity to work with GraphCMS and/or
-        Contentful.
+        For CMS I&#39;d like the opportunity to work with GraphCMS
+        and/or Contentful.
       </FaqListItem>
       <FaqListItem>
         For back-end I prefer <b>node</b> which is where the all of my
