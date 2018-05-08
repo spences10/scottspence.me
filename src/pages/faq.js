@@ -106,7 +106,7 @@ const FaqPage = () => (
       <FaqListItem>nop!</FaqListItem>
       <FaqListItem>
         I&#39;ll consider fully remote with minimal travel, two weeks{' '}
-        <b>at most</b>.
+        <b>at most</b> per year.
       </FaqListItem>
     </FaqList>
     <FaqList>
