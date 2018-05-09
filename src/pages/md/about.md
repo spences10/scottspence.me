@@ -1,5 +1,5 @@
 ---
-path: "/about-md"
+path: "/about"
 date: "2017-12-09"
 title: "Hello from London 👋"
 ---

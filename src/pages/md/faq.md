@@ -1,5 +1,5 @@
 ---
-path: "/faq-md"
+path: "/faq"
 date: "2018-05-09"
 title: "For recruiters - FAQ"
 ---
