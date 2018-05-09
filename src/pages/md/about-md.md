@@ -67,19 +67,25 @@ Things on my 'I should learn that list':
 
 I try to get to the gym three times a week to weight lift, that took
 up quite a bit of my time over the last 3 years or so. I have focused
-on the compound lifts bench, press, squat and my favourite, deadlift!
+on the compound lifts bench, press, squat and my favourite,
+[deadlift]!
 
 Before that I used to play tennis three times a week up to a county
 standard, I'd love to have the time to play tennis again but between
 all the above there's not much time left. 🙃
 
-If there's anything you want to ask, you can Ask Me Anything
+If there's anything you want to ask, you can [Ask Me Anything]
 
 or
 
-If you'd like to have a chat I'll be more than happy to have a 5
-minute call with you if you would like to know more about me.
+If you'd like to have a chat I'll be more than happy to have a [5
+minute call] with you if you would like to know more about me.
 
 All the best. 👍
 
+<!-- Links -->
+
 [teh]: # 'I know how to spell "the"'
+[deadlift]: https://www.youtube.com/watch?v=b8sadCd7Lhc
+[ask me anything]: https://github.com/spences10/ama
+[5 minute call]: https://calendly.com/spences10apps/5min
