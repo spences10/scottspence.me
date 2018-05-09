@@ -5,7 +5,11 @@ import { PageWrapper } from '../theme/globalStyle'
 
 const MdTitle = styled.h1``
 
-const MdDate = styled.span``
+const MdDate = styled.span`
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: ${props => props.theme.primary.dark};
+`
 
 export default function Template({
   data // this prop will be injected by the GraphQL query below.
@@ -16,7 +20,7 @@ export default function Template({
     <PageWrapper>
       <div className="md-post">
         <MdTitle>{frontmatter.title}</MdTitle>
-        <MdDate>{frontmatter.date}</MdDate>
+        <MdDate>Updated: {frontmatter.date}</MdDate>
         <div
           className="md-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
