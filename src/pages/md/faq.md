@@ -13,7 +13,7 @@ effort of putting this information here for you.
 * Working in an agile environment using best practices for
   development.
 
-* There has to be a good percentage of pair programming.
+* A good percentage of pair programming on the team.
 
 * Working in a team where there is an emphasis on technical
   development.
@@ -23,21 +23,22 @@ effort of putting this information here for you.
   the community, and how you help your team continue to learn and
   grow.
 
-* Work life balance is a big deal for me I really **do not** want to
+* Work life balance is a big deal for me, I really **do not** want to
   go over a 42.5 hour working week.
 
 ### What's your preferred stack?
 
-* Really enjoying using the JAMStack right now, Gatsby (which uses
-  React and GraphQL).
+* Really enjoying using the [JAMStack] right now, [Gatsby] (which uses
+  **React** and **GraphQL**).
 
 * For styling I have taken to using styled-components 💅, take a look
-  at the used by section on their site.
+  at the used by section on their [site].
 
-* For CMS I'd like the opportunity to work with GraphCMS and/or
-  Contentful.
+* For CMS I'd like the opportunity to work with [GraphCMS] and/or
+  [Contentful].
 
-* For back-end I prefer node which is where my experience is.
+* For back-end I prefer node which is where the majority of my
+  back-end experience is.
 
 ### Salary?
 
@@ -66,21 +67,36 @@ effort of putting this information here for you.
 
 I prefer to avoid phone calls for a number of reasons:
 
-* I'm on a maker's schedule, which means interruptions are
+* I'm on a [maker's schedule], which means interruptions are
   surprisingly disruptive to my flow.
 
 * I've already tried to answer some of the most basic questions on
   this site, and I've probably phrased them more clearly here than I
   will on the phone.
 
-* This question is asked frequently enough that my default answer has
-  to be, if not "no," at least "read this first."
+* This question gets asked frequently enough that my default answer
+  has to be, if not **"no,"** at least **["read this first."]**
 
 * Contact me by email. That's my preferred means of communication. If
   we are still interested in things after a few email exchanges,
   perhaps then a phone call can be arranged.
 
+### Can I take a look at your [CV]?
+
+* Sure, my CV uses the [JSON Schema] so you can find that [here].
+
+* Prefer something better formatted then take a look at [this].
+
 <!-- Links -->
 
 [site]: https://www.styled-components.com/
 [maker's schedule]: http://www.paulgraham.com/makersschedule.html
+[jamstack]: https://jamstack.org/
+[gatsby]: http://gatsbyjs.org/
+[graphcms]: https://graphcms.com/
+[contentful]: https://www.contentful.com
+["read this first."]: https://scottspence.me/faq
+[cv]: https://cv.scottspence.me/
+[json schema]: https://jsonresume.org/schema/
+[here]: https://cvjson.now.sh/
+[this]: https://cv.scottspence.me/
