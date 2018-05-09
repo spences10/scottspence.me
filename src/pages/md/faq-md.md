@@ -79,3 +79,8 @@ I prefer to avoid phone calls for a number of reasons:
 * Contact me by email. That's my preferred means of communication. If
   we are still interested in things after a few email exchanges,
   perhaps then a phone call can be arranged.
+
+<!-- Links -->
+
+[site]: https://www.styled-components.com/
+[maker's schedule]: http://www.paulgraham.com/makersschedule.html
