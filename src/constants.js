@@ -2,7 +2,8 @@
 const nameContent = 'Scott Spence - portfolio'
 const descriptionContent =
   'Portfolio site of Scott Spence - web developer'
-const keywordsContent = 'portfolio, web developer, javascript'
+const keywordsContent =
+  'portfolio, web developer, javascript, react, gatsby, html, css, styled-components, faq, graphql, graphcms'
 const imageLink =
   'https://scottspence.me/favicons/firefox_app_512x512.png'
 

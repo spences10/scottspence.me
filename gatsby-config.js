@@ -39,6 +39,14 @@ module.exports = {
         name: 'images',
         path: `${__dirname}/src/img/`
       }
-    }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'markdown-pages',
+        path: `${__dirname}/src/pages/md`
+      }
+    },
+    'gatsby-transformer-remark'
   ]
 }
