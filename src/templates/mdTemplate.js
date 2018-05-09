@@ -1,4 +1,11 @@
 import React from 'react'
+import styled from 'styled-components'
+
+import { PageWrapper } from '../theme/globalStyle'
+
+const MdTitle = styled.h1``
+
+const MdDate = styled.span``
 
 export default function Template({
   data // this prop will be injected by the GraphQL query below.
@@ -6,16 +13,16 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+    <PageWrapper>
+      <div className="md-post">
+        <MdTitle>{frontmatter.title}</MdTitle>
+        <MdDate>{frontmatter.date}</MdDate>
         <div
-          className="blog-post-content"
+          className="md-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-    </div>
+    </PageWrapper>
   )
 }
 
@@ -24,7 +31,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY MMMM Do")
         path
         title
       }
