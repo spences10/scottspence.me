@@ -23,8 +23,8 @@ effort of putting this information here for you.
   the community, and how you help your team continue to learn and
   grow.
 
-* Work life balance is a big deal for me I really don not want to go
-  over a 42.5 hour working week.
+* Work life balance is a big deal for me I really **do not** want to
+  go over a 42.5 hour working week.
 
 ### What's your preferred stack?
 
