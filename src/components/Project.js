@@ -22,7 +22,8 @@ const Desc = styled.div`
   color: ${props => props.theme.text};
   background-color: ${props => props.theme.white};
   text-align: center;
-  font-family: 'Titillium Web' bold;
+  font-family: 'Titillium Web';
+  font-weight: 700;
   line-height: 150%;
 `
 
