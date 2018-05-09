@@ -3,9 +3,7 @@ const path = require('path')
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
 
-  const faqTemplate = path.resolve('src/templates/faqTemplate.js')
-
-  const aboutTemplate = path.resolve('src/templates/faqTemplate.js')
+  const mdTemplate = path.resolve('src/templates/mdTemplate.js')
 
   return graphql(`
     {
@@ -30,14 +28,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
-        component: faqTemplate,
-        context: {} // additional data can be passed via context
-      })
-    })
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: aboutTemplate,
+        component: mdTemplate,
         context: {} // additional data can be passed via context
       })
     })
