@@ -4,7 +4,7 @@ import styled, {
   keyframes
 } from 'styled-components'
 
-export const theme = {
+export const theme1 = {
   primary: '#6e27c5',
   primaryAccent: '#eb238e',
   branding: '#f7e018',
