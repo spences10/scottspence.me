@@ -4,6 +4,37 @@ import styled, {
   keyframes
 } from 'styled-components'
 
+export const theme1 = {
+  primary: '#6e27c5',
+  secondary: '#fcdeb6',
+  primaryAccent: '#eb238e',
+  light: '#f4f4f4',
+  dark: '#4A4A4A',
+  background: '#f9f9fd',
+  foreground: '#fefefe',
+  border: '#044040',
+  fontHeader: '"Titillium Web", sans-serif',
+  fontBody: 'Open Sans, sans, sans-serif',
+  fontDark: '#34434b',
+  fontLight: '#586368',
+  fontWhite: '#ffffff'
+}
+
+export const theme2 = {
+  primary: '#6e27c5',
+  secondary: '#ffb617',
+  danger: '#f16623',
+  light: '#f5f5f5',
+  dark: '#505050',
+  background: '#e6e6e6',
+  foreground: '#f7f0f0',
+  border: '#054545',
+  fontHeader: 'Open Sans, sans, sans-serif',
+  fontBody: '"Titillium Web", sans-serif',
+  fontDark: '#034544',
+  fontLight: '#596869'
+}
+
 export const theme = {
   text: '#272727',
   white: '#fff',
@@ -38,7 +69,7 @@ export const theme = {
 }
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Roboto:400,900|Titillium+Web:200,400,700');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Titillium+Web:400,700');
 
   *, *:before, *:after {
     box-sizing: border-box;
