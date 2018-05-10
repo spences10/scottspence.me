@@ -76,30 +76,34 @@ const Last = styled.span`
   white-space: nowrap;
 `
 
-const IndexPage = () => (
-  <PageWrapper>
-    <Name className="name">
-      <StyledLink to="/">
-        <First>
-          {'Scott'
-            .split('')
-            .map((letter, index) => (
-              <Letter key={`${letter}-${index}`}>{letter}</Letter>
-            ))}
-        </First>
-        <Last>
-          {'Spence'
-            .split('')
-            .map((letter, index) => (
-              <Letter key={`${letter}-${index}`}>{letter}</Letter>
-            ))}
-        </Last>
-      </StyledLink>
-    </Name>
-    <Hi>Hi people 👋</Hi>
-    <p>Welcome to my personal portfolio site.</p>
-    <p>Built with Gatsby and Styled Components 💅</p>
-  </PageWrapper>
-)
+class IndexPage extends React.Component {
+  render() {
+    return (
+      <PageWrapper>
+        <Name className="name">
+          <StyledLink to="/">
+            <First>
+              {'Scott'
+                .split('')
+                .map((letter, index) => (
+                  <Letter key={`${letter}-${index}`}>{letter}</Letter>
+                ))}
+            </First>
+            <Last>
+              {'Spence'
+                .split('')
+                .map((letter, index) => (
+                  <Letter key={`${letter}-${index}`}>{letter}</Letter>
+                ))}
+            </Last>
+          </StyledLink>
+        </Name>
+        <Hi>Hi people 👋</Hi>
+        <p>Welcome to my personal portfolio site.</p>
+        <p>Built with Gatsby and Styled Components 💅</p>
+      </PageWrapper>
+    )
+  }
+}
 
 export default IndexPage
