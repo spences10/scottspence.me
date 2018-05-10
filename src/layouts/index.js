@@ -50,6 +50,8 @@ const PageContainer = styled.div`
 
 const Main = styled.div`
   grid-area: m;
+  font-family: ${props => props.theme.fontBody};
+  color: ${props => props.theme.textDark};
 `
 
 const TemplateWrapper = ({ children, data }) => (
