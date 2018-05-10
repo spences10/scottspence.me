@@ -11,9 +11,9 @@ const MdDate = styled.span`
   color: ${props => props.theme.primary.dark};
 `
 
-export default function Template({
+const Template = ({
   data // this prop will be injected by the GraphQL query below.
-}) {
+}) => {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
@@ -29,6 +29,8 @@ export default function Template({
     </PageWrapper>
   )
 }
+
+export default Template
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
