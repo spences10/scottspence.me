@@ -4,12 +4,11 @@ import styled, {
   keyframes
 } from 'styled-components'
 
-export const theme1 = {
+export const theme = {
   primary: '#6e27c5',
-  secondary: '#fcdeb6',
   primaryAccent: '#eb238e',
-  light: '#f4f4f4',
-  dark: '#4A4A4A',
+  branding: '#f7e018',
+  secondary: '#fcdeb6',
   background: '#f9f9fd',
   foreground: '#fefefe',
   border: '#044040',
@@ -17,56 +16,61 @@ export const theme1 = {
   fontBody: 'Open Sans, sans, sans-serif',
   fontDark: '#34434b',
   fontLight: '#586368',
-  fontWhite: '#ffffff'
+  fontWhite: '#ffffff',
+  pink: '#ff0198',
+  blue: '#01c1d6'
 }
 
 export const theme2 = {
   primary: '#6e27c5',
+  primaryAccent: '#eb238e',
+  branding: '#f7e018',
   secondary: '#ffb617',
-  danger: '#f16623',
-  light: '#f5f5f5',
-  dark: '#505050',
   background: '#e6e6e6',
   foreground: '#f7f0f0',
   border: '#054545',
   fontHeader: 'Open Sans, sans, sans-serif',
   fontBody: '"Titillium Web", sans-serif',
   fontDark: '#034544',
-  fontLight: '#596869'
+  fontLight: '#596869',
+  fontWhite: '#ffffff',
+  pink: '#ff0198',
+  blue: '#01c1d6'
 }
 
-export const theme = {
-  text: '#272727',
-  white: '#fff',
-  primary: {
-    dark: '#453463',
-    light: '#755f9f'
-  },
-  secondary: {
-    green: '#8ac3a9',
-    yellow: '#fcdeb6',
-    red: '#ff8463',
-    pink: '#ff0198', // hollywood cerise
-    mySinYellow: '#ffb617', // my sin
-    purple: '#6e27c5', // purple heart
-    orange: '#ff6600', // blaze orange
-    blue: '#01c1d6', // robin's egg blue
-    java: '#1cbcd2', // java
-    sun: '#fab319', // sun
-    affair: '#69479e', // affair
-    flamingo: '#f16623', // flamingo
-    minsk: '#2e2e86', // minsk
-    pomegranate: '#ee362c', // pomegranate
-    redviolet: '#eb238e', // red violet
-    sushi: '#7cc142', // sushi
-    bombay: '#adadaf', // Bombay
-    jsYellow: '#f7e018' // JS yellow
-  },
-  shades: {
-    dark: 'rgba(69, 52, 99, 0.5)',
-    offWhite: 'rgb(244, 254, 254)'
-  }
-}
+// export const theme = {
+//   text: '#272727',
+//   white: '#fff',
+//   background: '#f9f9fd',
+//   primary: {
+//     dark: '#453463',
+//     light: '#755f9f'
+//   },
+//   secondary: {
+//     green: '#8ac3a9',
+//     yellow: '#fcdeb6',
+//     red: '#ff8463',
+//     pink: '#ff0198', // hollywood cerise
+//     mySinYellow: '#ffb617', // my sin
+//     purple: '#6e27c5', // purple heart
+//     orange: '#ff6600', // blaze orange
+//     blue: '#01c1d6', // robin's egg blue
+//     java: '#1cbcd2', // java
+//     sun: '#fab319', // sun
+//     affair: '#69479e', // affair
+//     flamingo: '#f16623', // flamingo
+//     minsk: '#2e2e86', // minsk
+//     pomegranate: '#ee362c', // pomegranate
+//     redviolet: '#eb238e', // red violet
+//     sushi: '#7cc142', // sushi
+//     bombay: '#adadaf', // Bombay
+//     jsYellow: '#f7e018' // JS yellow
+//   },
+//   shades: {
+//     dark: 'rgba(69, 52, 99, 0.5)',
+//     offWhite: 'rgb(244, 254, 254)'
+//   }
+// }
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Titillium+Web:400,700');
@@ -78,19 +82,8 @@ injectGlobal`
   body {
     margin: 0;
     color: hsla(0, 0%, 0%, 0.8);
-    font-family: Roboto, sans-serif;
-    word-wrap: break-word;
-    background-color: #fafafa;
+    background-color: ${props => props.theme.background};
   }
-
-  h1 {
-    font-family: 'Titillium Web';
-    font-weight: 700;
-  }
-
-  /* h1, h2 { */
-    /* letter-spacing: 0.15rem; */
-  /* } */
 
   a {
     text-decoration: none;
@@ -113,7 +106,8 @@ injectGlobal`
 `
 
 const sizes = {
-  giant: 1170,
+  monitor: 1800,
+  giant: 1500,
   desktop: 992,
   tablet: 768,
   phone: 376
@@ -162,26 +156,26 @@ export const PageWrapper = styled.div`
 `
 
 export const StyledLink = styled.a`
-  color: ${props => props.theme.secondary.purple};
+  color: ${props => props.theme.primary};
   &:hover {
-    animation: halftone 1s forwards;
+    animation: halfTone 1s forwards;
     border-radius: 4px;
     padding: 0.2rem;
     background: radial-gradient(
           circle,
-          ${({ theme }) => theme.secondary.purple} 0.2em,
+          ${({ theme }) => theme.primary} 0.2em,
           transparent 0.25em
         )
         0 0 / 1.25em 1.25em,
       radial-gradient(
           circle,
-          ${({ theme }) => theme.secondary.purple} 0.2em,
+          ${({ theme }) => theme.primary} 0.2em,
           transparent 0.25em
         )
         6.25em 6.25em / 1.25em 1.25em;
-    color: ${({ theme }) => theme.secondary.red};
+    color: ${({ theme }) => theme.secondary};
   }
-  @keyframes halftone {
+  @keyframes halfTone {
     100% {
       background-size: 2.375em 2.375em, 0.1em 0.1em;
     }
@@ -195,8 +189,8 @@ export const ShinyButton = styled.button`
   text-decoration: none;
   text-transform: uppercase;
   background: #fafafa;
-  color: ${props => props.theme.secondary.purple};
-  border: 2px solid ${props => props.theme.secondary.purple};
+  color: ${props => props.theme.primary};
+  border: 2px solid ${props => props.theme.primary};
   font-size: 1rem;
   display: inline-block;
   border-radius: 50px;
@@ -206,7 +200,7 @@ export const ShinyButton = styled.button`
   cursor: pointer;
   &:before {
     content: '';
-    background-color: ${props => props.theme.secondary.purple};
+    background-color: ${props => props.theme.primary};
     height: 100%;
     width: 3em;
     display: block;
@@ -218,7 +212,7 @@ export const ShinyButton = styled.button`
   }
   &:hover {
     /* background-color: #2194e0; */
-    color: ${props => props.theme.secondary.red};
+    color: ${props => props.theme.primary};
     /* border-bottom: 4px solid #1977b5; */
     transform: translateY(1px);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);

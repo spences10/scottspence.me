@@ -8,7 +8,7 @@ const MdTitle = styled.h1``
 const MdDate = styled.span`
   font-weight: 700;
   font-size: 0.8rem;
-  color: ${props => props.theme.primary.dark};
+  color: ${props => props.theme.fontLight};
 `
 
 export default function Template({
