@@ -1,19 +1,23 @@
 ---
 path: "/now"
-date: "2017-12-01"
+date: "2018-05-11"
 title: "What I'm doing Now"
 ---
 
 ## Work
 
-Currently PM for a GitHub community project <code>grad.then()</code>
-working with two other remote developers in Egypt and Serbia.
-<code>grad.then()</code> is intended as a resource for post bootcamp
-graduates to use as a resource for finding a full time role.
+Working as a Front-End developer for [Zaizi] Empowering Data Driven
+Government, working on a CMS front end solution for a client.
 
 ## Play
 
-Back to the gym after Christmas break, I'm going to try focus more on
-conditioning and cardio work for a while.
+Due to work situation changing I have not been able to get to the gym
+as much as I would like to.
+
+Diet is the [see food diet] right now, this need to change I'm hoping
+once work has settled down I'll be able to work out some schedule.
 
 <!-- Links -->
+
+[zaizi]: https://www.linkedin.com/company/zaizi/
+[see food diet]: # 'I see food, I eat it!'
