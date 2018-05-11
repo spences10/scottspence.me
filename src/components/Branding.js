@@ -14,8 +14,9 @@ const Background = styled.div`
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 `
 
-const Text = styled.h1`
-  margin: 0rem 1rem 0.2rem 1.2rem;
+const Text = styled.span`
+  margin: 0.745rem;
+  padding: 0.745rem;
   grid-column-start: 3;
   grid-row-start: 3;
   font-family: ${props => props.theme.fontHeader};

@@ -1,7 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import Link from 'gatsby-link'
 
-import { PageWrapper } from '../theme/globalStyle'
+import { PageWrapper, ShinyButton } from '../theme/globalStyle'
 
 const MdTitle = styled.h1``
 
@@ -26,8 +28,15 @@ const Template = ({
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
+      <Link to="/">
+        <ShinyButton>homepage</ShinyButton>
+      </Link>
     </PageWrapper>
   )
+}
+
+Template.propTypes = {
+  data: PropTypes.object
 }
 
 export default Template
