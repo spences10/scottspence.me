@@ -1,6 +1,6 @@
 ---
 path: "/uses"
-date: "2017-12-01"
+date: "2018-05-11"
 title: "Uses"
 ---
 
@@ -8,9 +8,10 @@ title: "Uses"
 
 * Visual Studio Code with Dark+ (default dark) theme
 
-* Zeit's Hyper, with Hyper Snazzy Theme and fish 🐟 shell ❤️
+* Zeit's Hyper, with Hyper Snazzy Theme and fish 🐟 shell ❤️ check out
+  my [settings] and [dotfiles] if you're interested.
 
-* Monoid font for both text editor and terminal
+* [Dank Mono] font for both text editor and terminal
 
 ## Desk Setup
 
@@ -23,8 +24,11 @@ title: "Uses"
 
 * For development I use Windows Subsystem Linux in conjunction with
   Hyper terminal 👌
+
 * For gif capture I use LICEcap
 
 <!-- Links -->
 
-[monoid]: https://larsenwork.com/monoid/
+[dank mono]: https://dank.sh/
+[settings]: https://github.com/spences10/settings
+[dotfiles]: https://github.com/spences10/dotfiles
