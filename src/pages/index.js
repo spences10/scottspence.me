@@ -33,13 +33,14 @@ const Name = styled.h1`
   font-weight: 700;
   align-items: center;
   transition: font-size 250ms ease-in-out, padding 150ms ease-in;
-  background-color: ${props => props.theme.secondary.jsYellow};
-  color: ${props => props.theme.text};
+  background-color: ${props => props.theme.branding};
+  color: ${props => props.theme.textDark};
   width: auto;
   user-select: text;
   text-shadow: 8px 8px 3px rgba(0, 0, 0, 0.1);
+  font-family: ${props => props.theme.fontHeader};
   .wf-active & {
-    font-family: Roboto bold, sans-serif;
+    font-family: ${props => props.theme.fontHeader};
   }
   @media only screen and (min-width: 375px) {
     font-size: 2.5rem;

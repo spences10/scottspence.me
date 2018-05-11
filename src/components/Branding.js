@@ -10,7 +10,7 @@ const Background = styled.div`
   align-items: end;
   height: ${props => `${props.size}rem`};
   width: ${props => `${props.size}rem`};
-  background: ${props => props.theme.secondary.jsYellow};
+  background: ${props => props.theme.branding};
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 `
 
@@ -18,9 +18,9 @@ const Text = styled.h1`
   margin: 0rem 1rem 0.2rem 1.2rem;
   grid-column-start: 3;
   grid-row-start: 3;
-  font-family: Roboto;
-  font-weight: 900;
-  color: ${props => props.theme.text};
+  font-family: ${props => props.theme.fontHeader};
+  font-weight: 700;
+  color: ${props => props.theme.fontDark};
   font-size: ${props => `${props.size / 2}rem`};
 `
 

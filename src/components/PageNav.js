@@ -12,6 +12,8 @@ const NavMenu = styled.ul`
   grid-column-gap: 10px;
   margin: 1.5rem 0.1rem 1.5rem 0.1rem;
   padding: 1.5rem 0.1rem 1.5rem 0.1rem;
+  font-family: ${props => props.theme.fontBody};
+  font-weight: 700;
   ${media.giant`
     grid-template-columns: repeat(5, auto);
     margin: 1.5rem 0.1rem 1.5rem 0.1rem;
@@ -62,7 +64,7 @@ const NavItem = styled.li`
   transition: all 0.3s;
   text-transform: uppercase;
   list-style: none;
-  color: ${props => props.theme.white};
+  color: ${props => props.theme.fontWhite};
   &:hover {
     letter-spacing: 0.25rem;
     transition: all 0.3s;
@@ -71,7 +73,7 @@ const NavItem = styled.li`
 `
 
 const NavLink = styled(Link).attrs({
-  color: props => props.theme.secondary.yellow
+  color: props => props.theme.secondary
 })`
   color: inherit;
   &:visited,
@@ -82,7 +84,7 @@ const NavLink = styled(Link).attrs({
     color: ${props => props.color};
   }
   &.activeLink {
-    color: ${props => props.theme.secondary.red};
+    color: ${props => props.theme.secondary};
   }
 `
 
