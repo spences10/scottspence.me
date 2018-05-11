@@ -45,7 +45,7 @@ const StyledHeader = styled.div`
   /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [color]; */
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 
-  background-color: ${props => props.theme.secondary.purple};
+  background-color: ${props => props.theme.primary};
   background-image: url("${HEROS.TOPOGRAPHY}");
 `
 
@@ -53,7 +53,7 @@ const SiteTitle = styled.h1`
   grid-area: t;
   margin: 1rem;
   padding: 1rem;
-  color: ${props => props.theme.white};
+  color: ${props => props.theme.fontWhite};
 `
 
 const SiteLink = styled(Link)`
@@ -63,7 +63,7 @@ const SiteLink = styled(Link)`
     color: inherit;
   }
   &:hover {
-    color: ${props => props.theme.secondary.yellow};
+    color: ${props => props.theme.secondary};
   }
 `
 
