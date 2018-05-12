@@ -41,6 +41,7 @@ Template.propTypes = {
 
 export default Template
 
+/* eslint-disable */
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
@@ -53,3 +54,4 @@ export const pageQuery = graphql`
     }
   }
 `
+/* eslint-enable */
