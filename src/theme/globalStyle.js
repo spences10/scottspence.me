@@ -38,40 +38,6 @@ export const theme2 = {
   blue: '#01c1d6'
 }
 
-// export const theme = {
-//   text: '#272727',
-//   white: '#fff',
-//   background: '#f9f9fd',
-//   primary: {
-//     dark: '#453463',
-//     light: '#755f9f'
-//   },
-//   secondary: {
-//     green: '#8ac3a9',
-//     yellow: '#fcdeb6',
-//     red: '#ff8463',
-//     pink: '#ff0198', // hollywood cerise
-//     mySinYellow: '#ffb617', // my sin
-//     purple: '#6e27c5', // purple heart
-//     orange: '#ff6600', // blaze orange
-//     blue: '#01c1d6', // robin's egg blue
-//     java: '#1cbcd2', // java
-//     sun: '#fab319', // sun
-//     affair: '#69479e', // affair
-//     flamingo: '#f16623', // flamingo
-//     minsk: '#2e2e86', // minsk
-//     pomegranate: '#ee362c', // pomegranate
-//     redviolet: '#eb238e', // red violet
-//     sushi: '#7cc142', // sushi
-//     bombay: '#adadaf', // Bombay
-//     jsYellow: '#f7e018' // JS yellow
-//   },
-//   shades: {
-//     dark: 'rgba(69, 52, 99, 0.5)',
-//     offWhite: 'rgb(244, 254, 254)'
-//   }
-// }
-
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Titillium+Web:400,700');
 
@@ -151,7 +117,7 @@ export const animateShake = keyframes`
 export const PageWrapper = styled.div`
   margin: 1rem;
   padding: 1rem;
-  font-family: 'Titillium Web' bold;
+  font-family: ${props => props.theme.fontBody};
   line-height: 150%;
 `
 

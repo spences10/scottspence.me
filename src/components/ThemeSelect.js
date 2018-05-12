@@ -11,7 +11,7 @@ const SelectWrapper = styled.div`
 const Select = styled.select`
   margin: 0.5rem 0.5rem;
   padding: 0rem 0.5rem;
-  font-family: Roboto;
+  font-family: ${props => props.theme.fontBody};
   /* font-size: 1rem; */
   border: 1px solid ${props => props.theme.light};
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
@@ -20,7 +20,7 @@ const Select = styled.select`
 `
 
 export const SelectOpt = styled.option`
-  font-family: Roboto;
+  font-family: ${props => props.theme.fontBody};
   /* font-size: 1rem; */
 `
 
