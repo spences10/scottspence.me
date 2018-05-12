@@ -88,6 +88,7 @@ TemplateWrapper.propTypes = {
 
 export default TemplateWrapper
 
+/* eslint-disable */
 export const query = graphql`
   query LayoutQuery {
     site {
@@ -97,3 +98,4 @@ export const query = graphql`
     }
   }
 `
+/* eslint-enable */
