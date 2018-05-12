@@ -4,24 +4,32 @@ import styled from 'styled-components'
 import ThemeSelect from './ThemeSelect'
 import { ThemeSelectContext } from './ThemeSelectContext'
 
-import { PageWrapper } from '../theme/globalStyle'
+import { PageWrapper as PW } from '../theme/globalStyle'
 
-const ThemeSelectWrapper = styled.div`
+const ThemeSelectWrapper = PW.extend`
   grid-area: f;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: '. . . . . . . . . . . t';
+`
+
+const PlaceThemeSelect = styled.div`
+  grid-area: t;
 `
 
 class Footer extends React.Component {
   render() {
     return (
-      <PageWrapper>
-        <ThemeSelectWrapper>
+      <ThemeSelectWrapper>
+        <PlaceThemeSelect>
           <ThemeSelectContext.Consumer>
             {({ handleThemeChange }) => (
               <ThemeSelect handleThemeChange={handleThemeChange} />
             )}
           </ThemeSelectContext.Consumer>
-        </ThemeSelectWrapper>
-      </PageWrapper>
+        </PlaceThemeSelect>
+      </ThemeSelectWrapper>
     )
   }
 }
