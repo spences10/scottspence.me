@@ -93,7 +93,7 @@ All the best. 👍
 [vb.net]: # '💻 💻 💻 💻 💻 💻 💻 💻 💻 '
 [now]: https://zeit.co/now
 [gatsby]: https://www.gatsbyjs.org/
-[teh]: # 'I know how to spell "the"'
+[teh]: # 'I know how to spell "the", not a typo 🙃'
 [this site]: https://scottspence.me
 [my blog]: https://blog.scottspence.me
 [my cv]: https://cv.scottspence.me
