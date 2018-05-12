@@ -1,6 +1,6 @@
 ---
 path: "/about"
-date: "2018-05-10"
+date: "2018-05-12"
 title: "Hello from London 👋"
 ---
 
@@ -19,7 +19,7 @@ wife and daughter.
 
 ### Coding history
 
-###### Then:
+**Then:**
 
 I learned to code [VBA] whilst working my first 'proper' job at
 Barclays Bank as an assistant to the finance manager of a business
@@ -43,7 +43,7 @@ transformation.
 
 Tools of my trade: VBA, SQL some [VB.NET] and C#
 
-###### Now:
+**Now:**
 
 I have (as of today) a 499 day GitHub streak, there are several OSS
 projects I like to contribute to the majority of my commits are for my
