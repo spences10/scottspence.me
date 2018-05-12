@@ -3,9 +3,13 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled, { ThemeProvider } from 'styled-components'
 
-import Header from '../components/Header.js'
+import Header from '../components/Header'
+import {
+  ThemeSelectProvider,
+  ThemeSelectContext
+} from '../components/ThemeSelectContext'
 
-import { theme, media } from '../theme/globalStyle'
+import { media } from '../theme/globalStyle'
 import { siteMeta } from '../constants'
 
 const PageContainer = styled.div`
@@ -55,14 +59,23 @@ const Main = styled.div`
 `
 
 const TemplateWrapper = ({ children, data }) => (
-  <ThemeProvider theme={theme}>
-    <PageContainer>
-      <Helmet title="Scott Spence - portfolio" meta={siteMeta} />
-      <Header navItems={data.site.siteMetadata.pages} />
+  <ThemeSelectProvider>
+    <ThemeSelectContext.Consumer>
+      {({ theme }) => (
+        <ThemeProvider theme={theme}>
+          <PageContainer>
+            <Helmet
+              title="Scott Spence - portfolio"
+              meta={siteMeta}
+            />
+            <Header navItems={data.site.siteMetadata.pages} />
 
-      <Main>{children()}</Main>
-    </PageContainer>
-  </ThemeProvider>
+            <Main>{children()}</Main>
+          </PageContainer>
+        </ThemeProvider>
+      )}
+    </ThemeSelectContext.Consumer>
+  </ThemeSelectProvider>
 )
 
 TemplateWrapper.propTypes = {
