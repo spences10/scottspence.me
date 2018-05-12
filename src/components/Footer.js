@@ -10,6 +10,8 @@ const ThemeSelectWrapper = PW.extend`
   position: fixed;
   bottom: 0;
   width: 100%;
+  margin: 0.125rem;
+  padding: 0.125rem;
   grid-area: f;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
