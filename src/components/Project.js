@@ -10,7 +10,7 @@ const Name = styled.h3`
   margin: 0.5rem;
   padding: 0.5rem;
   color: ${props => props.theme.fontWhite};
-  font-family: Roboto;
+  font-family: ${props => props.theme.fontHeader};
   font-weight: 900;
   text-align: center;
 `
