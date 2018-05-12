@@ -7,6 +7,9 @@ import { ThemeSelectContext } from './ThemeSelectContext'
 import { PageWrapper as PW } from '../theme/globalStyle'
 
 const ThemeSelectWrapper = PW.extend`
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   grid-area: f;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
