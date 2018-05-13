@@ -17,7 +17,7 @@ const StyledHeader = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: '. . t t t . . n n n . .';
+  grid-template-areas: '. . . t t . . n n n . .';
 
   ${media.giant`
     grid-template-areas:
