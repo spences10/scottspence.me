@@ -17,16 +17,16 @@ const StyledHeader = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: '. . . t t . . n n n . .';
+  grid-template-areas: '. . . t t . n n n . . .';
 
   ${media.giant`
     grid-template-areas:
-      '. . t t t t t n n n . .';
+      '. . t t t t n n n n . .';
     /* background: goldenrod; */
   `};
   ${media.desktop`
     grid-template-areas:
-      '. . t t t t t n n n . .';
+      '. . t t t t n n n n . .';
     /* background: dodgerblue; */
   `};
   ${media.tablet`
