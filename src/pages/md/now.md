@@ -1,6 +1,6 @@
 ---
 path: "/now"
-date: "2018-05-11"
+date: "2018-05-13"
 title: "What I'm doing Now"
 ---
 
@@ -14,8 +14,9 @@ Government, working on a CMS front end solution for a client.
 Due to work situation changing I have not been able to get to the gym
 as much as I would like to.
 
-Diet is the [see food diet] right now, this need to change I'm hoping
-once work has settled down I'll be able to work out some schedule.
+Diet is the [see food diet] right now, this needs to change I'm hoping
+once work has settled down I'll be able to work out something in the
+way of a schedule.
 
 <!-- Links -->
 
