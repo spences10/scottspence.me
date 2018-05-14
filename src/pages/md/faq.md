@@ -93,7 +93,7 @@ I prefer to avoid phone calls for a number of reasons:
 
 ### Notice period?
 
-* Currently, two weeks.
+* Currently, [two weeks].
 
 ### Interview availability?
 
@@ -114,3 +114,4 @@ I prefer to avoid phone calls for a number of reasons:
 [json schema]: https://jsonresume.org/schema/
 [here]: https://cvjson.now.sh/
 [this]: https://cv.scottspence.me/
+[two weeks]: https://www.youtube.com/watch?v=9v-33jcEDk4
