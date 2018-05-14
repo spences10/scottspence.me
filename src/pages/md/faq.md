@@ -1,6 +1,6 @@
 ---
 path: "/faq"
-date: "2018-05-09"
+date: "2018-05-14"
 title: "For recruiters - FAQ"
 ---
 
@@ -34,7 +34,7 @@ effort of putting this information here for you.
 * For styling I have taken to using styled-components 💅, take a look
   at the used by section on their [site].
 
-* For CMS I'd like the opportunity to work with [GraphCMS] and/or
+* For CMS I'd like the opportunity to work with [GraphCMS] or
   [Contentful].
 
 * For back-end I prefer node which is where the majority of my
@@ -57,7 +57,7 @@ effort of putting this information here for you.
 
 ### What are your location preferences?
 
-* I live ~30 minute train ride from London Victoria/Blackfriars and
+* I live a ~30 minute train ride from London Victoria/Blackfriars and
   prefer to avoid travelling by tube if possible.
 
 * Based in Swanley, Kent I'll consider places very close to Sevenoaks
@@ -68,7 +68,7 @@ effort of putting this information here for you.
 I prefer to avoid phone calls for a number of reasons:
 
 * I'm on a [maker's schedule], which means interruptions are
-  surprisingly disruptive to my flow.
+  disruptive to my flow.
 
 * I've already tried to answer some of the most basic questions on
   this site, and I've probably phrased them more clearly here than I
@@ -86,6 +86,20 @@ I prefer to avoid phone calls for a number of reasons:
 * Sure, my CV uses the [JSON Schema] so you can find that [here].
 
 * Prefer something better formatted then take a look at [this].
+
+### My last two roles overlap, yes.
+
+* I'm still showing as at OES Technology because I own the company.
+
+### Notice period?
+
+* Currently, two weeks.
+
+### Interview availability?
+
+* I can telephone interview with little notice.
+
+* It will entirely depend on the location for face to face interviews.
 
 <!-- Links -->
 
