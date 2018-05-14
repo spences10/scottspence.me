@@ -3,9 +3,15 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled, { ThemeProvider } from 'styled-components'
 
-import Header from '../components/Header.js'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
-import { theme, media } from '../theme/globalStyle'
+import {
+  ThemeSelectProvider,
+  ThemeSelectContext
+} from '../components/ThemeSelectContext'
+
+import { media } from '../theme/globalStyle'
 import { siteMeta } from '../constants'
 
 const PageContainer = styled.div`
@@ -55,14 +61,24 @@ const Main = styled.div`
 `
 
 const TemplateWrapper = ({ children, data }) => (
-  <ThemeProvider theme={theme}>
-    <PageContainer>
-      <Helmet title="Scott Spence - portfolio" meta={siteMeta} />
-      <Header navItems={data.site.siteMetadata.pages} />
+  <ThemeSelectProvider>
+    <ThemeSelectContext.Consumer>
+      {({ theme }) => (
+        <ThemeProvider theme={theme}>
+          <PageContainer>
+            <Helmet
+              title="Scott Spence - portfolio"
+              meta={siteMeta}
+            />
+            <Header navItems={data.site.siteMetadata.pages} />
 
-      <Main>{children()}</Main>
-    </PageContainer>
-  </ThemeProvider>
+            <Main>{children()}</Main>
+            <Footer />
+          </PageContainer>
+        </ThemeProvider>
+      )}
+    </ThemeSelectContext.Consumer>
+  </ThemeSelectProvider>
 )
 
 TemplateWrapper.propTypes = {
@@ -72,6 +88,7 @@ TemplateWrapper.propTypes = {
 
 export default TemplateWrapper
 
+/* eslint-disable */
 export const query = graphql`
   query LayoutQuery {
     site {
@@ -81,3 +98,4 @@ export const query = graphql`
     }
   }
 `
+/* eslint-enable */
