@@ -1,6 +1,6 @@
 ---
 path: "/faq"
-date: "2018-05-14"
+date: "2018-05-15"
 title: "For recruiters - FAQ"
 ---
 
@@ -9,6 +9,8 @@ I'm nothing more than a keyword match right now, so I have gone to the
 effort of putting this information here for you.
 
 ### What's my ideal role?
+
+* Permanent.
 
 * Working in an agile environment using best practices for
   development.
@@ -60,12 +62,12 @@ effort of putting this information here for you.
 * I live a ~30 minute train ride from London Victoria/Blackfriars and
   prefer to avoid travelling by tube if possible.
 
-* Based in Swanley, Kent I'll consider places very close to Sevenoaks
-  and Bromley.
+* Based in Swanley, Kent I'll consider places that are close to
+  Sevenoaks and Bromley.
 
-### Your skills look like a great match for this position we have. Can we setup a phone call to chat?
+### Your skills look like a great match for this position we have. Can we have a quick five minute phone call to chat?
 
-I prefer to avoid phone calls for a number of reasons:
+I prefer to avoid phone calls for these reasons:
 
 * I'm on a [maker's schedule], which means interruptions are
   disruptive to my flow.
@@ -78,8 +80,8 @@ I prefer to avoid phone calls for a number of reasons:
   has to be, if not **"no,"** at least **["read this first."]**
 
 * Contact me by email. That's my preferred means of communication. If
-  we are still interested in things after a few email exchanges,
-  perhaps then a phone call can be arranged.
+  we are still interested in after some fact checking I'd love to have
+  a chat.
 
 ### Can I take a look at your [CV]?
 
@@ -89,7 +91,8 @@ I prefer to avoid phone calls for a number of reasons:
 
 ### My last two roles overlap, yes.
 
-* I'm still showing as at OES Technology because I own the company.
+* I'm still showing as at OES Technology because I'm the director of
+  the company.
 
 ### Notice period?
 
