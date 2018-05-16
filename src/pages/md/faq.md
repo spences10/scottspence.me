@@ -1,6 +1,6 @@
 ---
 path: "/faq"
-date: "2018-05-09"
+date: "2018-05-15"
 title: "For recruiters - FAQ"
 ---
 
@@ -9,6 +9,8 @@ I'm nothing more than a keyword match right now, so I have gone to the
 effort of putting this information here for you.
 
 ### What's my ideal role?
+
+* Permanent.
 
 * Working in an agile environment using best practices for
   development.
@@ -34,7 +36,7 @@ effort of putting this information here for you.
 * For styling I have taken to using styled-components 💅, take a look
   at the used by section on their [site].
 
-* For CMS I'd like the opportunity to work with [GraphCMS] and/or
+* For CMS I'd like the opportunity to work with [GraphCMS] or
   [Contentful].
 
 * For back-end I prefer node which is where the majority of my
@@ -57,18 +59,18 @@ effort of putting this information here for you.
 
 ### What are your location preferences?
 
-* I live ~30 minute train ride from London Victoria/Blackfriars and
+* I live a ~30 minute train ride from London Victoria/Blackfriars and
   prefer to avoid travelling by tube if possible.
 
-* Based in Swanley, Kent I'll consider places very close to Sevenoaks
-  and Bromley.
+* Based in Swanley, Kent I'll consider places that are close to
+  Sevenoaks and Bromley.
 
-### Your skills look like a great match for this position we have. Can we setup a phone call to chat?
+### Your skills look like a great match for this position we have. Can we have a quick five minute phone call to chat?
 
-I prefer to avoid phone calls for a number of reasons:
+I prefer to avoid phone calls for these reasons:
 
 * I'm on a [maker's schedule], which means interruptions are
-  surprisingly disruptive to my flow.
+  disruptive to my flow.
 
 * I've already tried to answer some of the most basic questions on
   this site, and I've probably phrased them more clearly here than I
@@ -78,14 +80,29 @@ I prefer to avoid phone calls for a number of reasons:
   has to be, if not **"no,"** at least **["read this first."]**
 
 * Contact me by email. That's my preferred means of communication. If
-  we are still interested in things after a few email exchanges,
-  perhaps then a phone call can be arranged.
+  we are still interested in after some fact checking I'd love to have
+  a chat.
 
 ### Can I take a look at your [CV]?
 
 * Sure, my CV uses the [JSON Schema] so you can find that [here].
 
 * Prefer something better formatted then take a look at [this].
+
+### My last two roles overlap, yes.
+
+* I'm still showing as at OES Technology because I'm the director of
+  the company.
+
+### Notice period?
+
+* Currently, [two weeks].
+
+### Interview availability?
+
+* I can telephone interview with little notice.
+
+* It will entirely depend on the location for face to face interviews.
 
 <!-- Links -->
 
@@ -100,3 +117,4 @@ I prefer to avoid phone calls for a number of reasons:
 [json schema]: https://jsonresume.org/schema/
 [here]: https://cvjson.now.sh/
 [this]: https://cv.scottspence.me/
+[two weeks]: https://www.youtube.com/watch?v=9v-33jcEDk4

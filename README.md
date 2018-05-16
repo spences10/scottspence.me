@@ -1,4 +1,4 @@
-# scottspence.me
+# [scottspence.me]
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/spences10/scottspence.me.svg)](https://greenkeeper.io/)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
@@ -13,3 +13,7 @@ Uses:
 * Gatsby
 * styled-components
 * Prettier
+
+<!-- Links -->
+
+[scottspence.me]: https://scottspence.me
