@@ -11,6 +11,7 @@ notifications:
 
 node_js:
   - '9'
+  - '10'
 
 before_script:
   - npm prune
