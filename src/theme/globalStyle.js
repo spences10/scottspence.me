@@ -4,6 +4,8 @@ import styled, {
   keyframes
 } from 'styled-components'
 
+import { fontFace } from './fonts'
+
 export const theme1 = {
   primary: '#6e27c5',
   primaryAccent: '#eb238e',
@@ -12,8 +14,8 @@ export const theme1 = {
   background: '#f9f9fd',
   foreground: '#fefefe',
   border: '#044040',
-  fontHeader: '"Titillium Web", sans-serif',
-  fontBody: 'Open Sans, sans, sans-serif',
+  fontHeader: 'Dosis, sans-serif',
+  fontBody: 'Poppins, sans, sans-serif',
   fontDark: '#34434b',
   fontLight: '#586368',
   fontWhite: '#ffffff',
@@ -29,8 +31,8 @@ export const theme2 = {
   background: '#e6e6e6',
   foreground: '#f7f0f0',
   border: '#054545',
-  fontHeader: 'Open Sans, sans, sans-serif',
-  fontBody: '"Titillium Web", sans-serif',
+  fontHeader: 'Poppins, sans, sans-serif',
+  fontBody: 'Dosis, sans-serif',
   fontDark: '#034544',
   fontLight: '#596869',
   fontWhite: '#ffffff',
@@ -58,7 +60,11 @@ export const theme2 = {
 // jsYellow: '#f7e018' // JS yellow
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Titillium+Web:400,700');
+  ${fontFace('Dosis', 'dosis-v7-latin-700', 'bold')}
+  ${fontFace('Dosis', 'dosis-v7-latin-regular')}
+
+  ${fontFace('Poppins', 'poppins-v5-latin-700', 'bold')}
+  ${fontFace('Poppins', 'poppins-v5-latin-regular')}
 
   *, *:before, *:after {
     box-sizing: border-box;
