@@ -1,5 +1,5 @@
 // SITE META ==================
-const nameContent = 'Scott Spence - portfolio'
+export const nameContent = 'Scott Spence - portfolio'
 const descriptionContent =
   'Portfolio site of Scott Spence - web developer'
 const keywordsContent =

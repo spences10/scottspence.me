@@ -47,6 +47,19 @@ module.exports = {
         path: `${__dirname}/src/pages/md`
       }
     },
-    'gatsby-transformer-remark'
+    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'scottspence.me',
+        short_name: 'scottspence.me',
+        start_url: '/',
+        background_color: '#f7f0eb', // #755f9f
+        theme_color: '#755f9f',
+        display: 'minimal-ui',
+        icon: 'src/img/favicon.png' // This path is relative to the root of the site.
+      }
+    },
+    'gatsby-plugin-offline'
   ]
 }

@@ -1,6 +1,6 @@
 ---
 path: "/faq"
-date: "2018-05-15"
+date: "2018-05-27"
 title: "For recruiters - FAQ"
 ---
 
@@ -30,8 +30,8 @@ effort of putting this information here for you.
 
 ### What's your preferred stack?
 
-* Really enjoying using the [JAMStack] right now, [Gatsby] (which uses
-  **React** and **GraphQL**).
+* Really enjoying using the [JAMStack] right now, with [Gatsby] (which
+  uses **React** and **GraphQL**) being my framework of choice.
 
 * For styling I have taken to using styled-components 💅, take a look
   at the used by section on their [site].
@@ -96,7 +96,7 @@ I prefer to avoid phone calls for these reasons:
 
 ### Notice period?
 
-* Currently, [two weeks].
+* ~~Currently, [two weeks].~~ four weeks
 
 ### Interview availability?
 

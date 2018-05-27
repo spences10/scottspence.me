@@ -1,6 +1,6 @@
 ---
 path: "/about"
-date: "2018-05-12"
+date: "2018-05-27"
 title: "Hello from London 👋"
 ---
 
@@ -9,7 +9,7 @@ title: "Hello from London 👋"
 ### Backstory
 
 A little bit about me, I have been a VBA developer since 2007 working
-for companies such as Barclays and Deloitte. For the past ~20 months
+for companies such as Barclays and Deloitte. For the past ~22 months
 now I have been learning web development (JavaScript) and all the
 technologies and languages used therein.
 
@@ -37,7 +37,7 @@ no SQL servers, just the MS Office suite, "user needs a database? Ok
 cool lets set up an MS Access db on a file server somewhere" yes,
 large corporations operate like this.
 
-Sectors I have worked in: Finance [Risk, Asset Management], Property,
+Sectors I have worked in: Finance (Risk, Asset Management), Property,
 Oil & Gas, Lloyd's insurance market and now government digital
 transformation.
 
@@ -45,7 +45,7 @@ Tools of my trade: VBA, SQL some [VB.NET] and C#
 
 **Now:**
 
-I have (as of today) a 499 day GitHub streak, there are several OSS
+I have (as of today) a 516 day GitHub streak, there are several OSS
 projects I like to contribute to the majority of my commits are for my
 projects, feel free to take a look 👀
 
@@ -65,6 +65,11 @@ Using Gatsby with CSS Grid and styled-components 💅 is an absolute joy
 
 Tools of my trade: JavaScript, Gatsby, GraphQL, styled-components 💅
 GraphCMS and Zeit [now]
+
+### My personality
+
+I find it hard to identify my traits, so instead I took the
+[16Personalities] test, here are [my results]
 
 ### My interests
 
@@ -101,3 +106,5 @@ All the best. 👍
 [deadlift]: https://www.youtube.com/watch?v=b8sadCd7Lhc
 [ask me anything]: https://github.com/spences10/ama
 [five minute call]: https://calendly.com/spences10apps/5min
+[16personalities]: https://www.16personalities.com/
+[my results]: https://www.16personalities.com/profiles/ba01a67248b68
