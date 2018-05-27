@@ -1,6 +1,6 @@
 ---
 path: "/about"
-date: "2018-05-12"
+date: "2018-05-27"
 title: "Hello from London 👋"
 ---
 
@@ -37,7 +37,7 @@ no SQL servers, just the MS Office suite, "user needs a database? Ok
 cool lets set up an MS Access db on a file server somewhere" yes,
 large corporations operate like this.
 
-Sectors I have worked in: Finance [Risk, Asset Management], Property,
+Sectors I have worked in: Finance (Risk, Asset Management), Property,
 Oil & Gas, Lloyd's insurance market and now government digital
 transformation.
 
@@ -45,7 +45,7 @@ Tools of my trade: VBA, SQL some [VB.NET] and C#
 
 **Now:**
 
-I have (as of today) a 499 day GitHub streak, there are several OSS
+I have (as of today) a 516 day GitHub streak, there are several OSS
 projects I like to contribute to the majority of my commits are for my
 projects, feel free to take a look 👀
 
