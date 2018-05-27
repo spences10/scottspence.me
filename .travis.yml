@@ -10,7 +10,6 @@ notifications:
   email: false
 
 node_js:
-  - '9'
   - '10'
 
 before_script:
