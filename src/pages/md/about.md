@@ -9,7 +9,7 @@ title: "Hello from London 👋"
 ### Backstory
 
 A little bit about me, I have been a VBA developer since 2007 working
-for companies such as Barclays and Deloitte. For the past ~20 months
+for companies such as Barclays and Deloitte. For the past ~22 months
 now I have been learning web development (JavaScript) and all the
 technologies and languages used therein.
 
@@ -66,6 +66,11 @@ Using Gatsby with CSS Grid and styled-components 💅 is an absolute joy
 Tools of my trade: JavaScript, Gatsby, GraphQL, styled-components 💅
 GraphCMS and Zeit [now]
 
+### My personality
+
+I find it hard to identify my traits, so instead I took the
+[16Personalities] test, here are [my results]
+
 ### My interests
 
 I try to get to the gym three times a week to weight lift, that took
@@ -101,3 +106,5 @@ All the best. 👍
 [deadlift]: https://www.youtube.com/watch?v=b8sadCd7Lhc
 [ask me anything]: https://github.com/spences10/ama
 [five minute call]: https://calendly.com/spences10apps/5min
+[16personalities]: https://www.16personalities.com/
+[my results]: https://www.16personalities.com/profiles/ba01a67248b68
