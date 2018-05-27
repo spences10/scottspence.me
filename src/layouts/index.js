@@ -12,7 +12,7 @@ import {
 } from '../components/ThemeSelectContext'
 
 import { media } from '../theme/globalStyle'
-import { siteMeta } from '../constants'
+import { siteMeta, nameContent } from '../constants'
 
 const PageContainer = styled.div`
   display: grid;
@@ -66,10 +66,7 @@ const TemplateWrapper = ({ children, data }) => (
       {({ theme }) => (
         <ThemeProvider theme={theme}>
           <PageContainer>
-            <Helmet
-              title="Scott Spence - portfolio"
-              meta={siteMeta}
-            />
+            <Helmet title={nameContent} meta={siteMeta} />
             <Header navItems={data.site.siteMetadata.pages} />
 
             <Main>{children()}</Main>
