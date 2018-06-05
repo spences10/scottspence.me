@@ -4,31 +4,31 @@
   "version": "1.0.0",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
-    "gatsby": "1.9.260",
+    "gatsby": "1.9.269",
     "gatsby-image": "1.0.51",
     "gatsby-link": "1.6.44",
     "gatsby-plugin-favicon": "2.1.1",
     "gatsby-plugin-google-analytics": "1.0.31",
-    "gatsby-plugin-manifest": "1.0.22",
-    "gatsby-plugin-offline": "1.0.16",
+    "gatsby-plugin-manifest": "1.0.25",
+    "gatsby-plugin-offline": "1.0.18",
     "gatsby-plugin-react-helmet": "2.0.11",
     "gatsby-plugin-react-next": "1.0.11",
-    "gatsby-plugin-sharp": "1.6.44",
+    "gatsby-plugin-sharp": "1.6.46",
     "gatsby-plugin-styled-components": "2.0.11",
     "gatsby-source-filesystem": "1.5.37",
     "gatsby-transformer-remark": "1.7.41",
-    "gatsby-transformer-sharp": "1.6.24",
+    "gatsby-transformer-sharp": "1.6.26",
     "react-helmet": "^5.2.0",
-    "styled-components": "3.2.6"
+    "styled-components": "3.3.0"
   },
   "devDependencies": {
     "babel-eslint": "8.2.3",
     "eslint": "4.19.1",
     "eslint-plugin-graphql": "2.1.1",
-    "eslint-plugin-react": "7.8.1",
+    "eslint-plugin-react": "7.8.2",
     "husky": "0.14.3",
-    "prettier": "1.12.1",
-    "pretty-quick": "1.4.1"
+    "prettier": "1.13.4",
+    "pretty-quick": "1.6.0"
   },
   "keywords": [
     "gatsby",
