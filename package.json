@@ -19,7 +19,8 @@
     "gatsby-transformer-remark": "1.7.41",
     "gatsby-transformer-sharp": "1.6.26",
     "react-helmet": "^5.2.0",
-    "styled-components": "3.3.0"
+    "styled-components": "3.3.0",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "babel-eslint": "8.2.3",
@@ -50,7 +51,9 @@
     "alias:prod": "now alias scottspence.me --token $NOW_TOKEN",
     "cleanup": "now rm scottportfolio --safe --yes --token $NOW_TOKEN",
     "release": "release pre beta",
-    "wellknown": "cp -r .well-known/ scottportfolio/"
+    "wellknown": "cp -r .well-known/ scottportfolio/",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -59,5 +62,6 @@
   "bugs": {
     "url": "https://github.com/spences10/scottspence.me/issues"
   },
-  "homepage": "https://github.com/spences10/scottspence.me#readme"
+  "homepage": "https://github.com/spences10/scottspence.me#readme",
+  "snyk": true
 }
