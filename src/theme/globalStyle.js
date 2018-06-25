@@ -60,11 +60,9 @@ export const theme2 = {
 // jsYellow: '#f7e018' // JS yellow
 
 injectGlobal`
-  ${fontFace('Dosis', 'dosis-v7-latin-700', 'bold')}
-  ${fontFace('Dosis', 'dosis-v7-latin-regular')}
-
-  ${fontFace('Poppins', 'poppins-v5-latin-700', 'bold')}
-  ${fontFace('Poppins', 'poppins-v5-latin-regular')}
+  @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Poppins:400,700');
+  /* @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Poppins:400,700|Trirong:400,700|Rubik:400,700|Eczar:400,700|Taviraj:400,700'); */
+  @import url('https://fonts-for-the-font-god.netlify.com/dank-mono.css?family=dm');
 
   *, *:before, *:after {
     box-sizing: border-box;
