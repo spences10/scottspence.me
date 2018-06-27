@@ -4,8 +4,6 @@ import styled, {
   keyframes
 } from 'styled-components'
 
-import { fontFace } from './fonts'
-
 export const theme1 = {
   primary: '#6e27c5',
   primaryAccent: '#eb238e',
