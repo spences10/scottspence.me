@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { theme1, theme2 } from '../theme/globalStyle'
+import { themes } from '../theme/globalStyle'
 
 // Context is made up of two things
 // Provider - Single as close to top level as possible
@@ -10,12 +10,12 @@ export const ThemeSelectContext = React.createContext()
 
 export class ThemeSelectProvider extends React.Component {
   state = {
-    theme: theme1
+    theme: themes['theme1']
   }
 
   handleThemeChange = e => {
-    let theme = e.target.value
-    theme === 'theme1' ? (theme = theme1) : (theme = theme2)
+    const key = e.target.value
+    const theme = themes[key]
     this.setState({ theme })
   }
 
