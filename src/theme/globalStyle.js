@@ -36,7 +36,8 @@ export const themes = {
     fontWhite: '#ffffff',
     pink: '#ff0198',
     blue: '#01c1d6'
-  }
+  },
+  theme3: {}
 }
 
 // green: '#8ac3a9',
