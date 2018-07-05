@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { BlogThemeContext } from '../contexts/BlogThemeContext'
+import { ThemeSelectContext } from '../components/ThemeSelectContext'
 import { themes } from '../theme/globalStyle'
 
 const SelectWrapper = styled.div`
@@ -29,7 +29,7 @@ export const SelectOpt = styled.option`
 
 const ThemeSelect = () => {
   return (
-    <BlogThemeContext.Consumer>
+    <ThemeSelectContext.Consumer>
       {({ handleThemeChange }) => (
         <SelectWrapper>
           <Select onChange={e => handleThemeChange(e)}>
@@ -43,7 +43,7 @@ const ThemeSelect = () => {
           </Select>
         </SelectWrapper>
       )}
-    </BlogThemeContext.Consumer>
+    </ThemeSelectContext.Consumer>
   )
 }
 
