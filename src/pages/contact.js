@@ -56,7 +56,7 @@ const IconWrapper = styled.div`
 `
 
 const StyledIcon = styled.div`
-  color: ${({ theme }) => theme.primary.light};
+  color: ${({ theme }) => theme.primary};
   grid-area: ${props => props.area};
   /* top right bottom left */
   margin: 0rem 0.5rem 0rem 0.5rem;
@@ -72,7 +72,7 @@ const IconLink = styled.a`
     color: inherit;
   }
   &:hover {
-    color: ${({ theme }) => theme.secondary.red};
+    color: ${({ theme }) => theme.secondary};
   }
 `
 
