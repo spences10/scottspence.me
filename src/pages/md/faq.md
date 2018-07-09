@@ -1,6 +1,6 @@
 ---
 path: "/faq"
-date: "2018-06-05"
+date: "2018-07-09"
 title: "For recruiters - FAQ"
 ---
 
@@ -11,6 +11,10 @@ effort of putting this information here for you.
 ### What's my ideal role?
 
 - Permanent.
+
+  - From previous experience I feel I need to qualify this by saying I
+    want a permanent role, not a contract role with permanent salary
+    rate.
 
 - Working in an agile environment using best practices for
   development.
@@ -41,6 +45,11 @@ effort of putting this information here for you.
 
 - For back-end I prefer node which is where the majority of my
   back-end experience is.
+
+### How many years experience do you have?
+
+- Check out my [about] page which details my experience and a bit
+  about me.
 
 ### Salary?
 
@@ -92,6 +101,10 @@ I prefer to avoid phone calls for these reasons:
 
 - Prefer something better formatted then take a look at [this].
 
+### Do you have your CV in PDF/Word format?
+
+- No.
+
 ### My last two roles overlap, yes.
 
 - I'm still showing as at OES Technology because I'm the director of
@@ -99,7 +112,7 @@ I prefer to avoid phone calls for these reasons:
 
 ### Notice period?
 
-- ~~Currently, [two weeks].~~ four weeks
+- ~~Currently, [two weeks].~~ four weeks.
 
 ### Interview availability?
 
@@ -115,6 +128,7 @@ I prefer to avoid phone calls for these reasons:
 [gatsby]: http://gatsbyjs.org/
 [graphcms]: https://graphcms.com/
 [contentful]: https://www.contentful.com
+[about]: https://scottspence/about
 ["read this first."]: https://scottspence.me/faq
 [cv]: https://cv.scottspence.me/
 [json schema]: https://jsonresume.org/schema/
