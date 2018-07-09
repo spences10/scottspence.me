@@ -128,7 +128,7 @@ I prefer to avoid phone calls for these reasons:
 [gatsby]: http://gatsbyjs.org/
 [graphcms]: https://graphcms.com/
 [contentful]: https://www.contentful.com
-[about]: https://scottspence/about
+[about]: https://scottspence.me/about
 ["read this first."]: https://scottspence.me/faq
 [cv]: https://cv.scottspence.me/
 [json schema]: https://jsonresume.org/schema/
