@@ -51,7 +51,7 @@
     "cleanup": "now rm scottportfolio --safe --yes --token $NOW_TOKEN",
     "release": "release pre beta",
     "wellknown": "cp -r .well-known/ scottportfolio/",
-    "searchConsole": "cp -r google268433005cbeabb2.html scottportfolio/"
+    "searchConsole": "cp -r googleb08af286575fc468.html scottportfolio/"
   },
   "repository": {
     "type": "git",
