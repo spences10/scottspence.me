@@ -12,9 +12,9 @@ effort of putting this information here for you.
 
 - Permanent.
 
-  - From previous experience I feel I need to qualify this by saying I
-    want a permanent role, not a contract role with permanent salary
-    rate.
+  - From previous experience I feel I need to qualify this by saying a
+    "contract of employment" i.e. a permanent role, not a "consultancy
+    contract" between my business and the employer/client.
 
 - Working in an agile environment using best practices for
   development.
