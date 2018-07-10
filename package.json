@@ -41,7 +41,7 @@
   },
   "scripts": {
     "clean": "rm -rf .cache/ && rm -rf scottportfolio/ && rm -rf public/",
-    "build": "gatsby build && mv public scottportfolio && npm run wellknown",
+    "build": "gatsby build && mv public scottportfolio && npm run wellknown && npm run searchConsole",
     "dev": "npm run clean && gatsby develop",
     "format": "pretty-quick",
     "precommit": "pretty-quick --staged",
@@ -50,7 +50,8 @@
     "alias:prod": "now alias scottspence.me --token $NOW_TOKEN",
     "cleanup": "now rm scottportfolio --safe --yes --token $NOW_TOKEN",
     "release": "release pre beta",
-    "wellknown": "cp -r .well-known/ scottportfolio/"
+    "wellknown": "cp -r .well-known/ scottportfolio/",
+    "searchConsole": "cp -r google268433005cbeabb2.html scottportfolio/"
   },
   "repository": {
     "type": "git",
