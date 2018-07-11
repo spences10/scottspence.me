@@ -58,10 +58,11 @@ export const themes = {
 // sushi: '#7cc142', // sushi
 // bombay: '#adadaf', // Bombay
 // jsYellow: '#f7e018' // JS yellow
+// Other Fonts
+// Nunito:400,700|Poppins:400,700|Trirong:400,700|Rubik:400,700|Eczar:400,700|Taviraj:400,700'
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Poppins:400,700');
-  /* @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Poppins:400,700|Trirong:400,700|Rubik:400,700|Eczar:400,700|Taviraj:400,700'); */
   @import url('https://fonts-for-the-font-god.netlify.com/dank-mono.css?family=dm');
 
   *, *:before, *:after {
