@@ -17,8 +17,8 @@ node_js:
 before_script:
   - npm prune
 
-# script:
-#   - npm i -g now@canary
+script:
+  - npm i -g now@canary
 #   - npm i -g release
 #   - npm run clean
 #   - npm run build
