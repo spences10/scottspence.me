@@ -19,6 +19,7 @@
     "gatsby-transformer-remark": "1.7.44",
     "gatsby-transformer-sharp": "1.6.27",
     "react-helmet": "^5.2.0",
+    "serve": "9.2.0",
     "styled-components": "3.3.3"
   },
   "devDependencies": {
@@ -36,11 +37,9 @@
   ],
   "license": "MIT",
   "main": "n/a",
-  "now": {
-    "name": "scottportfolio"
-  },
   "scripts": {
     "clean": "rm -rf .cache/ && rm -rf scottportfolio/ && rm -rf public/",
+    "now-start": "serve -s ./scottportfolio",
     "build": "gatsby build && mv public scottportfolio && npm run wellknown && npm run searchConsole",
     "dev": "npm run clean && gatsby develop",
     "format": "pretty-quick",
