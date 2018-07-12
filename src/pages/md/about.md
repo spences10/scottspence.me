@@ -1,6 +1,6 @@
 ---
 path: "/about"
-date: "2018-05-27"
+date: "2018-07-09"
 title: "Hello from London 👋"
 ---
 
@@ -9,7 +9,7 @@ title: "Hello from London 👋"
 ### Backstory
 
 A little bit about me, I have been a VBA developer since 2007 working
-for companies such as Barclays and Deloitte. For the past ~22 months
+for companies such as Barclays and Deloitte. For the past ~24 months
 now I have been learning web development (JavaScript) and all the
 technologies and languages used therein.
 
@@ -53,10 +53,10 @@ I'm a massive fan of [Gatsby] and right now, enjoying integrating that
 with as many things as possible, as of writing this I have four sites
 that I'm using Gatsby with:
 
-* [This site]
-* [My blog]
-* [My CV]
-* [Gatsby using GraphCMS]
+- [This site]
+- [My blog]
+- [My CV]
+- [Gatsby using GraphCMS]
 
 ###### Gatsby all the things!!
 
@@ -102,7 +102,8 @@ All the best. 👍
 [this site]: https://scottspence.me
 [my blog]: https://blog.scottspence.me
 [my cv]: https://cv.scottspence.me
-[gatsby using graphcms]: https://github.com/spences10/gatsby-using-graphcms
+[gatsby using graphcms]:
+  https://github.com/spences10/gatsby-using-graphcms
 [deadlift]: https://www.youtube.com/watch?v=b8sadCd7Lhc
 [ask me anything]: https://github.com/spences10/ama
 [five minute call]: https://calendly.com/spences10apps/5min
