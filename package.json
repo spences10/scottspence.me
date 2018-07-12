@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
     "gatsby": "1.9.273",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "babel-eslint": "8.2.5",
-    "eslint": "5.0.1",
+    "eslint": "5.1.0",
     "eslint-plugin-graphql": "2.1.1",
     "eslint-plugin-react": "7.10.0",
     "husky": "0.14.3",
