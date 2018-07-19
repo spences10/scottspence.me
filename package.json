@@ -1,10 +1,10 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
-    "gatsby": "1.9.274",
+    "gatsby": "1.9.275",
     "gatsby-image": "1.0.55",
     "gatsby-link": "1.6.46",
     "gatsby-plugin-favicon": "2.1.1",
