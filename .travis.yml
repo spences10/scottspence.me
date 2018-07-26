@@ -24,6 +24,7 @@ script:
 #   - npm run build
 #   - npm run deploy
 
+# revert as now is being derp
 after_script: 
   - if [ "$TRAVIS_BRANCH" = "development" ]; then npm run alias:dev; fi 
   - if [ "$TRAVIS_BRANCH" = "master" ]; then npm run alias:prod; fi
