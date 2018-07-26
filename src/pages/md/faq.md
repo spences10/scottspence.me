@@ -1,6 +1,6 @@
 ---
 path: "/faq"
-date: "2018-07-09"
+date: "2018-07-26"
 title: "For recruiters - FAQ"
 ---
 
@@ -8,9 +8,22 @@ Hi there 👋 thanks for taking an interest in me and my profile, I know
 I'm nothing more than a keyword match right now, so I have gone to the
 effort of putting this information here for you.
 
+Please 🙏, try to make it to the end, I know there's a fair bit of
+info here and you have roles to fill. I'm trying to save us both some
+time here. 👍
+
+### What's your current situation?
+
+- I'm actively looking for a new role.
+
 ### What's my ideal role?
 
-- Permanent.
+- Junior to Mid level role to match my six months commercial
+  experience.
+
+- Working with React.
+
+- Permanent, **not** open to contract roles right now.
 
   - From previous experience I feel I need to qualify this by saying a
     "contract of employment" i.e. a permanent role, not a "consultancy
@@ -63,16 +76,16 @@ effort of putting this information here for you.
 
 - nop!
 
-- I'll consider fully remote with minimal travel, two weeks at most
-  per year.
+- For my development over the next 24 months or so I will get the most
+  out of being office based closer to more experienced colleagues.
 
 ### What are your location preferences?
 
 - I live a ~30 minute train ride from London Victoria/Blackfriars and
   prefer to avoid travelling by tube if possible.
 
-  - Three or four tube stops **max** from either London Victoria or
-    Blackfriars
+  - I'll consider roles three or four tube stops **max** from either
+    London Victoria or Blackfriars.
 
 - Based in Swanley, Kent I'll consider places that are close to
   Sevenoaks and Bromley.
@@ -104,6 +117,9 @@ I prefer to avoid phone calls for these reasons:
 ### Do you have your CV in PDF/Word format?
 
 - No.
+
+- The link to my CV is my product and brand as it was built and styled
+  by me. I consider this a way to showcase my current skill level.
 
 ### My last two roles overlap, yes.
 
