@@ -37,7 +37,22 @@ export const themes = {
     pink: '#ff0198',
     blue: '#01c1d6'
   },
-  theme3: {}
+  theme3: {
+    primary: '',
+    primaryAccent: '',
+    branding: '',
+    secondary: '',
+    background: '',
+    foreground: '',
+    border: '',
+    fontHeader: 'sans, sans-serif',
+    fontBody: 'sans-serif',
+    fontDark: '',
+    fontLight: '',
+    fontWhite: '',
+    pink: '',
+    blue: ''
+  }
 }
 
 // green: '#8ac3a9',
