@@ -38,15 +38,15 @@ export const themes = {
     blue: '#01c1d6'
   },
   theme3: {
-    primary: '',
-    primaryAccent: '',
-    branding: '',
-    secondary: '',
-    background: '',
+    primary: '#1cbcd2',
+    primaryAccent: '#69479e',
+    branding: '#f16623',
+    secondary: '#7cc142',
+    background: '#f3eff5',
     foreground: '',
     border: '',
-    fontHeader: 'sans, sans-serif',
-    fontBody: 'sans-serif',
+    fontHeader: 'Eczar, sans, sans-serif',
+    fontBody: 'Trirong, sans-serif',
     fontDark: '',
     fontLight: '',
     fontWhite: '',
@@ -77,7 +77,7 @@ export const themes = {
 // Nunito:400,700|Poppins:400,700|Trirong:400,700|Rubik:400,700|Eczar:400,700|Taviraj:400,700'
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Poppins:400,700');
+  @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Poppins:400,700|Trirong:400,700|Rubik:400,700|Nunito:400,700|Eczar:400,700|Taviraj:400,700');
   @import url('https://fonts-for-the-font-god.netlify.com/dank-mono.css?family=dm');
 
   *, *:before, *:after {
