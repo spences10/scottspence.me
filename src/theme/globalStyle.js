@@ -34,8 +34,8 @@ export const themes = {
     fontDark: '#034544',
     fontLight: '#596869',
     fontWhite: '#ffffff',
-    pink: '#ff0198',
-    blue: '#01c1d6'
+    pink: '#ff52ba',
+    blue: '#59eeff'
   },
   theme3: {
     primary: '#1cbcd2',
@@ -50,8 +50,8 @@ export const themes = {
     fontDark: '#0d0a0b',
     fontLight: '#454955',
     fontWhite: 'fffff6',
-    pink: '',
-    blue: ''
+    pink: '#ff73c7',
+    blue: '#00e5ff'
   }
 }
 
