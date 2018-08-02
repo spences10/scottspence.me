@@ -15,7 +15,7 @@ export const projectsApi = {
       desc:
         'Learn node coursework 👀 🎉, an application using Node.js, Express and MongoDB',
       github: 'https://github.com/spences10/dang-thats-delicious',
-      demo: 'https://yummers.scottspence.me',
+      demo: 'https://yummers.now.sh',
       image: 'project2.jpeg'
     },
     {
@@ -24,7 +24,7 @@ export const projectsApi = {
       desc:
         'Pick characters from password, Next.js page to pick nth character from a given password',
       github: 'https://github.com/spences10/characters-from-password',
-      demo: 'https://cfromp.scottspence.me/',
+      demo: 'https://cfromp.now.sh',
       image: 'project3.jpeg'
     },
     {
@@ -40,7 +40,7 @@ export const projectsApi = {
       name: 'Framework of the Day',
       desc: 'Get your fresh JavaScript frameworks here!',
       github: 'https://github.com/spences10/framework-of-the-day',
-      demo: 'https://fotd.scottspence.me',
+      demo: 'https://fotd.now.sh',
       image: 'project5.jpeg'
     },
     {
@@ -48,7 +48,7 @@ export const projectsApi = {
       name: 'React Stopwatch',
       desc: 'Stopwatch to demonstrate how to use state in React',
       github: 'https://github.com/spences10/react-stopwatch',
-      demo: 'https://stopwatch.scottspence.me/',
+      demo: 'https://stopwatch.now.sh',
       image: 'project6.jpeg'
     }
   ],
