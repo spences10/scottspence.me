@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
     "gatsby": "1.9.277",
@@ -27,7 +27,7 @@
     "eslint-plugin-graphql": "2.1.1",
     "eslint-plugin-react": "7.10.0",
     "husky": "0.14.3",
-    "prettier": "1.13.7",
+    "prettier": "1.14.0",
     "pretty-quick": "1.6.0"
   },
   "keywords": [
@@ -37,14 +37,14 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "clean": "rm -rf .cache/ && rm -rf scottportfolio/ && rm -rf public/",
-    "build": "gatsby build && mv public scottportfolio && npm run wellknown && npm run searchConsole",
+    "clean": "rm -rf .cache/ && rm -rf public/",
+    "build": "gatsby build && npm run wellknown && npm run searchConsole",
     "dev": "npm run clean && gatsby develop",
     "format": "pretty-quick",
     "precommit": "pretty-quick --staged",
     "release": "release pre beta",
-    "wellknown": "cp -r .well-known/ scottportfolio/",
-    "searchConsole": "cp -r googleb08af286575fc468.html scottportfolio/"
+    "wellknown": "cp -r .well-known/ public/",
+    "searchConsole": "cp -r googleb08af286575fc468.html public/"
   },
   "repository": {
     "type": "git",
