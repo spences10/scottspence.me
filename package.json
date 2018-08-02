@@ -37,14 +37,14 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "clean": "rm -rf .cache/ && rm -rf scottportfolio/ && rm -rf public/",
-    "build": "gatsby build && mv public scottportfolio && npm run wellknown && npm run searchConsole",
+    "clean": "rm -rf .cache/ && rm -rf public/",
+    "build": "gatsby build && npm run wellknown && npm run searchConsole",
     "dev": "npm run clean && gatsby develop",
     "format": "pretty-quick",
     "precommit": "pretty-quick --staged",
     "release": "release pre beta",
-    "wellknown": "cp -r .well-known/ scottportfolio/",
-    "searchConsole": "cp -r googleb08af286575fc468.html scottportfolio/"
+    "wellknown": "cp -r .well-known/ public/",
+    "searchConsole": "cp -r googleb08af286575fc468.html public/"
   },
   "repository": {
     "type": "git",
