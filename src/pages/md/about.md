@@ -1,10 +1,10 @@
 ---
 path: "/about"
-date: "2018-07-09"
-title: "Hello from London 👋"
+date: "2018-07-26"
+title: "Hello about 👋"
 ---
 
-#### Hi I'm Scott Spence 👋
+#### Hi I'm Scott
 
 ### Backstory
 
@@ -45,7 +45,7 @@ Tools of my trade: VBA, SQL some [VB.NET] and C#
 
 **Now:**
 
-I have (as of today) a 516 day GitHub streak, there are several OSS
+I have (as of today) a 577 day GitHub streak, there are several OSS
 projects I like to contribute to the majority of my commits are for my
 projects, feel free to take a look 👀
 
@@ -57,6 +57,10 @@ that I'm using Gatsby with:
 - [My blog]
 - [My CV]
 - [Gatsby using GraphCMS]
+
+There is another contender to the static site gen throne that has
+caught my eye and that is [React Static] currently I have a [branch]
+I'm working on please check oit out! I'd love your feedback.
 
 ###### Gatsby all the things!!
 
@@ -84,11 +88,6 @@ all the above there's not much time left. 🙃
 
 If there's anything you want to ask, you can [Ask Me Anything]
 
-or
-
-If you'd like to have a chat I'll be more than happy to have a [five
-minute call] with you if you would like to know more about me.
-
 All the best. 👍
 
 <!-- Links -->
@@ -105,7 +104,8 @@ All the best. 👍
 [gatsby using graphcms]:
   https://github.com/spences10/gatsby-using-graphcms
 [deadlift]: https://www.youtube.com/watch?v=b8sadCd7Lhc
+[react static]: https://react-static.js.org/
+[branch]: https://rs-blog-scottspence.netlify.com/
 [ask me anything]: https://github.com/spences10/ama
-[five minute call]: https://calendly.com/spences10apps/5min
 [16personalities]: https://www.16personalities.com/
 [my results]: https://www.16personalities.com/profiles/ba01a67248b68

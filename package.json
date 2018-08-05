@@ -19,7 +19,6 @@
     "gatsby-transformer-remark": "1.7.44",
     "gatsby-transformer-sharp": "1.6.27",
     "react-helmet": "^5.2.0",
-    "serve": "9.4.0",
     "styled-components": "3.3.3"
   },
   "devDependencies": {
@@ -38,19 +37,14 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "clean": "rm -rf .cache/ && rm -rf scottportfolio/ && rm -rf public/",
-    "now-start": "serve -s ./scottportfolio",
-    "build": "gatsby build && mv public scottportfolio && npm run wellknown && npm run searchConsole",
+    "clean": "rm -rf .cache/ && rm -rf public/",
+    "build": "gatsby build && npm run wellknown && npm run searchConsole",
     "dev": "npm run clean && gatsby develop",
     "format": "pretty-quick",
     "precommit": "pretty-quick --staged",
-    "deploy": "now scottportfolio/ --token $NOW_TOKEN",
-    "alias:dev": "now alias scottspence.now.sh --token $NOW_TOKEN",
-    "alias:prod": "now alias scottspence.me --token $NOW_TOKEN",
-    "cleanup": "now rm scottportfolio --safe --yes --token $NOW_TOKEN",
     "release": "release pre beta",
-    "wellknown": "cp -r .well-known/ scottportfolio/",
-    "searchConsole": "cp -r googleb08af286575fc468.html scottportfolio/"
+    "wellknown": "cp -r .well-known/ public/",
+    "searchConsole": "cp -r googleb08af286575fc468.html public/"
   },
   "repository": {
     "type": "git",

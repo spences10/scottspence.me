@@ -34,10 +34,25 @@ export const themes = {
     fontDark: '#034544',
     fontLight: '#596869',
     fontWhite: '#ffffff',
-    pink: '#ff0198',
-    blue: '#01c1d6'
+    pink: '#ff52ba',
+    blue: '#59eeff'
   },
-  theme3: {}
+  theme3: {
+    primary: '#1cbcd2',
+    primaryAccent: '#69479e',
+    branding: '#f16623',
+    secondary: '#ffb617',
+    background: '#f3eff5',
+    foreground: '#88d4d8',
+    border: '#055455',
+    fontHeader: 'Eczar, sans, sans-serif',
+    fontBody: 'Trirong, sans-serif',
+    fontDark: '#0d0a0b',
+    fontLight: '#454955',
+    fontWhite: 'fffff6',
+    pink: '#ff73c7',
+    blue: '#00e5ff'
+  }
 }
 
 // green: '#8ac3a9',
@@ -62,7 +77,7 @@ export const themes = {
 // Nunito:400,700|Poppins:400,700|Trirong:400,700|Rubik:400,700|Eczar:400,700|Taviraj:400,700'
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Poppins:400,700');
+  @import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Poppins:400,700|Trirong:400,700|Rubik:400,700|Nunito:400,700|Eczar:400,700|Taviraj:400,700');
   @import url('https://fonts-for-the-font-god.netlify.com/dank-mono.css?family=dm');
 
   *, *:before, *:after {
