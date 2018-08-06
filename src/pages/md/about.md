@@ -1,7 +1,7 @@
 ---
 path: '/about'
 date: '2018-08-06'
-title: 'Hello about 👋'
+title: 'Hello World! 👋'
 ---
 
 #### Hi I'm Scott
