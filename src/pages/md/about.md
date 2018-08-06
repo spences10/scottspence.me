@@ -1,7 +1,7 @@
 ---
-path: "/about"
-date: "2018-07-26"
-title: "Hello about 👋"
+path: '/about'
+date: '2018-08-06'
+title: 'Hello about 👋'
 ---
 
 #### Hi I'm Scott
@@ -14,8 +14,9 @@ now I have been learning web development (JavaScript) and all the
 technologies and languages used therein.
 
 I'm a front-end developer in the government digital transformation
-space working in the City of London, I'm [marriwed] with a beautiful
-wife and daughter.
+space. I work in the City of London.
+
+I'm [marriwed] to a beautiful wife and we have a beautiful daughter.
 
 ### Coding history
 
