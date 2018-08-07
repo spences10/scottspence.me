@@ -1,7 +1,7 @@
 ---
-path: "/uses"
-date: "2018-07-04"
-title: "Uses"
+path: '/uses'
+date: '2018-07-04'
+title: 'Uses'
 ---
 
 ## Editor + Terminal
