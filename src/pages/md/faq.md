@@ -1,7 +1,7 @@
 ---
-path: "/faq"
-date: "2018-07-26"
-title: "For recruiters - FAQ"
+path: '/faq'
+date: '2018-07-26'
+title: 'For recruiters - FAQ'
 ---
 
 Hi there 👋 thanks for taking an interest in me and my profile, I know

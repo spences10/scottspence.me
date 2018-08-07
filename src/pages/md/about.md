@@ -1,6 +1,6 @@
 ---
 path: '/about'
-date: '2018-08-06'
+date: '2018-08-07'
 title: 'Hello World! 👋'
 ---
 
@@ -46,7 +46,7 @@ Tools of my trade: VBA, SQL some [VB.NET] and C#
 
 **Now:**
 
-I have (as of today) a 577 day GitHub streak, there are several OSS
+I have (as of today) a 589 day GitHub streak, there are several OSS
 projects I like to contribute to the majority of my commits are for my
 projects, feel free to take a look 👀
 
