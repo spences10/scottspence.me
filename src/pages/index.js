@@ -83,18 +83,14 @@ class IndexPage extends React.Component {
         <Name className="name">
           <StyledLink to="/">
             <First>
-              {'Scott'
-                .split('')
-                .map((letter, index) => (
-                  <Letter key={`${letter}-${index}`}>{letter}</Letter>
-                ))}
+              {'Scott'.split('').map((letter, index) => (
+                <Letter key={`${letter}-${index}`}>{letter}</Letter>
+              ))}
             </First>
             <Last>
-              {'Spence'
-                .split('')
-                .map((letter, index) => (
-                  <Letter key={`${letter}-${index}`}>{letter}</Letter>
-                ))}
+              {'Spence'.split('').map((letter, index) => (
+                <Letter key={`${letter}-${index}`}>{letter}</Letter>
+              ))}
             </Last>
           </StyledLink>
         </Name>
