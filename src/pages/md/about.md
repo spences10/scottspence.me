@@ -1,6 +1,6 @@
 ---
 path: '/about'
-date: '2018-08-07'
+date: '2018-08-21'
 title: 'Hello World! 👋'
 ---
 
@@ -46,7 +46,7 @@ Tools of my trade: VBA, SQL some [VB.NET] and C#
 
 **Now:**
 
-I have (as of today) a 589 day GitHub streak, there are several OSS
+I have (as of today) a 603 day GitHub streak, there are several OSS
 projects I like to contribute to the majority of my commits are for my
 projects, feel free to take a look 👀
 
@@ -69,7 +69,7 @@ Using Gatsby with CSS Grid and styled-components 💅 is an absolute joy
 ❤️
 
 Tools of my trade: JavaScript, Gatsby, GraphQL, styled-components 💅
-GraphCMS and Zeit [now]
+GraphCMS and Zeit [now] and [Netlify] for static site hosting 👌
 
 ### My personality
 
@@ -110,3 +110,4 @@ All the best. 👍
 [ask me anything]: https://github.com/spences10/ama
 [16personalities]: https://www.16personalities.com/
 [my results]: https://www.16personalities.com/profiles/ba01a67248b68
+[netlify]: http://netlify.com/
