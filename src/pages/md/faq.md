@@ -14,7 +14,7 @@ time here. 👍
 
 ### What's your current situation?
 
-- I'm actively looking for a new role.
+- I'm **not** actively looking for a new role.
 
 ### What's my ideal role?
 
@@ -23,7 +23,8 @@ time here. 👍
 
 - Working with React.
 
-- Permanent, **not** open to contract roles right now.
+- Permanent, **not** open to contract roles right now (or for the next
+  24 months or so).
 
   - From previous experience I feel I need to qualify this by saying a
     "contract of employment" i.e. a permanent role, not a "consultancy
@@ -92,7 +93,9 @@ time here. 👍
 
 ### Your skills look like a great match for this position we have. Can we have a quick five minute phone call to chat?
 
-I prefer to avoid phone calls for these reasons:
+You are welcome to my phone number to call but I won't answer it
+unless there is a prior arrangement or a recognise your number. I
+prefer to avoid phone calls for these reasons:
 
 - I'm on a [maker's schedule], which means interruptions are
   disruptive to my flow.
@@ -120,11 +123,6 @@ I prefer to avoid phone calls for these reasons:
 
 - The link to my CV is my product and brand as it was built and styled
   by me. I consider this a way to showcase my current skill level.
-
-### My last two roles overlap, yes.
-
-- I'm still showing as at OES Technology because I'm the director of
-  the company.
 
 ### Notice period?
 
