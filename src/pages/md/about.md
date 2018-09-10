@@ -1,6 +1,6 @@
 ---
 path: '/about'
-date: '2018-08-21'
+date: '2018-09-09'
 title: 'Hello World! 👋'
 ---
 
@@ -13,8 +13,8 @@ for companies such as Barclays and Deloitte. For the past ~24 months
 now I have been learning web development (JavaScript) and all the
 technologies and languages used therein.
 
-I'm a front-end developer in the government digital transformation
-space. I work in the City of London.
+I'm currently a web developer in the creative products space working
+for a digital agency. I work in the City of London.
 
 I'm [marriwed] to a beautiful wife and we have a beautiful daughter.
 
@@ -46,7 +46,7 @@ Tools of my trade: VBA, SQL some [VB.NET] and C#
 
 **Now:**
 
-I have (as of today) a 603 day GitHub streak, there are several OSS
+I have (as of today) a 622 day GitHub streak, there are several OSS
 projects I like to contribute to the majority of my commits are for my
 projects, feel free to take a look 👀
 

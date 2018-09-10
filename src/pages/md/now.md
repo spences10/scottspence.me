@@ -1,23 +1,21 @@
 ---
 path: '/now'
-date: '2018-05-27'
+date: '2018-09-09'
 title: "What I'm doing Now"
 ---
 
 ## Work
 
-Working as a Front-End developer for [Zaizi] Empowering Data Driven
-Government, working on a CMS front end solution for a client.
+Working as a web developer for [Karmarama].
 
 ## Play
 
-Going to the Gym three times a week now, I have started back on the
-5x5 routine which I'll try stick to as long as I can keep the workout
-under 45 minutes in my lunch break.
+Code! I've been coding a lot, wouldn't really say it's play, but it
+has been taking up a lot of my spare time recently.
 
 Diet is still the [see food diet].
 
 <!-- Links -->
 
-[zaizi]: https://www.linkedin.com/company/zaizi/
+[karmarama]: http://www.karmarama.com/
 [see food diet]: # 'I see food, I eat it!'
