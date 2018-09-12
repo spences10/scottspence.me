@@ -1,3 +1,5 @@
+import { createGlobalStyle } from 'styled-components'
+
 export const themes = {
   theme1: {
     primary: '#6e27c5',
@@ -48,3 +50,29 @@ export const themes = {
     blue: '#00e5ff'
   }
 }
+
+export const GlobalStyle = createGlobalStyle`
+  @import url('
+    https://fonts.googleapis.com/css?family=
+    Dosis:400,700|
+    Poppins:400,700|
+    Trirong:400,700|
+    Rubik:400,700|
+    Nunito:400,700|
+    Eczar:400,700|
+    Taviraj:400,700
+  ');
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    color: hsla(0, 0%, 0%, 0.8);
+  }
+
+  a {
+    text-decoration: none;
+  }
+`
