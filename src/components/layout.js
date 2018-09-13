@@ -14,6 +14,7 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            pages
           }
         }
       }
@@ -27,7 +28,7 @@ const Layout = ({ children }) => (
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' }
           ]}>
-          <html lang="en" />
+          <html lang="en-GB" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
