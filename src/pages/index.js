@@ -3,9 +3,12 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 
-const IndexPage = () => (
+import { Dump } from '../util/helpers'
+
+const IndexPage = data => (
   <Layout>
     <h1>Hi people</h1>
+    <Dump data={data} />
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <Link to="/page-2/">Go to page 2</Link>
