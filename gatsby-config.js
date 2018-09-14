@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'scottspence.me',
     pages: ['about', 'portfolio', 'now', 'uses', 'contact']
   },
   plugins: [
