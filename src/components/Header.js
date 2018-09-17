@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const HeaderWrapper = styled.header`
+  grid-area: h;
   color: white;
   background: rebeccapurple;
   margin-bottom: 1.45rem;
