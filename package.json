@@ -32,6 +32,7 @@
     "dev": "gatsby develop --verbose",
     "format": "pretty-quick",
     "precommit": "pretty-quick --staged",
+    "release": "release-it",
     "wellknown": "cp -r .well-known/ public/",
     "searchConsole": "cp -r googleb08af286575fc468.html public/"
   },
