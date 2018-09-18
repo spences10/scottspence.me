@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 const HeaderWrapper = styled.header`
   grid-area: h;
+  width: 100%;
   color: white;
   background: rebeccapurple;
   margin-bottom: 1.45rem;
