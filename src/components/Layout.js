@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled, { ThemeProvider } from 'styled-components'
 
@@ -61,7 +62,7 @@ const Wrapper = styled.div`
   grid-area: m;
 `
 
-const Layout = ({ children }) => (
+const Layout = ({ children, data }) => (
   <ThemeSelectProvider>
     <ThemeSelectContext.Consumer>
       {({ theme }) => (
@@ -69,14 +70,14 @@ const Layout = ({ children }) => (
           <AppStyles>
             <GlobalStyle />
             <Helmet
-              title={'data.site.siteMetadata.title'}
+              title={data.site.siteMetadata.title}
               meta={[
                 { name: 'description', content: 'Sample' },
                 { name: 'keywords', content: 'sample, something' }
               ]}>
               <html lang="en-GB" />
             </Helmet>
-            <Header siteTitle={'data.site.siteMetadata.title'} />
+            <Header siteTitle={data.site.siteMetadata.title} />
             <Wrapper>{children}</Wrapper>
           </AppStyles>
         </ThemeProvider>
@@ -89,4 +90,18 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired
 }
 
-export default Layout
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query LayoutData {
+        site {
+          siteMetadata {
+            title
+            pages
+          }
+        }
+      }
+    `}
+    render={data => <Layout data={data} {...props} />}
+  />
+)
