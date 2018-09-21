@@ -10,7 +10,7 @@ import {
   ThemeSelectProvider
 } from '../contexts/ThemeSelectContext'
 
-import { GlobalStyle, themes } from '../theme/globalStyle'
+import { GlobalStyle } from '../theme/globalStyle'
 import { media } from '../theme/globalStyle'
 
 const AppStyles = styled.div`
@@ -66,7 +66,7 @@ const Layout = ({ children, data }) => (
   <ThemeSelectProvider>
     <ThemeSelectContext.Consumer>
       {({ theme }) => (
-        <ThemeProvider theme={themes.theme1}>
+        <ThemeProvider theme={theme}>
           <AppStyles>
             <GlobalStyle />
             <Helmet
