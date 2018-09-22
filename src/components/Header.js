@@ -64,10 +64,10 @@ const SiteLink = styled(Link)`
   }
 `
 
-const Header = ({ siteTitle }) => (
+const Header = (/*{ siteTitle }*/) => (
   <StyledHeader>
     <SiteTitle>
-      {siteTitle}
+      {/* {siteTitle} */}
       <SiteLink to="/">
         <Branding size={4} />
       </SiteLink>

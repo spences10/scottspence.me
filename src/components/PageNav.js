@@ -1,9 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
-import { Dump } from '../util/helpers'
+// import { Dump } from '../util/helpers'
 
 import { media } from '../theme/globalStyle'
 
@@ -94,7 +93,7 @@ const PageNav = props => {
   const pages = props.data.site.siteMetadata.pages
   return (
     <NavMenu>
-      <Dump props={props} pages={pages} />
+      {/* <Dump props={props} pages={pages} /> */}
       {pages.map((item, index) => (
         <NavItem key={index}>
           <NavLink to={`/${item}`} activeClassName="activeLink">
@@ -120,7 +119,3 @@ export default props => (
     render={data => <PageNav data={data} {...props} />}
   />
 )
-
-PageNav.propTypes = {
-  pages: PropTypes.array.isRequired
-}
