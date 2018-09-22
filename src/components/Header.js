@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-// import PageNav from './PageNav'
+import PageNav from './PageNav'
 import Branding from './Branding'
 import ThemeSelect from './ThemeSelect'
 
@@ -67,12 +67,13 @@ const SiteLink = styled(Link)`
 const Header = ({ siteTitle }) => (
   <StyledHeader>
     <SiteTitle>
+      {siteTitle}
       <SiteLink to="/">
         <Branding size={4} />
       </SiteLink>
     </SiteTitle>
     <ThemeSelect />
-    {/* <PageNav nav={props.navItems} /> */}
+    <PageNav />
   </StyledHeader>
 )
 
