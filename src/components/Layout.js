@@ -9,6 +9,7 @@ import {
   ThemeSelectContext,
   ThemeSelectProvider
 } from '../contexts/ThemeSelectContext'
+// import { Dump } from '../util/helpers'
 
 import { GlobalStyle } from '../theme/globalStyle'
 import { media } from '../theme/globalStyle'
@@ -97,7 +98,6 @@ export default props => (
         site {
           siteMetadata {
             title
-            pages
           }
         }
       }
