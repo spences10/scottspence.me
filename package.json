@@ -6,17 +6,17 @@
   "dependencies": {
     "babel-plugin-styled-components": "1.7.1",
     "gatsby": "2.0.7",
-    "gatsby-plugin-manifest": "2.0.2-rc.1",
+    "gatsby-plugin-manifest": "2.0.2",
     "gatsby-plugin-offline": "2.0.5",
     "gatsby-plugin-react-helmet": "3.0.0-rc.1",
     "gatsby-plugin-styled-components": "3.0.0-rc.5",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-helmet": "^5.2.0",
-    "styled-components": "4.0.0-beta.5"
+    "styled-components": "4.0.0-beta.8"
   },
   "devDependencies": {
-    "husky": "0.14.3",
+    "husky": "1.0.0-rc.15",
     "prettier": "1.14.3",
     "pretty-quick": "1.7.0",
     "release-it": "7.6.1"
