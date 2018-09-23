@@ -1,7 +1,6 @@
 {
   "bracketSpacing": true,
   "jsxBracketSameLine": true,
-  "parser": "babylon",
   "printWidth": 70,
   "semi": false,
   "singleQuote": true,
