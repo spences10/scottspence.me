@@ -5,6 +5,8 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 // import Img from 'gatsby-image'
 
+// https://www.gatsbyjs.org/docs/working-with-images/#working-with-images
+
 import { media } from '../theme/globalStyle'
 import Layout from '../components/Layout'
 
