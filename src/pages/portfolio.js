@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 // import { ProjectCard } from '../components/ProjectCard'
 import styled from 'styled-components'
@@ -8,7 +8,7 @@ import styled from 'styled-components'
 // https://www.gatsbyjs.org/docs/working-with-images/#working-with-images
 
 import { media } from '../theme/globalStyle'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 // import { projectsApi } from '../utils/api'
 
@@ -107,8 +107,8 @@ const PortfolioPage = () => {
 //   }
 // `
 
-PortfolioPage.propTypes = {
-  data: PropTypes.object.isRequired
-}
+// PortfolioPage.propTypes = {
+//   data: PropTypes.object.isRequired
+// }
 
 export default PortfolioPage
