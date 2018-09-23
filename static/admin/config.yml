@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  repo: spences10/scottspence.me
+  branch: gatsby-v2
+
+media_folder: static/assets
+public_folder: assets
+
+
+collections:
+  - name: about
+    label: About
+    folder: about
+  - name: faq
+    label: FAQ
+    folder: faq
+  - name: now
+    label: Now
+    folder: now
+  - name: uses
+    label: Uses
+    folder: uses
