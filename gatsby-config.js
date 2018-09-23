@@ -1,7 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: 'scottspence.me',
-    pages: ['about', 'portfolio', 'now', 'uses', 'contact']
+    pages: ['about', 'portfolio', 'now', 'uses', 'contact'],
+    contact: [
+      { name: 'GitHub', link: 'https://github.com/spences10' },
+      { name: 'Medium', link: 'https://medium.com/@spences10' },
+      { name: 'Dev.to', link: 'https://dev.to/spences10' },
+      { name: 'Twitter', link: 'https://twitter.com/ScottDevTweets' },
+      { name: 'Email', link: 'mailto:spences10apps@gmail.com' }
+    ]
   },
   plugins: [
     'gatsby-plugin-react-helmet',
