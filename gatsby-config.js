@@ -25,6 +25,15 @@ module.exports = {
       }
     },
     'gatsby-plugin-offline',
-    'gatsby-plugin-styled-components'
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-netlify-cms',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages/md`,
+        name: 'posts'
+      }
+    },
+    'gatsby-transformer-remark'
   ]
 }
