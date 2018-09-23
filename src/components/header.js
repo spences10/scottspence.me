@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import PageNav from './PageNav'
-import Branding from './Branding'
+import Branding from './branding'
 import ThemeSelect from './ThemeSelect'
 
 import { media } from '../theme/globalStyle'
