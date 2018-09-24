@@ -1,10 +1,10 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-// import { PageWrapper, ShinyButton } from '../theme/globalStyle'
+import { /*PageWrapper,*/ ShinyButton } from '../components/shared'
 import Layout from '../components/layout'
 
 const MdTitle = styled.h1``
@@ -30,14 +30,16 @@ const Template = ({
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-      <Link to="/">{/* <ShinyButton>homepage</ShinyButton> */}</Link>
+      <Link to="/">
+        <ShinyButton>homepage</ShinyButton>
+      </Link>
     </Layout>
   )
 }
 
-// Template.propTypes = {
-//   data: PropTypes.object
-// }
+Template.propTypes = {
+  data: PropTypes.object
+}
 
 export default Template
 
