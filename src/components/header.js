@@ -46,14 +46,16 @@ const StyledHeader = styled.div`
   background-image: url("${PATTERNS.TOPOGRAPHY}");
 `
 
-const SiteTitle = styled.h1`
-  grid-area: t;
-  margin: 1rem;
-  padding: 1rem;
-  color: ${props => props.theme.fontWhite};
-`
+// const SiteTitle = styled.h1`
+//   margin: 1rem;
+//   padding: 1rem;
+//   color: ${props => props.theme.fontWhite};
+// `
 
 const SiteLink = styled(Link)`
+  margin: 1rem;
+  padding: 1rem;
+  grid-area: t;
   color: inherit;
   &:visited,
   &:active {
@@ -64,15 +66,11 @@ const SiteLink = styled(Link)`
   }
 `
 
-const Header = (/*{ siteTitle }*/) => (
+const Header = () => (
   <StyledHeader>
-    <SiteTitle>
-      {/* {siteTitle} */}
-      <SiteLink to="/">
-        <Branding size={4} />
-      </SiteLink>
-    </SiteTitle>
-    <ThemeSelect />
+    <SiteLink to="/">
+      <Branding size={4} />
+    </SiteLink>
     <PageNav />
   </StyledHeader>
 )
