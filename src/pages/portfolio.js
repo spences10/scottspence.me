@@ -97,6 +97,7 @@ export const query = graphql`
         createdAt
         updatedAt
         mimeType
+        url
         size
         width
         status
