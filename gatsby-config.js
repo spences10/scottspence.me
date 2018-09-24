@@ -34,6 +34,39 @@ module.exports = {
         name: 'posts'
       }
     },
-    'gatsby-transformer-remark'
+    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-source-graphcms',
+      options: {
+        endpoint:
+          'https://api-euwest.graphcms.com/v1/cjmgt766w107g01av7fdvb5zn/master',
+        token:
+          'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLCJ0b2tlbklkIjoiYjJhN2NjY2EtOTMzNS00ODg5LWE4MTgtOWE5Nzk3NzY4NGQwIn0.7QX1zNTaWeYQwNH8-q5p9G8Pana2qzUykUritMUGUIc',
+        query: `{
+          assets {
+            createdAt
+            updatedAt
+            mimeType
+            size
+            width
+            status
+            handle
+            fileName
+            height
+            id
+            projectImageProject {
+              createdAt
+              updatedAt
+              status
+              id
+              projectName
+              projectDescription
+              githubRepo
+              demoLink
+            }
+          }
+        }`
+      }
+    }
   ]
 }
