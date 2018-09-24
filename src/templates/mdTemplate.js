@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Link from 'gatsby-link'
 
 // import { PageWrapper, ShinyButton } from '../theme/globalStyle'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 const MdTitle = styled.h1``
 
