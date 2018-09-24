@@ -6,6 +6,7 @@ import ThemeSelect from '../components/themeSelect'
 import { StyledHyperLink as SHL } from '../components/shared'
 
 import { media } from '../theme/globalStyle'
+import { PATTERNS } from '../theme/themeConstants'
 
 // import { Dump } from '../utils/helpers'
 
@@ -15,10 +16,13 @@ const FooterWrapper = styled.footer`
   /* width: 100%; */
   /* position: fixed; sticky */
   /* height: 20rem; */
+  margin-top: 2rem;
   grid-area: f;
   display: grid;
   background: ${({ theme }) => theme.primary};
   color: ${({ theme }) => theme.fontDark};
+  background-color: ${props => props.theme.primary};
+  background-image: url("${PATTERNS.TOPOGRAPHY}");
   box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 5px 0px;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
