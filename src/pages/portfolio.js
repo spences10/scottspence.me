@@ -1,6 +1,6 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import { graphql, Link } from 'gatsby'
 // import { ProjectCard } from '../components/ProjectCard'
 import styled from 'styled-components'
 // import Img from 'gatsby-image'
@@ -9,6 +9,8 @@ import styled from 'styled-components'
 
 import { media } from '../theme/globalStyle'
 import Layout from '../components/layout'
+
+import { Dump } from '../util/helpers'
 
 // import { projectsApi } from '../utils/api'
 
@@ -32,7 +34,7 @@ const ProjectWrapper = styled.div`
   `};
 `
 
-const PortfolioPage = () => {
+const PortfolioPage = ({ data }) => {
   // const { edges: imgData } = data.allFile
   // console.log('====================')
   // console.log(data)
@@ -53,6 +55,7 @@ const PortfolioPage = () => {
 
   return (
     <Layout>
+      <Dump data={data} />
       <h1>Portfolio</h1>
       <p>List of projects here:</p>
       {/* {imgData.map((property, index) => (
@@ -87,25 +90,34 @@ const PortfolioPage = () => {
   )
 }
 
-// export const query = graphql`
-//   query GatsbyImageQuery {
-//     allFile(
-//       sort: { order: ASC, fields: [absolutePath] }
-//       filter: { relativePath: { regex: "/project/" } }
-//     ) {
-//       edges {
-//         node {
-//           relativePath
-//           childImageSharp {
-//             resolutions(width: 200, height: 200) {
-//               ...GatsbyImageSharpResolutions
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
+export const query = graphql`
+  {
+    graphcmsdata {
+      assets {
+        createdAt
+        updatedAt
+        mimeType
+        size
+        width
+        status
+        handle
+        fileName
+        height
+        id
+        projectImageProject {
+          createdAt
+          updatedAt
+          status
+          id
+          projectName
+          projectDescription
+          githubRepo
+          demoLink
+        }
+      }
+    }
+  }
+`
 
 // PortfolioPage.propTypes = {
 //   data: PropTypes.object.isRequired
