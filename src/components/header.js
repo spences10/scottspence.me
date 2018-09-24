@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 import PageNav from './pageNav'
 import Branding from './branding'
-import ThemeSelect from './themeSelect'
 
 import { media } from '../theme/globalStyle'
 import { PATTERNS } from '../theme/themeConstants'
