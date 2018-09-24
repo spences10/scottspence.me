@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import PageNav from './PageNav'
+import PageNav from './pageNav'
 import Branding from './branding'
 import ThemeSelect from './ThemeSelect'
 
