@@ -40,3 +40,15 @@ export const ShinyButton = styled.button`
     transition: all 0.5s ease-in-out;
   }
 `
+
+export const StyledHyperLink = styled.a`
+  cursor: pointer;
+  &:visited,
+  &:active {
+    color: ${props => props.theme.primary};
+  }
+  &:hover {
+    color: ${props => props.theme.secondary};
+  }
+  color: ${props => props.theme.primary};
+`

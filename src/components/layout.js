@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import styled, { ThemeProvider } from 'styled-components'
 
 import Header from './header'
+import Footer from './footer'
 import {
   ThemeSelectContext,
   ThemeSelectProvider
@@ -80,6 +81,7 @@ const Layout = ({ children, data }) => (
             </Helmet>
             <Header siteTitle={data.site.siteMetadata.title} />
             <Wrapper>{children}</Wrapper>
+            <Footer />
           </AppStyles>
         </ThemeProvider>
       )}
