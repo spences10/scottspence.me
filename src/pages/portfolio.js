@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 
-import { ProjectCard } from '../components/ProjectCard'
+import { ProjectCard } from '../components/projectCard'
 import { ShinyButton } from '../components/shared'
 // import { Dump } from '../util/helpers'
 
