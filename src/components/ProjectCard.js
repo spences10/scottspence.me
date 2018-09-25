@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
 
-import { ButtonSmall } from './Button'
-import { HEROS } from '../theme/themeConstants'
+import { ButtonSmall } from './shared'
+import { PATTERNS } from '../theme/themeConstants'
+
+import { Dump } from '../util/helpers'
 
 const Name = styled.h3`
   margin: 0.5rem;
@@ -50,7 +51,7 @@ const Card = styled.div`
     props.id % 2 === 0
       ? `${props.theme.pink}`
       : `${props.theme.blue}`};
-  background-image: url("${HEROS.WIGGLE}");
+  background-image: url("${PATTERNS.WIGGLE}");
 `
 
 const ImageWrapper = styled.div`
@@ -58,7 +59,7 @@ const ImageWrapper = styled.div`
   justify-items: center;
 `
 
-const CardButton = ButtonSmall.extend`
+const CardButton = styled(ButtonSmall)`
   text-transform: none;
   border: 2px solid ${props => props.theme.fontWhite};
   color: ${props => props.theme.fontWhite};
@@ -76,26 +77,27 @@ const ButtonsWrapper = styled.div`
 
 export const ProjectCard = props => {
   // childImageSharp.resolutions as cis
-  const { resolutions: cis } = props.imgData.node.childImageSharp
+  // const { resolutions: cis } = props.imgData.node.childImageSharp
   // console.log('=====props==========')
   // console.log(props.imgData.node.childImageSharp.resolutions)
   // console.log(cis)
   // console.log('====================')
   return (
     <CardWrapper key={props.id} id={props.id}>
+      <Dump props={props} />
       <Card id={props.id}>
         <ImageWrapper>
-          <Img
+          <img
             style={{
               borderRadius: '100%',
               border: '2px solid white'
             }}
             key={props.id}
-            alt={`${props.name} image`}
-            resolutions={cis}
+            alt={`${props.name}`}
+            // resolutions={cis}
           />
         </ImageWrapper>
-        <Name>{props.name}</Name>
+        `<Name>{props.name}</Name>
         <ButtonsWrapper>
           <StyledLink
             target="_blank"
