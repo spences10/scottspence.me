@@ -1,10 +1,10 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
-// import { ProjectCard } from '../components/ProjectCard'
 import styled from 'styled-components'
 // import Img from 'gatsby-image'
 
+import { ProjectCard } from '../components/ProjectCard'
 // https://www.gatsbyjs.org/docs/working-with-images/#working-with-images
 
 import { media } from '../theme/globalStyle'
@@ -14,7 +14,7 @@ import { Dump } from '../util/helpers'
 
 // import { projectsApi } from '../utils/api'
 
-// import { PageWrapper, ShinyButton } from '../theme/globalStyle'
+import { ShinyButton } from '../components/shared'
 
 const ProjectWrapper = styled.div`
   display: grid;
@@ -53,9 +53,11 @@ const PortfolioPage = ({ data }) => {
   //   console.log('====================')
   // })
 
+  const assets = data.graphcmsdata.assets
+
   return (
     <Layout>
-      <Dump data={data} />
+      {/* <Dump assets={assets} data={data} /> */}
       <h1>Portfolio</h1>
       <p>List of projects here:</p>
       {/* {imgData.map((property, index) => (
@@ -75,15 +77,14 @@ const PortfolioPage = ({ data }) => {
           <Project key={project.id} {...project} />
         ))} */}
 
-        {/* {projectsApi.projects.map((project, index) => {
-          project.imgData = imgData[index]
-          return <ProjectCard key={project.id} {...project} />
-        })} */}
+        {assets.map((project, index) => {
+          return <ProjectCard key={index} {...project} />
+        })}
       </ProjectWrapper>
 
       <p>
         <Link to="/">
-          {/* <ShinyButton>homepage</ShinyButton> */}
+          <ShinyButton>homepage</ShinyButton>
         </Link>
       </p>
     </Layout>
