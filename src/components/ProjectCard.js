@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { ButtonSmall } from './shared'
 import { PATTERNS } from '../theme/themeConstants'
 
-import { Dump } from '../util/helpers'
+// import { Dump } from '../util/helpers'
 
 const Name = styled.h3`
   margin: 0.5rem;
@@ -59,6 +59,10 @@ const ImageWrapper = styled.div`
   justify-items: center;
 `
 
+const StyledImage = styled.img`
+  max-height: 200px;
+`
+
 const CardButton = styled(ButtonSmall)`
   text-transform: none;
   border: 2px solid ${props => props.theme.fontWhite};
@@ -82,22 +86,26 @@ export const ProjectCard = props => {
   // console.log(props.imgData.node.childImageSharp.resolutions)
   // console.log(cis)
   // console.log('====================')
+
+  // const projectName = props.projectImageProject
+
   return (
     <CardWrapper key={props.id} id={props.id}>
-      <Dump props={props} />
+      {/* <Dump props={props} /> */}
       <Card id={props.id}>
         <ImageWrapper>
-          <img
+          <StyledImage
             style={{
               borderRadius: '100%',
               border: '2px solid white'
             }}
+            src={props.image}
             key={props.id}
             alt={`${props.name}`}
             // resolutions={cis}
           />
         </ImageWrapper>
-        `<Name>{props.name}</Name>
+        <Name>{props.name}</Name>
         <ButtonsWrapper>
           <StyledLink
             target="_blank"
