@@ -1,20 +1,14 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
-// import Img from 'gatsby-image'
 
 import { ProjectCard } from '../components/ProjectCard'
-// https://www.gatsbyjs.org/docs/working-with-images/#working-with-images
+import { ShinyButton } from '../components/shared'
+// import { Dump } from '../util/helpers'
 
 import { media } from '../theme/globalStyle'
 import Layout from '../components/layout'
-
-import { Dump } from '../util/helpers'
-
-// import { projectsApi } from '../utils/api'
-
-import { ShinyButton } from '../components/shared'
 
 const ProjectWrapper = styled.div`
   display: grid;
@@ -35,50 +29,31 @@ const ProjectWrapper = styled.div`
 `
 
 const PortfolioPage = ({ data }) => {
-  // const { edges: imgData } = data.allFile
-  // console.log('====================')
-  // console.log(data)
-  // console.log(imgData)
-  // console.log('====================')
-
-  // projectsApi.projects.map(project => {
-  //   console.log('=====projectsApi==========')
-  //   console.log(project.image)
-  //   console.log('====================')
-  // })
-
-  // imgData.map(property => {
-  //   console.log('=====imgData==========')
-  //   console.log(property.node.relativePath)
-  //   console.log('====================')
-  // })
-
-  const assets = data.graphcmsdata.assets
-
+  const { assets } = data.graphcmsdata
   return (
     <Layout>
-      {/* <Dump assets={assets} data={data} /> */}
+      {/* <Dump assets={assets} /> */}
       <h1>Portfolio</h1>
       <p>List of projects here:</p>
-      {/* {imgData.map((property, index) => (
-        <Img
-          key={index}
-          alt={property.node.relativePath}
-          resolutions={property.node.childImageSharp.resolutions}
-        />
-      ))} */}
-
       <ProjectWrapper>
-        {/* {imgData.map(property => {
-          property.node.relativePath
-          property.node.childImageSharp.resolutions
-        })}
-        {projectsApi.projects.map(project => (
-          <Project key={project.id} {...project} />
-        ))} */}
-
         {assets.map((project, index) => {
-          return <ProjectCard key={index} {...project} />
+          const {
+            projectName,
+            projectDescription,
+            githubRepo,
+            demoLink
+          } = project.projectImageProject[0]
+          const { url: image, id } = project
+          return (
+            <ProjectCard
+              key={id}
+              name={projectName}
+              desc={projectDescription}
+              github={githubRepo}
+              demo={demoLink}
+              image={image}
+            />
+          )
         })}
       </ProjectWrapper>
 
@@ -121,8 +96,8 @@ export const query = graphql`
   }
 `
 
-// PortfolioPage.propTypes = {
-//   data: PropTypes.object.isRequired
-// }
+PortfolioPage.propTypes = {
+  data: PropTypes.object.isRequired
+}
 
 export default PortfolioPage
