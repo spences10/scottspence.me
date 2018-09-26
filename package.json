@@ -1,10 +1,10 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "1.0.21",
+  "version": "1.0.28",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
-    "gatsby": "1.9.277",
+    "gatsby": "1.9.278",
     "gatsby-image": "1.0.55",
     "gatsby-link": "1.6.46",
     "gatsby-plugin-favicon": "2.1.1",
@@ -19,16 +19,16 @@
     "gatsby-transformer-remark": "1.7.44",
     "gatsby-transformer-sharp": "1.6.27",
     "react-helmet": "^5.2.0",
-    "styled-components": "3.4.6"
+    "styled-components": "3.4.9"
   },
   "devDependencies": {
     "babel-eslint": "9.0.0",
-    "eslint": "5.5.0",
+    "eslint": "5.6.0",
     "eslint-plugin-graphql": "2.1.1",
     "eslint-plugin-react": "7.11.1",
-    "husky": "0.14.3",
-    "prettier": "1.14.2",
-    "pretty-quick": "1.6.0"
+    "husky": "1.0.0",
+    "prettier": "1.14.3",
+    "pretty-quick": "1.7.0"
   },
   "keywords": [
     "gatsby",
