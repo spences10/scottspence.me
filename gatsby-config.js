@@ -44,6 +44,13 @@ module.exports = {
         url:
           'https://api-euwest.graphcms.com/v1/cjmgt766w107g01av7fdvb5zn/master'
       }
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: process.env.GATSBY_GA_TRACKING_ID, // add to netlify Build environment variables
+        anonymize: false
+      }
     }
   ]
 }
