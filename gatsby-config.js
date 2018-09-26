@@ -8,7 +8,9 @@ module.exports = {
       { name: 'Dev.to', link: 'https://dev.to/spences10' },
       { name: 'Twitter', link: 'https://twitter.com/ScottDevTweets' },
       { name: 'Email', link: 'mailto:spences10apps@gmail.com' }
-    ]
+    ],
+    firstName: 'Scott',
+    lastName: 'Spence'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
