@@ -8,9 +8,9 @@ import Banner from '../components/banner'
 
 import { media } from '../theme/globalStyle'
 
-// const EmojiWrapper = styled.span.attrs({
-//   role: 'img'
-// })``
+const EmojiWrapper = styled.span.attrs({
+  role: 'img'
+})``
 
 const Hi = styled.h1`
   margin-top: 5rem;
@@ -34,8 +34,10 @@ const IndexPage = data => (
     <Hi>Hi people</Hi>
     {/* <Dump data={data} /> */}
     <p>Welcome to my personal portfolio site.</p>
-    <p>Built with Gatsby and Styled Components</p>
-    {/* <EmojiWrapper aria-label="nail polish">💅</EmojiWrapper> */}
+    <p>
+      Built with Gatsby and Styled Components
+      <EmojiWrapper aria-label="nail polish">💅</EmojiWrapper>
+    </p>
   </Layout>
 )
 
