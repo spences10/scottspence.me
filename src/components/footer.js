@@ -8,6 +8,7 @@ import { StyledHyperLink as SHL } from '../components/shared'
 import { media } from '../theme/globalStyle'
 import { PATTERNS } from '../theme/themeConstants'
 
+import graphCms from '../images/graphCms.svg'
 // import { Dump } from '../utils/helpers'
 
 const FooterWrapper = styled.footer`
@@ -27,24 +28,24 @@ const FooterWrapper = styled.footer`
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-    '. . . l s . g g g . . .'
+    '. . . l s . t . . . . .'
+    '. . . . . . . . . . . .'
     '. . . . . . g g g . . .'
-    '. . . . . . r r r . . .'
-    '. . . t . . r r r . . .';
+    '. . . . . . g g g . . .';
   ${media.giant`
     grid-template-areas:
-      '. . l s . . . g g g . .'
+      '. . l s . . . t . . . .'
+      '. . . . . . . . . . . .'
       '. . . . . . . g g g . .'
-      '. . . . . . . r r r . .'
-      '. . . t . . . r r r . .';
+      '. . . . . . . g g g . .';
       /* background: goldenrod; */
   `};
   ${media.desktop`
     grid-template-areas:
-      '. l s . . . g g g g g .'
+      '. l s . . . t . . . . .'
+      '. . . . . . . . . . . .'
       '. . . . . . g g g g g .'
-      '. . . . . . r r r r r .'
-      '. t . . . . r r r r r .';
+      '. . . . . . g g g g g .';
     /* background: dodgerblue; */
   `};
   ${media.tablet`
@@ -54,9 +55,7 @@ const FooterWrapper = styled.footer`
         '. l s . . . . . .'
         '. t . . . . . . .'
         '. g g g g . . . .'
-        '. g g g g . . . .'
-        '. r r r r . . . .'
-        '. r r r r . . . .';
+        '. g g g g . . . .';
     /* background: mediumseagreen; */
   `};
   ${media.phone`
@@ -64,8 +63,7 @@ const FooterWrapper = styled.footer`
     grid-template-areas:
         'l s . . . . . . .'
         't . . . . . . . .'
-        'g g g g . . . . .'
-        'r r r r . . . . .';
+        'g g g g . . . . .';
     /* background: palevioletred; */
   `};
 `
@@ -78,8 +76,8 @@ const FooterWrapper = styled.footer`
 
 const LinksList = styled.ul`
   grid-area: ${props => props.area};
-  margin: 0.5rem;
-  padding: 0.5rem;
+  margin: 0.5rem 0rem;
+  padding: 0.5rem 0rem;
 `
 
 const LinksListTitle = styled.span`
@@ -126,6 +124,12 @@ const StyledLink = styled(Link)`
   text-transform: capitalize;
 `
 
+const ImageWrapper = styled.div`
+  margin: 0.5rem;
+  padding: 0.5rem;
+  grid-area: ${props => props.area};
+`
+
 const Footer = ({ data }) => {
   const pages = data.site.siteMetadata.pages
   const contact = data.site.siteMetadata.contact
@@ -153,6 +157,9 @@ const Footer = ({ data }) => {
           </StyledHyperLink>
         ))}
       </LinksList>
+      <ImageWrapper area={'g'}>
+        <img src={graphCms} className="App-logo" alt="logo" />
+      </ImageWrapper>
     </FooterWrapper>
   )
 }
