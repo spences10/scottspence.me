@@ -7,8 +7,8 @@ import { themes } from '../theme/globalStyle'
 
 const SelectWrapper = styled.div`
   grid-area: t;
-  margin: 0rem 0.5rem 0rem 0.25rem;
-  padding: 0rem 0.5rem 0rem 0.25rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
 `
 
 const Select = styled.select`
