@@ -25,11 +25,16 @@ export const animateShake = keyframes`
   }
 `
 
+const BannerWrapper = styled.div`
+  height: auto;
+`
+
 const Name = styled.h1`
-  margin: 0rem 0rem;
+  margin-top: 5rem;
+  font-size: 4.5rem;
+  padding: 5rem 0rem;
   display: flex;
   flex-wrap: wrap;
-  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
   align-items: center;
@@ -91,7 +96,7 @@ const Last = styled.span`
 
 const Banner = ({ data }) => {
   return (
-    <React.Fragment>
+    <BannerWrapper>
       <Name className="name">
         <StyledLink to="/">
           <First>
@@ -110,7 +115,7 @@ const Banner = ({ data }) => {
           </Last>
         </StyledLink>
       </Name>
-    </React.Fragment>
+    </BannerWrapper>
   )
 }
 
