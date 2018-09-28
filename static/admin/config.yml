@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  repo: spences10/scottspence.me
+  branch: gatsby-v2
+
+media_folder: static/assets
+public_folder: assets
+
+# collections:
+#   - name: about
+#     label: About
+#     folder: about
+#   - name: faq
+#     label: FAQ
+#     folder: faq
+#   - name: now
+#     label: Now
+#     folder: now
+#   - name: uses
+#     label: Uses
+#     folder: uses
+
+collections:
+  - name: infopages
+    label: 'Info Pages'
+    folder: /src/pages/md
+    create: true
+    slug: '{{year}}{{month}}{{day}}-{{slug}}'
+    fields:
+      - { name: path, label: Path, required: true, widget: string }
+      - {
+          name: date,
+          label: Date and Time,
+          required: true,
+          widget: datetime,
+        }
+      - { name: title, label: Title, required: true, widget: string }
+      - { name: tags, label: Tags, required: true, widget: string }
+      - {
+          name: published,
+          label: Published,
+          required: true,
+          widget: boolean,
+          default: false,
+        }
+      - { name: body, label: Body, required: true, widget: markdown }

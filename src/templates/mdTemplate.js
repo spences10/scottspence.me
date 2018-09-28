@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-import { PageWrapper, ShinyButton } from '../theme/globalStyle'
+import { /*PageWrapper,*/ ShinyButton } from '../components/shared'
+import Layout from '../components/layout'
 
 const MdTitle = styled.h1``
 
@@ -19,7 +21,7 @@ const Template = ({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-    <PageWrapper>
+    <Layout>
       <div className="md-post">
         <MdTitle>{frontmatter.title}</MdTitle>
         <MdDate>Updated: {frontmatter.date}</MdDate>
@@ -31,7 +33,7 @@ const Template = ({
       <Link to="/">
         <ShinyButton>homepage</ShinyButton>
       </Link>
-    </PageWrapper>
+    </Layout>
   )
 }
 
@@ -43,7 +45,7 @@ export default Template
 
 /* eslint-disable */
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query MDPageByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {

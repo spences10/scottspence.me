@@ -1,139 +1,54 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import styled from 'styled-components'
+import { Link } from 'gatsby'
 
-import { media } from '../theme/globalStyle'
-import Icon from '../components/Icon'
-import { ICONS } from '../theme/themeConstants'
-import { PageWrapper, ShinyButton } from '../theme/globalStyle'
-
-const IconWrapper = styled.div`
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: repeat(12 1fr);
-  grid-template-rows: 100px 400px 100px;
-  grid-template-areas:
-    '. . . . . . . . . . . .'
-    '. . g g t t e e l l . .'
-    '. . . . . . . . . . . .';
-  ${media.giant`
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 100px 400px 100px;
-    grid-template-areas:
-      '. . . . . . . . . .'
-      '. g g t t e e l l .'
-      '. . . . . . . . . .';
-    /* background: goldenrod; */
-  `};
-  ${media.desktop`
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 90px 300px 90px;
-    grid-template-areas:
-      '. . . . . . . . . .'
-      '. . . g t e l . . .'
-      '. . . . . . . . . .';
-    /* background: dodgerblue; */
-  `};
-  ${media.tablet`
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 50px 200px 50px;
-    grid-template-areas:
-      '. . . . . . . . . .'
-      '. . . g t e l . . .'
-      '. . . . . . . . . .';
-    /* background: mediumseagreen; */
-  `};
-  ${media.phone`
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 20px 100px 20px;
-    grid-template-areas:
-      '. . . . . .'
-      '. g t e l .'
-      '. . . . . .';
-    /* background: palevioletred; */
-  `};
-`
-
-const StyledIcon = styled.div`
-  color: ${({ theme }) => theme.primary};
-  grid-area: ${props => props.area};
-  /* top right bottom left */
-  margin: 0rem 0.5rem 0rem 0.5rem;
-  padding: 0rem 0.5rem 0rem 0.5rem;
-  font-size: 2rem;
-  font-weight: bold;
-`
-
-const IconLink = styled.a`
-  color: inherit;
-  &:visited,
-  &:active {
-    color: inherit;
-  }
-  &:hover {
-    color: ${({ theme }) => theme.secondary};
-  }
-`
+import Layout from '../components/layout'
 
 const ContactPage = () => (
-  <PageWrapper>
-    <h1>Get in touch</h1>
-    <IconWrapper>
-      <StyledIcon area={'g'}>
-        <IconLink
-          target="_blank"
-          rel="noopener"
-          href="https://github.com/spences10">
-          <Icon icon={ICONS.GITHUB} size={40} color="#453463" />
-        </IconLink>
-      </StyledIcon>
-      <StyledIcon area={'t'}>
-        <IconLink
-          target="_blank"
-          rel="noopener"
-          href="https://twitter.com/ScottDevTweets">
-          <Icon
-            viewbox="0 0 32 32"
-            size={40}
-            color="#453463"
-            icon={ICONS.TWITTER}
-          />
-        </IconLink>
-      </StyledIcon>
-      <StyledIcon area={'e'}>
-        <IconLink
-          target="_blank"
-          rel="noopener"
-          href="mailto:spences10apps@gmail.com?subject=Hi Scott 👋">
-          <Icon
-            viewbox="0 0 32 32"
-            size={40}
-            color="#453463"
-            icon={ICONS.EMAIL}
-          />
-        </IconLink>
-      </StyledIcon>
-      <StyledIcon area={'l'}>
-        <IconLink
-          target="_blank"
-          rel="noopener"
-          href="https://www.linkedin.com/in/linkedinscottspence/">
-          <Icon
-            viewbox="0 0 32 32"
-            size={40}
-            color="#453463"
-            icon={ICONS.LINKEDIN}
-          />
-        </IconLink>
-      </StyledIcon>
-    </IconWrapper>
+  <Layout>
+    <h1>Hi from the second page</h1>
+
     <p>
-      <Link to="/">
-        <ShinyButton>homepage</ShinyButton>
-      </Link>
+      I apologise for what you are seeing right now, it will be fixed
+      in coming changes
     </p>
-  </PageWrapper>
+
+    <p>Testing Netlify forms</p>
+
+    <form
+      name="contact"
+      method="post"
+      action="/success"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field">
+      <input type="hidden" name="bot-field" />
+      <div className="field half first">
+        <label htmlFor="name">Name:</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div className="field half">
+        <label htmlFor="email">Email:</label>
+        <input type="text" name="email" id="email" />
+      </div>
+      <div className="field">
+        <label htmlFor="message">Message:</label>
+        <textarea name="message" id="message" rows="6" />
+      </div>
+      <ul className="actions">
+        <li>
+          <input
+            type="submit"
+            value="Send Message"
+            className="special"
+          />
+        </li>
+        <li>
+          <input type="reset" value="Clear" />
+        </li>
+      </ul>
+    </form>
+
+    <Link to="/">Go back to the homepage</Link>
+  </Layout>
 )
 
 export default ContactPage
