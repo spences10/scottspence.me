@@ -61,6 +61,7 @@ const ImageWrapper = styled.div`
 
 const StyledImage = styled.img`
   max-height: 200px;
+  max-width: 200px;
 `
 
 const CardButton = styled(ButtonSmall)`
@@ -80,15 +81,6 @@ const ButtonsWrapper = styled.div`
 `
 
 export const ProjectCard = props => {
-  // childImageSharp.resolutions as cis
-  // const { resolutions: cis } = props.imgData.node.childImageSharp
-  // console.log('=====props==========')
-  // console.log(props.imgData.node.childImageSharp.resolutions)
-  // console.log(cis)
-  // console.log('====================')
-
-  // const projectName = props.projectImageProject
-
   return (
     <CardWrapper key={props.id} id={props.id}>
       {/* <Dump props={props} /> */}

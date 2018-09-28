@@ -45,6 +45,7 @@ const PortfolioPage = ({ data }) => {
           } = project.projectImageProject[0]
           const { url: image, id } = project
           return (
+            // <Dump prop={project.projectImageProject[0].projectName} />
             <ProjectCard
               key={id}
               name={projectName}

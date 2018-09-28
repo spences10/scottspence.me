@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import styled, { keyframes } from 'styled-components'
 
-import { Dump } from '../util/helpers'
+import { media } from '../theme/globalStyle'
+// import { Dump } from '../util/helpers'
 
 /*
 * https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
@@ -42,14 +43,26 @@ const Name = styled.h1`
   .wf-active & {
     font-family: ${props => props.theme.fontHeader};
   }
-  @media only screen and (min-width: 375px) {
-    font-size: 2.5rem;
-    padding: 2.5rem 0rem;
-  }
-  @media only screen and (min-width: 768px) {
+  ${media.giant`
+    margin-top: 5rem;
     font-size: 4.5rem;
     padding: 5rem 0rem;
-  }
+  `};
+  ${media.desktop`
+    margin-top: 5rem;
+    font-size: 4.5rem;
+    padding: 5rem 0rem;
+  `};
+  ${media.tablet`
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    padding: 2.5rem 0rem;
+  `};
+  ${media.phone`
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    padding: 2.5rem 0rem;
+  `};
 `
 
 const Letter = styled.span`
