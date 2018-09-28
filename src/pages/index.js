@@ -31,7 +31,7 @@ const Hi = styled.h1`
 const IndexPage = data => (
   <Layout>
     <Banner />
-    <Hi>Hi people</Hi>
+    <Hi>Hi people!</Hi>
     {/* <Dump data={data} /> */}
     <p>Welcome to my personal portfolio site.</p>
     <p>
