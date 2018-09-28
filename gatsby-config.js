@@ -1,3 +1,5 @@
+const config = require('./data/siteConfig')
+
 module.exports = {
   siteMetadata: {
     title: 'scottspence.me',
@@ -57,6 +59,38 @@ module.exports = {
       options: {
         trackingId: process.env.GATSBY_GA_TRACKING_ID, // add to netlify Build environment variables
         anonymize: false
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-favicon',
+      options: {
+        logo: config.faviconPng,
+        // WebApp Manifest Configuration
+        appName: config.siteTitle,
+        appDescription: config.descriptionContent,
+        developerName: config.developerName,
+        developerURL: config.developerUrl,
+        dir: 'auto',
+        lang: config.siteLanguage,
+        background: config.backgroundColour,
+        theme_color: config.themeColour,
+        display: 'standalone',
+        orientation: 'any',
+        start_url: '/?homescreen=1',
+        version: '1.0',
+
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          opengraph: false,
+          twitter: false,
+          yandex: false,
+          windows: false
+        }
       }
     }
   ]
