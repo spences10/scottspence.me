@@ -52,8 +52,8 @@ const StyledHeader = styled.div`
 // `
 
 const SiteLink = styled(Link)`
-  margin: 1rem;
-  padding: 1rem;
+  margin: 1rem 0rem;
+  padding: 1rem 0rem;
   grid-area: t;
   color: inherit;
   &:visited,
