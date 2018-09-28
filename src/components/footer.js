@@ -68,12 +68,6 @@ const FooterWrapper = styled.footer`
   `};
 `
 
-// // const ImageWrapper = styled.div`
-// //   margin: 0.5rem;
-// //   padding: 0.5rem;
-// //   grid-area: ${props => props.area};
-// // `
-
 const LinksList = styled.ul`
   grid-area: ${props => props.area};
   margin: 0.5rem 0rem;
