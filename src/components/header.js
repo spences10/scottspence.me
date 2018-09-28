@@ -24,7 +24,7 @@ const StyledHeader = styled.div`
   `};
   ${media.desktop`
     grid-template-areas:
-      '. . t t t t n n n n . .';
+      '. t t t t t n n n n . .';
     /* background: dodgerblue; */
   `};
   ${media.tablet`
