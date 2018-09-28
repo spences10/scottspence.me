@@ -92,6 +92,8 @@ module.exports = {
           windows: false
         }
       }
-    }
+    },
+    'gatsby-plugin-robots-txt',
+    'gatsby-plugin-sitemap'
   ]
 }
