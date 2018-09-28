@@ -37,6 +37,8 @@ const CardWrapper = styled.div`
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   &:hover {
     transform: translateY(-3px);
+    transition-delay: 0.2s;
+    transition: 2s ease-out;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
   }
   background-color: ${props => props.theme.foreground};
