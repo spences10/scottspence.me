@@ -1,64 +1,106 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { navigateTo } from 'gatsby'
 import Recaptcha from 'react-google-recaptcha'
+
+// need a .env.development file with the SITE_RECAPTCHA_KEY in there
 
 import Layout from '../components/layout'
 
-import { ShinyButton, ButtonBig } from '../components/shared'
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
 
-const ContactPage = () => (
-  <Layout>
-    <h1>Hi from the second page</h1>
+function encode(data) {
+  return Object.keys(data)
+    .map(
+      key =>
+        encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+    )
+    .join('&')
+}
 
-    <p>
-      I apologise for what you are seeing right now, it will be fixed
-      in coming changes
-    </p>
+export default class Contact extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
 
-    <p>Testing Netlify forms</p>
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
 
-    <form
-      name="contact"
-      method="post"
-      action="/success"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field">
-      <input type="hidden" name="bot-field" />
-      <div className="field half first">
-        <label htmlFor="name">Name:</label>
-        <input type="text" name="name" id="name" />
-      </div>
-      <div className="field half">
-        <label htmlFor="email">Email:</label>
-        <input type="text" name="email" id="email" />
-      </div>
-      <div className="field">
-        <label htmlFor="message">Message:</label>
-        <textarea name="message" id="message" rows="6" />
-      </div>
-      <Recaptcha
-        ref="recaptcha"
-        sitekey={RECAPTCHA_KEY}
-        onChange={this.handleRecaptcha}
-      />
-      <ul className="actions">
-        <li>
-          <input
-            type="submit"
-            value="Send Message"
-            className="special"
+  handleSubmit = e => {
+    fetch('/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: encode({ 'form-name': 'contact', ...this.state })
+    })
+      .then(() => navigateTo('/success/'))
+      .catch(error => alert(error))
+
+    e.preventDefault()
+  }
+
+  render() {
+    return (
+      <Layout>
+        <h1>Contact</h1>
+        <form
+          name="contact"
+          method="post"
+          action="/success/"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
+          onSubmit={this.handleSubmit}>
+          <noscript>
+            <p>This form will not work with JavaScript disabled.</p>
+          </noscript>
+          <p hidden>
+            <label>
+              Don’t fill this out:{' '}
+              <input name="bot-field" onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your name:
+              <br />
+              <input
+                type="text"
+                name="name"
+                onChange={this.handleChange}
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your email:
+              <br />
+              <input
+                type="email"
+                name="email"
+                onChange={this.handleChange}
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message:
+              <br />
+              <textarea name="message" onChange={this.handleChange} />
+            </label>
+          </p>
+          <Recaptcha
+            ref="recaptcha"
+            sitekey={RECAPTCHA_KEY}
+            onChange={this.handleRecaptcha}
           />
-        </li>
-        <li>
-          <input type="reset" value="Clear" />
-        </li>
-      </ul>
-    </form>
-
-    <Link to="/">
-      <ShinyButton>homepage</ShinyButton>
-    </Link>
-  </Layout>
-)
-
-export default ContactPage
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </Layout>
+    )
+  }
+}
