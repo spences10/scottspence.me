@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 
-import { ShinyButton } from '../components/shared'
+import { ShinyButton, ButtonBig } from '../components/shared'
 
 const ContactPage = () => (
   <Layout>
@@ -36,16 +36,16 @@ const ContactPage = () => (
         <textarea name="message" id="message" rows="6" />
       </div>
       <ul className="actions">
-        <li>
+        <div>
           <input
             type="submit"
             value="Send Message"
             className="special"
           />
-        </li>
-        <li>
+        </div>
+        <div>
           <input type="reset" value="Clear" />
-        </li>
+        </div>
       </ul>
     </form>
 
