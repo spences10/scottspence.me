@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "2.0.3",
+  "version": "2.0.1",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "1.7.1",
@@ -42,7 +42,7 @@
   "main": "n/a",
   "scripts": {
     "clean": "rm -rf .cache/ && rm -rf public/",
-    "build": "echo SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY >> env.production && gatsby build && npm run wellknown && npm run searchConsole",
+    "build": "gatsby build && npm run wellknown && npm run searchConsole",
     "dev": "gatsby develop --verbose",
     "format": "pretty-quick",
     "precommit": "pretty-quick --staged",
