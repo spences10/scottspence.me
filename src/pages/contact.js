@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 
+import { ShinyButton } from '../components/shared'
+
 const ContactPage = () => (
   <Layout>
     <h1>Hi from the second page</h1>
@@ -47,7 +49,9 @@ const ContactPage = () => (
       </ul>
     </form>
 
-    <Link to="/">Go back to the homepage</Link>
+    <Link to="/">
+      <ShinyButton>homepage</ShinyButton>
+    </Link>
   </Layout>
 )
 
