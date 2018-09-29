@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Recaptcha from 'react-google-recaptcha'
 
 import Layout from '../components/layout'
 
@@ -35,17 +36,22 @@ const ContactPage = () => (
         <label htmlFor="message">Message:</label>
         <textarea name="message" id="message" rows="6" />
       </div>
+      <Recaptcha
+        ref="recaptcha"
+        sitekey={RECAPTCHA_KEY}
+        onChange={this.handleRecaptcha}
+      />
       <ul className="actions">
-        <div>
+        <li>
           <input
             type="submit"
             value="Send Message"
             className="special"
           />
-        </div>
-        <div>
+        </li>
+        <li>
           <input type="reset" value="Clear" />
-        </div>
+        </li>
       </ul>
     </form>
 

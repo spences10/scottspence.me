@@ -24,6 +24,7 @@
     "netlify-cms": "2.1.2",
     "react": "16.5.2",
     "react-dom": "16.5.2",
+    "react-google-recaptcha": "1.0.4",
     "react-helmet": "^5.2.0",
     "styled-components": "4.0.0-beta.8-unpure"
   },
@@ -41,7 +42,7 @@
   "main": "n/a",
   "scripts": {
     "clean": "rm -rf .cache/ && rm -rf public/",
-    "build": "gatsby build && npm run wellknown && npm run searchConsole",
+    "build": "echo SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY >> env.production && gatsby build && npm run wellknown && npm run searchConsole",
     "dev": "gatsby develop --verbose",
     "format": "pretty-quick",
     "precommit": "pretty-quick --staged",
