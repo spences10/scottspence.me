@@ -2,6 +2,7 @@ const config = require('./data/siteConfig')
 
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://scottspence.me',
     title: 'scottspence.me',
     pages: ['about', 'portfolio', 'now', 'uses', 'contact'],
     contact: [
