@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 
-import { ShinyButton, ButtonBig } from '../components/shared'
+import { ShinyButton } from '../components/shared'
 
 const ContactPage = () => (
   <Layout>
