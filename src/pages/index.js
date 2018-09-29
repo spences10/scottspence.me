@@ -36,6 +36,7 @@ const IndexPage = data => (
     <p>Welcome to my personal portfolio site.</p>
     <p>
       Built with Gatsby and Styled Components
+      {/* eslint-disable-next-line */}
       <EmojiWrapper aria-label="nail polish">💅</EmojiWrapper>
     </p>
   </Layout>
