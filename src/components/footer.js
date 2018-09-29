@@ -28,23 +28,20 @@ const FooterWrapper = styled.footer`
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-    '. . . l s . t . . . . .'
-    '. . . . . . . . . . . .'
-    '. . . . . . g g g . . .'
+    '. . . l s . . . . . . .'
+    '. . . . . . t . . . . .'
     '. . . . . . g g g . . .';
   ${media.giant`
     grid-template-areas:
-      '. . l s . . . t . . . .'
-      '. . . . . . . . . . . .'
-      '. . . . . . . g g g . .'
+      '. . l . s . . . . . . .'
+      '. . . . . . . t . . . .'
       '. . . . . . . g g g . .';
       /* background: goldenrod; */
   `};
   ${media.desktop`
     grid-template-areas:
-      '. l s . . . t . . . . .'
-      '. . . . . . . . . . . .'
-      '. . . . . . g g g g g .'
+      '. l . s . . . . . . . .'
+      '. . . . . . t . . . . .'
       '. . . . . . g g g g g .';
     /* background: dodgerblue; */
   `};
@@ -52,19 +49,18 @@ const FooterWrapper = styled.footer`
     /* height: 30rem; */
     grid-template-columns: repeat(9, 1fr);
     grid-template-areas:
-        '. l s . . . . . .'
+        '. l . s . . . . .'
         '. t . . . . . . .'
-        '. g g g g . . . .'
         '. g g g g . . . .';
     /* background: mediumseagreen; */
   `};
   ${media.phone`
     grid-template-columns: repeat(9, 1fr);
     grid-template-areas:
-        'l s . . . . . . .'
+        'l . s . . . . . .'
         't . . . . . . . .'
         'g g g g . . . . .';
-    /* background: palevioletred; */
+    background: palevioletred;
   `};
 `
 
@@ -72,6 +68,10 @@ const LinksList = styled.ul`
   grid-area: ${props => props.area};
   margin: 0.5rem 0rem;
   padding: 0.5rem 0rem;
+  ${media.phone`
+    margin: 0.5rem ;
+    padding: 0.5rem;
+  `};
 `
 
 const LinksListTitle = styled.span`
@@ -119,9 +119,13 @@ const StyledLink = styled(Link)`
 `
 
 const ImageWrapper = styled.div`
-  margin: 0.5rem;
-  padding: 0.5rem;
+  margin: 0.5rem 0rem;
+  padding: 0.5rem 0rem;
   grid-area: ${props => props.area};
+  ${media.phone`
+    margin: 0.5rem ;
+    padding: 0.5rem;
+  `};
 `
 
 const Footer = ({ data }) => {
