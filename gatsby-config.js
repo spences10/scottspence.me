@@ -1,50 +1,36 @@
 const config = require('./data/siteConfig')
 
+const siteMetadata = {
+  siteUrl: 'https://scottspence.me',
+  title: 'scottspence.me',
+  pages: ['about', 'portfolio', 'now', 'uses', 'contact'],
+  contact: [
+    { name: 'GitHub', link: 'https://github.com/spences10' },
+    { name: 'Medium', link: 'https://medium.com/@spences10' },
+    { name: 'Dev.to', link: 'https://dev.to/spences10' },
+    { name: 'Twitter', link: 'https://twitter.com/ScottDevTweets' },
+    { name: 'Email', link: 'mailto:spences10apps@gmail.com' }
+  ],
+  firstName: 'Scott',
+  lastName: 'Spence',
+  faviconPng: './src/images/favicon.png',
+  backgroundColour: '#663399', // this is for favicon and manifest
+  themeColour: '#755f9f' // this is for favicon and manifest
+}
+
 module.exports = {
-  siteMetadata: {
-    siteUrl: 'https://scottspence.me',
-    title: 'scottspence.me',
-    pages: ['about', 'portfolio', 'now', 'uses', 'contact'],
-    contact: [
-      { name: 'GitHub', link: 'https://github.com/spences10' },
-      { name: 'Medium', link: 'https://medium.com/@spences10' },
-      { name: 'Dev.to', link: 'https://dev.to/spences10' },
-      { name: 'Twitter', link: 'https://twitter.com/ScottDevTweets' },
-      { name: 'Email', link: 'mailto:spences10apps@gmail.com' }
-    ],
-    firstName: 'Scott',
-    lastName: 'Spence',
-    faviconPng: './src/images/favicon.png',
-    backgroundColour: '#663399', // this is for favicon and manifest
-    themeColour: '#755f9f' // this is for favicon and manifest
-  },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: () => {
-          this.name = this.siteMetadata.title
-          return this
-        },
-        short_name: () => {
-          this.short_name = this.siteMetadata.title
-          return this
-        },
+        name: siteMetadata.title,
+        short_name: siteMetadata.title,
         start_url: '/',
-        background_color: () => {
-          this.background_color = this.siteMetadata.backgroundColour
-          return this
-        },
-        theme_color: () => {
-          this.theme_color = this.siteMetadata.themeColour
-          return this
-        },
+        background_color: siteMetadata.backgroundColour,
+        theme_color: siteMetadata.themeColour,
         display: 'minimal-ui',
-        icon: () => {
-          this.icon = this.siteMetadata.faviconPng
-          return this
-        } // This path is relative to the root of the site.
+        icon: siteMetadata.faviconPng // This path is relative to the root of the site.
       }
     },
     'gatsby-plugin-offline',
