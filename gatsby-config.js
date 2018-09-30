@@ -13,20 +13,25 @@ module.exports = {
       { name: 'Email', link: 'mailto:spences10apps@gmail.com' }
     ],
     firstName: 'Scott',
-    lastName: 'Spence'
+    lastName: 'Spence',
+    faviconPng: './src/images/favicon.png',
+    backgroundColour: '#663399', // this is for favicon and manifest
+    themeColour: '#755f9f' // this is for favicon and manifest
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: config.siteTitle,
-        short_name: config.siteTitle,
+        name: () => this.siteMetadata.title,
+        short_name: () => {
+          return this.siteMetadata.title
+        },
         start_url: '/',
-        background_color: config.backgroundColour,
-        theme_color: config.themeColour,
+        background_color: this.siteMetadata.backgroundColour,
+        theme_color: this.siteMetadata.themeColour,
         display: 'minimal-ui',
-        icon: config.faviconPng // This path is relative to the root of the site.
+        icon: this.siteMetadata.faviconPng // This path is relative to the root of the site.
       }
     },
     'gatsby-plugin-offline',
