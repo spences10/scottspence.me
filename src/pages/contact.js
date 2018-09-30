@@ -1,12 +1,5 @@
 import React from 'react'
 import { navigateTo } from 'gatsby'
-import Recaptcha from 'react-google-recaptcha'
-
-// need a .env.development file with the SITE_RECAPTCHA_KEY in there
-
-import Layout from '../components/layout'
-
-const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY
 
 function encode(data) {
   return Object.keys(data)
@@ -27,10 +20,6 @@ export default class Contact extends React.Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
-  handleRecaptcha = value => {
-    this.setState({ 'g-recaptcha-response': value })
-  }
-
   handleSubmit = e => {
     fetch('/', {
       method: 'POST',
@@ -47,19 +36,15 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <Layout>
+      <div>
         <h1>Contact</h1>
         <form
           name="contact"
           method="post"
-          action="/success/"
+          action="/thanks/"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          data-netlify-recaptcha="true"
           onSubmit={this.handleSubmit}>
-          <noscript>
-            <p>This form will not work with JavaScript disabled.</p>
-          </noscript>
           <p hidden>
             <label>
               Don’t fill this out:{' '}
@@ -95,16 +80,11 @@ export default class Contact extends React.Component {
               <textarea name="message" onChange={this.handleChange} />
             </label>
           </p>
-          <Recaptcha
-            ref="recaptcha"
-            sitekey={RECAPTCHA_KEY}
-            onChange={this.handleRecaptcha}
-          />
           <p>
             <button type="submit">Send</button>
           </p>
         </form>
-      </Layout>
+      </div>
     )
   }
 }
