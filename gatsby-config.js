@@ -23,28 +23,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: () => {
-          this.name = this.siteMetadata.title
-          return this
-        },
+        name: () => this.siteMetadata.title,
         short_name: () => {
-          this.short_name = this.siteMetadata.title
-          return this
+          return this.siteMetadata.title
         },
         start_url: '/',
-        background_color: () => {
-          this.background_color = this.siteMetadata.backgroundColour
-          return this
-        },
-        theme_color: () => {
-          this.theme_color = this.siteMetadata.themeColour
-          return this
-        },
+        background_color: this.siteMetadata.backgroundColour,
+        theme_color: this.siteMetadata.themeColour,
         display: 'minimal-ui',
-        icon: () => {
-          this.icon = this.siteMetadata.faviconPng
-          return this
-        } // This path is relative to the root of the site.
+        icon: this.siteMetadata.faviconPng // This path is relative to the root of the site.
       }
     },
     'gatsby-plugin-offline',
