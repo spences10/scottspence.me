@@ -28,7 +28,7 @@ export default class Contact extends React.Component {
       },
       body: encode({ 'form-name': 'contact', ...this.state })
     })
-      .then(() => navigateTo('/success/'))
+      .then(() => navigateTo('/thanks/'))
       .catch(error => alert(error))
 
     e.preventDefault()
