@@ -43,6 +43,7 @@
   "scripts": {
     "clean": "rm -rf .cache/ && rm -rf public/",
     "build": "gatsby build && npm run wellknown && npm run searchConsole",
+    "serve": "gatsby serve -9000",
     "dev": "gatsby develop --verbose",
     "format": "pretty-quick",
     "precommit": "pretty-quick --staged",
