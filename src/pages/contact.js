@@ -1,13 +1,11 @@
 import React from 'react'
 import { navigateTo } from 'gatsby'
 
-import Layout from '../components/layout'
-
 function encode(data) {
   return Object.keys(data)
     .map(
       key =>
-        `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
     )
     .join('&')
 }
@@ -38,12 +36,12 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <Layout>
+      <div>
         <h1>Contact</h1>
         <form
           name="contact"
           method="post"
-          action="/thanks/"
+          action="/success/"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}>
@@ -86,7 +84,7 @@ export default class Contact extends React.Component {
             <button type="submit">Send</button>
           </p>
         </form>
-      </Layout>
+      </div>
     )
   }
 }
