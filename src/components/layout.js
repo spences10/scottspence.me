@@ -78,16 +78,6 @@ const Layout = ({ children, data }) => (
                 { name: 'keywords', content: 'sample, something' }
               ]}>
               <html lang="en-GB" />
-              {/* <!-- A little help for the Netlify post-processing bots --> */}
-              <form
-                name="contact"
-                netlify
-                netlify-honeypot="bot-field"
-                hidden>
-                <input type="text" name="name" />
-                <input type="email" name="email" />
-                <textarea name="message" />
-              </form>
             </Helmet>
             <Header siteTitle={data.site.siteMetadata.title} />
             <Wrapper>{children}</Wrapper>
