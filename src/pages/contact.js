@@ -1,6 +1,8 @@
 import React from 'react'
 import { navigateTo } from 'gatsby'
 
+import Layout from '../components/layout'
+
 function encode(data) {
   return Object.keys(data)
     .map(
@@ -36,7 +38,7 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <div>
+      <Layout>
         <h1>Contact</h1>
         <form
           name="contact"
@@ -84,7 +86,7 @@ export default class Contact extends React.Component {
             <button type="submit">Send</button>
           </p>
         </form>
-      </div>
+      </Layout>
     )
   }
 }
