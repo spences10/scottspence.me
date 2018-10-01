@@ -1,5 +1,3 @@
-// const config = require('./data/siteConfig')
-
 const siteMetadata = {
   siteUrl: 'https://scottspence.me',
   title: 'scottspence.me',
@@ -111,3 +109,46 @@ module.exports = {
     'gatsby-plugin-sitemap'
   ]
 }
+
+// use https://www.heymeta.com/ to generate your tags
+export const siteMeta = [
+  // Google / Search Engine Tags
+  {
+    name: 'description',
+    content: siteMetadata.descriptionContent
+  },
+  {
+    name: 'keywords',
+    content: siteMetadata.keywordsContent
+  },
+  {
+    name: 'image',
+    content: siteMetadata.imageLink
+  },
+  // facebook
+  { name: 'og:url', content: siteMetadata.siteUrl },
+  { name: 'og:type', content: 'website' },
+  { name: 'og:title', content: siteMetadata.nameContent },
+  {
+    name: 'og:description',
+    content: siteMetadata.descriptionContent
+  },
+  {
+    name: 'og:image',
+    content: siteMetadata.imageLink
+  },
+  // twitter
+  { name: 'twitter:card', content: 'summary_large_image' },
+  {
+    name: 'twitter:title',
+    content: siteMetadata.nameContent
+  },
+  {
+    name: 'twitter:description',
+    content: siteMetadata.descriptionContent
+  },
+  {
+    name: 'twitter:image',
+    content: siteMetadata.imageLink
+  }
+]
