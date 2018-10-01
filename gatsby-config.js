@@ -1,9 +1,9 @@
-const config = require('./data/siteConfig')
+// const config = require('./data/siteConfig')
 
 const siteMetadata = {
   siteUrl: 'https://scottspence.me',
   title: 'scottspence.me',
-  pages: ['about', 'portfolio', 'now', 'uses', 'contact'],
+  pages: ['about', 'portfolio', 'now', 'uses'],
   contact: [
     { name: 'GitHub', link: 'https://github.com/spences10' },
     { name: 'Medium', link: 'https://medium.com/@spences10' },
@@ -15,10 +15,19 @@ const siteMetadata = {
   lastName: 'Spence',
   faviconPng: './src/images/favicon.png',
   backgroundColour: '#663399', // this is for favicon and manifest
-  themeColour: '#755f9f' // this is for favicon and manifest
+  themeColour: '#755f9f', // this is for favicon and manifest
+  nameContent: 'Scott Spence - portfolio',
+  developerName: 'Scott Spence',
+  developerUrl: 'https.scottspence.me',
+  descriptionContent: 'Scott Spence - web developer',
+  keywordsContent:
+    'web developer, javascript, react, portfolio, information',
+  imageLink: 'https://scottspence.me/icons/icon-512x512.png',
+  siteLanguage: 'en-GB'
 }
 
 module.exports = {
+  siteMetadata: siteMetadata,
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -69,16 +78,16 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-favicon',
       options: {
-        logo: config.faviconPng,
+        logo: siteMetadata.faviconPng,
         // WebApp Manifest Configuration
-        appName: config.siteTitle,
-        appDescription: config.descriptionContent,
-        developerName: config.developerName,
-        developerURL: config.developerUrl,
+        appName: siteMetadata.title,
+        appDescription: siteMetadata.descriptionContent,
+        developerName: siteMetadata.developerName,
+        developerURL: siteMetadata.developerUrl,
         dir: 'auto',
-        lang: config.siteLanguage,
-        background: config.backgroundColour,
-        theme_color: config.themeColour,
+        lang: siteMetadata.siteLanguage,
+        background: siteMetadata.backgroundColour,
+        theme_color: siteMetadata.themeColour,
         display: 'standalone',
         orientation: 'any',
         start_url: '/?homescreen=1',
