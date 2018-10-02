@@ -2,8 +2,8 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
-import Twitter from './Twitter'
-import Facebook from './Facebook'
+import Twitter from './twitter'
+import Facebook from './facebook'
 
 // import { Dump } from '../util/helpers'
 
