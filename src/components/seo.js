@@ -5,64 +5,78 @@ import Helmet from 'react-helmet'
 import Twitter from './Twitter'
 import Facebook from './Facebook'
 
-import { Dump } from '../util/helpers'
+// import { Dump } from '../util/helpers'
 
-const SEO = ({ data }) => {
-  const {
-    title,
-    titleTemplate,
-    description,
-    image,
-    siteUrl,
-    article,
-    twitterUsername,
-    facebookAppID
-  } = data.site.siteMetadata
-  return (
-    <>
-      <Dump data={data} />
-      <Helmet title={title} titleTemplate={titleTemplate}>
-        <meta name="description" content={description} />
-        <meta name="image" content={image} />
-      </Helmet>
-      <Facebook
-        pageUrl={siteUrl}
-        type={article ? 'article' : null}
-        title={title}
-        description={description}
-        image={image}
-        appID={facebookAppID}
-      />
-      <Twitter
-        username={twitterUsername}
-        title={title}
-        description={description}
-        image={image}
-      />
-    </>
-  )
-}
-
-export default props => (
+const SEO = ({
+  title = null,
+  description = null,
+  image = null,
+  pathname = null,
+  article = false
+}) => (
   <StaticQuery
     query={graphql`
-      query SEOData {
+      query SEOQuery {
         site {
           siteMetadata {
-            title
+            defaultTitle: title
             titleTemplate
-            description
+            defaultDescription: description
             siteUrl
-            imageLink
+            defaultImage: imageLink
             twitterUsername
             facebookAppID
           }
         }
       }
     `}
-    render={data => <SEO data={data} {...props} />}
+    render={({
+      site: {
+        siteMetadata: {
+          defaultTitle,
+          titleTemplate,
+          defaultDescription,
+          siteUrl,
+          defaultImage,
+          twitterUsername,
+          facebookAppID
+        }
+      }
+    }) => {
+      const seo = {
+        title: title || defaultTitle,
+        description: description || defaultDescription,
+        image: `${siteUrl}${image || defaultImage}`,
+        url: `${siteUrl}${pathname || '/'}`
+      }
+
+      return (
+        <>
+          <Helmet title={seo.title} titleTemplate={titleTemplate}>
+            <meta name="description" content={seo.description} />
+            <meta name="image" content={seo.image} />
+          </Helmet>
+          <Facebook
+            pageUrl={seo.url}
+            type={article ? 'article' : null}
+            title={seo.title}
+            description={seo.description}
+            image={seo.image}
+            appID={facebookAppID}
+          />
+          <Twitter
+            username={twitterUsername}
+            title={seo.title}
+            description={seo.description}
+            image={seo.image}
+          />
+        </>
+      )
+    }}
   />
 )
+
+export default SEO
 
 // use https://www.heymeta.com/ to generate your tags
 // export const siteMeta = [
