@@ -4,6 +4,8 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
+import SEO from '../components/seo'
+
 import { /*PageWrapper,*/ ShinyButton } from '../components/shared'
 import Layout from '../components/layout'
 
@@ -20,8 +22,16 @@ const Template = ({
 }) => {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
+  const { image } = data.site.siteMetadata
   return (
     <Layout>
+      <SEO
+        title={frontmatter.title}
+        description={html.substring(0, 250) || 'nothin’'}
+        image={image}
+        pathname={frontmatter.path}
+        article
+      />
       <div className="md-post">
         <MdTitle>{frontmatter.title}</MdTitle>
         <MdDate>Updated: {frontmatter.date}</MdDate>
@@ -52,6 +62,11 @@ export const pageQuery = graphql`
         date(formatString: "YYYY MMMM Do")
         path
         title
+      }
+    }
+    site {
+      siteMetadata {
+        imageLink
       }
     }
   }
