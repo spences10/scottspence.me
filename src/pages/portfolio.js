@@ -3,12 +3,14 @@ import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 
+import SEO from '../components/seo'
+import Layout from '../components/layout'
+
 import { ProjectCard } from '../components/projectCard'
 import { ShinyButton } from '../components/shared'
-// import { Dump } from '../util/helpers'
 
+// import { Dump } from '../util/helpers'
 import { media } from '../theme/globalStyle'
-import Layout from '../components/layout'
 
 const ProjectWrapper = styled.div`
   display: grid;
@@ -32,6 +34,7 @@ const PortfolioPage = ({ data }) => {
   const { assets } = data.graphcmsdata
   return (
     <Layout>
+      <SEO title={'Portfolio'} />
       {/* <Dump assets={assets} /> */}
       <h1>Portfolio</h1>
       <p>List of projects here:</p>

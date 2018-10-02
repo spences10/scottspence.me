@@ -89,8 +89,8 @@ const NavLink = styled(Link).attrs({
   }
 `
 
-const PageNav = props => {
-  const pages = props.data.site.siteMetadata.pages
+const PageNav = ({ data }) => {
+  const pages = data.site.siteMetadata.pages
   return (
     <NavMenu>
       {/* <Dump props={props} pages={pages} /> */}

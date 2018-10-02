@@ -4,8 +4,9 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Banner from '../components/banner'
-// import { Dump } from '../util/helpers'
+import SEO from '../components/seo'
 
+// import { Dump } from '../util/helpers'
 import { media } from '../theme/globalStyle'
 
 const EmojiWrapper = styled.span.attrs({
@@ -31,6 +32,7 @@ const Hi = styled.h1`
 const IndexPage = data => (
   <Layout>
     <Banner />
+    <SEO title={"It's me!"} />
     <Hi>Hi people!</Hi>
     {/* <Dump data={data} /> */}
     <p>Welcome to my personal portfolio site.</p>
