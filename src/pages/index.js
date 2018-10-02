@@ -32,7 +32,7 @@ const Hi = styled.h1`
 const IndexPage = data => (
   <Layout>
     <Banner />
-    <SEO title={"it's me!"} />
+    <SEO title={"It's me!"} />
     <Hi>Hi people!</Hi>
     {/* <Dump data={data} /> */}
     <p>Welcome to my personal portfolio site.</p>
