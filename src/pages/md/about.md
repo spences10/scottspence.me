@@ -1,6 +1,6 @@
 ---
 path: '/about'
-date: '2018-09-09'
+date: '2018-10-03'
 title: 'Hello World! 👋'
 ---
 
@@ -8,13 +8,13 @@ title: 'Hello World! 👋'
 
 ### Backstory
 
-A little bit about me, I have been a VBA developer since 2007 working
-for companies such as Barclays and Deloitte. For the past ~24 months
-now I have been learning web development (JavaScript) and all the
-technologies and languages used therein.
+A little bit about me, Since 2007 I had been working as a VBA
+developer for companies such as Barclays and Deloitte. For the past
+~24 months now I have been self learning web development (JavaScript)
+and all the technologies and languages used therein.
 
 I'm currently a web developer in the creative products space working
-for a digital agency. I work in the City of London.
+for [Karmarama]. I work in the City of London.
 
 I'm [marriwed] to a beautiful wife and we have a beautiful daughter.
 
@@ -37,10 +37,6 @@ work with the focus on using the tools the business had to hand, so,
 no SQL servers, just the MS Office suite, "user needs a database? Ok
 cool lets set up an MS Access db on a file server somewhere" yes,
 large corporations operate like this.
-
-Sectors I have worked in: Finance (Risk, Asset Management), Property,
-Oil & Gas, Lloyd's insurance market and now government digital
-transformation.
 
 Tools of my trade: VBA, SQL some [VB.NET] and C#
 
@@ -68,6 +64,12 @@ I'm working on please check oit out! I'd love your feedback.
 Using Gatsby with CSS Grid and styled-components 💅 is an absolute joy
 ❤️
 
+### Sectors I have worked in:
+
+Finance (Risk, Asset Management), Property, Oil & Gas, Lloyd's
+insurance market, government digital transformation and now creative
+digital.
+
 Tools of my trade: JavaScript, Gatsby, GraphQL, styled-components 💅
 GraphCMS and Zeit [now] and [Netlify] for static site hosting 👌
 
@@ -93,6 +95,7 @@ All the best. 👍
 
 <!-- Links -->
 
+[karmarama]: https://karmarama.com
 [marriwed]: # 'I know how to spell "married" yes 🙃'
 [vba]: https://en.wikipedia.org/wiki/Visual_Basic_for_Applications
 [vb.net]: # '💻 💻 💻 💻 💻 💻 💻 💻 💻 '
