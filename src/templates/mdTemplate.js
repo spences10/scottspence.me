@@ -22,13 +22,13 @@ const Template = ({
 }) => {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
-  const { image } = data.site.siteMetadata
+  const { imageLink } = data.site.siteMetadata
   return (
     <Layout>
       <SEO
         title={frontmatter.title}
         description={html.substring(0, 250) || 'nothin’'}
-        image={image}
+        image={imageLink}
         pathname={frontmatter.path}
         article
       />
