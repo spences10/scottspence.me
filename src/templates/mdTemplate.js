@@ -8,6 +8,7 @@ import SEO from '../components/seo'
 
 import { /*PageWrapper,*/ ShinyButton } from '../components/shared'
 import Layout from '../components/layout'
+// import { Dump } from '../util/helpers'
 
 const MdTitle = styled.h1``
 
@@ -21,13 +22,13 @@ const Template = ({
   data // this prop will be injected by the GraphQL query below.
 }) => {
   const { markdownRemark } = data // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html, excerpt } = markdownRemark
   const { imageLink } = data.site.siteMetadata
   return (
     <Layout>
       <SEO
         title={frontmatter.title}
-        description={html.substring(0, 250) || 'nothin’'}
+        description={excerpt || 'nothin’'}
         image={imageLink}
         pathname={frontmatter.path}
         article
@@ -35,6 +36,7 @@ const Template = ({
       <div className="md-post">
         <MdTitle>{frontmatter.title}</MdTitle>
         <MdDate>Updated: {frontmatter.date}</MdDate>
+        {/* <Dump excerpt={excerpt} /> */}
         <div
           className="md-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
@@ -58,6 +60,7 @@ export const pageQuery = graphql`
   query MDPageByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      excerpt(pruneLength: 250)
       frontmatter {
         date(formatString: "YYYY MMMM Do")
         path
