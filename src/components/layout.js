@@ -71,13 +71,12 @@ const Layout = ({ children, data }) => (
         <ThemeProvider theme={theme}>
           <AppStyles>
             <GlobalStyle />
-            <Helmet
-              title={data.site.siteMetadata.title}
-              meta={[
-                { name: 'description', content: 'Sample' },
-                { name: 'keywords', content: 'sample, something' }
-              ]}>
+            <Helmet>
               <html lang="en-GB" />
+              <link
+                rel="preconnect"
+                href="https://fonts.googleapis.com/"
+              />
             </Helmet>
             <Header siteTitle={data.site.siteMetadata.title} />
             <Wrapper>{children}</Wrapper>
