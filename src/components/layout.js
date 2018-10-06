@@ -77,6 +77,14 @@ const Layout = ({ children, data }) => (
                 rel="preconnect"
                 href="https://fonts.googleapis.com/"
               />
+              <link
+                rel="preconnect"
+                href="https://fonts.gstatic.com"
+              />
+              <link
+                rel="preconnect"
+                href="https://www.google-analytics.com"
+              />
             </Helmet>
             <Header siteTitle={data.site.siteMetadata.title} />
             <Wrapper>{children}</Wrapper>
