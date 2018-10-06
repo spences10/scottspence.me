@@ -77,7 +77,7 @@ module.exports = {
         // add to netlify Build environment variables
         trackingId: process.env.GATSBY_GA_TRACKING_ID,
         anonymize: false,
-        head: false
+        head: true
       }
     },
     {
