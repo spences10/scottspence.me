@@ -40,7 +40,7 @@ const Name = styled.h1`
   align-items: center;
   transition: font-size 250ms ease-in-out, padding 150ms ease-in;
   background-color: ${props => props.theme.branding};
-  color: ${props => props.theme.textDark};
+  color: ${props => props.theme.fontDark};
   width: auto;
   user-select: text;
   text-shadow: 8px 8px 3px rgba(0, 0, 0, 0.1);
