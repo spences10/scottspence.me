@@ -1,5 +1,5 @@
 import React from 'react'
-import { navigateTo } from 'gatsby'
+import { navigate } from 'gatsby'
 
 import Layout from '../components/layout'
 
@@ -30,7 +30,7 @@ export default class Contact extends React.Component {
       },
       body: encode({ 'form-name': 'contact', ...this.state })
     })
-      .then(() => navigateTo('/success/'))
+      .then(() => navigate('/success/'))
       .catch(error => alert(error))
 
     e.preventDefault()
