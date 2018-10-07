@@ -6,7 +6,7 @@ const siteMetadata = {
     'Scott Spence, Father, husband 👨‍👩‍👧 Full stack web developer in the making 👨‍💻 Just In Time learner 👌 Byproduct of: coffee+excess carbs+lack of sleep. He/Him',
   twitterUsername: '@ScottDevTweets',
   facebookAppID: '',
-  pages: ['about', 'portfolio', 'now', 'uses', 'contact'],
+  pages: ['about', 'portfolio', 'now', 'uses'],
   contact: [
     { name: 'GitHub', link: 'https://github.com/spences10' },
     { name: 'Medium', link: 'https://medium.com/@spences10' },
