@@ -71,12 +71,7 @@ const Layout = ({ children, data }) => (
         <ThemeProvider theme={theme}>
           <AppStyles>
             <GlobalStyle />
-            <Helmet
-              title={data.site.siteMetadata.title}
-              meta={[
-                { name: 'description', content: 'Sample' },
-                { name: 'keywords', content: 'sample, something' }
-              ]}>
+            <Helmet>
               <html lang="en-GB" />
             </Helmet>
             <Header siteTitle={data.site.siteMetadata.title} />
