@@ -35,7 +35,7 @@ const PortfolioPage = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title={'Portfolio'}
+        title={'Portfolio, projects, examples'}
         description={data.site.siteMetadata.description || 'nothin’'}
         image={data.site.siteMetadata.imageLink}
       />
