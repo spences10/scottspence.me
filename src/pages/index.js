@@ -38,7 +38,7 @@ const Hi = styled.span`
   `};
 `
 
-const IndexPage = data => (
+const IndexPage = ({ data }) => (
   <Layout>
     <Banner />
     <SEO
