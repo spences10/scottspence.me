@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import Banner from '../components/banner'
@@ -40,7 +41,11 @@ const Hi = styled.span`
 const IndexPage = data => (
   <Layout>
     <Banner />
-    <SEO title={"It's me!"} />
+    <SEO
+      title={"It's me!"}
+      description={data.site.siteMetadata.description || 'nothin’'}
+      image={data.site.siteMetadata.imageLink}
+    />
     <Hi>
       Hi people!
       <EmojiWrapper aria-label="waving hand">👋</EmojiWrapper>
@@ -68,4 +73,19 @@ const IndexPage = data => (
   </Layout>
 )
 
-export default IndexPage
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query IndexQuery {
+        site {
+          siteMetadata {
+            title
+            description
+            imageLink
+          }
+        }
+      }
+    `}
+    render={data => <IndexPage data={data} {...props} />}
+  />
+)
