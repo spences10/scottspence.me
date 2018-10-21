@@ -34,7 +34,11 @@ const PortfolioPage = ({ data }) => {
   const { assets } = data.graphcmsdata
   return (
     <Layout>
-      <SEO title={'Portfolio'} />
+      <SEO
+        title={'Portfolio, projects, examples'}
+        description={data.site.siteMetadata.description || 'nothin’'}
+        image={data.site.siteMetadata.imageLink}
+      />
       {/* <Dump assets={assets} /> */}
       <h1>Portfolio</h1>
       <p>List of projects here:</p>
@@ -95,6 +99,13 @@ export const query = graphql`
           githubRepo
           demoLink
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
+        description
+        imageLink
       }
     }
   }
