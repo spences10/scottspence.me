@@ -10,8 +10,6 @@ import { media } from '../theme/globalStyle'
 
 const Banner = lazy(() => import('../components/banner'))
 
-const Banner = lazy(() => import('../components/banner'))
-
 const EmojiWrapper = styled.span.attrs({
   role: 'img'
 })``
