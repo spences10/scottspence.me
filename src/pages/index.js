@@ -1,10 +1,12 @@
-import { graphql, StaticQuery } from 'gatsby'
 import React, { lazy, Suspense } from 'react'
 import styled from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby'
+
 import Layout from '../components/layout'
 // import Banner from '../components/banner'
 import SEO from '../components/seo'
 import { StyledHyperLink as SHL } from '../components/shared'
+
 // import { Dump } from '../util/helpers'
 import { media } from '../theme/globalStyle'
 
