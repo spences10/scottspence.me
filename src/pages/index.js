@@ -40,12 +40,12 @@ const Hi = styled.span`
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <Banner />
     <SEO
       title={"It's me!"}
       description={data.site.siteMetadata.description || 'nothin’'}
       image={data.site.siteMetadata.imageLink}
     />
+    <Banner />
     <Hi>
       Hi people!
       <EmojiWrapper aria-label="waving hand">👋</EmojiWrapper>
