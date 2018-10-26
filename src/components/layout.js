@@ -12,8 +12,7 @@ import {
 } from '../contexts/ThemeSelectContext'
 // import { Dump } from '../util/helpers'
 
-import { GlobalStyle } from '../theme/globalStyle'
-import { media } from '../theme/globalStyle'
+import { GlobalStyle, media } from '../theme/globalStyle'
 
 const AppStyles = styled.div`
   background-color: ${({ theme }) => theme.background};
