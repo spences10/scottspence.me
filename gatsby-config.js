@@ -1,3 +1,12 @@
+const activeEnv =
+  process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development'
+
+console.log(`Using environment config: '${activeEnv}'`)
+
+require('dotenv').config({
+  path: `.env.${activeEnv}`
+})
+
 const siteMetadata = {
   siteUrl: 'https://scottspence.me',
   title: 'scottspence.me',
@@ -67,8 +76,7 @@ module.exports = {
         typeName: 'GRAPHCMSDATA',
         fieldName: 'graphcmsdata',
         // Url to query from
-        url:
-          'https://api-euwest.graphcms.com/v1/cjmgt766w107g01av7fdvb5zn/master'
+        url: process.env.GATSBY_SOURCE_GRAPHQL
       }
     },
     {
