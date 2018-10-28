@@ -72,6 +72,18 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'GitHub',
+        fieldName: 'github',
+        url: 'https://api.github.com/graphql',
+        headers: {
+          Authorization: `bearer ${process.env.GATSBY_GITHUB_TOKEN}`
+        },
+        fetchOptions: {}
+      }
+    },
+    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         // add to netlify Build environment variables
