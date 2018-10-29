@@ -44,11 +44,16 @@ export default props => (
       query GitHubQuery {
         github {
           viewer {
-            repositories(last: 100, isFork: false) {
+            repositories(
+              last: 100
+              isFork: false
+              orderBy: { field: UPDATED_AT, direction: DESC }
+            ) {
               nodes {
                 name
                 description
                 url
+                updatedAt
                 languages(first: 5) {
                   nodes {
                     color
