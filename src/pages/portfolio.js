@@ -6,6 +6,8 @@ import styled from 'styled-components'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 
+import TopLanguages from '../components/topLanguages'
+
 import { ProjectCard } from '../components/projectCard'
 import { ShinyButton } from '../components/shared'
 
@@ -42,6 +44,9 @@ const PortfolioPage = ({ data }) => {
       {/* <Dump assets={assets} /> */}
       <h1>Portfolio</h1>
       <p>List of projects here:</p>
+      <div style={{ height: 500 }}>
+        <TopLanguages />
+      </div>
       <ProjectWrapper>
         {assets.map((project, index) => {
           const {
