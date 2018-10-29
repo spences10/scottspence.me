@@ -22,6 +22,7 @@
     "gatsby-transformer-remark": "2.1.9",
     "gatsby-transformer-sharp": "2.1.5",
     "netlify-cms": "2.1.3",
+    "nivo": "0.31.0",
     "react": "16.6.0",
     "react-dom": "16.6.0",
     "react-google-recaptcha": "1.0.4",
