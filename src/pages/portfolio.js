@@ -43,10 +43,8 @@ const PortfolioPage = ({ data }) => {
       />
       {/* <Dump assets={assets} /> */}
       <h1>Portfolio</h1>
+      <TopLanguages />
       <p>List of projects here:</p>
-      <div style={{ height: 500 }}>
-        <TopLanguages />
-      </div>
       <ProjectWrapper>
         {assets.map((project, index) => {
           const {
