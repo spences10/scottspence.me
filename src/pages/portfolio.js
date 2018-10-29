@@ -44,7 +44,7 @@ const PortfolioPage = ({ data }) => {
       {/* <Dump assets={assets} /> */}
       <h1>Portfolio</h1>
       <h2>Top 5 Languages used:</h2>
-      <p>Here's my latest languages being used on GitHub</p>
+      <p>Here&#39;s my latest languages being used on GitHub</p>
       <TopLanguages />
       <h2>Projects:</h2>
       <p>List of projects here.</p>
