@@ -60,7 +60,7 @@ const FooterWrapper = styled.footer`
         'l . s . . . . . .'
         't . . . . . . . .'
         'g g g g . . . . .';
-    background: palevioletred;
+    /* background: palevioletred; */
   `};
 `
 
