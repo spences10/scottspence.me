@@ -57,7 +57,7 @@ that I'm using Gatsby with:
 
 There is another contender to the static site gen throne that has
 caught my eye and that is [React Static] currently I have a [branch]
-I'm working on please check oit out! I'd love your feedback.
+I'm working on please check it out! I'd love your feedback.
 
 ###### Gatsby all the things!!
 
