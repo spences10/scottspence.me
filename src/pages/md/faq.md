@@ -111,6 +111,11 @@ prefer to avoid phone calls for these reasons:
   we are still interested in after some fact checking I'd love to have
   a chat.
 
+- Want me to know you have spent more than the three seconds nearly
+  all recruiters spend onm this page? (I use Google Analytics 👀)
+  - In your email mention "Quick Start Guides Rock!" and you will have
+    my attention and gratitude. 🙏
+
 ## Can I take a look at your [CV]?
 
 - Sure, my CV is here: [cv.scottspence.me].
