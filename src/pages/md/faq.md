@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2018-08-21'
+date: '2018-11-03'
 title: 'For recruiters - FAQ'
 ---
 
@@ -8,20 +8,20 @@ Hi there 👋 thanks for taking an interest in me and my profile, I know
 I'm nothing more than a keyword match right now, so I have gone to the
 effort of putting this information here for you.
 
-Please 🙏, try to make it to the end, I know there's a fair bit of
-info here and you have roles to fill. I'm trying to save us both some
-time here. 👍
+Please 🙏, please, try to make it to the end. I know there's a fair
+bit of info here and you have roles to fill. I'm trying to save us
+both some time here. You're welcome 👍
 
-### What's your current situation?
+## What's your current situation?
 
 - I'm **not** actively looking for a new role.
 
-### What's my ideal role?
+## What's my ideal role?
 
 - Junior to Mid level role to match my six months commercial
   experience.
 
-- Working with React.
+- Working with React, Gatsby, Netlify and GitHub.
 
 - Permanent, **not** open to contract roles right now (or for the next
   24 months or so).
@@ -46,7 +46,7 @@ time here. 👍
 - Work life balance is a big deal for me, I really **do not** want to
   go over a 42.5 hour working week.
 
-### What's your preferred stack?
+## What's your preferred stack?
 
 - Really enjoying using the [JAMStack] right now, with [Gatsby] (which
   uses **React** and **GraphQL**) being my framework of choice.
@@ -60,12 +60,12 @@ time here. 👍
 - For back-end I prefer node which is where the majority of my
   back-end experience is.
 
-### How many years experience do you have?
+## How many years experience do you have?
 
 - Check out my [about] page which details my experience and a bit
   about me.
 
-### Salary?
+## Salary?
 
 - Right now, for me, it's more about learning and progressing with the
   technology than it's about salary.
@@ -73,14 +73,14 @@ time here. 👍
 - If you don't want to give me a exact number then a range would be
   fine, but really the previous point covers it 😊.
 
-### Are you willing to relocate?
+## Are you willing to relocate?
 
 - nop!
 
 - For my development over the next 24 months or so I will get the most
   out of being office based closer to more experienced colleagues.
 
-### What are your location preferences?
+## What are your location preferences?
 
 - I live a ~30 minute train ride from London Victoria/Blackfriars and
   prefer to avoid travelling by tube if possible.
@@ -91,7 +91,7 @@ time here. 👍
 - Based in Swanley, Kent I'll consider places that are close to
   Sevenoaks and Bromley.
 
-### Your skills look like a great match for this position we have. Can we have a quick five minute phone call to chat?
+## Your skills look like a great match for this position we have. Can we have a quick five minute phone call to chat?
 
 You are welcome to my phone number to call but I won't answer it
 unless there is a prior arrangement or a recognise your number. I
@@ -111,24 +111,29 @@ prefer to avoid phone calls for these reasons:
   we are still interested in after some fact checking I'd love to have
   a chat.
 
-### Can I take a look at your [CV]?
+## Can I take a look at your [CV]?
 
-- Sure, my CV uses the [JSON Schema] so you can find that [here].
+- Sure, my CV is here: [cv.scottspence.me].
 
-- Prefer something better formatted then take a look at [this].
+- The CV use the [JSON Schema] standard, raw data [here].
 
-### Do you have your CV in PDF/Word format?
+## Do you have your CV in PDF/Word format?
 
 - No.
+
+- Please don't ask for the CV in MS Word/PDF format, the site is a
+  reflection of my current skill level and intended for prospective
+  employers to see, if your client want to see my CV give them the
+  link.
 
 - The link to my CV is my product and brand as it was built and styled
   by me. I consider this a way to showcase my current skill level.
 
-### Notice period?
+## Notice period?
 
-- ~~Currently, [two weeks].~~ four weeks.
+- Currently, [two weeks].
 
-### Interview availability?
+## Interview availability?
 
 - I can telephone interview with little notice.
 
@@ -147,5 +152,5 @@ prefer to avoid phone calls for these reasons:
 [cv]: https://cv.scottspence.me/
 [json schema]: https://jsonresume.org/schema/
 [here]: https://cvjson.now.sh/
-[this]: https://cv.scottspence.me/
+[cv.scottspence.me]: https://cv.scottspence.me/
 [two weeks]: https://www.youtube.com/watch?v=9v-33jcEDk4
