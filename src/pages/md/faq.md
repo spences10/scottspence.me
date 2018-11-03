@@ -120,7 +120,7 @@ prefer to avoid phone calls for these reasons:
 
 - Sure, my CV is here: [cv.scottspence.me].
 
-- The CV use the [JSON Schema] standard, raw data [here].
+- The CV uses the [JSON Schema] standard, raw data [here].
 
 ## Do you have your CV in PDF/Word format?
 
