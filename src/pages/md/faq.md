@@ -122,17 +122,13 @@ prefer to avoid phone calls for these reasons:
 
 - The CV uses the [JSON Schema] standard, raw data [here].
 
-## Do you have your CV in PDF/Word format?
+## Do you have your CV in PDF/MS Word format?
 
 - No.
 
-- Please don't ask for the CV in MS Word/PDF format, the site is a
-  reflection of my current skill level and intended for prospective
-  employers to see, if your client want to see my CV give them the
-  link.
-
-- The link to my CV is my product and brand as it was built and styled
-  by me. I consider this a way to showcase my current skill level.
+- The link to my CV is my product and brand, as it was built and
+  styled by me. I consider this a way to showcase my current skill
+  level. If your client wants to see my CV give them the link.
 
 ## Notice period?
 
