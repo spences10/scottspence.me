@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import Card from 'card-vibes'
 
 import { ButtonSmall } from './shared'
 import { PATTERNS } from '../theme/themeConstants'
@@ -18,7 +19,8 @@ const Name = styled.h3`
 
 const Desc = styled.div`
   margin: 0rem;
-  padding: 1rem 1.5rem 1rem 1.5rem;
+  padding: 1rem 0.5rem;
+  height: 7rem;
   border-radius: 0px 0px 5px 5px;
   color: ${props => props.theme.fontDark};
   background-color: ${props => props.theme.foreground};
@@ -44,7 +46,7 @@ const CardWrapper = styled.div`
   background-color: ${props => props.theme.foreground};
 `
 
-const Card = styled.div`
+const StyledProjectCard = styled.div`
   padding: 1.75rem;
   margin: 0rem;
   border-radius: 5px 5px 0px 0px;
@@ -84,39 +86,41 @@ const ButtonsWrapper = styled.div`
 
 export const ProjectCard = props => {
   return (
-    <CardWrapper key={props.id} id={props.id}>
-      {/* <Dump props={props} /> */}
-      <Card id={props.id}>
-        <ImageWrapper>
-          <StyledImage
-            style={{
-              borderRadius: '100%',
-              border: '2px solid white'
-            }}
-            src={props.image}
-            key={props.id}
-            alt={`${props.name}`}
-            // resolutions={cis}
-          />
-        </ImageWrapper>
-        <Name>{props.name}</Name>
-        <ButtonsWrapper>
-          <StyledLink
-            target="_blank"
-            rel="noopener"
-            href={props.demo}>
-            <CardButton>Demo</CardButton>
-          </StyledLink>
-          <StyledLink
-            target="_blank"
-            rel="noopener"
-            href={props.github}>
-            <CardButton>GitHub</CardButton>
-          </StyledLink>
-        </ButtonsWrapper>
-      </Card>
-      <Desc>{props.desc}</Desc>
-    </CardWrapper>
+    <Card style={{ width: 300 }}>
+      <CardWrapper key={props.id} id={props.id}>
+        {/* <Dump props={props} /> */}
+        <StyledProjectCard id={props.id}>
+          <ImageWrapper>
+            <StyledImage
+              style={{
+                borderRadius: '100%',
+                border: '2px solid white'
+              }}
+              src={props.image}
+              key={props.id}
+              alt={`${props.name}`}
+              // resolutions={cis}
+            />
+          </ImageWrapper>
+          <Name>{props.name}</Name>
+          <ButtonsWrapper>
+            <StyledLink
+              target="_blank"
+              rel="noopener"
+              href={props.demo}>
+              <CardButton>Demo</CardButton>
+            </StyledLink>
+            <StyledLink
+              target="_blank"
+              rel="noopener"
+              href={props.github}>
+              <CardButton>GitHub</CardButton>
+            </StyledLink>
+          </ButtonsWrapper>
+        </StyledProjectCard>
+        <Desc>{props.desc}</Desc>
+      </CardWrapper>
+    </Card>
   )
 }
 
