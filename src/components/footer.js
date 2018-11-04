@@ -78,13 +78,13 @@ const LinksListTitle = styled.span`
   font-size: 1.5rem;
   font-weight: 700;
   font-family: ${props => props.theme.fontHeader};
-  color: ${props => props.theme.fontLight};
+  color: ${props => props.theme.fontWhite};
 `
 
 const ListLink = styled.li`
   list-style-type: none;
   font-family: ${props => props.theme.fontBody};
-  color: ${props => props.theme.fontDark};
+  color: ${props => props.theme.fontWhite};
   &:visited,
   &:active {
     color: inherit;
