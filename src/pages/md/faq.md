@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2018-11-03'
+date: '2018-11-06'
 title: 'For recruiters - FAQ'
 ---
 
@@ -94,7 +94,7 @@ both some time here. You're welcome 👍
 ## Your skills look like a great match for this position we have. Can we have a quick five minute phone call to chat?
 
 You are welcome to my phone number to call but I won't answer it
-unless there is a prior arrangement or a recognise your number. I
+unless there is a prior arrangement or I recognise your number. I
 prefer to avoid phone calls for these reasons:
 
 - I'm on a [maker's schedule], which means interruptions are
@@ -112,7 +112,7 @@ prefer to avoid phone calls for these reasons:
   a chat.
 
 - Want me to know you have spent more than the three seconds nearly
-  all recruiters spend onm this page? (I use Google Analytics 👀)
+  all recruiters spend on this page? (I use Google Analytics 👀)
   - In your email mention "Quick Start Guides Rock!" and you will have
     my attention and gratitude. 🙏
 
