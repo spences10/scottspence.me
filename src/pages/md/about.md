@@ -1,6 +1,6 @@
 ---
 path: '/about'
-date: '2018-10-03'
+date: '2018-11-03'
 title: 'Hello World! 👋'
 ---
 
@@ -11,7 +11,7 @@ title: 'Hello World! 👋'
 A little bit about me, Since 2007 I had been working as a VBA
 developer for companies such as Barclays and Deloitte. For the past
 ~24 months now I have been self learning web development (JavaScript)
-and all the technologies and languages used therein.
+and all related technologies.
 
 I'm currently a web developer in the creative products space working
 for [Karmarama]. I work in the City of London.
@@ -34,32 +34,25 @@ in some cases PowerPoint!
 The majority of solutions I made at Barclays were workflow tools, the
 tracking of a cheque or payment through a process, lots of greenfeild
 work with the focus on using the tools the business had to hand, so,
-no SQL servers, just the MS Office suite, "user needs a database? Ok
-cool lets set up an MS Access db on a file server somewhere" yes,
-large corporations operate like this.
+no SQL servers, just the MS Office suite.
 
 Tools of my trade: VBA, SQL some [VB.NET] and C#
 
 **Now:**
 
-I have (as of today) a 622 day GitHub streak, there are several OSS
+I have (as of today) a 677 day GitHub streak, there are several OSS
 projects I like to contribute to the majority of my commits are for my
 projects, feel free to take a look 👀
 
-I'm a massive fan of [Gatsby] and right now, enjoying integrating that
-with as many things as possible, as of writing this I have four sites
-that I'm using Gatsby with:
+I'm a massive fan of the [JAM Stack] and in particular the static site
+generator [Gatsby]. Right now I'm enjoying integrating that with as
+many things as possible, as of writing this I have four sites that I'm
+using Gatsby with:
 
 - [This site]
 - [My blog]
 - [My CV]
 - [Gatsby using GraphCMS]
-
-There is another contender to the static site gen throne that has
-caught my eye and that is [React Static] currently I have a [branch]
-I'm working on please check it out! I'd love your feedback.
-
-###### Gatsby all the things!!
 
 Using Gatsby with CSS Grid and styled-components 💅 is an absolute joy
 ❤️
@@ -109,8 +102,8 @@ All the best. 👍
   https://github.com/spences10/gatsby-using-graphcms
 [deadlift]: https://www.youtube.com/watch?v=b8sadCd7Lhc
 [react static]: https://react-static.js.org/
-[branch]: https://rs-blog-scottspence.netlify.com/
 [ask me anything]: https://github.com/spences10/ama
 [16personalities]: https://www.16personalities.com/
 [my results]: https://www.16personalities.com/profiles/ba01a67248b68
 [netlify]: http://netlify.com/
+[jam stack]: https://jamstack.org/
