@@ -45,7 +45,7 @@ export const themes = {
     fontBody: 'Trirong, sans-serif',
     fontDark: '#0d0a0b',
     fontLight: '#454955',
-    fontWhite: 'fffff6',
+    fontWhite: '#ffffff',
     pink: '#ff73c7',
     blue: '#00e5ff'
   }
