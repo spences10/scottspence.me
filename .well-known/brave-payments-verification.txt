@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: scottspence.me
+Token: af445a36d96bb5aec99078ff31490a5a72fcd40ac03adc648e78072d315ddbe4
