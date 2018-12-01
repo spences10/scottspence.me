@@ -1,6 +1,6 @@
 ---
 path: '/uses'
-date: '2018-07-04'
+date: '2018-12-01'
 title: 'Uses'
 ---
 
@@ -33,8 +33,12 @@ title: 'Uses'
 
 - For gif capture I use LICEcap.
 
+- I have recently started using [Open Broadcaster Software](OBS) for
+  recording some coding sessions.
+
 <!-- Links -->
 
+[open broadcaster software]: https://obsproject.com/
 [dank mono]: https://dank.sh/
 [settings]: https://github.com/spences10/settings
 [dotfiles]: https://github.com/spences10/dotfiles
