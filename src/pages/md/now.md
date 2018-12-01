@@ -1,27 +1,31 @@
 ---
 path: '/now'
-date: '2018-09-28'
+date: '2018-12-01'
 title: "What I'm doing Now"
 ---
 
 ## Work
 
-Working as a Web Developer for [Karmarama].
+Working as a Web Developer for [Karmarama], using a variety of
+technologies. I'm currently working on a project that uses NextJS for
+the front-end with Apollo and Prisma with GrapgQL Yoga for the
+back-end.
 
 ## Play
 
 Code! I've been coding a lot, wouldn't really say it's play, but it
 has been taking up a lot of my spare time recently.
 
-No gym as of late dues to starting a new role but hoping to get back
-to some sort of schedule of training.
+Back at the gym, currently five days a week 😬 and alternating heavy
+ant light days with barbell training: Squat, Bench, Press, Deadlift
+and rows.
 
-Diet is still the [see food diet].
+Diet I have started the 16/8 fasting again and a 24hr fast midweek.
 
-Recently won tickets to go to Vue London and met some Twitter friends
-IRL! Was a great day.
+I have been to Spain 4 times this year and to Malta (Gozo) for a long
+weekend to attend a friends wedding.
 
 <!-- Links -->
 
-[karmarama]: http://www.karmarama.com/
+[karmarama]: https://www.karmarama.com/
 [see food diet]: # 'I see food, I eat it!'
