@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "2.0.100",
+  "version": "2.0.105",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "1.9.4",
@@ -31,10 +31,10 @@
     "styled-components": "4.1.2"
   },
   "devDependencies": {
-    "husky": "1.2.0",
+    "husky": "1.2.1",
     "prettier": "1.15.3",
     "pretty-quick": "1.8.0",
-    "release-it": "8.4.2"
+    "release-it": "9.1.0"
   },
   "keywords": [
     "gatsby",
