@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "2.0.115",
+  "version": "2.0.116",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "1.10.0",
@@ -24,8 +24,8 @@
     "gatsby-transformer-sharp": "2.1.9",
     "netlify-cms": "2.3.1",
     "nivo": "0.31.0",
-    "react": "16.6.3",
-    "react-dom": "16.6.3",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
     "react-google-recaptcha": "1.0.5",
     "react-helmet": "^5.2.0",
     "styled-components": "4.1.3"
