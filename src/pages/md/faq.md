@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2018-11-06'
+date: '2019-01-02'
 title: 'For recruiters - FAQ'
 ---
 
@@ -18,7 +18,7 @@ both some time here. You're welcome 👍
 
 ## What's my ideal role?
 
-- Junior to Mid level role to match my six months commercial
+- Junior to Mid level role to match my eleven months commercial
   experience.
 
 - Working with React, Gatsby, Netlify and GitHub.
@@ -132,7 +132,7 @@ prefer to avoid phone calls for these reasons:
 
 ## Notice period?
 
-- Currently, [two weeks].
+- Currently, ~~[two weeks]~~ three months.
 
 ## Interview availability?
 
