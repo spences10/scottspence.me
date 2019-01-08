@@ -1,6 +1,6 @@
 ---
 path: '/now'
-date: '2018-12-01'
+date: '2018-12-08'
 title: "What I'm doing Now"
 ---
 
