@@ -8,7 +8,7 @@ title: "What I'm doing Now"
 
 Working as a Web Developer for [Karmarama], using a variety of
 technologies. I'm currently working on a project that uses NextJS for
-the front-end with Apollo and Prisma with GrapgQL Yoga for the
+the front-end with Apollo and Prisma with GraphQL Yoga for the
 back-end.
 
 ## Play
