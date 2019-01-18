@@ -1,6 +1,6 @@
 ---
 path: '/uses'
-date: '2018-12-01'
+date: '2019-01-17'
 title: 'Uses'
 ---
 
@@ -29,7 +29,7 @@ title: 'Uses'
 ## Desktop Apps
 
 - For development I use Windows Subsystem Linux in conjunction with
-  Hyper terminal. 👌
+  Hyper terminal. 👌 [See here to set up your own].
 
 - For gif capture I use LICEcap.
 
@@ -49,3 +49,5 @@ title: 'Uses'
 [setting it up for windows]: https://blog.scottspence.me/wsl-setup
 [fifine usb cardioid studio condenser microphone]:
   https://www.amazon.co.uk/gp/product/B06XQ39XCY/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1
+[see here to set up your own]:
+  https://blog.scottspence.me/wsl-bootstrap-2019
