@@ -56,7 +56,6 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -132,7 +131,10 @@ module.exports = {
         }
       }
     },
+    'gatsby-plugin-catch-links',
     'gatsby-plugin-robots-txt',
-    'gatsby-plugin-sitemap'
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-netlify-cms',
+    'gatsby-plugin-netlify'
   ]
 }
