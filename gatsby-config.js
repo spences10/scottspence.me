@@ -134,7 +134,9 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-netlify-cms',
+    // this has to stay at the end of the array
     'gatsby-plugin-netlify'
   ]
 }
