@@ -1,16 +1,15 @@
-import React, { lazy, Suspense } from 'react'
+import loadable from '@loadable/component'
+import { graphql, StaticQuery } from 'gatsby'
+import React from 'react'
 import styled from 'styled-components'
-import { StaticQuery, graphql } from 'gatsby'
-
 import Layout from '../components/layout'
 // import Banner from '../components/banner'
 import SEO from '../components/seo'
 import { StyledHyperLink as SHL } from '../components/shared'
-
 // import { Dump } from '../util/helpers'
 import { media } from '../theme/globalStyle'
 
-const Banner = lazy(() => import('../components/banner'))
+const Banner = loadable(() => import('../components/banner'))
 
 const EmojiWrapper = styled.span.attrs({
   role: 'img'
@@ -79,14 +78,7 @@ const IndexPage = ({ data }) => (
       description={data.site.siteMetadata.description || 'nothin’'}
       image={data.site.siteMetadata.imageLink}
     />
-    <Suspense
-      fallback={
-        <BannerFallback>
-          fetching component, please wait...
-        </BannerFallback>
-      }>
-      <Banner />
-    </Suspense>
+    <Banner />
     <Hi>
       Hi people!
       <EmojiWrapper aria-label="waving hand">👋</EmojiWrapper>
