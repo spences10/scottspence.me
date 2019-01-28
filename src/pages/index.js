@@ -9,7 +9,9 @@ import { StyledHyperLink as SHL } from '../components/shared'
 // import { Dump } from '../util/helpers'
 import { media } from '../theme/globalStyle'
 
-const Banner = loadable(() => import('../components/banner'))
+const Banner = loadable(() => import('../components/banner'), {
+  fallback: <div>Loading...</div>
+})
 
 const EmojiWrapper = styled.span.attrs({
   role: 'img'
