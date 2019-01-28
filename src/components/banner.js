@@ -97,7 +97,7 @@ const Last = styled.span`
 const Banner = ({ data }) => {
   return (
     <BannerWrapper>
-      <Name className="name">
+      <Name>
         <StyledLink to="/">
           <First>
             {data.site.siteMetadata.firstName
