@@ -1,14 +1,15 @@
+import loadable from '@loadable/component'
+import { graphql, StaticQuery } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
-import { StaticQuery, graphql } from 'gatsby'
-
 import Layout from '../components/layout'
-import Banner from '../components/banner'
+// import Banner from '../components/banner'
 import SEO from '../components/seo'
 import { StyledHyperLink as SHL } from '../components/shared'
-
 // import { Dump } from '../util/helpers'
 import { media } from '../theme/globalStyle'
+
+const Banner = loadable(() => import('../components/banner'))
 
 const EmojiWrapper = styled.span.attrs({
   role: 'img'
@@ -38,14 +39,46 @@ const Hi = styled.span`
   `};
 `
 
+const BannerFallback = styled.div`
+  margin-top: 5rem;
+  font-size: 2rem;
+  padding: 5rem 0rem;
+  transition: font-size 250ms ease-in-out, padding 150ms ease-in;
+  background-color: ${props => props.theme.branding};
+  color: ${props => props.theme.fontDark};
+  width: auto;
+  text-shadow: 8px 8px 3px rgba(0, 0, 0, 0.1);
+  font-family: ${props => props.theme.fontHeader};
+  ${media.giant`
+    margin-top: 5rem;
+    font-size: 4.5rem;
+    padding: 5rem 0rem;
+  `};
+  ${media.desktop`
+    margin-top: 5rem;
+    font-size: 4.5rem;
+    padding: 5rem 0rem;
+  `};
+  ${media.tablet`
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    padding: 2.5rem 0rem;
+  `};
+  ${media.phone`
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    padding: 2.5rem 0rem;
+  `};
+`
+
 const IndexPage = ({ data }) => (
   <Layout>
-    <Banner />
     <SEO
       title={"It's me!"}
       description={data.site.siteMetadata.description || 'nothin’'}
       image={data.site.siteMetadata.imageLink}
     />
+    <Banner fallback={<div>Loading...</div>} />
     <Hi>
       Hi people!
       <EmojiWrapper aria-label="waving hand">👋</EmojiWrapper>
