@@ -9,9 +9,7 @@ import { StyledHyperLink as SHL } from '../components/shared'
 // import { Dump } from '../util/helpers'
 import { media } from '../theme/globalStyle'
 
-const Banner = loadable(() => import('../components/banner'), {
-  fallback: <div>Loading...</div>
-})
+const Banner = loadable(() => import('../components/banner'))
 
 const EmojiWrapper = styled.span.attrs({
   role: 'img'
@@ -80,7 +78,7 @@ const IndexPage = ({ data }) => (
       description={data.site.siteMetadata.description || 'nothin’'}
       image={data.site.siteMetadata.imageLink}
     />
-    <Banner />
+    <Banner fallback={<div>Loading...</div>} />
     <Hi>
       Hi people!
       <EmojiWrapper aria-label="waving hand">👋</EmojiWrapper>
