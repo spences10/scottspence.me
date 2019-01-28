@@ -4,6 +4,7 @@
   "version": "2.0.155",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
+    "@loadable/component": "^5.5.0",
     "babel-plugin-styled-components": "1.10.0",
     "card-vibes": "0.1.0",
     "gatsby": "2.0.91",
