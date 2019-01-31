@@ -5,6 +5,8 @@
 [![Build Status](https://travis-ci.org/spences10/scottspence.me.svg?branch=master)](https://travis-ci.org/spences10/scottspence.me)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4106c5f8-93d6-49c9-8e2f-710262680427/deploy-status)](https://app.netlify.com/sites/scottspence/deploys)
+
 My personal portfolio
 
 Uses:
