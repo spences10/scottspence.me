@@ -1,6 +1,6 @@
 ---
 path: '/uses'
-date: '2019-01-17'
+date: '2019-02-03'
 title: 'Uses'
 ---
 
@@ -46,7 +46,7 @@ title: 'Uses'
   https://www.aukey.com/products/104-key-led-backlit-mechanical-keyboard-km-g6
 [sarah drasner]: https://github.com/sdras/
 [night owl]: https://github.com/sdras/night-owl-vscode-theme
-[setting it up for windows]: https://blog.scottspence.me/wsl-setup
+[setting it up for windows]: https://ss10.me/wsl-2019
 [fifine usb cardioid studio condenser microphone]:
   https://www.amazon.co.uk/gp/product/B06XQ39XCY/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1
 [see here to set up your own]:
