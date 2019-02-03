@@ -14,9 +14,21 @@ title: 'Uses'
 
 - [Dank Mono] font for both text editor and terminal.
 
-## Desk Setup
+## Personal Setup
 
 - My computer is an ASUS Transformer Pro T304UA
+
+- Keyboard is an [AUKEY 104 Key LED-Backlit Mechanical Keyboard] 👌
+
+- I run two HP EliteDisplay's E232 58,4 cm (23") Monitors through a
+  Dell 452-BBOO USB 3.0 Ultra HD Triple Video Docking Station.
+
+- Recently putchased a [Fifine Usb Cardioid Studio Condenser
+  Microphone] which is surprisingly good quality for the price.
+
+## Work Setup
+
+- My computer is an DELL XPS 15
 
 - Keyboard is an [AUKEY 104 Key LED-Backlit Mechanical Keyboard] 👌
 
@@ -49,5 +61,4 @@ title: 'Uses'
 [setting it up for windows]: https://ss10.me/wsl-2019
 [fifine usb cardioid studio condenser microphone]:
   https://www.amazon.co.uk/gp/product/B06XQ39XCY/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1
-[see here to set up your own]:
-  https://blog.scottspence.me/wsl-bootstrap-2019
+[see here to set up your own]: https://ss10.me/wsl-2019
