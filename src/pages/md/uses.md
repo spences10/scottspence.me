@@ -1,6 +1,6 @@
 ---
 path: '/uses'
-date: '2019-01-17'
+date: '2019-02-03'
 title: 'Uses'
 ---
 
@@ -14,7 +14,7 @@ title: 'Uses'
 
 - [Dank Mono] font for both text editor and terminal.
 
-## Desk Setup
+## Personal Setup
 
 - My computer is an ASUS Transformer Pro T304UA
 
@@ -25,6 +25,12 @@ title: 'Uses'
 
 - Recently putchased a [Fifine Usb Cardioid Studio Condenser
   Microphone] which is surprisingly good quality for the price.
+
+## Work Setup
+
+- My computer is an DELL XPS 15
+
+- Keyboard, [HAVIT KB395L] (Kailh Low Profile Blue Switches)
 
 ## Desktop Apps
 
@@ -46,8 +52,9 @@ title: 'Uses'
   https://www.aukey.com/products/104-key-led-backlit-mechanical-keyboard-km-g6
 [sarah drasner]: https://github.com/sdras/
 [night owl]: https://github.com/sdras/night-owl-vscode-theme
-[setting it up for windows]: https://blog.scottspence.me/wsl-setup
+[setting it up for windows]: https://ss10.me/wsl-2019
 [fifine usb cardioid studio condenser microphone]:
   https://www.amazon.co.uk/gp/product/B06XQ39XCY/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1
-[see here to set up your own]:
-  https://blog.scottspence.me/wsl-bootstrap-2019
+[see here to set up your own]: https://ss10.me/wsl-2019
+[havit kb395l]:
+  https://www.amazon.co.uk/gp/product/B0767YQQTQ/ref=ox_sc_saved_title_1?smid=A144NZUZAZWQSX&psc=1
