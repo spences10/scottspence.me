@@ -1,22 +1,25 @@
 ---
 path: '/about'
-date: '2018-12-26'
+date: '2018-02-03'
 title: 'Hello World! 👋'
 ---
 
-#### Hi I'm Scott
+## Hi I'm Scott
 
 ### Backstory
 
 A little bit about me, Since 2007 I had been working as a VBA
 developer for companies such as Barclays and Deloitte. For the past
-~24 months now I have been self learning web development (JavaScript)
+two years now I have been self learning web development (JavaScript)
 and all related technologies.
 
 I'm currently a web developer in the creative products space working
 for [Karmarama]. I work in the City of London.
 
-I'm [marriwed] to a beautiful wife and we have a beautiful daughter.
+I'm [marriwed] to a beautiful wife and we have a beautiful daughter
+and three cats!
+
+## 👨‍👩‍👧 🐱😸😹
 
 ### Coding history
 
@@ -40,7 +43,7 @@ Tools of my trade: VBA, SQL some [VB.NET] and C#
 
 **Now:**
 
-I have (as of today) a 730 day GitHub streak, there are several OSS
+I have (as of today) a 768 day GitHub streak, there are several OSS
 projects I like to contribute to the majority of my commits are for my
 projects, feel free to take a look 👀
 
