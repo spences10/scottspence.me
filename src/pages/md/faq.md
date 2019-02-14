@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2019-01-02'
+date: '2019-02-14'
 title: 'For recruiters - FAQ'
 ---
 
@@ -17,9 +17,6 @@ both some time here. You're welcome 👍
 - I'm **not** actively looking for a new role.
 
 ## What's my ideal role?
-
-- Junior to Mid level role to match my eleven months commercial
-  experience.
 
 - Working with React, Gatsby, Netlify and GitHub.
 
@@ -44,17 +41,17 @@ both some time here. You're welcome 👍
   grow.
 
 - Work life balance is a big deal for me, I really **do not** want to
-  go over a 42.5 hour working week.
+  go over a 40 hour working week.
 
 ## What's your preferred stack?
 
-- Really enjoying using the [JAMStack] right now, with [Gatsby] (which
+- Really enjoying using the [JAMstack] right now, with [Gatsby] (which
   uses **React** and **GraphQL**) being my framework of choice.
 
 - For styling I have taken to using styled-components 💅, take a look
   at the used by section on their [site].
 
-- For CMS I'd like the opportunity to work with [GraphCMS] or
+- For CMS' I'd like the opportunity to work with [GraphCMS] or
   [Contentful].
 
 - For back-end I prefer node which is where the majority of my
