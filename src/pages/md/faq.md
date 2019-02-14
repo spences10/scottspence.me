@@ -18,9 +18,6 @@ both some time here. You're welcome 👍
 
 ## What's my ideal role?
 
-- Junior to Mid level role to match my eleven months commercial
-  experience.
-
 - Working with React, Gatsby, Netlify and GitHub.
 
 - Permanent, **not** open to contract roles right now (or for the next
@@ -54,7 +51,7 @@ both some time here. You're welcome 👍
 - For styling I have taken to using styled-components 💅, take a look
   at the used by section on their [site].
 
-- For CMS I'd like the opportunity to work with [GraphCMS] or
+- For CMS' I'd like the opportunity to work with [GraphCMS] or
   [Contentful].
 
 - For back-end I prefer node which is where the majority of my
