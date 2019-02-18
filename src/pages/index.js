@@ -78,10 +78,12 @@ const IndexPage = ({ data }) => (
       description={data.site.siteMetadata.description || 'nothin’'}
       image={data.site.siteMetadata.imageLink}
     />
-    <Banner fallback={<div>Loading...</div>} />
+    <Banner fallback={<BannerFallback>Loading...</BannerFallback>} />
     <Hi>
       Hi people!
-      <EmojiWrapper aria-label="waving hand">👋</EmojiWrapper>
+      <span role="img" aria-label="waving hand">
+        👋
+      </span>
     </Hi>
     {/* <Dump data={data} /> */}
     <p>Welcome to my personal portfolio site.</p>
