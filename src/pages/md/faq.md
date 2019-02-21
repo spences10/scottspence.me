@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2019-02-14'
+date: '2019-02-21'
 title: 'For recruiters - FAQ'
 ---
 
@@ -45,8 +45,8 @@ both some time here. You're welcome 👍
 
 ## What's your preferred stack?
 
-- Really enjoying using the [JAMstack] right now, with [Gatsby] (which
-  uses **React** and **GraphQL**) being my framework of choice.
+- I'm really enjoying using the [JAMstack] right now, with [Gatsby]
+  (which uses **React** and **GraphQL**) being my framework of choice.
 
 - For styling I have taken to using styled-components 💅, take a look
   at the used by section on their [site].
@@ -85,8 +85,8 @@ both some time here. You're welcome 👍
   - I'll consider roles three or four tube stops **max** from either
     London Victoria or Blackfriars.
 
-- Based in Swanley, Kent I'll consider places that are close to
-  Sevenoaks and Bromley.
+- Based in Swanley, Kent I'll consider places that are in Sevenoaks
+  and Bromley.
 
 ## Your skills look like a great match for this position we have. Can we have a quick five minute phone call to chat?
 
@@ -98,7 +98,7 @@ prefer to avoid phone calls for these reasons:
   disruptive to my flow.
 
 - I've already tried to answer some of the most basic questions on
-  this site, and I've probably phrased them more clearly here than I
+  this page, and I've probably phrased them more clearly here than I
   will on the phone.
 
 - This question gets asked frequently enough that my default answer
@@ -111,7 +111,7 @@ prefer to avoid phone calls for these reasons:
 - Want me to know you have spent more than the three seconds nearly
   all recruiters spend on this page? (I use Google Analytics 👀)
   - In your email mention "Quick Start Guides Rock!" and you will have
-    my attention and gratitude. 🙏
+    my attention, gratitude and a guaranteed reply. 🙏
 
 ## Can I take a look at your [CV]?
 
