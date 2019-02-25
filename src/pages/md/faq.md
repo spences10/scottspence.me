@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2019-02-21'
+date: '2019-02-25'
 title: 'For recruiters - FAQ'
 ---
 
@@ -14,7 +14,7 @@ both some time here. You're welcome 👍
 
 ## What's your current situation?
 
-- I'm **not** actively looking for a new role.
+- Open to "opportunities".
 
 ## What's my ideal role?
 
