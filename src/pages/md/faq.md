@@ -67,6 +67,10 @@ both some time here. You're welcome 👍
 - Right now, for me, it's more about learning and progressing with the
   technology than it's about salary.
 
+- I'm not going to be giving a number for my salary because it'll be
+  use it to cap any offer made to me. In other words, my old salary
+  becomes what's known in **behavioral economics** as an anchor.
+
 - If you don't want to give me a exact number then a range would be
   fine, but really the previous point covers it 😊.
 
