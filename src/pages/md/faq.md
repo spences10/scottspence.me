@@ -75,11 +75,11 @@ both some time here. You're welcome 👍
 - I know it's in your interest (being the recruiter) to get the best
   offer for me. I'll disclose my salary if:
 
-  -(a) You agree not to disclose it to the employer without my express
-  permission. No exceptions.
+  - (a) You agree not to disclose it to the employer without my
+    express permission. No exceptions.
 
-  -(b) You can explain how you're going to use the information for my
-  benefit — needs to be a good reason.
+  - (b) You can explain how you're going to use the information for my
+    benefit — needs to be a good reason.
 
 - If you don't want to give me a exact number then a range would be
   fine.
