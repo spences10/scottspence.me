@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2019-02-25'
+date: '2019-02-26'
 title: 'For recruiters - FAQ'
 ---
 
