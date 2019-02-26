@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2019-02-25'
+date: '2019-02-26'
 title: 'For recruiters - FAQ'
 ---
 
@@ -67,8 +67,22 @@ both some time here. You're welcome 👍
 - Right now, for me, it's more about learning and progressing with the
   technology than it's about salary.
 
+- That being said, however, I'm not going to be giving a number for my
+  salary because, among other things, it can be used to cap any offer
+  made to me. In other words, my old salary becomes what's known in
+  **behavioural economics** as an anchor.
+
+- I know it's in your interest (being the recruiter) to get the best
+  offer for me. I'll disclose my salary if:
+
+  - (a) You agree not to disclose it to the employer without my
+    express permission. No exceptions.
+
+  - (b) You can explain how you're going to use the information for my
+    benefit — needs to be a good reason.
+
 - If you don't want to give me a exact number then a range would be
-  fine, but really the previous point covers it 😊.
+  fine.
 
 ## Are you willing to relocate?
 
