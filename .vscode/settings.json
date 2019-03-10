@@ -9,5 +9,11 @@
     "interop",
     "noopener",
     "yandex"
-  ]
+  ],
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#b8cfef",
+    "titleBar.inactiveBackground": "#b8cfef99",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveForeground": "#15202b99"
+  }
 }
