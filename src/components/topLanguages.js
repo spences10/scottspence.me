@@ -1,9 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
 import { ResponsivePie } from 'nivo'
-import { topLanguages } from '../services/dataMassage'
+import React from 'react'
 import styled from 'styled-components'
+import { topLanguages } from '../services/dataMassage'
 // import { Dump } from '../util/helpers'
 
 const LanguageWrapper = styled.div`
