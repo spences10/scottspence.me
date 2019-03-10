@@ -1,6 +1,6 @@
 ---
 path: '/uses'
-date: '2019-02-03'
+date: '2019-03-10'
 title: 'Uses'
 ---
 
@@ -18,7 +18,8 @@ title: 'Uses'
 
 - My computer is an ASUS Transformer Pro T304UA
 
-- Keyboard is an [AUKEY 104 Key LED-Backlit Mechanical Keyboard] 👌
+- I have now replaced my [AUKEY 104 Key LED-Backlit Mechanical
+  Keyboard] with another [HAVIT KB395L], such a sweet keyboard!!
 
 - I run two HP EliteDisplay's E232 58,4 cm (23") Monitors through a
   Dell 452-BBOO USB 3.0 Ultra HD Triple Video Docking Station.
