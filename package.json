@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "2.0.239",
+  "version": "2.0.240",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "dependencies": {
     "@loadable/component": "^5.5.0",
@@ -23,9 +23,9 @@
     "gatsby-plugin-styled-components": "3.0.7",
     "gatsby-remark-autolink-headers": "2.0.16",
     "gatsby-remark-external-links": "0.0.4",
-    "gatsby-source-filesystem": "2.0.25",
+    "gatsby-source-filesystem": "2.0.26",
     "gatsby-source-graphql": "2.0.14",
-    "gatsby-transformer-remark": "2.3.3",
+    "gatsby-transformer-remark": "2.3.4",
     "gatsby-transformer-sharp": "2.1.17",
     "netlify-cms": "2.6.1",
     "nivo": "0.31.0",
