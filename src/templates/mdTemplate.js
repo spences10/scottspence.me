@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import styled from 'styled-components'
 import Link from 'gatsby-link'
-
-import SEO from '../components/seo'
-
-import { /*PageWrapper,*/ ShinyButton } from '../components/shared'
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
+import { /*PageWrapper,*/ ShinyButton } from '../components/shared'
+import useSiteMetadata from '../components/siteMetadata'
+
 // import { Dump } from '../util/helpers'
 
 const MdTitle = styled.h1``
@@ -23,7 +23,7 @@ const Template = ({
 }) => {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html, excerpt } = markdownRemark
-  const { imageLink } = data.site.siteMetadata
+  const { imageLink } = useSiteMetadata()
   return (
     <Layout>
       <SEO
@@ -65,11 +65,6 @@ export const pageQuery = graphql`
         date(formatString: "YYYY MMMM Do")
         path
         title
-      }
-    }
-    site {
-      siteMetadata {
-        imageLink
       }
     }
   }
