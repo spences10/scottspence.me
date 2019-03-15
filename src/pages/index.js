@@ -1,11 +1,11 @@
 import loadable from '@loadable/component'
-import { graphql, StaticQuery } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 // import Banner from '../components/banner'
 import SEO from '../components/seo'
 import { StyledHyperLink as SHL } from '../components/shared'
+import useSiteMetadata from '../components/SiteMetadata'
 // import { Dump } from '../util/helpers'
 import { media } from '../theme/globalStyle'
 
@@ -71,56 +71,53 @@ const BannerFallback = styled.div`
   `};
 `
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <SEO
-      title={"It's me!"}
-      description={data.site.siteMetadata.description || 'nothin’'}
-      image={data.site.siteMetadata.imageLink}
-    />
-    <Banner fallback={<BannerFallback>Loading...</BannerFallback>} />
-    <Hi>
-      Hi people!
-      <span role="img" aria-label="waving hand">
-        👋
-      </span>
-    </Hi>
-    {/* <Dump data={data} /> */}
-    <p>Welcome to my personal portfolio site.</p>
-    <p>
-      Built with{' '}
-      <StyledHyperLink
-        href={'https://www.gatsbyjs.com/'}
-        target="_blank"
-        rel="noopener">
-        Gatsby
-      </StyledHyperLink>{' '}
-      and{' '}
-      <StyledHyperLink
-        href={'https://www.styled-components.com/'}
-        target="_blank"
-        rel="noopener">
-        styled components
-      </StyledHyperLink>
-      {/* eslint-disable-next-line */}
-      <EmojiWrapper aria-label="nail polish">💅</EmojiWrapper>
-    </p>
-  </Layout>
-)
+const IndexPage = ({ data }) => {
+  const { description, imageLink, title } = useSiteMetadata()
+  return (
+    <Layout>
+      <SEO
+        title={title}
+        description={description || 'nothin’'}
+        image={imageLink}
+        keywords={[
+          `portfolio`,
+          `gatsby`,
+          `javascript`,
+          `react`,
+          `graphql`
+        ]}
+      />
+      <Banner
+        fallback={<BannerFallback>Loading...</BannerFallback>}
+      />
+      <Hi>
+        Hi people!
+        <span role="img" aria-label="waving hand">
+          👋
+        </span>
+      </Hi>
+      {/* <Dump data={data} /> */}
+      <p>Welcome to my personal portfolio site.</p>
+      <p>
+        Built with{' '}
+        <StyledHyperLink
+          href={'https://www.gatsbyjs.com/'}
+          target="_blank"
+          rel="noopener">
+          Gatsby
+        </StyledHyperLink>{' '}
+        and{' '}
+        <StyledHyperLink
+          href={'https://www.styled-components.com/'}
+          target="_blank"
+          rel="noopener">
+          styled components
+        </StyledHyperLink>
+        {/* eslint-disable-next-line */}
+        <EmojiWrapper aria-label="nail polish">💅</EmojiWrapper>
+      </p>
+    </Layout>
+  )
+}
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query IndexQuery {
-        site {
-          siteMetadata {
-            title
-            description
-            imageLink
-          }
-        }
-      }
-    `}
-    render={data => <IndexPage data={data} {...props} />}
-  />
-)
+export default IndexPage
