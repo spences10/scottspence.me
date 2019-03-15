@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 // import Banner from '../components/banner'
 import SEO from '../components/seo'
 import { StyledHyperLink as SHL } from '../components/shared'
-import useSiteMetadata from '../components/SiteMetadata'
+import useSiteMetadata from '../components/siteMetadata'
 // import { Dump } from '../util/helpers'
 import { media } from '../theme/globalStyle'
 
