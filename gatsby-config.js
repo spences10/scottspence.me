@@ -35,7 +35,8 @@ const siteMetadata = {
   keywordsContent:
     'web developer, javascript, react, portfolio, information',
   imageLink: 'https://scottspence.me/icons/icon-512x512.png',
-  siteLanguage: 'en-GB'
+  siteLanguage: 'en-GB',
+  lastBuildDate: Date.now()
 }
 
 module.exports = {

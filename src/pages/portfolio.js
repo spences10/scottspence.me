@@ -1,16 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
 import styled from 'styled-components'
-
-import SEO from '../components/seo'
 import Layout from '../components/layout'
-
-import TopLanguages from '../components/topLanguages'
-
 import { ProjectCard } from '../components/projectCard'
+import SEO from '../components/seo'
 import { ShinyButton } from '../components/shared'
-
+import useSiteMetadata from '../components/siteMetadata'
+import TopLanguages from '../components/topLanguages'
 // import { Dump } from '../util/helpers'
 import { media } from '../theme/globalStyle'
 
@@ -34,22 +31,38 @@ const ProjectWrapper = styled.div`
 
 const PortfolioPage = ({ data }) => {
   const { assets } = data.graphcmsdata
+  const {
+    description,
+    imageLink,
+    lastBuildDate,
+    siteLanguage
+  } = useSiteMetadata()
+  const builtDate = new Date(lastBuildDate).toLocaleDateString(
+    siteLanguage
+  )
   return (
     <Layout>
       <SEO
         title={'Portfolio, projects, examples'}
-        description={data.site.siteMetadata.description || 'nothin’'}
-        image={data.site.siteMetadata.imageLink}
+        description={description || 'nothin’'}
+        image={imageLink}
       />
       {/* <Dump assets={assets} /> */}
       <h1>Portfolio</h1>
       <h2>Top 5 Languages used:</h2>
-      <p>Here&#39;s my latest languages being used on GitHub</p>
+      <p>
+        Here&#39;s my top 5 languages being used calculated from my
+        GitHub commits.
+      </p>
+      <p>
+        This chart is updated every time this site is built, last
+        build date was {builtDate}
+      </p>
       <TopLanguages />
       <h2>Projects:</h2>
       <p>List of projects here.</p>
       <ProjectWrapper>
-        {assets.map((project, index) => {
+        {assets.map(project => {
           const {
             projectName,
             projectDescription,
@@ -83,7 +96,7 @@ const PortfolioPage = ({ data }) => {
 export const query = graphql`
   {
     graphcmsdata {
-      assets {
+      assets(orderBy: createdAt_DESC) {
         createdAt
         updatedAt
         mimeType
@@ -105,13 +118,6 @@ export const query = graphql`
           githubRepo
           demoLink
         }
-      }
-    }
-    site {
-      siteMetadata {
-        title
-        description
-        imageLink
       }
     }
   }
