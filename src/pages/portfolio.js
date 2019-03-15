@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import { ProjectCard } from '../components/projectCard'
 import SEO from '../components/seo'
 import { ShinyButton } from '../components/shared'
+import useSiteMetadata from '../components/SiteMetadata'
 import TopLanguages from '../components/topLanguages'
 // import { Dump } from '../util/helpers'
 import { media } from '../theme/globalStyle'
@@ -30,12 +31,21 @@ const ProjectWrapper = styled.div`
 
 const PortfolioPage = ({ data }) => {
   const { assets } = data.graphcmsdata
+  const {
+    description,
+    imageLink,
+    lastBuildDate,
+    siteLanguage
+  } = useSiteMetadata()
+  const builtDate = new Date(lastBuildDate).toLocaleDateString(
+    siteLanguage
+  )
   return (
     <Layout>
       <SEO
         title={'Portfolio, projects, examples'}
-        description={data.site.siteMetadata.description || 'nothin’'}
-        image={data.site.siteMetadata.imageLink}
+        description={description || 'nothin’'}
+        image={imageLink}
       />
       {/* <Dump assets={assets} /> */}
       <h1>Portfolio</h1>
@@ -46,7 +56,7 @@ const PortfolioPage = ({ data }) => {
       </p>
       <p>
         This chart is updated every time this site is built, last
-        publish date was {data.site.siteMetadata.lastBuildDate}
+        publish date was {builtDate}
       </p>
       <TopLanguages />
       <h2>Projects:</h2>
@@ -108,15 +118,6 @@ export const query = graphql`
           githubRepo
           demoLink
         }
-      }
-    }
-
-    site {
-      siteMetadata {
-        title
-        description
-        imageLink
-        lastBuildDate
       }
     }
   }
