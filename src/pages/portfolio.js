@@ -56,7 +56,7 @@ const PortfolioPage = ({ data }) => {
       </p>
       <p>
         This chart is updated every time this site is built, last
-        publish date was {builtDate}
+        build date was {builtDate}
       </p>
       <TopLanguages />
       <h2>Projects:</h2>
