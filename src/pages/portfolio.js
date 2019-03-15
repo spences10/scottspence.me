@@ -1,16 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
 import styled from 'styled-components'
-
-import SEO from '../components/seo'
 import Layout from '../components/layout'
-
-import TopLanguages from '../components/topLanguages'
-
 import { ProjectCard } from '../components/projectCard'
+import SEO from '../components/seo'
 import { ShinyButton } from '../components/shared'
-
+import TopLanguages from '../components/topLanguages'
 // import { Dump } from '../util/helpers'
 import { media } from '../theme/globalStyle'
 
@@ -44,12 +40,19 @@ const PortfolioPage = ({ data }) => {
       {/* <Dump assets={assets} /> */}
       <h1>Portfolio</h1>
       <h2>Top 5 Languages used:</h2>
-      <p>Here&#39;s my latest languages being used on GitHub</p>
+      <p>
+        Here&#39;s my top 5 languages being used calculated from my
+        GitHub commits.
+      </p>
+      <p>
+        This chart is updated every time this site is built, last
+        publish date was {data.site.siteMetadata.lastBuildDate}
+      </p>
       <TopLanguages />
       <h2>Projects:</h2>
       <p>List of projects here.</p>
       <ProjectWrapper>
-        {assets.map((project, index) => {
+        {assets.map(project => {
           const {
             projectName,
             projectDescription,
@@ -83,7 +86,7 @@ const PortfolioPage = ({ data }) => {
 export const query = graphql`
   {
     graphcmsdata {
-      assets {
+      assets(orderBy: createdAt_DESC) {
         createdAt
         updatedAt
         mimeType
@@ -107,11 +110,13 @@ export const query = graphql`
         }
       }
     }
+
     site {
       siteMetadata {
         title
         description
         imageLink
+        lastBuildDate
       }
     }
   }
