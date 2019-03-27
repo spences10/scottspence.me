@@ -1,14 +1,14 @@
-import React from 'react'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import React from 'react'
 import styled, { keyframes } from 'styled-components'
-
 import { media } from '../theme/globalStyle'
+
 // import { Dump } from '../util/helpers'
 
 /*
-* https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
-*/
+ * https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
+ */
 export const animateShake = keyframes`
   10%, 90% {
     transform: translate3d(-3px, 0, 0) rotate(8deg);
@@ -94,24 +94,21 @@ const Last = styled.span`
   white-space: nowrap;
 `
 
-const Banner = ({ data }) => {
+const Banner = () => {
+  const { firstName, lastName } = siteMetadata()
   return (
     <BannerWrapper>
       <Name>
         <StyledLink to="/">
           <First>
-            {data.site.siteMetadata.firstName
-              .split('')
-              .map((letter, index) => (
-                <Letter key={`${letter}-${index}`}>{letter}</Letter>
-              ))}
+            {firstName.split('').map((letter, index) => (
+              <Letter key={`${letter}-${index}`}>{letter}</Letter>
+            ))}
           </First>
           <Last>
-            {data.site.siteMetadata.lastName
-              .split('')
-              .map((letter, index) => (
-                <Letter key={`${letter}-${index}`}>{letter}</Letter>
-              ))}
+            {lastName.split('').map((letter, index) => (
+              <Letter key={`${letter}-${index}`}>{letter}</Letter>
+            ))}
           </Last>
         </StyledLink>
       </Name>
@@ -124,18 +121,4 @@ Banner.propTypes = {
   last: PropTypes.string
 }
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query BannerQuery {
-        site {
-          siteMetadata {
-            firstName
-            lastName
-          }
-        }
-      }
-    `}
-    render={data => <Banner data={data} {...props} />}
-  />
-)
+export default Banner
