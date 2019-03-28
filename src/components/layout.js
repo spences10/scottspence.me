@@ -1,18 +1,16 @@
-import React from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react'
 import Helmet from 'react-helmet'
 import styled, { ThemeProvider } from 'styled-components'
-
-import Header from './header'
-import Footer from './footer'
 import {
   ThemeSelectContext,
   ThemeSelectProvider
 } from '../contexts/ThemeSelectContext'
 // import { Dump } from '../util/helpers'
-
 import { GlobalStyle, media } from '../theme/globalStyle'
+import Footer from './footer'
+import Header from './header'
+import useSiteMetadata from './siteMetadata'
 
 const AppStyles = styled.div`
   background-color: ${({ theme }) => theme.background};
@@ -63,41 +61,31 @@ const Wrapper = styled.div`
   grid-area: m;
 `
 
-const Layout = ({ children, data }) => (
-  <ThemeSelectProvider>
-    <ThemeSelectContext.Consumer>
-      {({ theme }) => (
-        <ThemeProvider theme={theme}>
-          <AppStyles>
-            <GlobalStyle />
-            <Helmet>
-              <html lang="en-GB" />
-            </Helmet>
-            <Header siteTitle={data.site.siteMetadata.title} />
-            <Wrapper>{children}</Wrapper>
-            <Footer />
-          </AppStyles>
-        </ThemeProvider>
-      )}
-    </ThemeSelectContext.Consumer>
-  </ThemeSelectProvider>
-)
+const Layout = ({ children }) => {
+  const { title } = useSiteMetadata()
+  return (
+    <ThemeSelectProvider>
+      <ThemeSelectContext.Consumer>
+        {({ theme }) => (
+          <ThemeProvider theme={theme}>
+            <AppStyles>
+              <GlobalStyle />
+              <Helmet>
+                <html lang="en-GB" />
+              </Helmet>
+              <Header siteTitle={title} />
+              <Wrapper>{children}</Wrapper>
+              <Footer />
+            </AppStyles>
+          </ThemeProvider>
+        )}
+      </ThemeSelectContext.Consumer>
+    </ThemeSelectProvider>
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired
 }
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query LayoutData {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => <Layout data={data} {...props} />}
-  />
-)
+export default Layout
