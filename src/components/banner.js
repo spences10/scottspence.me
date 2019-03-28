@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import { media } from '../theme/globalStyle'
-
-// import { Dump } from '../util/helpers'
+import useSiteMetadata from './siteMetadata'
 
 /*
  * https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
@@ -95,7 +94,7 @@ const Last = styled.span`
 `
 
 const Banner = () => {
-  const { firstName, lastName } = siteMetadata()
+  const { firstName, lastName } = useSiteMetadata()
   return (
     <BannerWrapper>
       <Name>

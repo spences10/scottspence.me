@@ -1,14 +1,13 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
-import { Link, StaticQuery, graphql } from 'gatsby'
-
-import ThemeSelect from '../components/themeSelect'
 import { StyledHyperLink as SHL } from '../components/shared'
-
+import ThemeSelect from '../components/themeSelect'
+import graphCms from '../images/graphCms.svg'
 import { media } from '../theme/globalStyle'
 import { PATTERNS } from '../theme/themeConstants'
+import siteMetadata from './siteMetadata'
 
-import graphCms from '../images/graphCms.svg'
 // import { Dump } from '../utils/helpers'
 
 const FooterWrapper = styled.footer`
@@ -128,9 +127,8 @@ const ImageWrapper = styled.div`
   `};
 `
 
-const Footer = ({ data }) => {
-  const pages = data.site.siteMetadata.pages
-  const contact = data.site.siteMetadata.contact
+const Footer = () => {
+  const { contact, pages } = siteMetadata()
   return (
     <FooterWrapper>
       <ThemeSelect />
@@ -162,21 +160,4 @@ const Footer = ({ data }) => {
   )
 }
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query FooterData {
-        site {
-          siteMetadata {
-            pages
-            contact {
-              name
-              link
-            }
-          }
-        }
-      }
-    `}
-    render={data => <Footer data={data} {...props} />}
-  />
-)
+export default Footer
