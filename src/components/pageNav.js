@@ -1,10 +1,9 @@
+import { Link } from 'gatsby'
 import React from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-
 // import { Dump } from '../util/helpers'
-
 import { media } from '../theme/globalStyle'
+import useSiteMetadata from './siteMetadata'
 
 const NavMenu = styled.ul`
   grid-area: n;
@@ -89,8 +88,8 @@ const NavLink = styled(Link).attrs({
   }
 `
 
-const PageNav = ({ data }) => {
-  const pages = data.site.siteMetadata.pages
+const PageNav = () => {
+  const { pages } = useSiteMetadata()
   return (
     <NavMenu>
       {/* <Dump props={props} pages={pages} /> */}
@@ -105,17 +104,4 @@ const PageNav = ({ data }) => {
   )
 }
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query NavItems {
-        site {
-          siteMetadata {
-            pages
-          }
-        }
-      }
-    `}
-    render={data => <PageNav data={data} {...props} />}
-  />
-)
+export default PageNav

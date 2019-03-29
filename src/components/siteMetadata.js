@@ -19,6 +19,8 @@ const useSiteMetadata = () => {
             }
             siteLanguage
             lastBuildDate
+            firstName
+            lastName
           }
         }
       }
