@@ -13,14 +13,18 @@ const siteMetadata = {
   titleTemplate: '%s | scottspence.me',
   description:
     'Scott Spence, Father, husband 👨‍👩‍👧 Full stack web developer in the making 👨‍💻 Just In Time learner 👌 Byproduct of: coffee+excess carbs+lack of sleep. He/Him',
-  twitterUsername: '@ScottDevTweets',
+  twitterUsername: '@spences10',
   facebookAppID: '',
   pages: ['about', 'portfolio', 'now', 'uses'],
   contact: [
     { name: 'GitHub', link: 'https://github.com/spences10' },
-    { name: 'YouTube', link: 'https://www.youtube.com/channel/UCnngLXpLSFsKkDhFoO9Ct3w?view_as=subscriber' },
+    {
+      name: 'YouTube',
+      link:
+        'https://www.youtube.com/channel/UCnngLXpLSFsKkDhFoO9Ct3w?view_as=subscriber'
+    },
     { name: 'Dev.to', link: 'https://dev.to/spences10' },
-    { name: 'Twitter', link: 'https://twitter.com/ScottDevTweets' },
+    { name: 'Twitter', link: 'https://twitter.com/spences10' },
     { name: 'Medium', link: 'https://medium.com/@spences10' },
     { name: 'Email', link: 'mailto:spences10apps@gmail.com' }
   ],
