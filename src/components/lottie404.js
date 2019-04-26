@@ -1,6 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Lottie from 'react-lottie'
 import animationData from '../animationData.json'
+
+function useWindowWidth() {
+  const [width, setWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth)
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  })
+
+  return width
+}
 
 export default class LottieControl extends React.Component {
   constructor(props) {
@@ -9,6 +24,7 @@ export default class LottieControl extends React.Component {
   }
 
   render() {
+    const windowWidth = useWindowWidth() // Our custom Hook
     const defaultOptions = {
       loop: true,
       autoplay: true,
@@ -22,8 +38,8 @@ export default class LottieControl extends React.Component {
       <div>
         <Lottie
           options={defaultOptions}
-          height={500}
-          width={500}
+          width={windowWidth}
+          height={windowWidth}
           isStopped={this.state.isStopped}
           isPaused={this.state.isPaused}
         />
