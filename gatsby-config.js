@@ -80,7 +80,8 @@ module.exports = {
               target: '_blank',
               rel: 'noopener'
             }
-          }
+          },
+          `gatsby-remark-smartypants`
         ]
       }
     },
