@@ -8,97 +8,98 @@ require('dotenv').config({
 })
 
 const siteMetadata = {
-  siteUrl: 'https://scottspence.me',
-  title: 'scottspence.me',
-  titleTemplate: '%s | scottspence.me',
+  siteUrl: `https://scottspence.me`,
+  title: `scottspence.me`,
+  titleTemplate: `%s | scottspence.me`,
   description:
-    'Scott Spence, Father, husband 👨‍👩‍👧 Full stack web developer in the making 👨‍💻 Just In Time learner 👌 Byproduct of: coffee+excess carbs+lack of sleep. He/Him',
-  twitterUsername: '@spences10',
-  facebookAppID: '',
-  pages: ['about', 'portfolio', 'now', 'uses'],
+    `Scott Spence, Father, husband 👨‍👩‍👧 Full stack web developer in the making 👨‍💻 Just In Time learner 👌 Byproduct of: coffee+excess carbs+lack of sleep. He/Him`,
+  twitterUsername: `@spences10`,
+  facebookAppID: ``,
+  pages: [`about`, `portfolio`, `now`, `uses`],
   contact: [
-    { name: 'GitHub', link: 'https://github.com/spences10' },
+    { name: `GitHub`, link: `https://github.com/spences10` },
     {
-      name: 'YouTube',
+      name: `YouTube`,
       link:
-        'https://www.youtube.com/channel/UCnngLXpLSFsKkDhFoO9Ct3w?view_as=subscriber'
+        `https://www.youtube.com/channel/UCnngLXpLSFsKkDhFoO9Ct3w?view_as=subscriber`
     },
-    { name: 'Dev.to', link: 'https://dev.to/spences10' },
-    { name: 'Twitter', link: 'https://twitter.com/spences10' },
-    { name: 'Medium', link: 'https://medium.com/@spences10' },
-    { name: 'Email', link: 'mailto:spences10apps@gmail.com' }
+    { name: `Dev.to`, link: `https://dev.to/spences10` },
+    { name: `Twitter`, link: `https://twitter.com/spences10` },
+    { name: `Medium`, link: `https://medium.com/@spences10` },
+    { name: `Email`, link: `mailto:spences10apps@gmail.com` }
   ],
-  firstName: 'Scott',
-  lastName: 'Spence',
-  faviconPng: './src/images/favicon.png',
-  backgroundColour: '#663399', // this is for favicon and manifest
-  themeColour: '#755f9f', // this is for favicon and manifest
-  nameContent: 'Scott Spence - portfolio',
-  developerName: 'Scott Spence',
-  developerUrl: 'https.scottspence.me',
-  descriptionContent: 'Scott Spence - web developer',
+  firstName: `Scott`,
+  lastName: `Spence`,
+  faviconPng: `./src/images/favicon.png`,
+  backgroundColour: `#663399`, // this is for favicon and manifest
+  themeColour: `#755f9f`, // this is for favicon and manifest
+  nameContent: `Scott Spence - portfolio`,
+  developerName: `Scott Spence`,
+  developerUrl: `https.scottspence.me`,
+  descriptionContent: `Scott Spence - web developer`,
   keywordsContent:
-    'web developer, javascript, react, portfolio, information',
-  imageLink: 'https://scottspence.me/icons/icon-512x512.png',
-  siteLanguage: 'en-GB',
+    `web developer, javascript, react, portfolio, information`,
+  imageLink: `https://scottspence.me/icons/icon-512x512.png`,
+  siteLanguage: `en-GB`,
   lastBuildDate: Date.now()
 }
 
 module.exports = {
   siteMetadata: siteMetadata,
   plugins: [
-    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: siteMetadata.title,
         short_name: siteMetadata.title,
-        start_url: '/',
+        start_url: `/`,
         background_color: siteMetadata.backgroundColour,
         theme_color: siteMetadata.themeColour,
-        display: 'minimal-ui',
+        display: `minimal-ui`,
         icon: siteMetadata.faviconPng // This path is relative to the root of the site.
       }
     },
-    'gatsby-plugin-offline',
-    'gatsby-plugin-styled-components',
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-styled-components`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages/md`,
-        name: 'posts'
+        name: `posts`
       }
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          'gatsby-remark-autolink-headers',
+          `gatsby-remark-autolink-headers`,
           {
-            resolve: 'gatsby-remark-external-links',
+            resolve: `gatsby-remark-external-links`,
             options: {
-              target: '_blank',
-              rel: 'noopener'
+              target: `_blank`,
+              rel: `noopener`
             }
-          }
+          },
+          `gatsby-remark-smartypants`
         ]
       }
     },
     {
-      resolve: 'gatsby-source-graphql',
+      resolve: `gatsby-source-graphql`,
       options: {
-        typeName: 'GRAPHCMSDATA',
-        fieldName: 'graphcmsdata',
+        typeName: `GRAPHCMSDATA`,
+        fieldName: `graphcmsdata`,
         // Url to query from
         url: process.env.GATSBY_SOURCE_GRAPHQL
       }
     },
     {
-      resolve: 'gatsby-source-graphql',
+      resolve: `gatsby-source-graphql`,
       options: {
-        typeName: 'GitHub',
-        fieldName: 'github',
-        url: 'https://api.github.com/graphql',
+        typeName: `GitHub`,
+        fieldName: `github`,
+        url: `https://api.github.com/graphql`,
         headers: {
           Authorization: `bearer ${process.env.GATSBY_GITHUB_TOKEN}`
         },
@@ -106,7 +107,7 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
         // add to netlify Build environment variables
         trackingId: process.env.GATSBY_GA_TRACKING_ID,
@@ -115,7 +116,7 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-favicon',
+      resolve: `gatsby-plugin-favicon`,
       options: {
         logo: siteMetadata.faviconPng,
         // WebApp Manifest Configuration
@@ -123,14 +124,14 @@ module.exports = {
         appDescription: siteMetadata.descriptionContent,
         developerName: siteMetadata.developerName,
         developerURL: siteMetadata.developerUrl,
-        dir: 'auto',
+        dir: `auto`,
         lang: siteMetadata.siteLanguage,
         background: siteMetadata.backgroundColour,
         theme_color: siteMetadata.themeColour,
-        display: 'standalone',
-        orientation: 'any',
-        start_url: '/?homescreen=1',
-        version: '1.0',
+        display: `standalone`,
+        orientation: `any`,
+        start_url: `/?homescreen=1`,
+        version: `1.0`,
 
         icons: {
           android: true,
@@ -146,12 +147,12 @@ module.exports = {
         }
       }
     },
-    'gatsby-plugin-catch-links',
-    'gatsby-plugin-robots-txt',
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-remove-serviceworker',
-    'gatsby-plugin-netlify-cms',
+    `gatsby-plugin-catch-links`,
+    `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-remove-serviceworker`,
+    `gatsby-plugin-netlify-cms`,
     // this has to stay at the end of the array
-    'gatsby-plugin-netlify'
+    `gatsby-plugin-netlify`
   ]
 }
