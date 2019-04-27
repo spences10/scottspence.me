@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2019-02-26'
+date: '2019-04-26'
 title: 'For recruiters - FAQ'
 ---
 
@@ -14,7 +14,15 @@ both some time here. You're welcome 👍
 
 ## What's your current situation?
 
-- Open to "opportunities".
+- Currently open to "opportunities".
+
+## How come your looking again?
+
+- Like most developers will say, I want to work with tomorrow's tech
+  stack today.
+
+- Where I currently am, although a great place to work, my development
+  is going to suffer if I have to keep maintaining WordPress sites.
 
 ## What's my ideal role?
 
@@ -59,8 +67,12 @@ both some time here. You're welcome 👍
 
 ## How many years experience do you have?
 
-- Check out my [about] page which details my experience and a bit
-  about me.
+- I started as a professional web developer in March 2018, I have 10+
+  years previous experience as a VBA developer for mainly financial
+  organisations.
+
+- For more, check out my [about] page which details my experience and
+  a bit about me.
 
 ## Salary?
 
@@ -88,8 +100,13 @@ both some time here. You're welcome 👍
 
 - nop!
 
+## Are you willing to work remotely?
+
 - For my development over the next 24 months or so I will get the most
   out of being office based closer to more experienced colleagues.
+
+- That being said I do know that [you can succeed as a junior
+  developer in a fully remote role]
 
 ## What are your location preferences?
 
@@ -124,6 +141,7 @@ prefer to avoid phone calls for these reasons:
 
 - Want me to know you have spent more than the three seconds nearly
   all recruiters spend on this page? (I use Google Analytics 👀)
+
   - In your email mention "Quick Start Guides Rock!" and you will have
     my attention, gratitude and a guaranteed reply. 🙏
 
@@ -166,3 +184,5 @@ prefer to avoid phone calls for these reasons:
 [here]: https://cvjson.now.sh/
 [cv.scottspence.me]: https://cv.scottspence.me/
 [two weeks]: https://www.youtube.com/watch?v=9v-33jcEDk4
+[you can succeed as a junior developer in a fully remote role]:
+  https://dev.to/spences10/can-you-succeed-as-a-junior-developer-in-a-fully-remote-role-2a84
