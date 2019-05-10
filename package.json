@@ -1,8 +1,22 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "2.0.324",
+  "version": "2.0.325",
   "author": "Scott Spence <spences10apps@gmail.com>",
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "clean": "rm -rf .cache/ && rm -rf public/",
+    "build": "gatsby build && npm run wellknown && npm run searchConsole",
+    "serve": "gatsby serve -9000",
+    "buildServe": "npm run build && npm run serve",
+    "dev": "gatsby develop -p 6677 -o",
+    "format": "pretty-quick",
+    "precommit": "pretty-quick --staged",
+    "release": "release-it",
+    "wellknown": "cp -r .well-known/ public/",
+    "searchConsole": "cp -r googleb08af286575fc468.html public/"
+  },
   "dependencies": {
     "@loadable/component": "^5.5.0",
     "babel-plugin-styled-components": "1.10.0",
@@ -41,26 +55,12 @@
     "husky": "2.2.0",
     "prettier": "1.17.0",
     "pretty-quick": "1.10.0",
-    "release-it": "12.0.0"
+    "release-it": "12.0.1"
   },
   "keywords": [
     "gatsby",
     "portfolio"
   ],
-  "license": "MIT",
-  "main": "n/a",
-  "scripts": {
-    "clean": "rm -rf .cache/ && rm -rf public/",
-    "build": "gatsby build && npm run wellknown && npm run searchConsole",
-    "serve": "gatsby serve -9000",
-    "buildServe": "npm run build && npm run serve",
-    "dev": "gatsby develop --verbose --open",
-    "format": "pretty-quick",
-    "precommit": "pretty-quick --staged",
-    "release": "release-it",
-    "wellknown": "cp -r .well-known/ public/",
-    "searchConsole": "cp -r googleb08af286575fc468.html public/"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/spences10/scottspence.me.git"
