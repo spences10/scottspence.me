@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "2.0.331",
+  "version": "2.0.334",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "license": "MIT",
   "main": "n/a",
@@ -21,7 +21,7 @@
     "@loadable/component": "^5.5.0",
     "babel-plugin-styled-components": "1.10.0",
     "card-vibes": "0.1.0",
-    "gatsby": "2.4.5",
+    "gatsby": "2.5.0",
     "gatsby-plugin-catch-links": "^2.0.9",
     "gatsby-plugin-favicon": "3.1.6",
     "gatsby-plugin-google-analytics": "2.0.20",
@@ -38,7 +38,7 @@
     "gatsby-remark-autolink-headers": "2.0.16",
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-smartypants": "^2.0.9",
-    "gatsby-source-filesystem": "2.0.34",
+    "gatsby-source-filesystem": "2.0.35",
     "gatsby-source-graphql": "2.0.18",
     "gatsby-transformer-remark": "2.3.12",
     "gatsby-transformer-sharp": "2.1.19",
@@ -55,7 +55,7 @@
     "husky": "2.3.0",
     "prettier": "1.17.1",
     "pretty-quick": "1.10.0",
-    "release-it": "12.1.0"
+    "release-it": "12.2.0"
   },
   "keywords": [
     "gatsby",
