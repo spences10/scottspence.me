@@ -25,7 +25,7 @@ const siteMetadata = {
     },
     { name: `Dev.to`, link: `https://dev.to/spences10` },
     { name: `Twitter`, link: `https://twitter.com/spences10` },
-    { name: `Medium`, link: `https://medium.com/@spences10` },
+    { name: `LinkedIn`, link: `https://www.linkedin.com/in/spences10` },
     { name: `Email`, link: `mailto:spences10apps@gmail.com` }
   ],
   firstName: `Scott`,
