@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "2.0.366",
+  "version": "2.0.367",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "license": "MIT",
   "main": "n/a",
@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "husky": "2.4.0",
-    "prettier": "1.17.1",
+    "prettier": "1.18.0",
     "pretty-quick": "1.11.0",
     "release-it": "12.3.0"
   },
