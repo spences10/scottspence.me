@@ -11,8 +11,7 @@ const siteMetadata = {
   siteUrl: `https://scottspence.me`,
   title: `scottspence.me`,
   titleTemplate: `%s | scottspence.me`,
-  description:
-    `Scott Spence, Father, husband 👨‍👩‍👧 Full stack web developer in the making 👨‍💻 Just In Time learner 👌 Byproduct of: coffee+excess carbs+lack of sleep. He/Him`,
+  description: `Scott Spence, Father, husband 👨‍👩‍👧 Full stack web developer in the making 👨‍💻 Just In Time learner 👌 Byproduct of: coffee+excess carbs+lack of sleep. He/Him`,
   twitterUsername: `@spences10`,
   facebookAppID: ``,
   pages: [`about`, `portfolio`, `now`, `uses`],
@@ -20,12 +19,14 @@ const siteMetadata = {
     { name: `GitHub`, link: `https://github.com/spences10` },
     {
       name: `YouTube`,
-      link:
-        `https://www.youtube.com/channel/UCnngLXpLSFsKkDhFoO9Ct3w?view_as=subscriber`
+      link: `https://www.youtube.com/channel/UCnngLXpLSFsKkDhFoO9Ct3w?view_as=subscriber`
     },
     { name: `Dev.to`, link: `https://dev.to/spences10` },
     { name: `Twitter`, link: `https://twitter.com/spences10` },
-    { name: `LinkedIn`, link: `https://www.linkedin.com/in/spences10` },
+    {
+      name: `LinkedIn`,
+      link: `https://www.linkedin.com/in/spences10`
+    },
     { name: `Email`, link: `mailto:spences10apps@gmail.com` }
   ],
   firstName: `Scott`,
@@ -37,8 +38,7 @@ const siteMetadata = {
   developerName: `Scott Spence`,
   developerUrl: `https.scottspence.me`,
   descriptionContent: `Scott Spence - web developer`,
-  keywordsContent:
-    `web developer, javascript, react, portfolio, information`,
+  keywordsContent: `web developer, javascript, react, portfolio, information`,
   imageLink: `https://scottspence.me/icons/icon-512x512.png`,
   siteLanguage: `en-GB`,
   lastBuildDate: Date.now()
@@ -150,9 +150,6 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-remove-serviceworker`,
-    `gatsby-plugin-netlify-cms`,
-    // this has to stay at the end of the array
-    `gatsby-plugin-netlify`
+    `gatsby-plugin-remove-serviceworker`
   ]
 }
