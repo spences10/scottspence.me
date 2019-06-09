@@ -1,22 +1,28 @@
 ---
 path: '/uses'
-date: '2019-03-10'
+date: '2019-06-09'
 title: 'Uses'
 ---
 
-## Editor + Terminal
+This page details all the equipment and tools I use on a daily basis.
 
-- Visual Studio Code [Sarah Drasner]'s awesome [Night Owl] 🦉 theme
+For home, I have recently changed to using Pop!\_OS [Linux] in place
+of Windows. Windows is still a good platform for web development and
+if you are a Windows user you can see how to use Windows Subsystem
+Linux for web development in [this guide].
 
-- Zeit's Hyper, with Hyper Snazzy Theme and fish 🐟 shell ❤️ check out
-  my blog post on [setting it up for Windows] and my [settings] and
-  [dotfiles] if you're interested.
+## Home
 
-- [Dank Mono] font for both text editor and terminal.
-
-## Personal Setup
+### Editor + Terminal
 
 - My computer is an ASUS Transformer Pro T304UA
+
+- Microsoft [Visual Studio Code] with [Sarah Drasner]'s awesome [Night
+  Owl] 🦉 theme
+
+- Terminal of choice now is [Tilix].
+
+- [Dank Mono] font for both text editor and terminal.
 
 - I have now replaced my [AUKEY 104 Key LED-Backlit Mechanical
   Keyboard] with another [HAVIT KB395L], such a sweet keyboard!!
@@ -27,7 +33,7 @@ title: 'Uses'
 - Recently putchased a [Fifine Usb Cardioid Studio Condenser
   Microphone] which is surprisingly good quality for the price.
 
-## Work Setup
+## Work
 
 - My computer is an DELL XPS 15
 
@@ -57,5 +63,8 @@ title: 'Uses'
 [fifine usb cardioid studio condenser microphone]:
   https://www.amazon.co.uk/gp/product/B06XQ39XCY/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1
 [see here to set up your own]: https://ss10.me/wsl-2019
+[this guide]: https://ss10.me/wsl-2019
 [havit kb395l]:
   https://www.amazon.co.uk/gp/product/B0767YQQTQ/ref=ox_sc_saved_title_1?smid=A144NZUZAZWQSX&psc=1
+[visual studio code]: https://code.visualstudio.com/
+[tilix]: https://github.com/gnunn1/tilix
