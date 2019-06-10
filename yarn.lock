@@ -4739,9 +4739,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.150, electron-to-chromium@^1.3.47:
-  version "1.3.154"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.154.tgz#e5b73beecd4db9f024d807ba1faad93fe1fb98aa"
-  integrity sha512-r3jVJRWvQIKDdjAbtmvJ7NihBFNUpU4VJKsslAzruv9dnYde3v8U2T7J62Vap3c6l6Ku4J56kxlciIO/E93cQg==
+  version "1.3.155"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.155.tgz#ebf0cc8eeaffd6151d1efad60fd9e021fb45fd3a"
+  integrity sha512-/ci/XgZG8jkLYOgOe3mpJY1onxPPTDY17y7scldhnSjjZqV6VvREG/LvwhRuV7BJbnENFfuDWZkSqlTh4x9ZjQ==
 
 elliptic@^6.0.0:
   version "6.4.1"
@@ -5430,9 +5430,10 @@ fastparse@^1.1.1:
   resolved "https://registry.yarnpkg.com/fastparse/-/fastparse-1.1.2.tgz#91728c5a5942eced8531283c79441ee4122c35a9"
   integrity sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==
 
-"favicons-webpack-plugin@https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf":
+"favicons-webpack-plugin@git+https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf":
   version "0.0.9"
-  resolved "https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
+  uid "0872de414061baaad0a2853c77ae75bc38b8bbbf"
+  resolved "git+https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
   dependencies:
     core-js "^2.5.7"
     favicons "^5.1.1"
@@ -5952,7 +5953,7 @@ gatsby-plugin-favicon@^3.1.6:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-favicon/-/gatsby-plugin-favicon-3.1.6.tgz#f63f45c9af112bc13dbf4cb89e0445f72c0811ac"
   integrity sha512-uQa5z1F/KKcjdVsDh/pnEMbXC9E1dQh7kpQpTVpTiKGOpft5s4J+qpGTJFOHizsppQMijNX+QO8lUAyaTI0sRw==
   dependencies:
-    favicons-webpack-plugin "https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
+    favicons-webpack-plugin "git+https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
     html-react-parser "^0.6.4"
     lodash "^4.17.11"
 
