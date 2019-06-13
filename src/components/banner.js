@@ -2,8 +2,8 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
+import { useSiteMetadata } from '../hooks/useSiteMetadata'
 import { media } from '../theme/globalStyle'
-import useSiteMetadata from './siteMetadata'
 
 /*
  * https://css-tricks.com/snippets/css/shake-css-keyframe-animation/

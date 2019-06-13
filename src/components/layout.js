@@ -6,11 +6,11 @@ import {
   ThemeSelectContext,
   ThemeSelectProvider
 } from '../contexts/ThemeSelectContext'
+import { useSiteMetadata } from '../hooks/useSiteMetadata'
 // import { Dump } from '../util/helpers'
 import { GlobalStyle, media } from '../theme/globalStyle'
 import Footer from './footer'
 import Header from './header'
-import useSiteMetadata from './siteMetadata'
 
 const AppStyles = styled.div`
   background-color: ${({ theme }) => theme.background};

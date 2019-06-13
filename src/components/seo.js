@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import Helmet from 'react-helmet'
-import useSiteMetadata from './siteMetadata'
+import { useSiteMetadata } from '../hooks/useSiteMetadata'
 
 const SEO = ({
   article,
