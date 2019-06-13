@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 // import Banner from '../components/banner'
 import SEO from '../components/seo'
 import { StyledHyperLink as SHL } from '../components/shared'
-import useSiteMetadata from '../components/siteMetadata'
+import { useSiteMetadata } from '../hooks/useSiteMetadata'
 // import { Dump } from '../util/helpers'
 import { media } from '../theme/globalStyle'
 
@@ -71,7 +71,7 @@ const BannerFallback = styled.div`
   `};
 `
 
-const IndexPage = ({ data }) => {
+export default () => {
   const { description, imageLink, title } = useSiteMetadata()
   return (
     <Layout>
@@ -119,5 +119,3 @@ const IndexPage = ({ data }) => {
     </Layout>
   )
 }
-
-export default IndexPage
