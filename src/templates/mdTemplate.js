@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { /*PageWrapper,*/ ShinyButton } from '../components/shared'
-import useSiteMetadata from '../components/siteMetadata'
+import { useSiteMetadata } from '../hooks/useSiteMetadata'
 
 // import { Dump } from '../util/helpers'
 
