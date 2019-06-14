@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2019-04-26'
+date: '2019-07-14'
 title: 'For recruiters - FAQ'
 ---
 
@@ -133,11 +133,11 @@ prefer to avoid phone calls for these reasons:
   will on the phone.
 
 - This question gets asked frequently enough that my default answer
-  has to be, if not **"no,"** at least **["read this first."]**
+  has to be, if not **"no"**, at least **["read this first."]**
 
-- Contact me by email. That's my preferred means of communication. If
-  we are still interested in after some fact checking I'd love to have
-  a chat.
+- **Contact me by email.** That's my preferred means of communication.
+  If we are still interested in after some fact checking I'd love to
+  have a chat.
 
 - Want me to know you have spent more than the three seconds nearly
   all recruiters spend on this page? (I use Google Analytics 👀)
@@ -158,6 +158,9 @@ prefer to avoid phone calls for these reasons:
 - The link to my CV is my product and brand, as it was built and
   styled by me. I consider this a way to showcase my current skill
   level. If your client wants to see my CV give them the link.
+
+- I understand that a lot of companies wil have ATS that you need to
+  add a document to. I'll leave this part of your job up to you.
 
 ## Notice period?
 
