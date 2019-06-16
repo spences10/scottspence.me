@@ -19,7 +19,7 @@ for [Karmarama]. I work in the City of London.
 I'm [marriwed] to a beautiful wife and we have a beautiful daughter
 and three cats!
 
-## 👨‍👩‍👧 🐱😸😹
+## 👨‍👩‍👧 🐱 😸 😹
 
 ### Coding history
 
