@@ -5963,10 +5963,10 @@ gatsby-plugin-manifest@2.1.1:
     semver "^5.6.0"
     sharp "^0.22.1"
 
-gatsby-plugin-netlify-cms@4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.0.2.tgz#d5c4b4b5c74c72ae0c795173ccb8c93b9a499386"
-  integrity sha512-Q0S4fe5xBLuxlWa0JRCTT54wEebKLVOOcm/XDmA6OiwTKAhpXGb63CfulvmUQK6j3ptvWh9VeaAiRk7TJBa50g==
+gatsby-plugin-netlify-cms@4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.0.3.tgz#8a84100e372a6c2cd5a7fd6ab2d753d768837ddf"
+  integrity sha512-X7h6kbcc/Txr54EYIlBmIafORBDqCazVZn0GeWz5ZFEZzt9kOgt/w0bBHU6Opyue939UsWcFxv9COz0MfoV8rA==
   dependencies:
     "@pieh/friendly-errors-webpack-plugin" "1.7.0-chalk-2"
     html-webpack-exclude-assets-plugin "^0.0.7"
