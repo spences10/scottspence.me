@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "2.0.404",
+  "version": "2.0.405",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "license": "MIT",
   "main": "n/a",
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@loadable/component": "^5.5.0",
-    "babel-plugin-styled-components": "1.10.2",
+    "babel-plugin-styled-components": "1.10.4",
     "card-vibes": "0.1.0",
     "gatsby": "2.11.3",
     "gatsby-plugin-catch-links": "^2.0.9",
