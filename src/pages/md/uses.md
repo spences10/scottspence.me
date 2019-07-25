@@ -31,8 +31,8 @@ development].
 - I run two HP EliteDisplay's E232 58,4 cm (23") Monitors through a
   Dell 452-BBOO USB 3.0 Ultra HD Triple Video Docking Station.
 
-- Recently putchased a [Fifine Usb Cardioid Studio Condenser
-  Microphone] which is surprisingly good quality for the price.
+- Microphone, a [Fifine Usb Cardioid Studio Condenser Microphone]
+  which is surprisingly good quality for the price.
 
 ## Work
 
