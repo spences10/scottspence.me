@@ -1,15 +1,16 @@
 ---
 path: '/uses'
-date: '2019-06-09'
+date: '2019-07-25'
 title: 'Uses'
 ---
 
 This page details all the equipment and tools I use on a daily basis.
 
-For home, I have recently changed to using Pop!\_OS [Linux] in place
-of Windows. Windows is still a good platform for web development and
-if you are a Windows user you can see how to use Windows Subsystem
-Linux for web development in [this guide].
+For home, I use Ubuntu 19.04 in place of Windows now. Windows is still
+a good platform for web development and if you are a Windows user you
+can see how to use Windows Subsystem Linux for web development in
+[this guide], I also made a video for setting up [Ubuntu for web
+development].
 
 ## Home
 
@@ -20,7 +21,7 @@ Linux for web development in [this guide].
 - Microsoft [Visual Studio Code] with [Sarah Drasner]'s awesome [Night
   Owl] 🦉 theme
 
-- Terminal of choice now is [Tilix].
+- Terminal of choice is [Tilix].
 
 - [Dank Mono] font for both text editor and terminal.
 
@@ -30,24 +31,26 @@ Linux for web development in [this guide].
 - I run two HP EliteDisplay's E232 58,4 cm (23") Monitors through a
   Dell 452-BBOO USB 3.0 Ultra HD Triple Video Docking Station.
 
-- Recently putchased a [Fifine Usb Cardioid Studio Condenser
-  Microphone] which is surprisingly good quality for the price.
+- Microphone, a [Fifine Usb Cardioid Studio Condenser Microphone]
+  which is surprisingly good quality for the price.
 
 ## Work
 
 - My computer is an DELL XPS 15
 
-- Keyboard, [HAVIT KB395L] (Kailh Low Profile Blue Switches)
-
-## Desktop Apps
-
 - For development I use Windows Subsystem Linux in conjunction with
   Hyper terminal. 👌 [See here to set up your own].
 
+- Keyboard, [HAVIT KB395L] (Kailh Low Profile Blue Switches)
+
 - For gif capture I use LICEcap.
 
-- I have recently started using [Open Broadcaster Software](OBS) for
-  recording some coding sessions.
+## Desktop Apps
+
+- I use [Open Broadcaster Software](OBS) for recording some coding
+  sessions.
+
+- For light video editing I use [OpenShot Video Editor]
 
 <!-- Links -->
 
@@ -68,3 +71,6 @@ Linux for web development in [this guide].
   https://www.amazon.co.uk/gp/product/B0767YQQTQ/ref=ox_sc_saved_title_1?smid=A144NZUZAZWQSX&psc=1
 [visual studio code]: https://code.visualstudio.com/
 [tilix]: https://github.com/gnunn1/tilix
+[ubuntu for web development]:
+  https://www.youtube.com/watch?v=eSAsdQuQ-1o
+[openshot video editor]: https://www.openshot.org/
