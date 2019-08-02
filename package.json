@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "2.0.440",
+  "version": "2.0.441",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "license": "MIT",
   "main": "n/a",
@@ -29,7 +29,7 @@
     "gatsby-plugin-netlify": "^2.0.6",
     "gatsby-plugin-netlify-cms": "4.1.6",
     "gatsby-plugin-offline": "2.2.4",
-    "gatsby-plugin-react-helmet": "3.1.2",
+    "gatsby-plugin-react-helmet": "3.1.3",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-robots-txt": "1.5.0",
     "gatsby-plugin-sharp": "2.2.9",
