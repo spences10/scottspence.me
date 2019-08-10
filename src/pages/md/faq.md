@@ -49,7 +49,7 @@ both some time here. You're welcome 👍
   grow.
 
 - Work life balance is a big deal for me, I really **do not** want to
-  go over a 40 hour working week.
+  go over a 37.5 hour working week.
 
 ## What's your preferred stack?
 
