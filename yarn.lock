@@ -6222,10 +6222,10 @@ gatsby-react-router-scroll@^2.1.6:
     scroll-behavior "^0.9.10"
     warning "^3.0.0"
 
-gatsby-remark-autolink-headers@2.1.7:
-  version "2.1.7"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-autolink-headers/-/gatsby-remark-autolink-headers-2.1.7.tgz#796cb33eae9b81ef92b0b2490cfeeb88ea2b3299"
-  integrity sha512-k5d+1p6KpNLslR8Fu8OV8T1/o3faC76k2O3GfN16eSO1LjdkvCIS7xT619qnb6M7dZlWwLtVfH2OMf0y4BT+YA==
+gatsby-remark-autolink-headers@2.1.8:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-autolink-headers/-/gatsby-remark-autolink-headers-2.1.8.tgz#38f6cf86dbc39d5d8b7030372a7d023af268700a"
+  integrity sha512-3zeZTZamEkOxxZB504tmC7NKt/iCDyBd6tpwsrQZWbf1AKT4YjEtvNkjCpBhQx97ZNQunhRbndQFhrz6Cd3bKw==
   dependencies:
     "@babel/runtime" "^7.5.5"
     github-slugger "^1.2.1"
@@ -6253,10 +6253,10 @@ gatsby-remark-smartypants@^2.0.9:
     retext-smartypants "^3.0.0"
     unist-util-visit "^1.3.0"
 
-gatsby-source-filesystem@2.1.17:
-  version "2.1.17"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.17.tgz#160a4ad106a24466cf9db8232eac2cfc4efe4569"
-  integrity sha512-pi/Tteg7zhc98D4noJEkPcgM0nHH0McCPSucycJS4Sw3dVCj2upBwWxaqUIaia5avYoklndMry4LViTUkr0YUg==
+gatsby-source-filesystem@2.1.18:
+  version "2.1.18"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.18.tgz#fcf80c62f243f4bfdb5ff4b17e8b0a79ace3730d"
+  integrity sha512-+LHqeDsK61F1BKiH1QGUNhZBH33tQVqB/iRw4AfKf/IlhfsJo5TzpzouAQv3aZXVj+5L05MSLmP9negHPGerag==
   dependencies:
     "@babel/runtime" "^7.5.5"
     better-queue "^3.8.10"
@@ -6274,15 +6274,14 @@ gatsby-source-filesystem@2.1.17:
     valid-url "^1.0.9"
     xstate "^3.3.3"
 
-gatsby-source-graphql@2.1.10:
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/gatsby-source-graphql/-/gatsby-source-graphql-2.1.10.tgz#338a6ce539372f0708c1fe1a805add216a89d131"
-  integrity sha512-8I4cEqcdu5/L11c55CnSJMgkOKrR3v+hN4t51S47XSeTTVKZN7QgjHGXMFwWz2R3zsk0KVboidYU6Y5oIy0f8w==
+gatsby-source-graphql@2.1.11:
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/gatsby-source-graphql/-/gatsby-source-graphql-2.1.11.tgz#e530d1be0f50423e9d74ec6d6fe54eb965097545"
+  integrity sha512-7uXNN3Tz9QMBzQumlCkHNQEZZCdTlo66RAAklqG9IrpFEmeMkitPP/5j4QDnrJXblpphqKkx1oUSBQenIMyVTA==
   dependencies:
     "@babel/runtime" "^7.5.5"
     apollo-link "1.2.12"
     apollo-link-http "^1.5.15"
-    graphql "^14.5.3"
     graphql-tools "^3.1.1"
     invariant "^2.2.4"
     node-fetch "^1.7.3"
