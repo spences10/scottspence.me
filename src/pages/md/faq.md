@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2019-07-14'
+date: '2019-09-03'
 title: 'For recruiters - FAQ'
 ---
 
@@ -16,29 +16,11 @@ both some time here. You're welcome 👍
 
 - Currently open to "opportunities".
 
-## How come your looking again?
-
-- Like most developers will say, I want to work with tomorrow's tech
-  stack today.
-
-- Where I currently am, although a great place to work, my development
-  is going to suffer if I have to keep maintaining WordPress sites.
-
 ## What's my ideal role?
 
-- Working with React, Gatsby, Netlify and GitHub.
-
-- Permanent, **not** open to contract roles right now (or for the next
-  24 months or so).
-
-  - From previous experience I feel I need to qualify this by saying a
-    "contract of employment" i.e. a permanent role, not a "consultancy
-    contract" between my business and the employer/client.
-
-- Working in an agile environment using best practices for
-  development.
-
 - A good percentage of pair programming on the team.
+
+- Working with React, Gatsby, Netlify and GitHub.
 
 - Working in a team where there is an emphasis on technical
   development.
@@ -50,6 +32,24 @@ both some time here. You're welcome 👍
 
 - Work life balance is a big deal for me, I really **do not** want to
   go over a 37.5 hour working week.
+
+- Permanent, **not** open to contract roles.
+
+- Working in an agile environment using best practices for
+  development.
+
+## What sort of company do you want to work with?
+
+- **No** AI
+
+- **No** Fintech
+
+- **No** Gambling
+
+- **No** Market Disruptor
+
+If the above are mentioned in the first line of selling the company to
+me I'm not buying, thanks.
 
 ## What's your preferred stack?
 
@@ -67,22 +67,24 @@ both some time here. You're welcome 👍
 
 ## How many years experience do you have?
 
-- I started as a professional web developer in March 2018, I have 10+
-  years previous experience as a VBA developer for mainly financial
-  organisations.
+- JavaScript 3 years
+
+- React 2.5 years
+
+- I started as a professional web developer in March 2018.
+
+- I have 10+ years previous experience as a VBA developer for
+  financial organisations.
 
 - For more, check out my [about] page which details my experience and
   a bit about me.
 
 ## Salary?
 
-- Right now, for me, it's more about learning and progressing with the
-  technology than it's about salary.
-
-- That being said, however, I'm not going to be giving a number for my
-  salary because, among other things, it can be used to cap any offer
-  made to me. In other words, my old salary becomes what's known in
-  **behavioural economics** as an anchor.
+- I'm not going to be giving a number for my salary because, among
+  other things, it can be used to cap any offer made to me. In other
+  words, my old salary becomes what's known in **behavioural
+  economics** as an anchor.
 
 - I know it's in your interest (being the recruiter) to get the best
   offer for me. I'll disclose my salary if:
@@ -114,10 +116,12 @@ both some time here. You're welcome 👍
   prefer to avoid travelling by tube if possible.
 
   - I'll consider roles three or four tube stops **max** from either
-    London Victoria or Blackfriars.
+    London Victoria, Blackfriars or Elephant & Castle.
 
 - Based in Swanley, Kent I'll consider places that are in Sevenoaks
-  and Bromley.
+  and Bromley, only those two places though. I'm not interested in
+  roles in Ashford, Maidstone or anywhere else deemed 'in the same
+  region'.
 
 ## Your skills look like a great match for this position we have. Can we have a quick five minute phone call to chat?
 
@@ -136,8 +140,8 @@ prefer to avoid phone calls for these reasons:
   has to be, if not **"no"**, at least **["read this first."]**
 
 - **Contact me by email.** That's my preferred means of communication.
-  If we are still interested in after some fact checking I'd love to
-  have a chat.
+  If we are still interested after some fact checking I'd love to have
+  a chat.
 
 - Want me to know you have spent more than the three seconds nearly
   all recruiters spend on this page? (I use Google Analytics 👀)
