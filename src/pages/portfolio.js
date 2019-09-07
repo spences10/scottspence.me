@@ -37,8 +37,15 @@ const PortfolioPage = ({ data }) => {
     lastBuildDate,
     siteLanguage
   } = useSiteMetadata()
+  const options = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }
   const builtDate = new Date(lastBuildDate).toLocaleDateString(
-    siteLanguage
+    siteLanguage,
+    options
   )
   return (
     <Layout>
