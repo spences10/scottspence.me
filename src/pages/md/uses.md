@@ -1,6 +1,6 @@
 ---
 path: '/uses'
-date: '2019-07-25'
+date: '2019-09-07'
 title: 'Uses'
 ---
 
@@ -14,9 +14,22 @@ development].
 
 ## Home
 
-### Editor + Terminal
+### Desk
 
 - My computer is an ASUS Transformer Pro T304UA
+
+- Desk chair is a [HÅG Capisco Puls]
+
+- I run two [HP EliteDisplay's E232 58,4 cm (23")] Monitors through a
+  Dell 452-BBOO USB 3.0 Ultra HD Triple Video Docking Station.
+
+- Keyboard is a [HAVIT KB395L], (Kailh Low Profile Blue Switches)
+  really nice Kailh choc switches 👍
+
+- Microphone, a [Fifine Usb Cardioid Studio Condenser Microphone]
+  which is surprisingly good quality for the price.
+
+### Editor + Terminal
 
 - Microsoft [Visual Studio Code] with [Sarah Drasner]'s awesome [Night
   Owl] 🦉 theme
@@ -25,46 +38,46 @@ development].
 
 - [Dank Mono] font for both text editor and terminal.
 
-- I have now replaced my [AUKEY 104 Key LED-Backlit Mechanical
-  Keyboard] with another [HAVIT KB395L], such a sweet keyboard!!
-
-- I run two HP EliteDisplay's E232 58,4 cm (23") Monitors through a
-  Dell 452-BBOO USB 3.0 Ultra HD Triple Video Docking Station.
-
-- Microphone, a [Fifine Usb Cardioid Studio Condenser Microphone]
-  which is surprisingly good quality for the price.
-
-## Work
-
-- My computer is an DELL XPS 15
-
-- For development I use Windows Subsystem Linux in conjunction with
-  Hyper terminal. 👌 [See here to set up your own].
-
-- Keyboard, [HAVIT KB395L] (Kailh Low Profile Blue Switches)
-
-- For gif capture I use LICEcap.
-
-## Desktop Apps
+### Desktop Apps
 
 - I use [Open Broadcaster Software](OBS) for recording some coding
   sessions.
 
 - For light video editing I use [OpenShot Video Editor]
 
+## Work
+
+### Desk
+
+- My work computer is a i9 [MackBook Pro (15-inch, 2019)]
+
+### Editor + Terminal
+
+- Microsoft [Visual Studio Code] with [Sarah Drasner]'s awesome [Night
+  Owl] 🦉 theme
+
+- iTerm2 with ZSH and Oh My Zsh
+
+### Desktop apps
+
+- For gif capture I use Kap.
+
+- For installing any apps I'm using Brew.
+
 <!-- Links -->
 
+[mackbook pro (15-inch, 2019)]: https://amzn.to/30ZX76C
+[hp elitedisplay's e232 58,4 cm (23")]: https://amzn.to/2ZKVMUP
+[håg capisco puls]: https://amzn.to/2ZKWKQa
 [open broadcaster software]: https://obsproject.com/
 [dank mono]: https://dank.sh/
 [settings]: https://github.com/spences10/settings
 [dotfiles]: https://github.com/spences10/dotfiles
-[aukey 104 key led-backlit mechanical keyboard]:
-  https://www.aukey.com/products/104-key-led-backlit-mechanical-keyboard-km-g6
 [sarah drasner]: https://github.com/sdras/
 [night owl]: https://github.com/sdras/night-owl-vscode-theme
 [setting it up for windows]: https://ss10.me/wsl-2019
 [fifine usb cardioid studio condenser microphone]:
-  https://www.amazon.co.uk/gp/product/B06XQ39XCY/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1
+  https://amzn.to/2N1uDWK
 [see here to set up your own]: https://ss10.me/wsl-2019
 [this guide]: https://ss10.me/wsl-2019
 [havit kb395l]:
