@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "2.0.515",
+  "version": "2.0.516",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "license": "MIT",
   "main": "n/a",
@@ -47,7 +47,7 @@
     "react-dom": "16.9.0",
     "react-helmet": "^5.2.0",
     "react-lottie": "^1.2.3",
-    "styled-components": "4.3.2"
+    "styled-components": "4.4.0"
   },
   "devDependencies": {
     "husky": "3.0.5",
