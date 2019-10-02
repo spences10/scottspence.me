@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2019-09-03'
+date: '2019-10-02'
 title: 'For recruiters - FAQ'
 ---
 
@@ -168,7 +168,7 @@ prefer to avoid phone calls for these reasons:
 
 ## Notice period?
 
-- Currently, ~~[two weeks]~~ three months.
+- Currently, ~~[two weeks]~~ two months.
 
 ## Interview availability?
 
