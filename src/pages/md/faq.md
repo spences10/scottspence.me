@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2019-10-02'
+date: '2019-09-05'
 title: 'For recruiters - FAQ'
 ---
 
@@ -40,16 +40,11 @@ both some time here. You're welcome 👍
 
 ## What sort of company do you want to work with?
 
-- **No** AI
+- Ethically I don't agree with Gambling.
 
-- **No** Fintech
-
-- **No** Gambling
-
-- **No** Market Disruptor
-
-If the above are mentioned in the first line of selling the company to
-me I'm not buying, thanks.
+- I find increasingly annoying when the opening line for a company is
+  peppered with buzzwords like AI, Fintech or when they're a market
+  leader I've never heard of (they're always market leaders).
 
 ## What's your preferred stack?
 
@@ -102,6 +97,8 @@ me I'm not buying, thanks.
 
 - nop!
 
+- I'm happy in sunny Swanley
+
 ## Are you willing to work remotely?
 
 - For my development over the next 24 months or so I will get the most
@@ -144,7 +141,7 @@ prefer to avoid phone calls for these reasons:
   a chat.
 
 - Want me to know you have spent more than the three seconds nearly
-  all recruiters spend on this page? (I use Google Analytics 👀)
+  all recruiters spend on this page?
 
   - In your email mention "Quick Start Guides Rock!" and you will have
     my attention, gratitude and a guaranteed reply. 🙏
@@ -174,7 +171,14 @@ prefer to avoid phone calls for these reasons:
 
 - I can telephone interview with little notice.
 
-- It will entirely depend on the location for face to face interviews.
+- It will entirely depend on the location and duration for face to
+  face interviews.
+
+- Being the end of the year I have zero time available to take off of
+  my current job.
+
+- Unless I'm going to be reimbursed for my time I'm not willing to do
+  any interviews that will go on longer than an hour.
 
 <!-- Links -->
 
