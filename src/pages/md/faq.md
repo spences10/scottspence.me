@@ -165,7 +165,7 @@ prefer to avoid phone calls for these reasons:
 
 ## Notice period?
 
-- Currently, ~~[two weeks]~~ three months.
+- Currently, ~~[two weeks]~~ two months.
 
 ## Interview availability?
 
