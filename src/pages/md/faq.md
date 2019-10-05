@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2019-09-05'
+date: '2019-10-05'
 title: 'For recruiters - FAQ'
 ---
 
@@ -92,6 +92,13 @@ both some time here. You're welcome 👍
 
 - If you don't want to give me a exact number then a range would be
   fine.
+
+## Benefits?
+
+- I'm seeing an increasing amount of places offer "unlimited holiday".
+  I'd rather know the minimum amount of holiday that _has_ to be
+  taken. The reality is that it's not actually unlimited so please
+  don't say that.
 
 ## Are you willing to relocate?
 
