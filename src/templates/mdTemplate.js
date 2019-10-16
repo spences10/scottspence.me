@@ -31,7 +31,8 @@ const Template = ({
         description={excerpt || 'nothin’'}
         image={imageLink}
         pathname={frontmatter.path}
-        article
+        article={true}
+        publishedDate={frontmatter.date}
       />
       <div className="md-post">
         <MdTitle>{frontmatter.title}</MdTitle>
