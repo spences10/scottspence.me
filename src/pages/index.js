@@ -79,13 +79,6 @@ export default () => {
         title={title}
         description={description || 'nothin’'}
         image={imageLink}
-        keywords={[
-          `portfolio`,
-          `gatsby`,
-          `javascript`,
-          `react`,
-          `graphql`
-        ]}
       />
       <Banner
         fallback={<BannerFallback>Loading...</BannerFallback>}
