@@ -31,7 +31,6 @@ const siteMetadata = {
   ],
   firstName: `Scott`,
   lastName: `Spence`,
-  imageLink: `/favicon.png`,
   backgroundColour: `#663399`, // this is for favicon and manifest
   themeColour: `#755f9f`, // this is for favicon and manifest
   nameContent: `Scott Spence - portfolio`,
