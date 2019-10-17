@@ -9,7 +9,7 @@ require('dotenv').config({
 
 const siteMetadata = {
   siteUrl: `https://scottspence.me`,
-  title: `scottspence.me`,
+  title: `Portfolio Site of Scott Spence, Web Developer`,
   titleTemplate: `%s | scottspence.me`,
   description: `Scott Spence, Father, husband 👨‍👩‍👧 Full stack web developer in the making 👨‍💻 Just In Time learner 👌 Byproduct of: coffee+excess carbs+lack of sleep. He/Him`,
   twitterUsername: `@spences10`,
