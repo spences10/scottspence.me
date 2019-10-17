@@ -31,17 +31,18 @@ const siteMetadata = {
   ],
   firstName: `Scott`,
   lastName: `Spence`,
-  faviconPng: `./src/images/favicon.png`,
   backgroundColour: `#663399`, // this is for favicon and manifest
   themeColour: `#755f9f`, // this is for favicon and manifest
   nameContent: `Scott Spence - portfolio`,
   developerName: `Scott Spence`,
-  developerUrl: `https.scottspence.me`,
+  developerUrl: `https://scottspence.me`,
   descriptionContent: `Scott Spence - web developer`,
   keywordsContent: `web developer, javascript, react, portfolio, information`,
-  imageLink: `https://scottspence.me/icons/icon-512x512.png`,
+  faviconPng: `./static/favicon.png`,
+  imageLink: `/favicon.png`,
   siteLanguage: `en-GB`,
-  lastBuildDate: Date.now()
+  siteLocale: `en_gb`,
+  lastBuildDate: new Date(Date.now()).toISOString()
 }
 
 module.exports = {
@@ -115,38 +116,6 @@ module.exports = {
         trackingId: process.env.GATSBY_GA_TRACKING_ID,
         anonymize: false,
         head: true
-      }
-    },
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: siteMetadata.faviconPng,
-        // WebApp Manifest Configuration
-        appName: siteMetadata.title,
-        appDescription: siteMetadata.descriptionContent,
-        developerName: siteMetadata.developerName,
-        developerURL: siteMetadata.developerUrl,
-        dir: `auto`,
-        lang: siteMetadata.siteLanguage,
-        background: siteMetadata.backgroundColour,
-        theme_color: siteMetadata.themeColour,
-        display: `standalone`,
-        orientation: `any`,
-        start_url: `/?homescreen=1`,
-        version: `1.0`,
-
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          opengraph: false,
-          twitter: false,
-          yandex: false,
-          windows: false
-        }
       }
     },
     `gatsby-plugin-catch-links`,
