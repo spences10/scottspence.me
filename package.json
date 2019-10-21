@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "2.0.545",
+  "version": "2.0.546",
   "author": "Scott Spence <spences10apps@gmail.com>",
   "license": "MIT",
   "main": "n/a",
@@ -41,7 +41,7 @@
     "gatsby-source-filesystem": "2.1.33",
     "gatsby-source-graphql": "2.1.20",
     "gatsby-transformer-remark": "2.6.30",
-    "gatsby-transformer-sharp": "2.2.23",
+    "gatsby-transformer-sharp": "2.3.0",
     "nivo": "0.31.0",
     "react": "16.10.2",
     "react-dom": "16.10.2",
