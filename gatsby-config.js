@@ -120,7 +120,6 @@ module.exports = {
     },
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-remove-serviceworker`
+    `gatsby-plugin-sitemap`
   ]
 }
