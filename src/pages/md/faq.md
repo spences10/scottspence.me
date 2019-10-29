@@ -1,6 +1,6 @@
 ---
 path: '/faq'
-date: '2019-10-05'
+date: '2019-10-29'
 title: 'For recruiters - FAQ'
 ---
 
@@ -178,14 +178,13 @@ prefer to avoid phone calls for these reasons:
 
 - I can telephone interview with little notice.
 
+- I can video call with prior arrangement.
+
 - It will entirely depend on the location and duration for face to
   face interviews.
 
 - Being the end of the year I have zero time available to take off of
-  my current job.
-
-- Unless I'm going to be reimbursed for my time I'm not willing to do
-  any interviews that will go on longer than an hour.
+  my current role for day long interview events.
 
 <!-- Links -->
 
