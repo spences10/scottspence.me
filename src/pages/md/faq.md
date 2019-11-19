@@ -1,16 +1,17 @@
 ---
 path: '/faq'
-date: '2019-10-29'
+date: '2019-11-19'
 title: 'For recruiters - FAQ'
 ---
 
-Hi there 👋 thanks for taking an interest in me and my profile, I know
-I'm nothing more than a keyword match right now, so I have gone to the
-effort of putting this information here for you.
+Hello friend 👋, thanks for taking an interest in me and my profile, I
+know I'm nothing more than a keyword match right now.
+
+I really value my time, so I have gone to the effort of putting this
+information here for you. I'm trying to save us both some time here.
 
 Please 🙏, please, try to make it to the end. I know there's a fair
-bit of info here and you have roles to fill. I'm trying to save us
-both some time here. You're welcome 👍
+bit of info here and you have roles to fill.
 
 ## What's your current situation?
 
@@ -40,11 +41,15 @@ both some time here. You're welcome 👍
 
 ## What sort of company do you want to work with?
 
-- Ethically I don't agree with Gambling.
-
 - I find increasingly annoying when the opening line for a company is
-  peppered with buzzwords like AI, Fintech or when they're a market
-  leader I've never heard of (they're always market leaders).
+  peppered with buzzwords like AI, Fintech or when they're a award
+  winning market leader I've never heard of (they're always market
+  leaders).
+
+- I have no issues with these sort of companies, just the marketing of
+  them.
+
+- Ethically I don't agree with Gambling.
 
 ## What's your preferred stack?
 
@@ -76,10 +81,12 @@ both some time here. You're welcome 👍
 
 ## Salary?
 
-- I'm not going to be giving a number for my salary because, among
-  other things, it can be used to cap any offer made to me. In other
-  words, my old salary becomes what's known in **behavioural
-  economics** as an anchor.
+- In my next role I'm looking for **£47,500**.
+
+- I'm not giving a number for my _current_ salary because, among other
+  things, it can be used to cap any offer made to me. In other words,
+  my old salary becomes what's known in **behavioural economics** as
+  an anchor.
 
 - I know it's in your interest (being the recruiter) to get the best
   offer for me. I'll disclose my salary if:
@@ -89,9 +96,6 @@ both some time here. You're welcome 👍
 
   - (b) You can explain how you're going to use the information for my
     benefit — needs to be a good reason.
-
-- If you don't want to give me a exact number then a range would be
-  fine.
 
 ## Benefits?
 
@@ -108,7 +112,7 @@ both some time here. You're welcome 👍
 
 ## Are you willing to work remotely?
 
-- For my development over the next 24 months or so I will get the most
+- For my development over the next 12 months or so I will get the most
   out of being office based closer to more experienced colleagues.
 
 - That being said I do know that [you can succeed as a junior
@@ -119,8 +123,8 @@ both some time here. You're welcome 👍
 - I live a ~30 minute train ride from London Victoria/Blackfriars and
   prefer to avoid travelling by tube if possible.
 
-  - I'll consider roles three or four tube stops **max** from either
-    London Victoria, Blackfriars or Elephant & Castle.
+- I'll consider roles three or four tube stops **max** from either
+  London Victoria, Blackfriars or Elephant & Castle.
 
 - Based in Swanley, Kent I'll consider places that are in Sevenoaks
   and Bromley, only those two places though. I'm not interested in
@@ -129,16 +133,17 @@ both some time here. You're welcome 👍
 
 ## Your skills look like a great match for this position we have. Can we have a quick five minute phone call to chat?
 
-You are welcome to my phone number to call but I won't answer it
-unless there is a prior arrangement or I recognise your number. I
-prefer to avoid phone calls for these reasons:
+- Sure book in a [15 minute chat].
+
+- Please don't call without a previously agreed tim slot, I prefer to
+  avoid phone calls for these reasons:
 
 - I'm on a [maker's schedule], which means interruptions are
   disruptive to my flow.
 
-- I've already tried to answer some of the most basic questions on
-  this page, and I've probably phrased them more clearly here than I
-  will on the phone.
+- I've already tried to answer the most basic questions on this page,
+  and I've probably phrased them more clearly here than I will on the
+  phone.
 
 - This question gets asked frequently enough that my default answer
   has to be, if not **"no"**, at least **["read this first."]**
@@ -203,3 +208,4 @@ prefer to avoid phone calls for these reasons:
 [two weeks]: https://www.youtube.com/watch?v=9v-33jcEDk4
 [you can succeed as a junior developer in a fully remote role]:
   https://dev.to/spences10/can-you-succeed-as-a-junior-developer-in-a-fully-remote-role-2a84
+[15 minute chat]: https://calendly.com/spences10apps/15min
