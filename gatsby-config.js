@@ -110,12 +110,9 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-fathom`,
       options: {
-        // add to netlify Build environment variables
-        trackingId: process.env.GATSBY_GA_TRACKING_ID,
-        anonymize: false,
-        head: true
+        siteId: process.env.GATSBY_FATHOM_TRACKING_ID_SCOTT_SPENCE_ME
       }
     },
     `gatsby-plugin-catch-links`,
