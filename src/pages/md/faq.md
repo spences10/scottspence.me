@@ -135,7 +135,7 @@ bit of info here and you have roles to fill.
 
 - Sure book in a [15 minute chat].
 
-- Please don't call without a previously agreed tim slot, I prefer to
+- Please don't call without a previously agreed time slot, I prefer to
   avoid phone calls for these reasons:
 
 - I'm on a [maker's schedule], which means interruptions are
