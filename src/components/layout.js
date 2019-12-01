@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
-// import { Dump } from '../util/helpers'
-import { GlobalStyle } from '../theme/globalStyle';
+// import Dump from '@wesbos/dump'
+import { GlobalStyle } from '../theme/global-style';
 import { Footer } from './footer';
 
 const AppStyles = styled.div`
