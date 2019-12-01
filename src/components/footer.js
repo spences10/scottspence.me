@@ -3,9 +3,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { StyledHyperLink as SHL } from '../components/shared';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
-import graphCms from '../images/graphCms.svg';
 import { media } from '../theme/sizes';
 import { PATTERNS } from '../theme/themeConstants';
+import graphCms from '/graphCms.svg';
 
 const FooterStyles = styled.footer`
   margin-top: 2rem;
