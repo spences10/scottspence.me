@@ -1,19 +1,22 @@
-import React from 'react'
-import SEO from 'react-seo-component'
-import styled from 'styled-components'
-import Layout from '../components/layout'
-import { StyledHyperLink as SHL } from '../components/shared'
-import { useSiteMetadata } from '../hooks/useSiteMetadata'
-import { media } from '../theme/sizes'
+import React from 'react';
+import SEO from 'react-seo-component';
+import styled from 'styled-components';
+import About from '../../copy/about';
+import Now from '../../copy/now';
+import Uses from '../../copy/uses';
+import Layout from '../components/layout';
+import { StyledHyperLink as SHL } from '../components/shared';
+import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import { media } from '../theme/sizes';
 
 const EmojiWrapper = styled.span.attrs({
-  role: 'img'
-})``
+  role: 'img',
+})``;
 
 const StyledHyperLink = styled(SHL)`
   font-family: ${props => props.theme.fontBody};
   color: ${props => props.theme.fontDark};
-`
+`;
 
 const Hi = styled.span`
   font-size: 2rem;
@@ -32,7 +35,7 @@ const Hi = styled.span`
   ${media.phone`
     margin-top: 2rem;
   `};
-`
+`;
 
 export default () => {
   const {
@@ -42,8 +45,8 @@ export default () => {
     siteUrl,
     siteLanguage,
     siteLocale,
-    twitterUsername
-  } = useSiteMetadata()
+    twitterUsername,
+  } = useSiteMetadata();
   return (
     <Layout>
       <SEO
@@ -61,6 +64,9 @@ export default () => {
           👋
         </span>
       </Hi>
+      <About />
+      <Now />
+      <Uses />
       {/* <Dump data={data} /> */}
       <p>Welcome to my personal portfolio site.</p>
       <p>
@@ -68,19 +74,21 @@ export default () => {
         <StyledHyperLink
           href={'https://www.gatsbyjs.com/'}
           target="_blank"
-          rel="noopener">
+          rel="noopener"
+        >
           Gatsby
         </StyledHyperLink>{' '}
         and{' '}
         <StyledHyperLink
           href={'https://www.styled-components.com/'}
           target="_blank"
-          rel="noopener">
+          rel="noopener"
+        >
           styled components
         </StyledHyperLink>
         {/* eslint-disable-next-line */}
         <EmojiWrapper aria-label="nail polish">💅</EmojiWrapper>
       </p>
     </Layout>
-  )
-}
+  );
+};
