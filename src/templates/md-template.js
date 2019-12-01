@@ -1,14 +1,11 @@
 import { graphql } from 'gatsby';
-import Link from 'gatsby-link';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 import PropTypes from 'prop-types';
 import React from 'react';
 import SEO from 'react-seo-component';
 import styled from 'styled-components';
 import Layout from '../components/layout';
-import { /*PageWrapper,*/ ShinyButton } from '../components/shared';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
-
-// import { Dump } from '../util/helpers'
 
 const MdTitle = styled.h1``;
 
@@ -18,11 +15,13 @@ const MdDate = styled.span`
   color: ${props => props.theme.fontLight};
 `;
 
-const Template = ({
-  data, // this prop will be injected by the GraphQL query below.
-}) => {
-  const { markdownRemark } = data; // data.markdownRemark holds our post data
-  const { frontmatter, html, excerpt } = markdownRemark;
+const Template = ({ data }) => {
+  const {
+    frontmatter: { title, date },
+    body,
+    excerpt,
+    fields: { slug },
+  } = data.mdx;
   const {
     imageLink,
     siteUrl,
@@ -34,30 +33,21 @@ const Template = ({
   return (
     <Layout>
       <SEO
-        title={frontmatter.title}
-        description={excerpt || 'nothin’'}
+        title={title}
+        description={excerpt}
         image={`${siteUrl}${imageLink}`}
-        pathname={`${siteUrl}${frontmatter.path}`}
+        pathname={`${siteUrl}${slug}`}
         publishedDate={'2019-12-01T08:26:52.963Z'}
-        modifiedDate={frontmatter.date}
+        modifiedDate={date}
         siteLanguage={siteLanguage}
         siteLocale={siteLocale}
         twitterUsername={twitterUsername}
         author={developerName}
         article={true}
       />
-      <div className="md-post">
-        <MdTitle>{frontmatter.title}</MdTitle>
-        <MdDate>Updated: {frontmatter.date}</MdDate>
-        {/* <Dump excerpt={excerpt} /> */}
-        <div
-          className="md-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
-      <Link to="/">
-        <ShinyButton>homepage</ShinyButton>
-      </Link>
+      <MdTitle>{title}</MdTitle>
+      <MdDate>Updated: {date}</MdDate>
+      <MDXRenderer>{body}</MDXRenderer>
     </Layout>
   );
 };
