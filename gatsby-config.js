@@ -69,30 +69,29 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `copy`,
         path: `${__dirname}/copy`,
-        name: `posts`,
       },
     },
-    `gatsby-plugin-mdx`,
-    // {
-    //   resolve: `gatsby-plugin-mdx`,
-    //   options: {
-    //     extensions: [`.mdx`, `.md`],
-    //     gatsbyRemarkPlugins: [
-    //       `gatsby-remark-autolink-headers`,
-    //       {
-    //         resolve: `gatsby-remark-external-links`,
-    //         options: {
-    //           target: `_blank`,
-    //           rel: `noopener`,
-    //         },
-    //       },
-    //       `gatsby-remark-smartypants`,
-    //       `gatsby-transformer-sharp`,
-    //       `gatsby-plugin-sharp`,
-    //     ],
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        // gatsbyRemarkPlugins: [
+        //   `gatsby-remark-autolink-headers`,
+        //   {
+        //     resolve: `gatsby-remark-external-links`,
+        //     options: {
+        //       target: `_blank`,
+        //       rel: `noopener`,
+        //     },
+        //   },
+        //   `gatsby-remark-smartypants`,
+        //   `gatsby-transformer-sharp`,
+        //   `gatsby-plugin-sharp`,
+        // ],
+      },
+    },
     {
       resolve: `gatsby-source-graphql`,
       options: {
