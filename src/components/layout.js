@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
-import styled, { ThemeProvider } from 'styled-components';
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import styled from 'styled-components';
 // import { Dump } from '../util/helpers'
-import { GlobalStyle, theme } from '../theme/globalStyle';
+import { GlobalStyle } from '../theme/globalStyle';
 import { Footer } from './footer';
 
 const AppStyles = styled.div`
@@ -18,18 +17,15 @@ const Wrapper = styled.div`
 `;
 
 const Layout = ({ children }) => {
-  const { title } = useSiteMetadata();
   return (
-    <ThemeProvider theme={theme}>
-      <AppStyles>
-        <GlobalStyle />
-        <Helmet>
-          <html lang="en-GB" />
-        </Helmet>
-        <Wrapper>{children}</Wrapper>
-        <Footer />
-      </AppStyles>
-    </ThemeProvider>
+    <AppStyles>
+      <GlobalStyle />
+      <Helmet>
+        <html lang="en-GB" />
+      </Helmet>
+      <Wrapper>{children}</Wrapper>
+      <Footer />
+    </AppStyles>
   );
 };
 
