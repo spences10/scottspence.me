@@ -62,24 +62,24 @@ const Template = ({
   );
 };
 
+export default Template;
+
 Template.propTypes = {
   data: PropTypes.object,
 };
 
-export default Template;
-
-/* eslint-disable */
-export const pageQuery = graphql`
-  query MDPageByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      excerpt(pruneLength: 250)
+export const query = graphql`
+  query PageBySlug($slug: String!) {
+    mdx(fields: { slug: { eq: $slug } }) {
       frontmatter {
-        date(formatString: "YYYY MMMM Do")
-        path
         title
+        date
+      }
+      body
+      excerpt
+      fields {
+        slug
       }
     }
   }
 `;
-/* eslint-enable */
