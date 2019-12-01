@@ -1,23 +1,21 @@
-import { Link } from 'gatsby'
-import React from 'react'
-import styled from 'styled-components'
-import { PATTERNS } from '../theme/themeConstants'
-import Branding from './branding'
-import PageNav from './pageNav'
+import { Link } from 'gatsby';
+import React from 'react';
+import styled from 'styled-components';
+import { PATTERNS } from '../theme/themeConstants';
+import Branding from './branding';
+import PageNav from './pageNav';
 
 const HeaderStyles = styled.div`
-  
-
   /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [color]; */
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  background-color: ${props => props.theme.primary};
+  background-color: ${({ theme }) => theme.colours.primary[100]};
   background-image: url("${PATTERNS.TOPOGRAPHY}");
-`
+`;
 
 const Wrapper = styled.div`
-  max-width: 570px;
+  max-width: ${({ theme }) => theme.maxWidth};
   margin: 0 auto;
-`
+`;
 
 // const SiteTitle = styled.h1`
 //   margin: 1rem;
@@ -37,7 +35,7 @@ const SiteLink = styled(Link)`
   &:hover {
     color: ${props => props.theme.secondary};
   }
-`
+`;
 
 export const Header = () => (
   <HeaderStyles>
@@ -48,4 +46,4 @@ export const Header = () => (
       <PageNav />
     </Wrapper>
   </HeaderStyles>
-)
+);
