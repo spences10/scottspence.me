@@ -34,8 +34,12 @@ const PortfolioPage = ({ data }) => {
   const {
     description,
     imageLink,
-    lastBuildDate,
-    siteLanguage
+    title,
+    siteUrl,
+    siteLanguage,
+    siteLocale,
+    twitterUsername,
+    lastBuildDate
   } = useSiteMetadata()
   const options = {
     weekday: 'long',
@@ -50,9 +54,13 @@ const PortfolioPage = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title={'Portfolio, projects, examples'}
-        description={description || 'nothin’'}
-        image={imageLink}
+        title={title}
+        description={description}
+        image={`${siteUrl}${imageLink}`}
+        pathname={siteUrl}
+        siteLanguage={siteLanguage}
+        siteLocale={siteLocale}
+        twitterUsername={twitterUsername}
       />
       {/* <Dump assets={assets} /> */}
       <h1>Portfolio</h1>

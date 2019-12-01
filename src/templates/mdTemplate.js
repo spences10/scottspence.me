@@ -23,16 +23,29 @@ const Template = ({
 }) => {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html, excerpt } = markdownRemark
-  const { imageLink } = useSiteMetadata()
+  const {
+    imageLink,
+    siteUrl,
+    siteLanguage,
+    siteLocale,
+    twitterUsername,
+    developerName
+  } = useSiteMetadata()
   return (
     <Layout>
       <SEO
         title={frontmatter.title}
         description={excerpt || 'nothin’'}
-        image={imageLink}
-        pathname={frontmatter.path}
+        image={`${siteUrl}${imageLink}`}
+        pathname={`${siteUrl}${frontmatter.path}`}
         article={true}
-        publishedDate={frontmatter.date}
+        publishedDate={'2019-12-01T08:26:52.963Z'}
+        modifiedDate={frontmatter.date}
+        siteLanguage={siteLanguage}
+        siteLocale={siteLocale}
+        twitterUsername={twitterUsername}
+        author={developerName}
+        article={true}
       />
       <div className="md-post">
         <MdTitle>{frontmatter.title}</MdTitle>

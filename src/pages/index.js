@@ -35,13 +35,25 @@ const Hi = styled.span`
 `
 
 export default () => {
-  const { description, imageLink, title } = useSiteMetadata()
+  const {
+    description,
+    imageLink,
+    title,
+    siteUrl,
+    siteLanguage,
+    siteLocale,
+    twitterUsername
+  } = useSiteMetadata()
   return (
     <Layout>
       <SEO
         title={title}
-        description={description || 'nothin’'}
-        image={imageLink}
+        description={description}
+        image={`${siteUrl}${imageLink}`}
+        pathname={siteUrl}
+        siteLanguage={siteLanguage}
+        siteLocale={siteLocale}
+        twitterUsername={twitterUsername}
       />
       <Hi>
         Hi people!
