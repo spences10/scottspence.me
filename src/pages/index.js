@@ -1,7 +1,7 @@
 import React from 'react'
+import SEO from 'react-seo-component'
 import styled from 'styled-components'
 import Layout from '../components/layout'
-import SEO from '../components/seo'
 import { StyledHyperLink as SHL } from '../components/shared'
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
 import { media } from '../theme/sizes'

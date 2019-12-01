@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@loadable/component": "^5.5.0",
+    "@wesbos/dump": "0.1.1",
     "babel-plugin-styled-components": "1.10.6",
     "card-vibes": "0.1.0",
     "gatsby": "2.15.29",
@@ -44,6 +45,7 @@
     "react-dom": "16.10.2",
     "react-helmet": "^5.2.0",
     "react-lottie": "^1.2.3",
+    "react-seo-component": "0.1.16",
     "styled-components": "4.4.0"
   },
   "devDependencies": {
