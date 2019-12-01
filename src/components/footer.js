@@ -2,7 +2,6 @@ import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import { StyledHyperLink as SHL } from '../components/shared'
-import ThemeSelect from '../components/themeSelect'
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
 import graphCms from '../images/graphCms.svg'
 import { media } from '../theme/globalStyle'
@@ -10,57 +9,19 @@ import { PATTERNS } from '../theme/themeConstants'
 
 // import { Dump } from '../utils/helpers'
 
-const FooterWrapper = styled.footer`
-  z-index: 1;
-  bottom: 0;
-  /* width: 100%; */
-  /* position: fixed; sticky */
-  /* height: 20rem; */
+const FooterStyles = styled.footer`
   margin-top: 2rem;
-  grid-area: f;
-  display: grid;
   background: ${({ theme }) => theme.primary};
   color: ${({ theme }) => theme.fontDark};
   background-color: ${props => props.theme.primary};
   background-image: url("${PATTERNS.TOPOGRAPHY}");
   box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 5px 0px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas:
-    '. . . l s . . . . . . .'
-    '. . . . . . t . . . . .'
-    '. . . . . . g g g . . .';
-  ${media.giant`
-    grid-template-areas:
-      '. . l . s . . . . . . .'
-      '. . . . . . . t . . . .'
-      '. . . . . . . g g g . .';
-      /* background: goldenrod; */
-  `};
-  ${media.desktop`
-    grid-template-areas:
-      '. l . s . . . . . . . .'
-      '. . . . . . t . . . . .'
-      '. . . . . . g g g g g .';
-    /* background: dodgerblue; */
-  `};
-  ${media.tablet`
-    /* height: 30rem; */
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-areas:
-        '. l . s . . . . .'
-        '. t . . . . . . .'
-        '. g g g g . . . .';
-    /* background: mediumseagreen; */
-  `};
-  ${media.phone`
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-areas:
-        'l . s . . . . . .'
-        't . . . . . . . .'
-        'g g g g . . . . .';
-    /* background: palevioletred; */
-  `};
+  
+`
+
+const Wrapper = styled.div`
+  max-width: 570px;
+  margin: 0 auto;
 `
 
 const LinksList = styled.ul`
@@ -127,37 +88,36 @@ const ImageWrapper = styled.div`
   `};
 `
 
-const Footer = () => {
+export const Footer = () => {
   const { contact, pages } = useSiteMetadata()
   return (
-    <FooterWrapper>
-      <ThemeSelect />
-      {/* <Dump data={data} pages={pages} /> */}
-      <LinksList area={'l'}>
-        <LinksListTitle>Links</LinksListTitle>
-        {pages.map((page, index) => (
-          <StyledLink key={index} to={page}>
-            <ListLink>{page}</ListLink>
-          </StyledLink>
-        ))}
-      </LinksList>
-      <LinksList area={'s'}>
-        <LinksListTitle>Social</LinksListTitle>
-        {contact.map((details, index) => (
-          <StyledHyperLink
-            key={index}
-            href={details.link}
-            target="_blank"
-            rel="noopener">
-            <ListLink>{details.name}</ListLink>
-          </StyledHyperLink>
-        ))}
-      </LinksList>
-      <ImageWrapper area={'g'}>
-        <img src={graphCms} className="App-logo" alt="logo" />
-      </ImageWrapper>
-    </FooterWrapper>
+    <FooterStyles>
+      <Wrapper>
+        {/* <Dump data={data} pages={pages} /> */}
+        <LinksList area={'l'}>
+          <LinksListTitle>Links</LinksListTitle>
+          {pages.map((page, index) => (
+            <StyledLink key={index} to={page}>
+              <ListLink>{page}</ListLink>
+            </StyledLink>
+          ))}
+        </LinksList>
+        <LinksList area={'s'}>
+          <LinksListTitle>Social</LinksListTitle>
+          {contact.map((details, index) => (
+            <StyledHyperLink
+              key={index}
+              href={details.link}
+              target="_blank"
+              rel="noopener">
+              <ListLink>{details.name}</ListLink>
+            </StyledHyperLink>
+          ))}
+        </LinksList>
+        <ImageWrapper area={'g'}>
+          <img src={graphCms} className="App-logo" alt="logo" />
+        </ImageWrapper>
+      </Wrapper>
+    </FooterStyles>
   )
 }
-
-export default Footer
