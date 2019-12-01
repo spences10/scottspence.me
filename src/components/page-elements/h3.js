@@ -8,7 +8,7 @@ const Wrapper = styled.a`
 
 const StyledText = styled.h3`
   font-weight: bold;
-  font-size: 24px;
+  font-size: ${({ theme }) => theme.fontSizes.h3};
   text-align: center;
   &:after {
     display: block;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { media } from '../../theme/sizes';
 
 const StyledText = styled.p`
-  font-size: 16px;
+  font-size: ${({ theme }) => theme.fontSizes.p};
   /* max-width: ${({ theme }) => theme.maxWidth}; */
   margin: 0 auto;
   margin-top: 30px;
