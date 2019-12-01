@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ShinyButton = styled.button`
   margin: 0rem 0rem;
@@ -39,7 +39,7 @@ export const ShinyButton = styled.button`
     transform: skewX(-45deg) translateX(13.5em);
     transition: all 0.5s ease-in-out;
   }
-`
+`;
 
 export const StyledHyperLink = styled.a`
   cursor: pointer;
@@ -51,7 +51,7 @@ export const StyledHyperLink = styled.a`
     color: ${props => props.theme.secondary};
   }
   color: ${props => props.theme.primary};
-`
+`;
 
 export const Button = styled.button`
   color: ${props => props.color};
@@ -67,14 +67,14 @@ export const Button = styled.button`
     transform: translateY(1px);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
   }
-`
+`;
 
 export const ButtonSmall = styled(Button)`
   padding: 0.1rem 2rem;
   margin: 0.2rem;
-`
+`;
 
 export const ButtonBig = styled(Button)`
   padding: 0.75rem 2rem;
   margin: 0.5rem;
-`
+`;

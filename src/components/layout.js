@@ -6,7 +6,6 @@ import { useSiteMetadata } from '../hooks/useSiteMetadata';
 // import { Dump } from '../util/helpers'
 import { GlobalStyle, theme } from '../theme/globalStyle';
 import { Footer } from './footer';
-import { Header } from './header';
 
 const AppStyles = styled.div`
   position: relative;
@@ -27,7 +26,6 @@ const Layout = ({ children }) => {
         <Helmet>
           <html lang="en-GB" />
         </Helmet>
-        <Header siteTitle={title} />
         <Wrapper>{children}</Wrapper>
         <Footer />
       </AppStyles>
