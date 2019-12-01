@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
 // import { Dump } from '../util/helpers'
-import { media } from '../theme/globalStyle'
+import { media } from '../theme/sizes'
 
 const NavMenu = styled.ul`
   grid-area: n;

@@ -1,8 +1,7 @@
-import React from 'react'
 import PropTypes from 'prop-types'
+import React from 'react'
 import styled from 'styled-components'
-
-import { media } from '../theme/globalStyle'
+import { media } from '../theme/sizes'
 
 const Background = styled.div`
   display: grid;

@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import styled, { ThemeProvider } from 'styled-components'
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
 // import { Dump } from '../util/helpers'
-import { GlobalStyle, themes } from '../theme/globalStyle'
+import { GlobalStyle, theme } from '../theme/globalStyle'
 import { Footer } from './footer'
 import { Header } from './header'
 
@@ -21,7 +21,7 @@ const Wrapper = styled.div`
 const Layout = ({ children }) => {
   const { title } = useSiteMetadata()
   return (
-    <ThemeProvider theme={themes.theme1}>
+    <ThemeProvider theme={theme}>
       <AppStyles>
         <GlobalStyle />
         <Helmet>

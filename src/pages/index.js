@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { StyledHyperLink as SHL } from '../components/shared'
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
-import { media } from '../theme/globalStyle'
+import { media } from '../theme/sizes'
 
 const EmojiWrapper = styled.span.attrs({
   role: 'img'

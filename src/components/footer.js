@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { StyledHyperLink as SHL } from '../components/shared'
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
 import graphCms from '../images/graphCms.svg'
-import { media } from '../theme/globalStyle'
+import { media } from '../theme/sizes'
 import { PATTERNS } from '../theme/themeConstants'
 
 const FooterStyles = styled.footer`
@@ -23,13 +23,13 @@ const Wrapper = styled.div`
 `
 
 const LinksList = styled.ul`
-  grid-area: ${props => props.area};
   margin: 0.5rem 0rem;
   padding: 0.5rem 0rem;
   ${media.phone`
     margin: 0.5rem ;
     padding: 0.5rem;
   `};
+  margin-right: 2.5rem;
 `
 
 const LinksListTitle = styled.span`

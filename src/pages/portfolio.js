@@ -9,7 +9,7 @@ import { ShinyButton } from '../components/shared'
 import TopLanguages from '../components/topLanguages'
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
 // import { Dump } from '../util/helpers'
-import { media } from '../theme/globalStyle'
+import { media } from '../theme/sizes'
 
 const ProjectWrapper = styled.div`
   display: grid;
