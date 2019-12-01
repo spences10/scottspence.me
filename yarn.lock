@@ -13045,6 +13045,11 @@ styled-components@4.4.0:
     stylis-rule-sheet "^0.0.10"
     supports-color "^5.5.0"
 
+styled-reset@4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/styled-reset/-/styled-reset-4.0.8.tgz#2d4fa08d3144bc68778609e25398d5d4ee4d44bd"
+  integrity sha512-RZuMsGo/FEmugu+YK0bktp+w3anT5V7NXxAuO4Pi9C55Mtn83448cnR99naomlKVH0iGKwGkpQbLcGm4zyrTPA==
+
 stylehacks@^4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/stylehacks/-/stylehacks-4.0.3.tgz#6718fcaf4d1e07d8a1318690881e8d96726a71d5"
