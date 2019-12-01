@@ -1,11 +1,11 @@
 const activeEnv =
-  process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development'
+  process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development';
 
-console.log(`Using environment config: '${activeEnv}'`)
+console.log(`Using environment config: '${activeEnv}'`);
 
 require('dotenv').config({
-  path: `.env.${activeEnv}`
-})
+  path: `.env.${activeEnv}`,
+});
 
 const siteMetadata = {
   siteUrl: `https://scottspence.me`,
@@ -19,15 +19,15 @@ const siteMetadata = {
     { name: `GitHub`, link: `https://github.com/spences10` },
     {
       name: `YouTube`,
-      link: `https://www.youtube.com/channel/UCnngLXpLSFsKkDhFoO9Ct3w?view_as=subscriber`
+      link: `https://www.youtube.com/channel/UCnngLXpLSFsKkDhFoO9Ct3w?view_as=subscriber`,
     },
     { name: `Dev.to`, link: `https://dev.to/spences10` },
     { name: `Twitter`, link: `https://twitter.com/spences10` },
     {
       name: `LinkedIn`,
-      link: `https://www.linkedin.com/in/spences10`
+      link: `https://www.linkedin.com/in/spences10`,
     },
-    { name: `Email`, link: `mailto:spences10apps@gmail.com` }
+    { name: `Email`, link: `mailto:spences10apps@gmail.com` },
   ],
   firstName: `Scott`,
   lastName: `Spence`,
@@ -42,8 +42,8 @@ const siteMetadata = {
   imageLink: `/favicon.png`,
   siteLanguage: `en-GB`,
   siteLocale: `en_gb`,
-  lastBuildDate: new Date(Date.now()).toISOString()
-}
+  lastBuildDate: new Date(Date.now()).toISOString(),
+};
 
 module.exports = {
   siteMetadata: siteMetadata,
@@ -58,17 +58,17 @@ module.exports = {
         background_color: siteMetadata.backgroundColour,
         theme_color: siteMetadata.themeColour,
         display: `minimal-ui`,
-        icon: siteMetadata.faviconPng // This path is relative to the root of the site.
-      }
+        icon: siteMetadata.faviconPng, // This path is relative to the root of the site.
+      },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages/md`,
-        name: `posts`
-      }
+        path: `${__dirname}/copy`,
+        name: `posts`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -79,14 +79,14 @@ module.exports = {
             resolve: `gatsby-remark-external-links`,
             options: {
               target: `_blank`,
-              rel: `noopener`
-            }
+              rel: `noopener`,
+            },
           },
           `gatsby-remark-smartypants`,
           `gatsby-transformer-sharp`,
-          `gatsby-plugin-sharp`
-        ]
-      }
+          `gatsby-plugin-sharp`,
+        ],
+      },
     },
     {
       resolve: `gatsby-source-graphql`,
@@ -94,8 +94,8 @@ module.exports = {
         typeName: `GRAPHCMSDATA`,
         fieldName: `graphcmsdata`,
         // Url to query from
-        url: process.env.GATSBY_SOURCE_GRAPHQL
-      }
+        url: process.env.GATSBY_SOURCE_GRAPHQL,
+      },
     },
     {
       resolve: `gatsby-source-graphql`,
@@ -104,19 +104,19 @@ module.exports = {
         fieldName: `github`,
         url: `https://api.github.com/graphql`,
         headers: {
-          Authorization: `bearer ${process.env.GATSBY_GITHUB_TOKEN}`
+          Authorization: `bearer ${process.env.GATSBY_GITHUB_TOKEN}`,
         },
-        fetchOptions: {}
-      }
+        fetchOptions: {},
+      },
     },
     {
       resolve: `gatsby-plugin-fathom`,
       options: {
-        siteId: process.env.GATSBY_FATHOM_TRACKING_ID_SCOTT_SPENCE_ME
-      }
+        siteId: process.env.GATSBY_FATHOM_TRACKING_ID_SCOTT_SPENCE_ME,
+      },
     },
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-sitemap`
-  ]
-}
+    `gatsby-plugin-sitemap`,
+  ],
+};

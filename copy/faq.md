@@ -206,6 +206,5 @@ bit of info here and you have roles to fill.
 [here]: https://cvjson.now.sh/
 [cv.scottspence.me]: https://cv.scottspence.me/
 [two weeks]: https://www.youtube.com/watch?v=9v-33jcEDk4
-[you can succeed as a junior developer in a fully remote role]:
-  https://dev.to/spences10/can-you-succeed-as-a-junior-developer-in-a-fully-remote-role-2a84
+[you can succeed as a junior developer in a fully remote role]: https://dev.to/spences10/can-you-succeed-as-a-junior-developer-in-a-fully-remote-role-2a84
 [15 minute chat]: https://calendly.com/spences10apps/15min

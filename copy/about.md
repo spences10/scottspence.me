@@ -101,8 +101,7 @@ All the best. 👍
 [this site]: https://scottspence.me
 [my blog]: https://blog.scottspence.me
 [my cv]: https://cv.scottspence.me
-[gatsby using graphcms]:
-  https://github.com/spences10/gatsby-using-graphcms
+[gatsby using graphcms]: https://github.com/spences10/gatsby-using-graphcms
 [deadlift]: https://www.youtube.com/watch?v=b8sadCd7Lhc
 [react static]: https://react-static.js.org/
 [ask me anything]: https://github.com/spences10/ama

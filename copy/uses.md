@@ -76,14 +76,11 @@ development].
 [sarah drasner]: https://github.com/sdras/
 [night owl]: https://github.com/sdras/night-owl-vscode-theme
 [setting it up for windows]: https://ss10.me/wsl-2019
-[fifine usb cardioid studio condenser microphone]:
-  https://amzn.to/2N1uDWK
+[fifine usb cardioid studio condenser microphone]: https://amzn.to/2N1uDWK
 [see here to set up your own]: https://ss10.me/wsl-2019
 [this guide]: https://ss10.me/wsl-2019
-[havit kb395l]:
-  https://www.amazon.co.uk/gp/product/B0767YQQTQ/ref=ox_sc_saved_title_1?smid=A144NZUZAZWQSX&psc=1
+[havit kb395l]: https://www.amazon.co.uk/gp/product/B0767YQQTQ/ref=ox_sc_saved_title_1?smid=A144NZUZAZWQSX&psc=1
 [visual studio code]: https://code.visualstudio.com/
 [tilix]: https://github.com/gnunn1/tilix
-[ubuntu for web development]:
-  https://www.youtube.com/watch?v=eSAsdQuQ-1o
+[ubuntu for web development]: https://www.youtube.com/watch?v=eSAsdQuQ-1o
 [openshot video editor]: https://www.openshot.org/
