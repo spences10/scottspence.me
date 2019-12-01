@@ -1,11 +1,11 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+import graphCms from '../../static/graph-cms.svg';
 import { StyledHyperLink as SHL } from '../components/shared';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import { media } from '../theme/sizes';
 import { PATTERNS } from '../theme/themeConstants';
-import graphCms from '/graphCms.svg';
 
 const FooterStyles = styled.footer`
   margin-top: 2rem;
