@@ -25,8 +25,10 @@ export const theme = {
     h1: '40px',
     h2: '26px',
     h3: '24px',
-    p: '21px',
+    h4: '21px',
+    p: '18px',
   },
+  maxWidth: '700px',
 };
 
 const fonts = () => {
@@ -54,12 +56,10 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colours.dark[100]};
   }
   body {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: ${({ theme }) => theme.fontSizes.p};
+    font-weight: normal;
     padding: 0;
     margin: 0;
     line-height: 1.9;
-    overflow-x: initial;
-    background-color: ${({ theme }) => theme.primary}
   }
 `;

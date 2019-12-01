@@ -1,26 +1,26 @@
-import { Link } from 'gatsby'
-import React from 'react'
-import styled from 'styled-components'
-import { StyledHyperLink as SHL } from '../components/shared'
-import { useSiteMetadata } from '../hooks/useSiteMetadata'
-import graphCms from '../images/graphCms.svg'
-import { media } from '../theme/sizes'
-import { PATTERNS } from '../theme/themeConstants'
+import { Link } from 'gatsby';
+import React from 'react';
+import styled from 'styled-components';
+import { StyledHyperLink as SHL } from '../components/shared';
+import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import graphCms from '../images/graphCms.svg';
+import { media } from '../theme/sizes';
+import { PATTERNS } from '../theme/themeConstants';
 
 const FooterStyles = styled.footer`
   margin-top: 2rem;
-  background: ${({ theme }) => theme.primary};
+  background: ${({ theme }) => theme.colours.primary[100]};
   color: ${({ theme }) => theme.fontDark};
   background-color: ${props => props.theme.primary};
   background-image: url("${PATTERNS.TOPOGRAPHY}");
   box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 5px 0px;
-`
+`;
 
 const Wrapper = styled.div`
   display: flex;
-  max-width: 570px;
+  max-width: ${({ theme }) => theme.maxWidth};
   margin: 0 auto;
-`
+`;
 
 const LinksList = styled.ul`
   margin: 0.5rem 0rem;
@@ -30,14 +30,14 @@ const LinksList = styled.ul`
     padding: 0.5rem;
   `};
   margin-right: 2.5rem;
-`
+`;
 
 const LinksListTitle = styled.span`
   font-size: 1.5rem;
   font-weight: 700;
   font-family: ${props => props.theme.fontHeader};
   color: ${props => props.theme.fontWhite};
-`
+`;
 
 const ListLink = styled.li`
   list-style-type: none;
@@ -53,12 +53,12 @@ const ListLink = styled.li`
     border-radius: 4px;
     transition: color 0.2s ease-out, background 0.2s ease-in;
   }
-`
+`;
 
 const StyledHyperLink = styled(SHL)`
   font-family: ${props => props.theme.fontBody};
   color: ${props => props.theme.fontDark};
-`
+`;
 
 const StyledLink = styled(Link)`
   font-family: ${props => props.theme.fontBody};
@@ -74,7 +74,7 @@ const StyledLink = styled(Link)`
     transition: color 0.2s ease-out, background 0.2s ease-in;
   }
   text-transform: capitalize;
-`
+`;
 
 const ImageWrapper = styled.div`
   margin: 0.5rem 0rem;
@@ -84,10 +84,10 @@ const ImageWrapper = styled.div`
     margin: 0.5rem ;
     padding: 0.5rem;
   `};
-`
+`;
 
 export const Footer = () => {
-  const { contact, pages } = useSiteMetadata()
+  const { contact, pages } = useSiteMetadata();
   return (
     <FooterStyles>
       <Wrapper>
@@ -107,7 +107,8 @@ export const Footer = () => {
               key={index}
               href={details.link}
               target="_blank"
-              rel="noopener">
+              rel="noopener"
+            >
               <ListLink>{details.name}</ListLink>
             </StyledHyperLink>
           ))}
@@ -117,5 +118,5 @@ export const Footer = () => {
         </ImageWrapper>
       </Wrapper>
     </FooterStyles>
-  )
-}
+  );
+};
