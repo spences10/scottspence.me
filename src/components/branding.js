@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import styled from 'styled-components'
-import { media } from '../theme/sizes'
+import PropTypes from 'prop-types';
+import React from 'react';
+import styled from 'styled-components';
+import { media } from '../theme/sizes';
 
 const Background = styled.div`
   display: grid;
@@ -17,7 +17,7 @@ const Background = styled.div`
     margin: 1rem;
     padding: 1rem;
   `};
-`
+`;
 
 const Text = styled.span`
   margin: 0.745rem;
@@ -32,16 +32,16 @@ const Text = styled.span`
     margin: 0.3rem;
     padding: 0.3rem;
   `};
-`
+`;
 
 const Branding = props => (
   <Background size={props.size}>
-    <Text size={props.size}>SS</Text>
+    <Text size={props.size}>Scott Spence</Text>
   </Background>
-)
+);
 
 Branding.propTypes = {
-  size: PropTypes.number.isRequired
-}
+  size: PropTypes.number.isRequired,
+};
 
-export default Branding
+export default Branding;
