@@ -9,6 +9,7 @@ import { Footer } from './footer'
 import { Header } from './header'
 
 const AppStyles = styled.div`
+  position: relative;
   font-family: ${({ theme }) => theme.p};
 `
 

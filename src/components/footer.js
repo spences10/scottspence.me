@@ -7,8 +7,6 @@ import graphCms from '../images/graphCms.svg'
 import { media } from '../theme/globalStyle'
 import { PATTERNS } from '../theme/themeConstants'
 
-// import { Dump } from '../utils/helpers'
-
 const FooterStyles = styled.footer`
   margin-top: 2rem;
   background: ${({ theme }) => theme.primary};
@@ -16,10 +14,10 @@ const FooterStyles = styled.footer`
   background-color: ${props => props.theme.primary};
   background-image: url("${PATTERNS.TOPOGRAPHY}");
   box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 5px 0px;
-  
 `
 
 const Wrapper = styled.div`
+  display: flex;
   max-width: 570px;
   margin: 0 auto;
 `
