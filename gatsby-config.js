@@ -49,6 +49,10 @@ module.exports = {
   siteMetadata: siteMetadata,
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-catch-links`,
+    `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -62,7 +66,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -70,24 +73,26 @@ module.exports = {
         name: `posts`,
       },
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          `gatsby-remark-autolink-headers`,
-          {
-            resolve: `gatsby-remark-external-links`,
-            options: {
-              target: `_blank`,
-              rel: `noopener`,
-            },
-          },
-          `gatsby-remark-smartypants`,
-          `gatsby-transformer-sharp`,
-          `gatsby-plugin-sharp`,
-        ],
-      },
-    },
+    `gatsby-plugin-mdx`,
+    // {
+    //   resolve: `gatsby-plugin-mdx`,
+    //   options: {
+    //     extensions: [`.mdx`, `.md`],
+    //     gatsbyRemarkPlugins: [
+    //       `gatsby-remark-autolink-headers`,
+    //       {
+    //         resolve: `gatsby-remark-external-links`,
+    //         options: {
+    //           target: `_blank`,
+    //           rel: `noopener`,
+    //         },
+    //       },
+    //       `gatsby-remark-smartypants`,
+    //       `gatsby-transformer-sharp`,
+    //       `gatsby-plugin-sharp`,
+    //     ],
+    //   },
+    // },
     {
       resolve: `gatsby-source-graphql`,
       options: {
@@ -115,8 +120,5 @@ module.exports = {
         siteId: process.env.GATSBY_FATHOM_TRACKING_ID_SCOTT_SPENCE_ME,
       },
     },
-    `gatsby-plugin-catch-links`,
-    `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-sitemap`,
   ],
 };
