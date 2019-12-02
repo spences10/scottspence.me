@@ -3,6 +3,9 @@ import styled from 'styled-components';
 
 export const StyledLi = styled.li`
   list-style-type: circle;
+  p {
+    margin-top: 10px;
+  }
 `;
 
 export const Li = props => {

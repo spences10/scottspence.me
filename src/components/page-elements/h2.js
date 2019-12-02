@@ -10,6 +10,7 @@ const StyledText = styled.h2`
   font-weight: bold;
   font-size: ${({ theme }) => theme.fontSizes.h2};
   text-align: center;
+  margin-top: 30px;
   &:after {
     display: block;
     content: '';

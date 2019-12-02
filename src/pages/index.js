@@ -7,7 +7,6 @@ import Uses from '../../copy/uses';
 import Layout from '../components/layout';
 import { StyledHyperLink as SHL } from '../components/shared';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
-import { media } from '../theme/sizes';
 
 const EmojiWrapper = styled.span.attrs({
   role: 'img',
@@ -16,25 +15,6 @@ const EmojiWrapper = styled.span.attrs({
 const StyledHyperLink = styled(SHL)`
   font-family: ${props => props.theme.fontBody};
   color: ${props => props.theme.fontDark};
-`;
-
-const Hi = styled.span`
-  font-size: 2rem;
-  font-weight: 900;
-  color: ${props => props.theme.fontDark};
-  margin-top: 5rem;
-  ${media.giant`
-    margin-top: 5rem;
-  `};
-  ${media.desktop`
-    margin-top: 5rem;
-  `};
-  ${media.tablet`
-    margin-top: 3rem;
-  `};
-  ${media.phone`
-    margin-top: 2rem;
-  `};
 `;
 
 export default () => {
@@ -58,12 +38,6 @@ export default () => {
         siteLocale={siteLocale}
         twitterUsername={twitterUsername}
       />
-      <Hi>
-        Hi people!
-        <span role="img" aria-label="waving hand">
-          👋
-        </span>
-      </Hi>
       <About />
       <Now />
       <Uses />

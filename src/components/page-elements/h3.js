@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const StyledText = styled.h3`
   font-weight: bold;
   font-size: ${({ theme }) => theme.fontSizes.h3};
+  margin-top: 30px;
   &:after {
     display: block;
     content: '';

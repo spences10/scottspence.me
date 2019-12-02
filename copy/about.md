@@ -53,8 +53,11 @@ many things as possible, as of writing this I have four sites that I'm
 using Gatsby with:
 
 - [This site]
+
 - [My blog]
+
 - [My CV]
+
 - [Gatsby using GraphCMS]
 
 Using Gatsby with CSS Grid and styled-components 💅 is an absolute joy

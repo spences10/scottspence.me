@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 export const StyledUl = styled.ul`
-  list-style-type: circle;
+  margin: 0 17px;
 `;
 
 export const Ul = props => {
