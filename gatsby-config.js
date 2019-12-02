@@ -27,7 +27,7 @@ const siteMetadata = {
       name: `LinkedIn`,
       link: `https://www.linkedin.com/in/spences10`,
     },
-    { name: `Email`, link: `mailto:spences10apps@gmail.com` },
+    { name: `Email`, link: `mailto:yo@scottspence.dev` },
   ],
   firstName: `Scott`,
   lastName: `Spence`,
@@ -77,19 +77,19 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
-        // gatsbyRemarkPlugins: [
-        //   `gatsby-remark-autolink-headers`,
-        //   {
-        //     resolve: `gatsby-remark-external-links`,
-        //     options: {
-        //       target: `_blank`,
-        //       rel: `noopener`,
-        //     },
-        //   },
-        //   `gatsby-remark-smartypants`,
-        //   `gatsby-transformer-sharp`,
-        //   `gatsby-plugin-sharp`,
-        // ],
+        gatsbyRemarkPlugins: [
+          `gatsby-remark-autolink-headers`,
+          //   {
+          //     resolve: `gatsby-remark-external-links`,
+          //     options: {
+          //       target: `_blank`,
+          //       rel: `noopener`,
+          //     },
+          //   },
+          //   `gatsby-remark-smartypants`,
+          //   `gatsby-transformer-sharp`,
+          //   `gatsby-plugin-sharp`,
+        ],
       },
     },
     {

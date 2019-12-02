@@ -1,18 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import { H2 } from './h2';
+import { AutoLink } from './linked-headers';
 
-const StyledText = styled.h3`
-  font-weight: bold;
+const StyledText = styled(H2)`
   font-size: ${({ theme }) => theme.fontSizes.h3};
-  margin-top: 30px;
-  &:after {
-    display: block;
-    content: '';
-    background-color: ${({ theme }) => theme.dark};
-    height: 4px;
-  }
+  text-align: left;
+  ${() => AutoLink}
 `;
 
-export const H3 = props => {
-  return <StyledText>{props.children}</StyledText>;
+export const H3 = ({ children }) => {
+  return <StyledText>{children}</StyledText>;
 };

@@ -6,7 +6,10 @@ const StyledText = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.p};
   /* max-width: ${({ theme }) => theme.maxWidth}; */
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 40px;
+  strong {
+    font-weight: bold;
+  }
   ${media.desktop`
     font-size: 18px;
     margin-top: 40px;
