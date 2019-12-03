@@ -18,7 +18,7 @@ export const theme = {
     },
   },
   fonts: {
-    header: 'Dosis, sans-serif',
+    header: 'Alatsi, sans-serif',
     body: 'Poppins, sans, sans-serif',
   },
   fontSizes: {
@@ -32,7 +32,7 @@ export const theme = {
 };
 
 const fonts = () => {
-  const list = ['Dosis:400,700|', 'Poppins:400,700|'];
+  const list = ['Alatsi:400,700|', 'Poppins:400,700|'];
   return list.join('');
 };
 
