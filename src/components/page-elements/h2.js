@@ -4,8 +4,9 @@ import { AutoLink } from './linked-headers';
 
 const StyledText = styled.h2`
   font-size: ${({ theme }) => theme.fontSizes.h2};
-  margin-top: 30px;
+  font-family: ${({ theme }) => theme.fonts.header};
   ${() => AutoLink}
+  margin-top: 50px;
 `;
 
 export const H2 = ({ children }) => {
