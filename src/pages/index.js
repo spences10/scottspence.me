@@ -5,6 +5,7 @@ import About from '../../copy/about';
 import Now from '../../copy/now';
 import Uses from '../../copy/uses';
 import Layout from '../components/layout';
+import { MugFace } from '../components/mug-face';
 import { StyledHyperLink as SHL } from '../components/shared';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
@@ -38,6 +39,7 @@ export default () => {
         siteLocale={siteLocale}
         twitterUsername={twitterUsername}
       />
+      <MugFace />
       <About />
       <Now />
       <Uses />
