@@ -22,6 +22,10 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
+const LinksWrapper = styled.div`
+  margin: 0 30px;
+`;
+
 const LinksList = styled.ul`
   margin: 0.5rem 0rem;
   padding: 0.5rem 0rem;
@@ -91,28 +95,29 @@ export const Footer = () => {
   return (
     <FooterStyles>
       <Wrapper>
-        {/* <Dump data={data} pages={pages} /> */}
-        <LinksList area={'l'}>
-          <LinksListTitle>Links</LinksListTitle>
-          {pages.map((page, index) => (
-            <StyledLink key={index} to={page}>
-              <ListLink>{page}</ListLink>
-            </StyledLink>
-          ))}
-        </LinksList>
-        <LinksList area={'s'}>
-          <LinksListTitle>Social</LinksListTitle>
-          {contact.map((details, index) => (
-            <StyledHyperLink
-              key={index}
-              href={details.link}
-              target="_blank"
-              rel="noopener"
-            >
-              <ListLink>{details.name}</ListLink>
-            </StyledHyperLink>
-          ))}
-        </LinksList>
+        <LinksWrapper>
+          <LinksList area={'l'}>
+            <LinksListTitle>Links</LinksListTitle>
+            {pages.map((page, index) => (
+              <StyledLink key={index} to={page}>
+                <ListLink>{page}</ListLink>
+              </StyledLink>
+            ))}
+          </LinksList>
+          <LinksList area={'s'}>
+            <LinksListTitle>Social</LinksListTitle>
+            {contact.map((details, index) => (
+              <StyledHyperLink
+                key={index}
+                href={details.link}
+                target="_blank"
+                rel="noopener"
+              >
+                <ListLink>{details.name}</ListLink>
+              </StyledHyperLink>
+            ))}
+          </LinksList>
+        </LinksWrapper>
         <ImageWrapper area={'g'}>
           <img src={graphCms} className="App-logo" alt="logo" />
         </ImageWrapper>

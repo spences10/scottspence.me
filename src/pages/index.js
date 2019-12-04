@@ -18,6 +18,10 @@ const StyledHyperLink = styled(SHL)`
   color: ${props => props.theme.fontDark};
 `;
 
+const Wrapper = styled.div`
+  margin: 0 30px;
+`;
+
 export default () => {
   const {
     description,
@@ -39,32 +43,34 @@ export default () => {
         siteLocale={siteLocale}
         twitterUsername={twitterUsername}
       />
-      <MugFace />
-      <About />
-      <Now />
-      <Uses />
-      {/* <Dump data={data} /> */}
-      <p>Welcome to my personal portfolio site.</p>
-      <p>
-        Built with{' '}
-        <StyledHyperLink
-          href={'https://www.gatsbyjs.com/'}
-          target="_blank"
-          rel="noopener"
-        >
-          Gatsby
-        </StyledHyperLink>{' '}
-        and{' '}
-        <StyledHyperLink
-          href={'https://www.styled-components.com/'}
-          target="_blank"
-          rel="noopener"
-        >
-          styled components
-        </StyledHyperLink>
-        {/* eslint-disable-next-line */}
-        <EmojiWrapper aria-label="nail polish">💅</EmojiWrapper>
-      </p>
+      <Wrapper>
+        <MugFace />
+        <About />
+        <Now />
+        <Uses />
+        {/* <Dump data={data} /> */}
+        <p>Welcome to my personal portfolio site.</p>
+        <p>
+          Built with{' '}
+          <StyledHyperLink
+            href={'https://www.gatsbyjs.com/'}
+            target="_blank"
+            rel="noopener"
+          >
+            Gatsby
+          </StyledHyperLink>{' '}
+          and{' '}
+          <StyledHyperLink
+            href={'https://www.styled-components.com/'}
+            target="_blank"
+            rel="noopener"
+          >
+            styled components
+          </StyledHyperLink>
+          {/* eslint-disable-next-line */}
+          <EmojiWrapper aria-label="nail polish">💅</EmojiWrapper>
+        </p>
+      </Wrapper>
     </Layout>
   );
 };
