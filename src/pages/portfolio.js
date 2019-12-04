@@ -1,15 +1,15 @@
-import { graphql, Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
-import SEO from 'react-seo-component'
-import styled from 'styled-components'
-import Layout from '../components/layout'
-import { ProjectCard } from '../components/projectCard'
-import { ShinyButton } from '../components/shared'
-import TopLanguages from '../components/topLanguages'
-import { useSiteMetadata } from '../hooks/useSiteMetadata'
+import { graphql, Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import SEO from 'react-seo-component';
+import styled from 'styled-components';
+import Layout from '../components/layout';
+import { ProjectCard } from '../components/project-card';
+import { ShinyButton } from '../components/shared';
+import TopLanguages from '../components/top-languages';
+import { useSiteMetadata } from '../hooks/useSiteMetadata';
 // import { Dump } from '../util/helpers'
-import { media } from '../theme/sizes'
+import { media } from '../theme/sizes';
 
 const ProjectWrapper = styled.div`
   display: grid;
@@ -27,10 +27,10 @@ const ProjectWrapper = styled.div`
   ${media.phone`
     grid-template-columns: repeat(1, 1fr);
   `};
-`
+`;
 
 const PortfolioPage = ({ data }) => {
-  const { assets } = data.graphcmsdata
+  const { assets } = data.graphcmsdata;
   const {
     description,
     imageLink,
@@ -39,18 +39,18 @@ const PortfolioPage = ({ data }) => {
     siteLanguage,
     siteLocale,
     twitterUsername,
-    lastBuildDate
-  } = useSiteMetadata()
+    lastBuildDate,
+  } = useSiteMetadata();
   const options = {
     weekday: 'long',
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
-  }
+    day: 'numeric',
+  };
   const builtDate = new Date(lastBuildDate).toLocaleDateString(
     siteLanguage,
     options
-  )
+  );
   return (
     <Layout>
       <SEO
@@ -82,9 +82,9 @@ const PortfolioPage = ({ data }) => {
             projectName,
             projectDescription,
             githubRepo,
-            demoLink
-          } = project.projectImageProject[0]
-          const { url: image, id } = project
+            demoLink,
+          } = project.projectImageProject[0];
+          const { url: image, id } = project;
           return (
             // <Dump prop={project.projectImageProject[0].projectName} />
             <ProjectCard
@@ -95,7 +95,7 @@ const PortfolioPage = ({ data }) => {
               demo={demoLink}
               image={image}
             />
-          )
+          );
         })}
       </ProjectWrapper>
 
@@ -105,8 +105,8 @@ const PortfolioPage = ({ data }) => {
         </Link>
       </p>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   {
@@ -136,10 +136,10 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 PortfolioPage.propTypes = {
-  data: PropTypes.object.isRequired
-}
+  data: PropTypes.object.isRequired,
+};
 
-export default PortfolioPage
+export default PortfolioPage;
