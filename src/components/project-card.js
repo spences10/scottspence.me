@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import Card from 'card-vibes'
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import Card from 'card-vibes';
 
-import { ButtonSmall } from './shared'
-import { PATTERNS } from '../theme/themeConstants'
+import { ButtonSmall } from './shared';
+import { PATTERNS } from '../theme/themeConstants';
 
 // import { Dump } from '../util/helpers'
 
@@ -15,7 +15,7 @@ const Name = styled.h3`
   font-family: ${props => props.theme.fontHeader};
   font-weight: 900;
   text-align: center;
-`
+`;
 
 const Desc = styled.div`
   margin: 0rem;
@@ -28,9 +28,9 @@ const Desc = styled.div`
   font-family: ${props => props.theme.fontBody};
   font-weight: 700;
   line-height: 150%;
-`
+`;
 
-const StyledLink = styled.a``
+const StyledLink = styled.a``;
 
 const CardWrapper = styled.div`
   margin: 0rem;
@@ -44,7 +44,7 @@ const CardWrapper = styled.div`
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
   }
   background-color: ${props => props.theme.foreground};
-`
+`;
 
 const StyledProjectCard = styled.div`
   padding: 1.75rem;
@@ -56,17 +56,17 @@ const StyledProjectCard = styled.div`
       ? `${props.theme.pink}`
       : `${props.theme.blue}`};
   background-image: url("${PATTERNS.WIGGLE}");
-`
+`;
 
 const ImageWrapper = styled.div`
   display: grid;
   justify-items: center;
-`
+`;
 
 const StyledImage = styled.img`
   max-height: 200px;
   max-width: 200px;
-`
+`;
 
 const CardButton = styled(ButtonSmall)`
   text-transform: none;
@@ -77,12 +77,12 @@ const CardButton = styled(ButtonSmall)`
   margin: 0.5rem 0.6rem 0.5rem 0.6rem;
   padding: 0.5rem 0.8rem 0.5rem 0.8rem;
   border-radius: 50px;
-`
+`;
 
 const ButtonsWrapper = styled.div`
   display: flex;
   justify-content: center;
-`
+`;
 
 export const ProjectCard = props => {
   return (
@@ -94,7 +94,7 @@ export const ProjectCard = props => {
             <StyledImage
               style={{
                 borderRadius: '100%',
-                border: '2px solid white'
+                border: '2px solid white',
               }}
               src={props.image}
               key={props.id}
@@ -107,13 +107,15 @@ export const ProjectCard = props => {
             <StyledLink
               target="_blank"
               rel="noopener"
-              href={props.demo}>
+              href={props.demo}
+            >
               <CardButton>Demo</CardButton>
             </StyledLink>
             <StyledLink
               target="_blank"
               rel="noopener"
-              href={props.github}>
+              href={props.github}
+            >
               <CardButton>GitHub</CardButton>
             </StyledLink>
           </ButtonsWrapper>
@@ -121,8 +123,8 @@ export const ProjectCard = props => {
         <Desc>{props.desc}</Desc>
       </CardWrapper>
     </Card>
-  )
-}
+  );
+};
 
 ProjectCard.propTypes = {
   id: PropTypes.number,
@@ -131,7 +133,7 @@ ProjectCard.propTypes = {
   github: PropTypes.string,
   demo: PropTypes.string,
   image: PropTypes.string,
-  imgData: PropTypes.object
-}
+  imgData: PropTypes.object,
+};
 
-export default ProjectCard
+export default ProjectCard;

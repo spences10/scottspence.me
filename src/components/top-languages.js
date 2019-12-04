@@ -1,8 +1,8 @@
-import { graphql, StaticQuery } from 'gatsby'
-import { ResponsivePie } from 'nivo'
-import React from 'react'
-import styled from 'styled-components'
-import { topLanguages } from '../services/dataMassage'
+import { graphql, StaticQuery } from 'gatsby';
+import { ResponsivePie } from 'nivo';
+import React from 'react';
+import styled from 'styled-components';
+import { topLanguages } from '../services/dataMassage';
 // import { Dump } from '../util/helpers'
 
 const LanguageWrapper = styled.div`
@@ -12,10 +12,10 @@ const LanguageWrapper = styled.div`
   max-width: 700px;
   margin: 0 auto;
   padding: 40;
-`
+`;
 
 const TopLanguages = ({ data }) => {
-  const { repositories } = data.github.viewer
+  const { repositories } = data.github.viewer;
   return (
     <LanguageWrapper>
       <ResponsivePie
@@ -24,18 +24,18 @@ const TopLanguages = ({ data }) => {
           top: 40,
           right: 80,
           bottom: 80,
-          left: 80
+          left: 80,
         }}
         innerRadius={0.5}
         padAngle={0.7}
         cornerRadius={3}
       />
     </LanguageWrapper>
-  )
-}
+  );
+};
 // <Dump data={data.github.viewer.repositories} />
 
-TopLanguages.propTypes = {}
+TopLanguages.propTypes = {};
 
 export default props => (
   <StaticQuery
@@ -67,4 +67,4 @@ export default props => (
     `}
     render={data => <TopLanguages data={data} {...props} />}
   />
-)
+);
