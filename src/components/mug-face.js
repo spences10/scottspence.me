@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import mugFace from '../../static/favicon.png';
 
 const ImageDiv = styled.div`
-  margin-top: 200px;
+  margin: 0 auto;
+  margin-top: 100px;
   position: relative;
   height: 200px;
   width: 200px;
