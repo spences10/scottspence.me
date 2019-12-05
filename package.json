@@ -7,15 +7,14 @@
   "main": "n/a",
   "scripts": {
     "clean": "rm -rf .cache/ && rm -rf public/",
-    "build": "gatsby build && npm run wellknown && npm run searchConsole",
+    "build": "gatsby build && npm run wellknown",
     "serve": "gatsby serve -9000",
     "buildServe": "npm run build && npm run serve",
     "dev": "gatsby develop -p 6677 -o",
     "format": "pretty-quick",
     "precommit": "pretty-quick --staged",
     "release": "release-it",
-    "wellknown": "cp -r .well-known/ public/",
-    "searchConsole": "cp -r googleb08af286575fc468.html public/"
+    "wellknown": "cp -r .well-known/ public/"
   },
   "dependencies": {
     "@loadable/component": "^5.5.0",
