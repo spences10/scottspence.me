@@ -12,6 +12,8 @@ const Wrapper = styled.div`
   margin: 0 30px;
 `;
 
+const PageWrapper = styled.div``;
+
 export default () => {
   const {
     description,
@@ -35,9 +37,15 @@ export default () => {
       />
       <Wrapper>
         <MugFace />
-        <About />
-        <Now />
-        <Uses />
+        <PageWrapper>
+          <About id={`about`} />
+        </PageWrapper>
+        <PageWrapper id={`now`}>
+          <Now />
+        </PageWrapper>
+        <PageWrapper id={`uses`}>
+          <Uses />
+        </PageWrapper>
       </Wrapper>
     </Layout>
   );
