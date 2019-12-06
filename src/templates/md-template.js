@@ -5,9 +5,10 @@ import React from 'react';
 import SEO from 'react-seo-component';
 import styled from 'styled-components';
 import Layout from '../components/layout';
+import { H1 } from '../components/page-elements';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
-const MdTitle = styled.h1``;
+const MdTitle = styled(H1)``;
 
 const MdDate = styled.span`
   font-weight: 700;
