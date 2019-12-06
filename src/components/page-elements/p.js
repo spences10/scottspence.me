@@ -10,6 +10,9 @@ const StyledText = styled.p`
   strong {
     font-weight: bold;
   }
+  em {
+    font-style: italic;
+  }
   ${media.desktop`
     font-size: 18px;
     margin-top: 40px;
