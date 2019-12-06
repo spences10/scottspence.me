@@ -86,7 +86,7 @@ module.exports = {
           //       rel: `noopener`,
           //     },
           //   },
-          //   `gatsby-remark-smartypants`,
+          `gatsby-remark-smartypants`,
           //   `gatsby-transformer-sharp`,
           //   `gatsby-plugin-sharp`,
         ],
