@@ -135,6 +135,10 @@ bit of info here and you have roles to fill.
 
 - Sure book in a [15 minute chat].
 
+- **"But I have to talk to you today, my client's deadline is this
+  afternoon"** I hear this almost daily, please book in a [15 minute
+  chat].
+
 - Please don't call without a previously agreed time slot, I prefer to
   avoid phone calls for these reasons:
 
@@ -158,7 +162,7 @@ bit of info here and you have roles to fill.
   - In your email mention "Quick Start Guides Rock!" and you will have
     my attention, gratitude and a guaranteed reply. 🙏
 
-## Can I take a look at your [CV]?
+## Can I take a look at your CV?
 
 - Sure, my CV is here: [cv.scottspence.me].
 
@@ -173,7 +177,7 @@ bit of info here and you have roles to fill.
   level. If your client wants to see my CV give them the link.
 
 - I understand that a lot of companies wil have ATS that you need to
-  add a document to. I'll leave this part of your job up to you.
+  add a document to. I'll leave this part of _your job_ up to you.
 
 ## Notice period?
 
@@ -206,5 +210,6 @@ bit of info here and you have roles to fill.
 [here]: https://cvjson.now.sh/
 [cv.scottspence.me]: https://cv.scottspence.me/
 [two weeks]: https://www.youtube.com/watch?v=9v-33jcEDk4
-[you can succeed as a junior developer in a fully remote role]: https://dev.to/spences10/can-you-succeed-as-a-junior-developer-in-a-fully-remote-role-2a84
+[you can succeed as a junior developer in a fully remote role]:
+  https://dev.to/spences10/can-you-succeed-as-a-junior-developer-in-a-fully-remote-role-2a84
 [15 minute chat]: https://calendly.com/spences10apps/15min
