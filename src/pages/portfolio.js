@@ -1,5 +1,4 @@
 import { graphql, Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import React from 'react';
 import SEO from 'react-seo-component';
 import styled from 'styled-components';
@@ -8,7 +7,6 @@ import { ProjectCard } from '../components/project-card';
 import { ShinyButton } from '../components/shared';
 import TopLanguages from '../components/top-languages';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
-// import { Dump } from '../util/helpers'
 import { media } from '../theme/sizes';
 
 const ProjectWrapper = styled.div`
@@ -29,7 +27,7 @@ const ProjectWrapper = styled.div`
   `};
 `;
 
-const PortfolioPage = ({ data }) => {
+export default ({ data }) => {
   const { assets } = data.graphcmsdata;
   const {
     description,
@@ -137,9 +135,3 @@ export const query = graphql`
     }
   }
 `;
-
-PortfolioPage.propTypes = {
-  data: PropTypes.object.isRequired,
-};
-
-export default PortfolioPage;
