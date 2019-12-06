@@ -68,3 +68,23 @@ export default props => (
     render={data => <TopLanguages data={data} {...props} />}
   />
 );
+
+// query GitHubContributions {
+//   github {
+//     viewer {
+//       contributionsCollection {
+//         contributionCalendar {
+//           totalContributions
+//           weeks {
+//             contributionDays {
+//               color
+//               contributionCount
+//               date
+//               weekday
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
