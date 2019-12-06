@@ -1,8 +1,6 @@
----
-path: '/faq'
-date: '2019-11-19'
-title: 'For recruiters - FAQ'
----
+# For recruiters - FAQ
+
+updated date: 2019-11-19
 
 Hello friend 👋, thanks for taking an interest in me and my profile, I
 know I'm nothing more than a keyword match right now.

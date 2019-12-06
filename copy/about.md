@@ -1,12 +1,10 @@
----
-path: '/about'
-date: '2018-02-03'
-title: 'Hello World! 👋'
----
+# Hello World! 👋
 
 ## Hi I'm Scott
 
 ### Backstory
+
+updated date: 2018-02-03
 
 A little bit about me, Since 2007 I had been working as a VBA
 developer for companies such as Barclays and Deloitte. For the past
@@ -104,7 +102,8 @@ All the best. 👍
 [this site]: https://scottspence.me
 [my blog]: https://blog.scottspence.me
 [my cv]: https://cv.scottspence.me
-[gatsby using graphcms]: https://github.com/spences10/gatsby-using-graphcms
+[gatsby using graphcms]:
+  https://github.com/spences10/gatsby-using-graphcms
 [deadlift]: https://www.youtube.com/watch?v=b8sadCd7Lhc
 [react static]: https://react-static.js.org/
 [ask me anything]: https://github.com/spences10/ama

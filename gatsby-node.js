@@ -11,10 +11,6 @@ exports.createPages = ({ actions, graphql }) => {
         nodes {
           id
           excerpt(pruneLength: 250)
-          frontmatter {
-            title
-            date
-          }
           fields {
             slug
           }
