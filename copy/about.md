@@ -2,9 +2,7 @@
 
 ## Hi I'm Scott
 
-### Backstory
-
-updated date: 2018-02-03
+updated date: 2019-12-07
 
 A little bit about me, Since 2007 I had been working as a VBA
 developer for companies such as Barclays and Deloitte. For the past
@@ -19,7 +17,7 @@ and three cats!
 
 ## 👨‍👩‍👧 🐱 😸 😹
 
-### Coding history
+## Coding history
 
 **Then:**
 
@@ -59,9 +57,9 @@ using Gatsby with:
 - [Gatsby using GraphCMS]
 
 Using Gatsby with CSS Grid and styled-components 💅 is an absolute joy
-❤️
+💜
 
-### Sectors I have worked in:
+## Sectors I have worked in:
 
 Finance (Risk, Asset Management), Property, Oil & Gas, Lloyd's
 insurance market, government digital transformation and now creative
@@ -70,12 +68,12 @@ digital.
 Tools of my trade: JavaScript, Gatsby, GraphQL, styled-components 💅
 GraphCMS and Zeit [now] and [Netlify] for static site hosting 👌
 
-### My personality
+## My personality
 
 I find it hard to identify my traits, so instead I took the
 [16Personalities] test, here are [my results]
 
-### My interests
+## My interests
 
 I try to get to the gym three times a week to weight lift, that took
 up quite a bit of my time over the last 3 years or so. I have focused

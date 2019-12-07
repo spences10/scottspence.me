@@ -1,18 +1,16 @@
 # Uses
 
-date: 2019-09-07
+updated date: 2019-12-07
 
 This page details all the equipment and tools I use on a daily basis.
 
-For home, I use Ubuntu 19.04 in place of Windows now. Windows is still
+For home, I use Ubuntu 19.10 in place of Windows now. Windows is still
 a good platform for web development and if you are a Windows user you
 can see how to use Windows Subsystem Linux for web development in
 [this guide], I also made a video for setting up [Ubuntu for web
 development].
 
-## Home
-
-### Desk
+## At home: Desk
 
 - My computer is an ASUS Transformer Pro T304UA
 
@@ -27,7 +25,7 @@ development].
 - Microphone, a [Fifine Usb Cardioid Studio Condenser Microphone]
   which is surprisingly good quality for the price.
 
-### Editor + Terminal
+## Editor + Terminal
 
 - Microsoft [Visual Studio Code] with [Sarah Drasner]'s awesome [Night
   Owl] 🦉 theme
@@ -36,31 +34,30 @@ development].
 
 - [Dank Mono] font for both text editor and terminal.
 
-### Desktop Apps
+## Desktop Apps
 
 - I use [Open Broadcaster Software](OBS) for recording some coding
   sessions.
 
 - For light video editing I use [OpenShot Video Editor]
 
-## Work
-
-### Desk
+## At work: Desk
 
 - My work computer is a i9 [MackBook Pro (15-inch, 2019)]
 
-### Editor + Terminal
+## Editor + Terminal
 
 - Microsoft [Visual Studio Code] with [Sarah Drasner]'s awesome [Night
   Owl] 🦉 theme
 
-- iTerm2 with ZSH and Oh My Zsh
+- I recently switched from iTerm2 with ZSH and Oh My Zsh to Hyper with
+  Fish and Oh My Fish
 
-### Desktop apps
+## Desktop apps
 
 - For gif capture I use Kap.
 
-- For installing any apps I'm using Brew.
+- For installing any apps I'm using [Homebrew].
 
 <!-- Links -->
 
@@ -85,3 +82,4 @@ development].
 [ubuntu for web development]:
   https://www.youtube.com/watch?v=eSAsdQuQ-1o
 [openshot video editor]: https://www.openshot.org/
+[homebrew]: https://cheatsheets.xyz/homebrew/
