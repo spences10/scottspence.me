@@ -1,11 +1,10 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import graphCms from '../../static/graph-cms.svg';
-import { StyledHyperLink as SHL } from '../components/shared';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import { media } from '../theme/sizes';
-import { PATTERNS } from '../theme/themeConstants';
+import { PATTERNS } from '../theme/theme-constants';
+import { A } from './page-elements';
 
 const FooterStyles = styled.footer`
   margin-top: 2rem;
@@ -59,25 +58,9 @@ const ListLink = styled.li`
   }
 `;
 
-const StyledHyperLink = styled(SHL)`
+const StyledHyperLink = styled(A)`
   font-family: ${props => props.theme.fontBody};
   color: ${props => props.theme.fontDark};
-`;
-
-const StyledLink = styled(Link)`
-  font-family: ${props => props.theme.fontBody};
-  color: ${props => props.theme.fontDark};
-  &:visited,
-  &:active {
-    color: inherit;
-  }
-  &:hover {
-    color: ${({ theme }) => theme.primaryAccent};
-    background: ${({ theme }) => theme.primary};
-    border-radius: 4px;
-    transition: color 0.2s ease-out, background 0.2s ease-in;
-  }
-  text-transform: capitalize;
 `;
 
 const ImageWrapper = styled.div`
@@ -91,19 +74,11 @@ const ImageWrapper = styled.div`
 `;
 
 export const Footer = () => {
-  const { contact, pages } = useSiteMetadata();
+  const { contact } = useSiteMetadata();
   return (
     <FooterStyles>
       <Wrapper>
         <LinksWrapper>
-          <LinksList area={'l'}>
-            <LinksListTitle>Links</LinksListTitle>
-            {pages.map((page, index) => (
-              <StyledLink key={index} to={page}>
-                <ListLink>{page}</ListLink>
-              </StyledLink>
-            ))}
-          </LinksList>
           <LinksList area={'s'}>
             <LinksListTitle>Social</LinksListTitle>
             {contact.map((details, index) => (

@@ -1,3 +1,5 @@
+import { Link } from 'gatsby';
+import React from 'react';
 import styled from 'styled-components';
 
 export const ShinyButton = styled.button`
@@ -41,16 +43,18 @@ export const ShinyButton = styled.button`
   }
 `;
 
-export const StyledHyperLink = styled.a`
-  cursor: pointer;
-  &:visited,
-  &:active {
-    color: ${props => props.theme.primary};
+export const StyledLink = styled(props => <Link {...props} />)`
+  color: ${({ theme }) => theme.colours.dark[100]};
+  &:focus {
+    outline: 3px dashed ${({ theme }) => theme.colours.primary[100]};
   }
+  padding: 3px;
   &:hover {
-    color: ${props => props.theme.secondary};
+    color: ${({ theme }) => theme.colours.primary[100]};
   }
-  color: ${props => props.theme.primary};
+  &:active {
+    color: ${({ theme }) => theme.colours.primary[100]};
+  }
 `;
 
 export const Button = styled.button`

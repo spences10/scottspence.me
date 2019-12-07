@@ -4,7 +4,12 @@ import reset from 'styled-reset';
 export const theme = {
   colours: {
     primary: {
-      100: '#663399',
+      100: '#3c60a4',
+      200: '#6063ae',
+      300: '#8164b3',
+      400: '#a064b5',
+      500: '#be64b2',
+      600: '#d964ab',
     },
     dark: {
       100: '#1e151f',
