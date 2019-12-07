@@ -26,7 +26,6 @@
     "@mdx-js/react": "1.5.1",
     "@wesbos/dump": "0.1.1",
     "babel-plugin-styled-components": "1.10.6",
-    "card-vibes": "0.1.0",
     "gatsby": "2.18.7",
     "gatsby-plugin-catch-links": "^2.0.9",
     "gatsby-plugin-fathom": "1.1.0",
