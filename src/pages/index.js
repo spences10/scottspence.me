@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import SEO from 'react-seo-component';
 import styled from 'styled-components';
 import About from '../../copy/about';
@@ -37,6 +38,10 @@ export default () => {
         twitterUsername={twitterUsername}
       />
       <Wrapper>
+        <Helmet
+          title={`Homepage time!`}
+          titleTemplate={`%s | ${title}`}
+        />
         <MugFace />
         <PageWrapper>
           <About id={`about`} />
