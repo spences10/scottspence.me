@@ -6,6 +6,7 @@ import Now from '../../copy/now';
 import Uses from '../../copy/uses';
 import Layout from '../components/layout';
 import { MugFace } from '../components/mug-face';
+import { TopLanguages } from '../components/top-languages';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
 const Wrapper = styled.div`
@@ -39,6 +40,9 @@ export default () => {
         <MugFace />
         <PageWrapper>
           <About id={`about`} />
+        </PageWrapper>
+        <PageWrapper id={`portfolio`}>
+          <TopLanguages />
         </PageWrapper>
         <PageWrapper id={`now`}>
           <Now />
