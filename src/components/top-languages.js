@@ -1,7 +1,7 @@
-import { graphql, StaticQuery } from 'gatsby';
 import { ResponsivePie } from 'nivo';
 import React from 'react';
 import styled from 'styled-components';
+import { useGitHubRepositories } from '../hooks/useGitHubRepositories';
 import { topLanguages } from '../services/data-massage';
 // import { Dump } from '../util/helpers'
 
@@ -14,8 +14,8 @@ const LanguageWrapper = styled.div`
   padding: 40;
 `;
 
-const TopLanguages = ({ data }) => {
-  const { repositories } = data.github.viewer;
+export const TopLanguages = ({ data }) => {
+  const { repositories } = useGitHubRepositories();
   return (
     <LanguageWrapper>
       <ResponsivePie
@@ -33,41 +33,8 @@ const TopLanguages = ({ data }) => {
     </LanguageWrapper>
   );
 };
-// <Dump data={data.github.viewer.repositories} />
 
 TopLanguages.propTypes = {};
-
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query GitHubQuery {
-        github {
-          viewer {
-            repositories(
-              last: 100
-              isFork: false
-              orderBy: { field: UPDATED_AT, direction: DESC }
-            ) {
-              nodes {
-                name
-                description
-                url
-                updatedAt
-                languages(first: 5) {
-                  nodes {
-                    color
-                    name
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={data => <TopLanguages data={data} {...props} />}
-  />
-);
 
 // query GitHubContributions {
 //   github {
