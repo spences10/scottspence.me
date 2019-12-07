@@ -3,10 +3,10 @@ import SEO from 'react-seo-component';
 import styled from 'styled-components';
 import About from '../../copy/about';
 import Now from '../../copy/now';
+import Portfolio from '../../copy/portfolio';
 import Uses from '../../copy/uses';
 import Layout from '../components/layout';
 import { MugFace } from '../components/mug-face';
-import { TopLanguages } from '../components/top-languages';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
 const Wrapper = styled.div`
@@ -42,7 +42,7 @@ export default () => {
           <About id={`about`} />
         </PageWrapper>
         <PageWrapper id={`portfolio`}>
-          <TopLanguages />
+          <Portfolio />
         </PageWrapper>
         <PageWrapper id={`now`}>
           <Now />
