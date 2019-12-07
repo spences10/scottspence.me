@@ -2,7 +2,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import { ResponsivePie } from 'nivo';
 import React from 'react';
 import styled from 'styled-components';
-import { topLanguages } from '../services/dataMassage';
+import { topLanguages } from '../services/data-massage';
 // import { Dump } from '../util/helpers'
 
 const LanguageWrapper = styled.div`
