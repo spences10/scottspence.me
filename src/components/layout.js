@@ -4,11 +4,17 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 // import Dump from '@wesbos/dump'
 import { GlobalStyle } from '../theme/global-style';
+import { media } from '../theme/sizes';
 import { Footer } from './footer';
 
 const AppStyles = styled.div`
   position: relative;
-  font-family: ${({ theme }) => theme.p};
+  max-width: 88vw;
+  margin: 0 auto;
+  display: block;
+  ${media.desktop`
+    max-width: 70vw;
+  `};
 `;
 
 const Wrapper = styled.div`
