@@ -8,7 +8,7 @@ export const NavWrapper = styled.div`
     justify-content: center;
     width: 100vw;
     position: relative;
-    right: 50%;
+    right: 37%;
   `};
   display: grid;
   grid-template-columns: repeat(2, 1fr);
