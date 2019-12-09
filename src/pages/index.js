@@ -8,6 +8,7 @@ import Portfolio from '../../copy/portfolio';
 import Uses from '../../copy/uses';
 import Layout from '../components/layout';
 import { MugFace } from '../components/mug-face';
+import { NavItems } from '../components/nav-items';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
 const Wrapper = styled.div`
@@ -42,7 +43,17 @@ export default () => {
           title={`Homepage time!`}
           titleTemplate={`%s | ${title}`}
         />
-        <MugFace />
+        <div
+          style={{
+            minHeight: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            padding: '4vh 0px',
+          }}
+        >
+          <MugFace />
+          <NavItems />
+        </div>
         <PageWrapper>
           <About id={`about`} />
         </PageWrapper>
