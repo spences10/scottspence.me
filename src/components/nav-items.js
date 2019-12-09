@@ -35,6 +35,7 @@ const NavLink = styled.a`
   align-items: center;
   justify-content: center;
   flex: 1;
+  text-decoration: none;
 `;
 
 export const NavItems = () => {
