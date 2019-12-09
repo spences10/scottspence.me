@@ -5,7 +5,6 @@ import styled from 'styled-components';
 // import Dump from '@wesbos/dump'
 import { GlobalStyle } from '../theme/global-style';
 import { media } from '../theme/sizes';
-import { Footer } from './footer';
 
 const AppStyles = styled.div`
   position: relative;
@@ -30,7 +29,6 @@ const Layout = ({ children }) => {
         <html lang="en-GB" />
       </Helmet>
       <Wrapper>{children}</Wrapper>
-      <Footer />
     </AppStyles>
   );
 };

@@ -1,10 +1,13 @@
 import React from 'react';
-import Layout from './layout';
+import styled from 'styled-components';
 
-export const LandingPage = () => {
-  return (
-    <>
-      <Layout></Layout>
-    </>
-  );
+const Wrapper = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 0px;
+`;
+
+export const LandingPage = ({ children }) => {
+  return <Wrapper>{children}</Wrapper>;
 };

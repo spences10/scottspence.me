@@ -4,7 +4,6 @@ import mugFace from '../../static/favicon.png';
 
 const ImageDiv = styled.div`
   margin: 0 auto;
-  margin-top: 100px;
   position: relative;
   height: 200px;
   width: 200px;
@@ -14,10 +13,17 @@ const ImageDiv = styled.div`
   border-radius: 50%;
 `;
 
+const Wrapper = styled.div`
+  flex: 1 1 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const MugFace = () => {
   return (
-    <>
+    <Wrapper>
       <ImageDiv />
-    </>
+    </Wrapper>
   );
 };

@@ -6,6 +6,9 @@ export const NavWrapper = styled.div`
   ${media.desktop`
     display: flex;
     justify-content: center;
+    width: 100vw;
+    position: relative;
+    right: 50%;
   `};
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -16,7 +19,6 @@ export const NavWrapper = styled.div`
   width: 100%;
   max-width: 880px;
   margin: 0 auto;
-  font-size: ${({ theme }) => theme.fontSizes.p};
 `;
 
 const NavLink = styled.a`
