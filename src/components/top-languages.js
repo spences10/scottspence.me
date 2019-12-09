@@ -7,11 +7,10 @@ import { topLanguages } from '../services/data-massage';
 
 const LanguageWrapper = styled.div`
   width: 100%;
-  height: 55vh;
+  height: 40vh;
   max-height: 700px;
   max-width: 700px;
-  margin: 0 auto;
-  padding: 40;
+  margin-top: 60px;
 `;
 
 export const TopLanguages = ({ data }) => {
