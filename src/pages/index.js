@@ -1,114 +1,61 @@
-import loadable from '@loadable/component'
-import React from 'react'
-import styled from 'styled-components'
-import Layout from '../components/layout'
-// import Banner from '../components/banner'
-import SEO from '../components/seo'
-import { StyledHyperLink as SHL } from '../components/shared'
-import { useSiteMetadata } from '../hooks/useSiteMetadata'
-// import { Dump } from '../util/helpers'
-import { media } from '../theme/globalStyle'
+import React from 'react';
+import Helmet from 'react-helmet';
+import SEO from 'react-seo-component';
+import styled from 'styled-components';
+import About from '../../copy/about';
+import Now from '../../copy/now';
+import Portfolio from '../../copy/portfolio';
+import Uses from '../../copy/uses';
+import Layout from '../components/layout';
+import { MugFace } from '../components/mug-face';
+import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
-const Banner = loadable(() => import('../components/banner'))
+const Wrapper = styled.div`
+  margin: 0 30px;
+`;
 
-const EmojiWrapper = styled.span.attrs({
-  role: 'img'
-})``
-
-const StyledHyperLink = styled(SHL)`
-  font-family: ${props => props.theme.fontBody};
-  color: ${props => props.theme.fontDark};
-`
-
-const Hi = styled.span`
-  font-size: 2rem;
-  font-weight: 900;
-  color: ${props => props.theme.fontDark};
-  margin-top: 5rem;
-  ${media.giant`
-    margin-top: 5rem;
-  `};
-  ${media.desktop`
-    margin-top: 5rem;
-  `};
-  ${media.tablet`
-    margin-top: 3rem;
-  `};
-  ${media.phone`
-    margin-top: 2rem;
-  `};
-`
-
-const BannerFallback = styled.div`
-  margin-top: 5rem;
-  font-size: 2rem;
-  padding: 5rem 0rem;
-  transition: font-size 250ms ease-in-out, padding 150ms ease-in;
-  background-color: ${props => props.theme.branding};
-  color: ${props => props.theme.fontDark};
-  width: auto;
-  text-shadow: 8px 8px 3px rgba(0, 0, 0, 0.1);
-  font-family: ${props => props.theme.fontHeader};
-  ${media.giant`
-    margin-top: 5rem;
-    font-size: 4.5rem;
-    padding: 5rem 0rem;
-  `};
-  ${media.desktop`
-    margin-top: 5rem;
-    font-size: 4.5rem;
-    padding: 5rem 0rem;
-  `};
-  ${media.tablet`
-    margin-top: 3rem;
-    font-size: 2.5rem;
-    padding: 2.5rem 0rem;
-  `};
-  ${media.phone`
-    margin-top: 2rem;
-    font-size: 2.5rem;
-    padding: 2.5rem 0rem;
-  `};
-`
+const PageWrapper = styled.div``;
 
 export default () => {
-  const { description, imageLink, title } = useSiteMetadata()
+  const {
+    description,
+    imageLink,
+    title,
+    siteUrl,
+    siteLanguage,
+    siteLocale,
+    twitterUsername,
+  } = useSiteMetadata();
   return (
     <Layout>
       <SEO
         title={title}
-        description={description || 'nothin’'}
-        image={imageLink}
+        description={description}
+        image={`${siteUrl}${imageLink}`}
+        pathname={siteUrl}
+        siteLanguage={siteLanguage}
+        siteLocale={siteLocale}
+        twitterUsername={twitterUsername}
       />
-      <Banner
-        fallback={<BannerFallback>Loading...</BannerFallback>}
-      />
-      <Hi>
-        Hi people!
-        <span role="img" aria-label="waving hand">
-          👋
-        </span>
-      </Hi>
-      {/* <Dump data={data} /> */}
-      <p>Welcome to my personal portfolio site.</p>
-      <p>
-        Built with{' '}
-        <StyledHyperLink
-          href={'https://www.gatsbyjs.com/'}
-          target="_blank"
-          rel="noopener">
-          Gatsby
-        </StyledHyperLink>{' '}
-        and{' '}
-        <StyledHyperLink
-          href={'https://www.styled-components.com/'}
-          target="_blank"
-          rel="noopener">
-          styled components
-        </StyledHyperLink>
-        {/* eslint-disable-next-line */}
-        <EmojiWrapper aria-label="nail polish">💅</EmojiWrapper>
-      </p>
+      <Wrapper>
+        <Helmet
+          title={`Homepage time!`}
+          titleTemplate={`%s | ${title}`}
+        />
+        <MugFace />
+        <PageWrapper>
+          <About id={`about`} />
+        </PageWrapper>
+        <PageWrapper id={`portfolio`}>
+          <Portfolio />
+        </PageWrapper>
+        <PageWrapper id={`now`}>
+          <Now />
+        </PageWrapper>
+        <PageWrapper id={`uses`}>
+          <Uses />
+        </PageWrapper>
+      </Wrapper>
     </Layout>
-  )
-}
+  );
+};

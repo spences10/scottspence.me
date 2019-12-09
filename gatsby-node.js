@@ -1,36 +1,49 @@
-const path = require('path')
+const { createFilePath } = require(`gatsby-source-filesystem`);
+const path = require(`path`);
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
-
-  const mdTemplate = path.resolve('src/templates/mdTemplate.js')
+  const { createPage } = actions;
+  const mdTemplate = path.resolve('src/templates/md-template.js');
 
   return graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
-        edges {
-          node {
-            frontmatter {
-              path
-            }
+      allMdx {
+        nodes {
+          id
+          excerpt(pruneLength: 250)
+          fields {
+            slug
           }
         }
       }
     }
   `).then(result => {
     if (result.errors) {
-      return Promise.reject(result.errors)
+      throw result.errors;
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const pages = result.data.allMdx.nodes;
+
+    pages.forEach(post => {
       createPage({
-        path: node.frontmatter.path,
+        path: post.fields.slug,
         component: mdTemplate,
-        context: {} // additional data can be passed via context
-      })
-    })
-  })
-}
+        context: {
+          slug: post.fields.slug,
+        },
+      });
+    });
+  });
+};
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
+  if (node.internal.type === `Mdx`) {
+    const value = createFilePath({ node, getNode });
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    });
+  }
+};
