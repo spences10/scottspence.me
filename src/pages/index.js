@@ -47,7 +47,12 @@ export default () => {
           />
           <LandingPage>
             <div style={{ textAlign: 'center' }}>
-              <H1>Hello World! 👋</H1>
+              <H1>
+                Hello World!
+                <span role="img" aria-label="waving hand emoji">
+                  👋
+                </span>
+              </H1>
             </div>
             <MugFace />
             <NavItems />
