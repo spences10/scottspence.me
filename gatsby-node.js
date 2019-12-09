@@ -24,7 +24,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     const pages = result.data.allMdx.nodes;
 
-    pages.forEach((post, index) => {
+    pages.forEach(post => {
       createPage({
         path: post.fields.slug,
         component: mdTemplate,
