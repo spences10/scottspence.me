@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import graphCms from '../../static/graph-cms.svg';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
-import { media } from '../theme/sizes';
 import { PATTERNS } from '../theme/theme-constants';
 import { A } from './page-elements';
 
 const FooterStyles = styled.footer`
+  position: relative;
   margin-top: 2rem;
   background: ${({ theme }) => theme.colours.primary[100]};
   color: ${({ theme }) => theme.fontDark};
@@ -21,19 +21,7 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
-const LinksWrapper = styled.div`
-  margin: 0 30px;
-`;
-
-const LinksList = styled.ul`
-  margin: 0.5rem 0rem;
-  padding: 0.5rem 0rem;
-  ${media.phone`
-    margin: 0.5rem ;
-    padding: 0.5rem;
-  `};
-  margin-right: 2.5rem;
-`;
+const LinksList = styled.ul``;
 
 const LinksListTitle = styled.span`
   font-size: 1.5rem;
@@ -64,13 +52,9 @@ const StyledHyperLink = styled(A)`
 `;
 
 const ImageWrapper = styled.div`
-  margin: 0.5rem 0rem;
-  padding: 0.5rem 0rem;
-  grid-area: ${props => props.area};
-  ${media.phone`
-    margin: 0.5rem ;
-    padding: 0.5rem;
-  `};
+  position: absolute;
+  right: 30%;
+  bottom: 10%;
 `;
 
 export const Footer = () => {
@@ -78,21 +62,19 @@ export const Footer = () => {
   return (
     <FooterStyles>
       <Wrapper>
-        <LinksWrapper>
-          <LinksList area={'s'}>
-            <LinksListTitle>Social</LinksListTitle>
-            {contact.map((details, index) => (
-              <StyledHyperLink
-                key={index}
-                href={details.link}
-                target="_blank"
-                rel="noopener"
-              >
-                <ListLink>{details.name}</ListLink>
-              </StyledHyperLink>
-            ))}
-          </LinksList>
-        </LinksWrapper>
+        <LinksList>
+          <LinksListTitle>Social</LinksListTitle>
+          {contact.map((details, index) => (
+            <StyledHyperLink
+              key={index}
+              href={details.link}
+              target="_blank"
+              rel="noopener"
+            >
+              <ListLink>{details.name}</ListLink>
+            </StyledHyperLink>
+          ))}
+        </LinksList>
         <ImageWrapper area={'g'}>
           <img src={graphCms} className="App-logo" alt="logo" />
         </ImageWrapper>
