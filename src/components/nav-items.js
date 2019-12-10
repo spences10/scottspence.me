@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useAnalytics } from '../contexts/fathom-event-tracking';
 import { media } from '../theme/sizes';
 
 export const NavWrapper = styled.div`
@@ -40,12 +41,33 @@ const NavLink = styled.a`
 `;
 
 export const NavItems = () => {
+  const analytics = useAnalytics();
   return (
     <NavWrapper aria-label={`Site navigation`}>
-      <NavLink href={`#about`}>About</NavLink>
-      <NavLink href={`#portfolio`}>Portfolio</NavLink>
-      <NavLink href={`#now`}>Now</NavLink>
-      <NavLink href={`#uses`}>Uses</NavLink>
+      <NavLink
+        href={`#about`}
+        onClick={() => analytics.logNavigation('RC4QULF8')}
+      >
+        About
+      </NavLink>
+      <NavLink
+        href={`#portfolio`}
+        onClick={() => analytics.logNavigation('H9UEFCBF')}
+      >
+        Portfolio
+      </NavLink>
+      <NavLink
+        href={`#now`}
+        onClick={() => analytics.logNavigation('WSZZMPAQ')}
+      >
+        Now
+      </NavLink>
+      <NavLink
+        href={`#uses`}
+        onClick={() => analytics.logNavigation('QSWHMGAE')}
+      >
+        Uses
+      </NavLink>
     </NavWrapper>
   );
 };
