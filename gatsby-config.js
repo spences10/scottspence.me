@@ -11,10 +11,9 @@ const siteMetadata = {
   siteUrl: `https://scottspence.me`,
   title: `Scott Spence - Portfolio`,
   titleTemplate: `%s | scottspence.me`,
-  description: `Scott Spence, Father, husband 👨‍👩‍👧 Full stack web developer in the making 👨‍💻 Just In Time learner 👌 Byproduct of: coffee+excess carbs+lack of sleep. He/Him`,
+  description: `Scott Spence, Father, husband 👨‍👩‍👧. Web Developer. Just In Time learner ❤️👍. JavaScript, Gatsby, React, GraphQL and Netlify.`,
   twitterUsername: `@spences10`,
   facebookAppID: ``,
-  pages: [`about`, `portfolio`, `now`, `uses`],
   contact: [
     { name: `GitHub`, link: `https://github.com/spences10` },
     {
