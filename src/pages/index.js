@@ -12,6 +12,7 @@ import Layout from '../components/layout';
 import { MugFace } from '../components/mug-face';
 import { NavItems } from '../components/nav-items';
 import { H1 } from '../components/page-elements';
+import { AnalyticsProvider } from '../contexts/fathom-event-tracking';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
 const Wrapper = styled.div``;
@@ -30,48 +31,50 @@ export default () => {
   } = useSiteMetadata();
   return (
     <>
-      <Layout>
-        <SEO
-          title={title}
-          description={description}
-          image={`${siteUrl}${imageLink}`}
-          pathname={siteUrl}
-          siteLanguage={siteLanguage}
-          siteLocale={siteLocale}
-          twitterUsername={twitterUsername}
-        />
-        <Wrapper>
-          <Helmet
-            title={`Homepage time!`}
-            titleTemplate={`%s | ${title}`}
+      <AnalyticsProvider>
+        <Layout>
+          <SEO
+            title={title}
+            description={description}
+            image={`${siteUrl}${imageLink}`}
+            pathname={siteUrl}
+            siteLanguage={siteLanguage}
+            siteLocale={siteLocale}
+            twitterUsername={twitterUsername}
           />
-          <LandingPage>
-            <div style={{ textAlign: 'center' }}>
-              <H1>
-                Hello World!
-                <span role="img" aria-label="waving hand emoji">
-                  👋
-                </span>
-              </H1>
-            </div>
-            <MugFace />
-            <NavItems />
-          </LandingPage>
-          <PageWrapper id={`about`}>
-            <About />
-          </PageWrapper>
-          <PageWrapper id={`portfolio`}>
-            <Portfolio />
-          </PageWrapper>
-          <PageWrapper id={`now`}>
-            <Now />
-          </PageWrapper>
-          <PageWrapper id={`uses`}>
-            <Uses />
-          </PageWrapper>
-        </Wrapper>
-      </Layout>
-      <Footer />
+          <Wrapper>
+            <Helmet
+              title={`Homepage time!`}
+              titleTemplate={`%s | ${title}`}
+            />
+            <LandingPage>
+              <div style={{ textAlign: 'center' }}>
+                <H1>
+                  Hello World!
+                  <span role="img" aria-label="waving hand emoji">
+                    👋
+                  </span>
+                </H1>
+              </div>
+              <MugFace />
+              <NavItems />
+            </LandingPage>
+            <PageWrapper id={`about`}>
+              <About />
+            </PageWrapper>
+            <PageWrapper id={`portfolio`}>
+              <Portfolio />
+            </PageWrapper>
+            <PageWrapper id={`now`}>
+              <Now />
+            </PageWrapper>
+            <PageWrapper id={`uses`}>
+              <Uses />
+            </PageWrapper>
+          </Wrapper>
+        </Layout>
+        <Footer />
+      </AnalyticsProvider>
     </>
   );
 };

@@ -1,15 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useAnalytics } from '../contexts/fathom-event-tracking';
 import { media } from '../theme/sizes';
 
 export const NavWrapper = styled.div`
-  ${media.desktop`
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    position: relative;
-    right: 37%;
-  `};
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -17,8 +11,16 @@ export const NavWrapper = styled.div`
   gap: 30px;
   padding-bottom: 30px;
   width: 100%;
-  max-width: 880px;
+  max-width: 1000px;
   margin: 0 auto;
+  ${media.desktop`
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    right: 36%;
+    gap: 50px;
+  `};
 `;
 
 const NavLink = styled.a`
@@ -39,12 +41,33 @@ const NavLink = styled.a`
 `;
 
 export const NavItems = () => {
+  const analytics = useAnalytics();
   return (
     <NavWrapper aria-label={`Site navigation`}>
-      <NavLink href={`#about`}>About</NavLink>
-      <NavLink href={`#portfolio`}>Portfolio</NavLink>
-      <NavLink href={`#now`}>Now</NavLink>
-      <NavLink href={`#uses`}>Uses</NavLink>
+      <NavLink
+        href={`#about`}
+        onClick={() => analytics.logNavigation('RC4QULF8')}
+      >
+        About
+      </NavLink>
+      <NavLink
+        href={`#portfolio`}
+        onClick={() => analytics.logNavigation('H9UEFCBF')}
+      >
+        Portfolio
+      </NavLink>
+      <NavLink
+        href={`#now`}
+        onClick={() => analytics.logNavigation('WSZZMPAQ')}
+      >
+        Now
+      </NavLink>
+      <NavLink
+        href={`#uses`}
+        onClick={() => analytics.logNavigation('QSWHMGAE')}
+      >
+        Uses
+      </NavLink>
     </NavWrapper>
   );
 };

@@ -1,5 +1,5 @@
-# Redirects from what the browser requests to what we serve
-/about      /#about
-/portfolio  /#portfolio
-/now        /#now
-/uses       /#uses
+# Redirects from pages to page locations
+/about      /#about 301!
+/portfolio  /#portfolio 301!
+/now        /#now 301!
+/uses       /#uses 301!
