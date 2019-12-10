@@ -46,13 +46,28 @@ export const NavItems = () => {
     <NavWrapper aria-label={`Site navigation`}>
       <NavLink
         href={`#about`}
-        onClick={() => analytics.logButtonPress()}
+        onClick={() => analytics.logButtonPress('RC4QULF8')}
       >
         About
       </NavLink>
-      <NavLink href={`#portfolio`}>Portfolio</NavLink>
-      <NavLink href={`#now`}>Now</NavLink>
-      <NavLink href={`#uses`}>Uses</NavLink>
+      <NavLink
+        href={`#portfolio`}
+        onClick={() => analytics.logButtonPress('H9UEFCBF')}
+      >
+        Portfolio
+      </NavLink>
+      <NavLink
+        href={`#now`}
+        onClick={() => analytics.logButtonPress('WSZZMPAQ')}
+      >
+        Now
+      </NavLink>
+      <NavLink
+        href={`#uses`}
+        onClick={() => analytics.logButtonPress('QSWHMGAE')}
+      >
+        Uses
+      </NavLink>
     </NavWrapper>
   );
 };
