@@ -12,8 +12,8 @@ export const AnalyticsProvider = ({ children }) => {
   }, []);
 
   const events = {
-    logButtonPress: e => {
-      window.fathom('trackGoal', 'YAQQ2DND', 0);
+    logButtonPress: goalId => {
+      window.fathom('trackGoal', goalId, 0);
     },
   };
   return (
