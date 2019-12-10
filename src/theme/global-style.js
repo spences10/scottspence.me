@@ -33,7 +33,7 @@ export const theme = {
     h4: '21px',
     p: '18px',
   },
-  maxWidth: '500px',
+  maxWidth: '580px',
 };
 
 const fonts = () => {

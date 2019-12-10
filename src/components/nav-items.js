@@ -3,13 +3,6 @@ import styled from 'styled-components';
 import { media } from '../theme/sizes';
 
 export const NavWrapper = styled.div`
-  ${media.desktop`
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    position: relative;
-    right: 37%;
-  `};
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -17,8 +10,16 @@ export const NavWrapper = styled.div`
   gap: 30px;
   padding-bottom: 30px;
   width: 100%;
-  max-width: 880px;
+  max-width: 1000px;
   margin: 0 auto;
+  ${media.desktop`
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    right: 36%;
+    gap: 50px;
+  `};
 `;
 
 const NavLink = styled.a`
