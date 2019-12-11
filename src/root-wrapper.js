@@ -8,6 +8,7 @@ import {
   Hr,
   Li,
   P,
+  Small,
   Ul,
 } from './components/page-elements';
 import { theme } from './theme/global-style';
@@ -19,6 +20,7 @@ const components = {
   hr: props => <Hr {...props} />,
   li: props => <Li {...props} />,
   p: props => <P {...props} />,
+  small: props => <Small {...props} />,
   ul: props => <Ul {...props} />,
 };
 

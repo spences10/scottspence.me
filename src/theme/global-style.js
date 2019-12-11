@@ -32,6 +32,7 @@ export const theme = {
     h3: '24px',
     h4: '21px',
     p: '18px',
+    small: '11px',
   },
   maxWidth: '580px',
 };

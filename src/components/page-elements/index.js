@@ -5,4 +5,5 @@ export * from './h3';
 export * from './hr';
 export * from './li';
 export * from './p';
+export * from './small';
 export * from './ul';
