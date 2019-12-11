@@ -12,7 +12,10 @@ const Wrapper = styled.div`
 export const LandingPage = ({ children }) => {
   return (
     <Wrapper>
-      <header id="top" style={{ textAlign: 'center' }}>
+      <header
+        id="top"
+        style={{ textAlign: 'center', marginTop: '-50px' }}
+      >
         <H1>
           Hello World!{' '}
           <span role="img" aria-label="waving hand emoji">
