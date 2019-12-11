@@ -14,7 +14,7 @@ export const LandingPage = ({ children }) => {
     <Wrapper>
       <header id="top" style={{ textAlign: 'center' }}>
         <H1>
-          Hello World!
+          Hello World!{' '}
           <span role="img" aria-label="waving hand emoji">
             👋
           </span>
