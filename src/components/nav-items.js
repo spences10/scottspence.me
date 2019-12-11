@@ -8,18 +8,17 @@ export const NavWrapper = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-gap: 30px;
-  gap: 30px;
   padding-bottom: 30px;
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
   ${media.desktop`
     display: flex;
     justify-content: center;
     width: 100vw;
     position: relative;
     right: 36%;
-    gap: 50px;
+    gap: 10px;
+    margin: 0 -50px;
   `};
 `;
 
@@ -38,6 +37,9 @@ const NavLink = styled.a`
   justify-content: center;
   flex: 1;
   text-decoration: none;
+  ${media.desktop`
+    margin: 0 10px;
+  `};
 `;
 
 export const NavItems = () => {
