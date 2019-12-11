@@ -6,12 +6,12 @@ import About from '../../copy/about';
 import Now from '../../copy/now';
 import Portfolio from '../../copy/portfolio';
 import Uses from '../../copy/uses';
+import { BackToTop } from '../components/back-to-top';
 import { Footer } from '../components/footer';
 import { LandingPage } from '../components/landing-page';
 import Layout from '../components/layout';
 import { MugFace } from '../components/mug-face';
 import { NavItems } from '../components/nav-items';
-import { H1 } from '../components/page-elements';
 import { AnalyticsProvider } from '../contexts/fathom-event-tracking';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
@@ -48,32 +48,27 @@ export default () => {
               titleTemplate={`%s | ${title}`}
             />
             <LandingPage>
-              <div style={{ textAlign: 'center' }}>
-                <H1>
-                  Hello World!
-                  <span role="img" aria-label="waving hand emoji">
-                    👋
-                  </span>
-                </H1>
-              </div>
               <MugFace />
               <NavItems />
             </LandingPage>
-            <PageWrapper id={`about`}>
-              <About />
-            </PageWrapper>
-            <PageWrapper id={`portfolio`}>
-              <Portfolio />
-            </PageWrapper>
-            <PageWrapper id={`now`}>
-              <Now />
-            </PageWrapper>
-            <PageWrapper id={`uses`}>
-              <Uses />
-            </PageWrapper>
+            <section id={`back-to-top-intersection`}>
+              <PageWrapper id={`about`}>
+                <About />
+              </PageWrapper>
+              <PageWrapper id={`portfolio`}>
+                <Portfolio />
+              </PageWrapper>
+              <PageWrapper id={`now`}>
+                <Now />
+              </PageWrapper>
+              <PageWrapper id={`uses`}>
+                <Uses />
+              </PageWrapper>
+            </section>
           </Wrapper>
         </Layout>
         <Footer />
+        <BackToTop />
       </AnalyticsProvider>
     </>
   );
