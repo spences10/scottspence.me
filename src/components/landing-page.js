@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { H1 } from './page-elements';
 
 const Wrapper = styled.div`
   min-height: 100vh;
@@ -9,5 +10,17 @@ const Wrapper = styled.div`
 `;
 
 export const LandingPage = ({ children }) => {
-  return <Wrapper>{children}</Wrapper>;
+  return (
+    <Wrapper>
+      <header id="top" style={{ textAlign: 'center' }}>
+        <H1>
+          Hello World!
+          <span role="img" aria-label="waving hand emoji">
+            👋
+          </span>
+        </H1>
+      </header>
+      {children}
+    </Wrapper>
+  );
 };
