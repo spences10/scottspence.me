@@ -6,6 +6,7 @@ const StyledHr = styled.hr`
   opacity: 0.5;
   color: ${({ theme }) => theme.colours.dark[300]};
 `;
+
 export const Hr = props => {
   return <StyledHr {...props}>{props.children}</StyledHr>;
 };

@@ -3,7 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { useGitHubRepositories } from '../hooks/useGitHubRepositories';
 import { topLanguages } from '../services/data-massage';
-// import { Dump } from '../util/helpers'
 
 const LanguageWrapper = styled.div`
   width: 100%;
@@ -32,8 +31,6 @@ export const TopLanguages = ({ data }) => {
     </LanguageWrapper>
   );
 };
-
-TopLanguages.propTypes = {};
 
 // query GitHubContributions {
 //   github {
