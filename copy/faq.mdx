@@ -1,10 +1,11 @@
 import { DateUpdated } from '../src/components/date-updated';
 import { Small } from '../src/components/page-elements';
+import { DateDistance } from '../src/components/date-distance';
 
 # For recruiters - FAQ
 
 <Small>
-  Last updated: <UpdatedDate date={`2019-12-11`} small={`true`} />
+  Last updated: <UpdatedDate date={`2019-12-12`} small={`true`} />
 </Small>
 
 Hello friend 👋, thanks for taking an interest in me and my profile, I
@@ -91,11 +92,12 @@ here, hopefully everything you need 🙏.
 
 ## How many years experience do you have?
 
-- JavaScript 3 years
+- JavaScript <DateDistance date={`2016-06-15`} />
 
-- React 2.5 years
+- React <DateDistance date={`2017-05-20`} />
 
-- I started as a professional web developer in March 2018.
+- I have <DateDistance date={`2018-03-14`} /> as a professional web
+  developer.
 
 - I have 10+ years previous experience as a VBA developer for
   financial organisations.
