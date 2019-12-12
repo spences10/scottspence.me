@@ -19,6 +19,8 @@ data should come back formatted like:
 ]
 */
 
+import data from '../hooks/data';
+
 export const topLanguages = repositories => {
   const langObject = repositories.nodes.reduce(
     (langs, { languages }) => {
@@ -50,3 +52,28 @@ const formatLanguagesForChart = langObject =>
       color,
     }))
     .filter(data => data.color && data.value > 1);
+
+/*
+data should come back formatted like:
+[
+  { day: '2018-12-09', value: 11 },
+  { day: '2018-12-10', value: 6 },
+  { day: '2018-12-11', value: 11 },
+  { day: '2018-12-12', value: 25 },
+]
+*/
+
+export const contributions = weeks => {
+  const contributionsObject = weeks.reduce(
+    (contrbs, { contributionDays }) => {
+      console.log(contributionDays);
+    },
+    {}
+  );
+  return [];
+};
+
+const {
+  weeks,
+} = data.data.github.viewer.contributionsCollection.contributionCalendar;
+contributions(weeks);
