@@ -16,7 +16,7 @@ export const NavWrapper = styled.div`
     justify-content: center;
     width: 100vw;
     position: relative;
-    right: 36%;
+    right: 27%;
     gap: 10px;
     margin: 0 -50px;
   `};
