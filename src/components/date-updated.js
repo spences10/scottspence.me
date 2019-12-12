@@ -8,7 +8,7 @@ const StyledDate = styled.span`
     small && `font-size: ${theme.fontSizes.small}`}
 `;
 
-export const UpdatedDate = ({ date, small }) => {
+export const DateUpdated = ({ date, small }) => {
   const { lastBuildDate } = useSiteMetadata();
   const buildDate = date
     ? format(new Date(date), 'MMMM do YYY')
