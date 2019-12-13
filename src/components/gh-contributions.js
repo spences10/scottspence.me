@@ -7,7 +7,7 @@ import { contributions } from '../services/data-massage';
 const ContributionsWrapper = styled.div`
   position: relative;
   width: 150%;
-  right: 27%;
+  right: 24%;
   height: 20vh;
   margin-top: 60px;
 `;
