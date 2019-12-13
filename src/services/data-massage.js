@@ -63,14 +63,50 @@ data should come back formatted like:
 ]
 */
 
+/**
+  contributionDays: [
+  {
+    color: "#7bc96f"
+    contributionCount: 43
+    date: "2019-12-01"
+    weekday: 0
+  },
+  ...
+]
+*/
 export const contributions = weeks => {
-  const contributionsObject = weeks.reduce(
-    (contrbs, { contributionDays }) => {
-      console.log(contributionDays);
-    },
-    {}
-  );
-  return [];
+  // console.log('=====================');
+  // console.log(weeks.length);
+  // console.log(weeks[0].contributionDays[1].date);
+  // console.log(weeks[0].contributionDays[1].contributionCount);
+  // console.log(weeks[1].contributionDays.length);
+  // console.log(weeks[2].contributionDays.length);
+  // console.log('=====================');
+
+  const obj = {
+    day: '',
+    value: 0,
+  };
+  for (const { contributionDays } of weeks) {
+    // console.log(contributionDays);
+    contributionDays.map(d => {
+      console.log('=====================');
+      console.log(d);
+      console.log('=====================');
+    });
+  }
+  console.log('=====================');
+  console.log(obj);
+  console.log('=====================');
+  // const contributionsObject = weeks.reduce(
+  //   (contrbs, { contributionDays }) => {
+  //     console.log('=====================');
+  //     console.log(contributionDays);
+  //     console.log('=====================');
+  //   },
+  //   {}
+  // );
+  // return [];
 };
 
 const {
