@@ -19,8 +19,6 @@ data should come back formatted like:
 ]
 */
 
-import data from '../hooks/data';
-
 export const topLanguages = repositories => {
   const langObject = repositories.nodes.reduce(
     (langs, { languages }) => {
@@ -64,16 +62,17 @@ data should come back formatted like:
 */
 
 export const contributions = weeks => {
-  const contributionsObject = weeks.reduce(
-    (contrbs, { contributionDays }) => {
-      console.log(contributionDays);
-    },
-    {}
-  );
-  return [];
+  const arrayOfDays = [];
+  for (const { contributionDays } of weeks) {
+    const days = contributionDays.map(
+      ({ contributionCount, date }) => {
+        return {
+          day: date,
+          value: contributionCount,
+        };
+      }
+    );
+    arrayOfDays.push(days);
+  }
+  return [].concat.apply([], arrayOfDays);
 };
-
-const {
-  weeks,
-} = data.data.github.viewer.contributionsCollection.contributionCalendar;
-contributions(weeks);
