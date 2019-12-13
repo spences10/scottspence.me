@@ -1,4 +1,3 @@
-import Dump from '@wesbos/dump';
 import React from 'react';
 import Helmet from 'react-helmet';
 import SEO from 'react-seo-component';
@@ -9,7 +8,6 @@ import Portfolio from '../../copy/portfolio';
 import Uses from '../../copy/uses';
 import { BackToTop } from '../components/back-to-top';
 import { Footer } from '../components/footer';
-import { GitHubContributions } from '../components/gh-contributions';
 import { LandingPage } from '../components/landing-page';
 import Layout from '../components/layout';
 import { MugFace } from '../components/mug-face';
@@ -17,7 +15,6 @@ import { NavItems } from '../components/nav-items';
 import { AnalyticsProvider } from '../contexts/fathom-event-tracking';
 import { useGitHubContributions } from '../hooks/useGitHubContributions';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
-import { contributions } from '../services/data-massage';
 
 const Wrapper = styled.div``;
 
@@ -52,8 +49,6 @@ export default () => {
               title={`Homepage time!`}
               titleTemplate={`%s | ${title}`}
             />
-            <GitHubContributions />
-            <Dump data={contributions(weeks)} />
             <LandingPage>
               <MugFace />
               <NavItems />
