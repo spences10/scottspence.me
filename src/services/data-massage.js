@@ -19,8 +19,6 @@ data should come back formatted like:
 ]
 */
 
-import data from '../hooks/data';
-
 export const topLanguages = repositories => {
   const langObject = repositories.nodes.reduce(
     (langs, { languages }) => {
@@ -75,41 +73,17 @@ data should come back formatted like:
 ]
 */
 export const contributions = weeks => {
-  // console.log('=====================');
-  // console.log(weeks.length);
-  // console.log(weeks[0].contributionDays[1].date);
-  // console.log(weeks[0].contributionDays[1].contributionCount);
-  // console.log(weeks[1].contributionDays.length);
-  // console.log(weeks[2].contributionDays.length);
-  // console.log('=====================');
-
-  const obj = {
-    day: '',
-    value: 0,
-  };
+  const arrayOfDays = [];
   for (const { contributionDays } of weeks) {
-    // console.log(contributionDays);
-    contributionDays.map(d => {
-      console.log('=====================');
-      console.log(d);
-      console.log('=====================');
-    });
+    const days = contributionDays.map(
+      ({ contributionCount, date }) => {
+        return {
+          day: date,
+          value: contributionCount,
+        };
+      }
+    );
+    arrayOfDays.push(days);
   }
-  console.log('=====================');
-  console.log(obj);
-  console.log('=====================');
-  // const contributionsObject = weeks.reduce(
-  //   (contrbs, { contributionDays }) => {
-  //     console.log('=====================');
-  //     console.log(contributionDays);
-  //     console.log('=====================');
-  //   },
-  //   {}
-  // );
-  // return [];
+  return [].concat.apply([], arrayOfDays);
 };
-
-const {
-  weeks,
-} = data.data.github.viewer.contributionsCollection.contributionCalendar;
-contributions(weeks);
