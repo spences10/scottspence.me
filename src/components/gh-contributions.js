@@ -1,7 +1,8 @@
 import { ResponsiveCalendar } from 'nivo';
 import React from 'react';
 import styled from 'styled-components';
-import { useGitHubRepositories } from '../hooks/useGitHubRepositories';
+import { useGitHubContributions } from '../hooks/useGitHubContributions';
+import { contributions } from '../services/data-massage';
 
 const ContributionsWrapper = styled.div`
   width: 100%;
@@ -12,13 +13,13 @@ const ContributionsWrapper = styled.div`
 `;
 
 export const GitHubContributions = ({ data }) => {
-  const { repositories } = useGitHubRepositories();
+  const { weeks } = useGitHubContributions();
   return (
     <ContributionsWrapper>
       <ResponsiveCalendar
-        data={[]}
-        from="2015-03-01"
-        to="2016-07-12"
+        data={contributions(weeks)}
+        from="2019-01-01"
+        to="2019-12-12"
       />
     </ContributionsWrapper>
   );
