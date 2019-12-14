@@ -12,7 +12,7 @@ const LanguageWrapper = styled.div`
   margin-top: 60px;
 `;
 
-export const TopLanguages = ({ data }) => {
+export const TopLanguages = () => {
   const { repositories } = useGitHubRepositories();
   return (
     <LanguageWrapper>
@@ -32,23 +32,3 @@ export const TopLanguages = ({ data }) => {
     </LanguageWrapper>
   );
 };
-
-// query GitHubContributions {
-//   github {
-//     viewer {
-//       contributionsCollection {
-//         contributionCalendar {
-//           totalContributions
-//           weeks {
-//             contributionDays {
-//               color
-//               contributionCount
-//               date
-//               weekday
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }

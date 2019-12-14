@@ -4,16 +4,23 @@ import React from 'react';
 import styled from 'styled-components';
 import { useGitHubContributions } from '../hooks/useGitHubContributions';
 import { contributions } from '../services/data-massage';
+import { media } from '../theme/sizes';
 
 const ContributionsWrapper = styled.div`
-  position: relative;
-  width: 150%;
-  right: 24%;
+  width: 100%;
   height: 40vh;
   margin-top: 60px;
+  max-height: 700px;
+  max-width: 700px;
+  margin-top: 60px;
+  ${media.desktop`
+    position: relative;
+    width: 150%;
+    right: 24%;
+  `}
 `;
 
-export const GitHubContributions = ({ data }) => {
+export const GitHubContributions = () => {
   const { weeks } = useGitHubContributions();
   return (
     <ContributionsWrapper>
