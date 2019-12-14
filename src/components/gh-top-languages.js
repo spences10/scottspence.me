@@ -1,4 +1,4 @@
-import { ResponsivePie } from 'nivo';
+import { ResponsivePie } from '@nivo/pie';
 import React from 'react';
 import styled from 'styled-components';
 import { useGitHubRepositories } from '../hooks/useGitHubRepositories';
