@@ -27,6 +27,7 @@ export const TopLanguages = ({ data }) => {
         innerRadius={0.5}
         padAngle={0.7}
         cornerRadius={3}
+        colors={['#f7df1e', '#299bd7', '#f16529', '#007acc']}
       />
     </LanguageWrapper>
   );
