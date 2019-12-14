@@ -24,6 +24,7 @@ const Wrapper = styled.div`
   ${down('md')} {
     position: inherit;
     width: 100%;
+    height: 40vh;
   }
   ${between('lg', 'md')} {
     position: initial;
