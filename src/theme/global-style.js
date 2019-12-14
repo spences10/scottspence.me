@@ -36,10 +36,10 @@ export const theme = {
   },
   maxWidth: '580px',
   breakpoints: {
-    sm: '576px',
-    md: '768px',
-    lg: '992px',
-    xl: '1200px',
+    sm: '375px',
+    md: '576px',
+    lg: '1023px',
+    xl: '1524px',
   },
 };
 
