@@ -1,28 +1,50 @@
 import { ResponsiveCalendar } from '@nivo/calendar';
 import { startOfYear, subYears } from 'date-fns';
 import React from 'react';
-import { between, up } from 'styled-breakpoints';
+import { between, down, up } from 'styled-breakpoints';
 import styled from 'styled-components';
 import { useGitHubContributions } from '../hooks/useGitHubContributions';
 import { contributions } from '../services/data-massage';
 
 const Wrapper = styled.div`
   overflow: hidden;
+  border: 2px solid ${({ theme }) => theme.colours.light[100]};
+  border-radius: 5px;
+  margin-top: 60px;
+  ${down('lg')} {
+    width: 100%;
+    right: 0%;
+  }
   ${up('md')} {
     position: relative;
     width: 150%;
     max-width: 850px;
     right: 22%;
   }
+  ${down('md')} {
+    position: inherit;
+    width: 100%;
+  }
+  ${between('lg', 'md')} {
+    position: initial;
+  }
 `;
 
 const ContributionsWrapper = styled.div`
   height: 50vh;
-  ${between('sm', 'md')} {
+  margin: -80px auto;
+  ${down('md')} {
     position: relative;
     max-width: 800px;
     width: 200%;
     right: 94%;
+  }
+  ${between('md', 'lg')} {
+    position: initial;
+  }
+  ${between('sm', 'md')} {
+    position: initial;
+    right: 100%;
   }
 `;
 
