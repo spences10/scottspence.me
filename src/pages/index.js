@@ -13,7 +13,6 @@ import Layout from '../components/layout';
 import { MugFace } from '../components/mug-face';
 import { NavItems } from '../components/nav-items';
 import { AnalyticsProvider } from '../contexts/fathom-event-tracking';
-import { useGitHubContributions } from '../hooks/useGitHubContributions';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
 const Wrapper = styled.div``;
@@ -30,7 +29,6 @@ export default () => {
     siteLocale,
     twitterUsername,
   } = useSiteMetadata();
-  const { weeks } = useGitHubContributions();
   return (
     <>
       <AnalyticsProvider>
