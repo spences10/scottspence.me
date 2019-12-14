@@ -17,11 +17,11 @@ const Wrapper = styled.div`
 `;
 
 const ContributionsWrapper = styled.div`
-  height: 40vh;
+  height: 50vh;
   position: relative;
   max-width: 800px;
-  width: 150%;
-  right: 50%;
+  width: 200%;
+  right: 94%;
   ${media.desktop`
     position: null;
     max-width: null;
