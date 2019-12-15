@@ -24,6 +24,8 @@
   "dependencies": {
     "@mdx-js/mdx": "1.5.1",
     "@mdx-js/react": "1.5.1",
+    "@nivo/calendar": "0.60.0",
+    "@nivo/pie": "0.60.0",
     "@wesbos/dump": "0.1.1",
     "babel-plugin-styled-components": "1.10.6",
     "date-fns": "2.8.1",
@@ -42,12 +44,12 @@
     "gatsby-remark-smartypants": "2.1.19",
     "gatsby-source-filesystem": "2.1.42",
     "gatsby-source-graphql": "2.1.28",
-    "nivo": "0.31.0",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-helmet": "5.2.1",
     "react-lottie": "1.2.3",
     "react-seo-component": "0.1.16",
+    "styled-breakpoints": "7.1.0",
     "styled-components": "4.4.1",
     "styled-reset": "4.0.8"
   },

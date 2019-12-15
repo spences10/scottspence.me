@@ -1,4 +1,4 @@
-import { ResponsivePie } from 'nivo';
+import { ResponsivePie } from '@nivo/pie';
 import React from 'react';
 import styled from 'styled-components';
 import { useGitHubRepositories } from '../hooks/useGitHubRepositories';
@@ -12,7 +12,7 @@ const LanguageWrapper = styled.div`
   margin-top: 60px;
 `;
 
-export const TopLanguages = ({ data }) => {
+export const TopLanguages = () => {
   const { repositories } = useGitHubRepositories();
   return (
     <LanguageWrapper>
@@ -27,27 +27,8 @@ export const TopLanguages = ({ data }) => {
         innerRadius={0.5}
         padAngle={0.7}
         cornerRadius={3}
+        colors={['#f7df1e', '#299bd7', '#f16529', '#007acc']}
       />
     </LanguageWrapper>
   );
 };
-
-// query GitHubContributions {
-//   github {
-//     viewer {
-//       contributionsCollection {
-//         contributionCalendar {
-//           totalContributions
-//           weeks {
-//             contributionDays {
-//               color
-//               contributionCount
-//               date
-//               weekday
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }

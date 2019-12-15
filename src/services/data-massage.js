@@ -50,3 +50,40 @@ const formatLanguagesForChart = langObject =>
       color,
     }))
     .filter(data => data.color && data.value > 1);
+
+/*
+data should come back formatted like:
+[
+  { day: '2018-12-09', value: 11 },
+  { day: '2018-12-10', value: 6 },
+  { day: '2018-12-11', value: 11 },
+  { day: '2018-12-12', value: 25 },
+]
+*/
+
+/**
+  contributionDays: [
+  {
+    color: "#7bc96f"
+    contributionCount: 43
+    date: "2019-12-01"
+    weekday: 0
+  },
+  ...
+]
+*/
+export const contributions = weeks => {
+  const arrayOfDays = [];
+  for (const { contributionDays } of weeks) {
+    const days = contributionDays.map(
+      ({ contributionCount, date }) => {
+        return {
+          day: date,
+          value: contributionCount,
+        };
+      }
+    );
+    arrayOfDays.push(days);
+  }
+  return [].concat.apply([], arrayOfDays);
+};

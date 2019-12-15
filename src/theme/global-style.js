@@ -35,6 +35,12 @@ export const theme = {
     small: '11px',
   },
   maxWidth: '580px',
+  breakpoints: {
+    sm: '375px',
+    md: '576px',
+    lg: '1023px',
+    xl: '1524px',
+  },
 };
 
 const fonts = () => {
