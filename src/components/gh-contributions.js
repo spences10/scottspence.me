@@ -1,5 +1,5 @@
 import { ResponsiveCalendar } from '@nivo/calendar';
-import { startOfYear, subYears } from 'date-fns';
+import { subWeeks } from 'date-fns';
 import React from 'react';
 import { between, down, up } from 'styled-breakpoints';
 import styled from 'styled-components';
@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   border: 2px solid ${({ theme }) => theme.colours.light[100]};
   border-radius: 5px;
   margin-top: 60px;
+  height: 320px;
   ${down('lg')} {
     width: 100%;
     right: 0%;
@@ -24,7 +25,7 @@ const Wrapper = styled.div`
   ${down('md')} {
     position: inherit;
     width: 100%;
-    height: 40vh;
+    overflow-x: auto;
   }
   ${between('lg', 'md')} {
     position: initial;
@@ -32,8 +33,8 @@ const Wrapper = styled.div`
 `;
 
 const ContributionsWrapper = styled.div`
-  height: 50vh;
-  margin: -80px auto;
+  height: 400px;
+  margin: -60px auto;
   ${down('md')} {
     position: relative;
     max-width: 800px;
@@ -56,10 +57,9 @@ export const GitHubContributions = () => {
       <ContributionsWrapper>
         <ResponsiveCalendar
           data={contributions(weeks)}
-          from={startOfYear(subYears(new Date(Date.now()), 1))}
+          from={subWeeks(new Date(Date.now()), 49).toISOString()}
           to={new Date(Date.now()).toISOString()}
           emptyColor="#eeeeee"
-          // colors={['#70facb', '#29c195', '#008a62', '#3c60a4']}
           colors={[
             '#a1cfff',
             '#468df3',
@@ -69,7 +69,7 @@ export const GitHubContributions = () => {
           ]}
           margin={{ top: 80, right: 40, bottom: 40, left: 40 }}
           yearSpacing={40}
-          yearLegendPosition="after"
+          // yearLegendPosition="after"
           monthBorderColor="#ffffff"
           dayBorderWidth={2}
           dayBorderColor="#ffffff"
