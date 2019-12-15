@@ -1,15 +1,13 @@
+import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 import React from 'react';
 import styled from 'styled-components';
-import mugFace from '../../static/favicon.png';
 
-const ImageDiv = styled.div`
+const ImageDiv = styled(Img)`
   margin: 0 auto;
   position: relative;
   height: 200px;
   width: 200px;
-  background-image: url(${mugFace});
-  background-size: contain;
-  background-repeat: no-repeat;
   border-radius: 50%;
 `;
 
@@ -21,9 +19,21 @@ const Wrapper = styled.div`
 `;
 
 export const MugFace = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "favicon.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 200) {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <Wrapper>
-      <ImageDiv />
+      <ImageDiv fluid={data.placeholderImage.childImageSharp.fluid} />
     </Wrapper>
   );
 };
