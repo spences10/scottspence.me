@@ -1,3 +1,4 @@
+// import Dump from '@wesbos/dump';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
@@ -43,8 +44,8 @@ const StyledProjectCard = styled.div`
   color: ${({ theme }) => theme.colours.grey[200]};
   background-color: ${props =>
     props.id % 2 === 0
-      ? `${props.theme.colours.grey[200]}`
-      : `${props.theme.colours.grey[300]}}`};
+      ? `${props.theme.colours.primary[100]}`
+      : `${props.theme.colours.primary[600]}}`};
   background-image: url("${PATTERNS.WIGGLE}");
 `;
 
