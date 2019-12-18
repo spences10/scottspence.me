@@ -1,4 +1,5 @@
 import React from 'react';
+import { isIE } from 'react-device-detect';
 import Helmet from 'react-helmet';
 import SEO from 'react-seo-component';
 import styled from 'styled-components';
@@ -29,6 +30,13 @@ export default () => {
     siteLocale,
     twitterUsername,
   } = useSiteMetadata();
+  if (isIE)
+    return (
+      <h1>
+        IE is not supported. Please use a modern browser like Firefox
+        or Chrome.
+      </h1>
+    );
   return (
     <>
       <AnalyticsProvider>
