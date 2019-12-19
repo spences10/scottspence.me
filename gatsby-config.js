@@ -50,10 +50,36 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: siteMetadata.siteUrl,
+        sitemap: `${siteMetadata.siteUrl}/sitemap.xml`,
+        policy: [
+          {
+            userAgent: 'Googlebot',
+            allow: '/',
+            disallow: ['/about/', '/uses/', '/now/', '/portfolio/'],
+            crawlDelay: 2,
+          },
+          {
+            userAgent: 'OtherBot',
+            allow: '/',
+            disallow: ['/about/', '/uses/', '/now/', '/portfolio/'],
+            crawlDelay: 2,
+          },
+          {
+            userAgent: '*',
+            allow: '/',
+            disallow: ['/about/', '/uses/', '/now/', '/portfolio/'],
+            crawlDelay: 10,
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
