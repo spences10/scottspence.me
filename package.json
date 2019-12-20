@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "3.0.8",
+  "version": "3.0.9",
   "author": "Scott Spence <yo@scottspence.dev>",
   "license": "MIT",
   "main": "n/a",
@@ -22,8 +22,8 @@
     }
   },
   "dependencies": {
-    "@mdx-js/mdx": "1.5.2",
-    "@mdx-js/react": "1.5.2",
+    "@mdx-js/mdx": "1.5.3",
+    "@mdx-js/react": "1.5.3",
     "@nivo/calendar": "0.60.0",
     "@nivo/pie": "0.60.0",
     "@wesbos/dump": "0.1.1",
