@@ -6,7 +6,7 @@ import { ProjectCard } from './project-card';
 const ProjectWrapper = styled.div`
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 `;
 
 export const Projects = () => {
