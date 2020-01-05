@@ -54,7 +54,7 @@
     "react-seo-component": "0.1.16",
     "styled-breakpoints": "7.2.0",
     "styled-components": "4.4.1",
-    "styled-reset": "4.0.8"
+    "styled-reset": "4.0.9"
   },
   "devDependencies": {
     "husky": "3.1.0",
