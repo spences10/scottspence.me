@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "3.0.12",
+  "version": "3.0.13",
   "author": "Scott Spence <yo@scottspence.dev>",
   "license": "MIT",
   "main": "n/a",
@@ -32,7 +32,7 @@
     "gatsby": "2.18.17",
     "gatsby-image": "2.2.37",
     "gatsby-plugin-catch-links": "2.1.21",
-    "gatsby-plugin-fathom": "1.1.0",
+    "gatsby-plugin-fathom": "1.1.1",
     "gatsby-plugin-manifest": "2.2.34",
     "gatsby-plugin-mdx": "1.0.64",
     "gatsby-plugin-offline": "3.0.30",
