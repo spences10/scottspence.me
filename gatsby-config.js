@@ -153,5 +153,13 @@ module.exports = {
         siteId: process.env.GATSBY_FATHOM_TRACKING_ID_SCOTT_SPENCE_ME,
       },
     },
+    {
+      resolve: `gatsby-plugin-web-font-loader`,
+      options: {
+        google: {
+          families: ['Alatsi:400,700', 'Poppins:400,700'],
+        },
+      },
+    },
   ],
 };
