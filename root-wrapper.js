@@ -2,6 +2,7 @@ import { MDXProvider } from '@mdx-js/react';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import {
+  A,
   H1,
   H2,
   H3,
@@ -10,8 +11,8 @@ import {
   P,
   Small,
   Ul,
-} from './components/page-elements';
-import { theme } from './theme/global-style';
+} from './src/components/page-elements';
+import { theme } from './src/theme/global-style';
 
 const components = {
   h1: props => <H1 {...props} />,
@@ -20,6 +21,7 @@ const components = {
   hr: props => <Hr {...props} />,
   li: props => <Li {...props} />,
   p: props => <P {...props} />,
+  'p.a': props => <A {...props} />,
   small: props => <Small {...props} />,
   ul: props => <Ul {...props} />,
 };
