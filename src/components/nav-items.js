@@ -23,7 +23,7 @@ export const NavWrapper = styled.div`
 `;
 
 const NavLink = styled.a`
-  color: ${({ theme }) => theme.colours.light[100]};
+  color: ${({ theme }) => theme.colours.grey[100]};
   background: linear-gradient(
     180turn,
     ${({ theme }) => theme.colours.primary[100]},

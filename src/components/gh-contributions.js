@@ -8,7 +8,7 @@ import { contributions } from '../services/data-massage';
 
 const Wrapper = styled.div`
   overflow: hidden;
-  border: 2px solid ${({ theme }) => theme.colours.light[100]};
+  border: 2px solid ${({ theme }) => theme.colours.grey[100]};
   border-radius: 5px;
   margin-top: 60px;
   height: 320px;

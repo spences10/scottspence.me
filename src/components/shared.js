@@ -44,7 +44,7 @@ export const ShinyButton = styled.button`
 `;
 
 export const StyledLink = styled(props => <Link {...props} />)`
-  color: ${({ theme }) => theme.colours.dark[100]};
+  color: ${({ theme }) => theme.colours.grey[100]};
   &:focus {
     outline: 3px dashed ${({ theme }) => theme.colours.primary[100]};
   }
