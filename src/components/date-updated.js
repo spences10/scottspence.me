@@ -11,7 +11,7 @@ const StyledDate = styled.span`
 export const DateUpdated = ({ date, small }) => {
   const { lastBuildDate } = useSiteMetadata();
   const buildDate = date
-    ? format(new Date(date), 'MMMM do YYY')
-    : format(new Date(lastBuildDate), 'MMMM do YYY');
+    ? format(new Date(date), 'MMMM do yyyy')
+    : format(new Date(lastBuildDate), 'MMMM do yyyy');
   return <StyledDate small={small}>{buildDate}</StyledDate>;
 };
