@@ -43,14 +43,8 @@ export const theme = {
   },
 };
 
-const fonts = () => {
-  const list = ['Alatsi:400,700|', 'Poppins:400,700|'];
-  return list.join('');
-};
-
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=${fonts}');
-
+  
   ${reset}
   
   /* use for debugging only!! */
