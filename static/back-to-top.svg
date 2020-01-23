@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 16.4 27.18"><defs><style>.cls-1{fill:#1d1d1b}.cls-2{fill:none;stroke:#1d1d1b;stroke-miterlimit:10;stroke-width:1.5px}</style></defs><title>BTT_Arrow</title><path d="M7.53,4.05V24.4a.75.75,0,0,0,1.5,0V4.05a.75.75,0,0,0-1.5,0Z" class="cls-1"/><path d="M8.28,4.68a.63.63,0,0,0,0-1.25.63.63,0,0,0,0,1.25Z" class="cls-1"/><polyline points="14.57 10.34 8.28 4.05 2 10.34 8.28 4.05" class="cls-2"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 16.4 27.18">
+  <defs>
+    <style>.cls-1{fill:#1a202c}</style>
+  </defs>
+  <path d="M7.53 4.05V24.4a.75.75 0 001.5 0V4.05a.75.75 0 00-1.5 0z" class="cls-1"/>
+  <path d="M8.28 4.68a.63.63 0 000-1.25.63.63 0 000 1.25z" class="cls-1"/>
+  <path fill="none" stroke="#1a202c" stroke-miterlimit="10" stroke-width="1.5" d="M14.57 10.34L8.28 4.05 2 10.34l6.28-6.29"/>
+</svg>

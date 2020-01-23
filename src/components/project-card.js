@@ -40,11 +40,11 @@ const StyledProjectCard = styled.div`
   padding: 1.75rem;
   margin: 0rem;
   border-radius: 5px 5px 0px 0px;
-  color: ${({ theme }) => theme.colours.dark[200]};
+  color: ${({ theme }) => theme.colours.grey[200]};
   background-color: ${props =>
     props.id % 2 === 0
-      ? `${props.theme.colours.light[200]}`
-      : `${props.theme.colours.light[300]}}`};
+      ? `${props.theme.colours.grey[200]}`
+      : `${props.theme.colours.grey[300]}}`};
   background-image: url("${PATTERNS.WIGGLE}");
 `;
 
