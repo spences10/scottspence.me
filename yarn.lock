@@ -5954,10 +5954,10 @@ gatsby-plugin-fathom@1.2.0:
     "@babel/runtime" "7.1.2"
     react "16.5.2"
 
-gatsby-plugin-manifest@2.2.37:
-  version "2.2.37"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.37.tgz#ea385bbd453d8455d3c4715c4f3b1e8c1313a97b"
-  integrity sha512-RT7ALsnq/H1gZrmyHJ6jJFn+Z/OzDJgiwVlP5qIUmAzAoqC95bq3XbXB5yHCePAvZjKn0liIRjUyp0OHVKQlNQ==
+gatsby-plugin-manifest@2.2.38:
+  version "2.2.38"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.38.tgz#365d679dc815b301b38eff7893f35c62036f5e2b"
+  integrity sha512-3DXS7FTK4qJnKLAZ/8x2/UfSOVCwTykg/kp0erYbdJ2roxPvUd3paCqGm3WfzbfwKVGVBpZgMaYO/whNw/bdbQ==
   dependencies:
     "@babel/runtime" "^7.7.6"
     gatsby-core-utils "^1.0.26"
@@ -6149,10 +6149,10 @@ gatsby-source-filesystem@2.1.46:
     valid-url "^1.0.9"
     xstate "^4.7.2"
 
-gatsby-source-graphql@2.1.31:
-  version "2.1.31"
-  resolved "https://registry.yarnpkg.com/gatsby-source-graphql/-/gatsby-source-graphql-2.1.31.tgz#26377b401fc25b0a790b9cb5bcfda0a4228c4a9a"
-  integrity sha512-dIRpBco+7zhMkOVvgzHs/qaPHJk1U2AKMwimUJsKoFufMHajxSAJ0knYdDAiPsvmZrQ3DGNoiQOzubyZM2hh5w==
+gatsby-source-graphql@2.1.32:
+  version "2.1.32"
+  resolved "https://registry.yarnpkg.com/gatsby-source-graphql/-/gatsby-source-graphql-2.1.32.tgz#a8fbc71fe95569dbf70dea66ef0bdc27a3265622"
+  integrity sha512-yNWuus/pmfdZfVOTib5oqNV1VmZ0VZuJ+C9fVXbsEMgZMHKYlydAAVgAt/eR21guhxUOXEvzrgwmjC2fRGpmvg==
   dependencies:
     "@babel/runtime" "^7.7.6"
     apollo-link "1.2.13"
@@ -6198,10 +6198,10 @@ gatsby-transformer-sharp@2.3.13:
     semver "^5.7.1"
     sharp "^0.23.4"
 
-gatsby@2.19.1:
-  version "2.19.1"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.19.1.tgz#eaea19aec7580a459a7d2b9acea6e1445902ec36"
-  integrity sha512-n4GCNLIdG+0Kf6qNlIN4cfRp+PMAtN45RMvKoRFHQ5hDKnBZf53+wKe0CH2WhYtYayxit32Cn4usDqe5iASWag==
+gatsby@2.19.5:
+  version "2.19.5"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.19.5.tgz#41dfc896ad8654d3372581fa17edf5a981625cee"
+  integrity sha512-KdZBFJtTT1XHVHQVXwqpd93Dn/HHkBE7cCBg7n9dLRYGIkywtcw52xpEoBtzSuSeJGJy0Nc97Fvdl2VJXou8Fw==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.7.5"
