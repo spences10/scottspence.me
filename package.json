@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "3.0.25",
+  "version": "3.0.26",
   "author": "Scott Spence <yo@scottspence.dev>",
   "license": "MIT",
   "main": "n/a",
@@ -27,7 +27,7 @@
     "@nivo/calendar": "0.61.1",
     "@nivo/pie": "0.61.1",
     "@wesbos/dump": "0.1.1",
-    "babel-plugin-styled-components": "1.10.6",
+    "babel-plugin-styled-components": "1.10.7",
     "date-fns": "2.9.0",
     "gatsby": "2.19.1",
     "gatsby-image": "2.2.39",
