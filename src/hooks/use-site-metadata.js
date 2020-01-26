@@ -12,9 +12,11 @@ export const useSiteMetadata = () => {
             siteUrl
             imageLink
             twitterUsername
-            contact {
-              name
-              link
+            socialUserNames {
+              github
+              devto
+              twitter
+              linkedin
             }
             siteLanguage
             siteLocale
