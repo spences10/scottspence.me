@@ -12,7 +12,7 @@ import Layout from '../components/layout';
 import { MugFace } from '../components/mug-face';
 import { NavItems } from '../components/nav-items';
 import { AnalyticsProvider } from '../contexts/fathom-event-tracking';
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import { useSiteMetadata } from '../hooks/use-site-metadata';
 
 const Wrapper = styled.div``;
 

@@ -1,7 +1,7 @@
 import { format } from 'date-fns';
 import React from 'react';
 import styled from 'styled-components';
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import { useSiteMetadata } from '../hooks/use-site-metadata';
 
 const StyledDate = styled.span`
   ${({ small, theme }) =>
