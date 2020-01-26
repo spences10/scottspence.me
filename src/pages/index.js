@@ -1,5 +1,4 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import SEO from 'react-seo-component';
 import styled from 'styled-components';
 import About from '../../copy/about';
@@ -34,7 +33,8 @@ export default () => {
       <AnalyticsProvider>
         <Layout>
           <SEO
-            title={title}
+            title={`Homepage time!`}
+            titleTemplate={title}
             description={description}
             image={`${siteUrl}${imageLink}`}
             pathname={siteUrl}
@@ -43,10 +43,6 @@ export default () => {
             twitterUsername={twitterUsername}
           />
           <Wrapper>
-            <Helmet
-              title={`Homepage time!`}
-              titleTemplate={`%s | ${title}`}
-            />
             <LandingPage>
               <MugFace />
               <NavItems />
