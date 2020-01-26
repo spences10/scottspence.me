@@ -14,20 +14,13 @@ const siteMetadata = {
   description: `Scott Spence, Father, husband 👨‍👩‍👧. Web Developer. Just In Time learner ❤️👍. JavaScript, Gatsby, React, GraphQL and Netlify.`,
   twitterUsername: `@spences10`,
   facebookAppID: ``,
-  contact: [
-    { name: `GitHub`, link: `https://github.com/spences10` },
-    {
-      name: `YouTube`,
-      link: `https://www.youtube.com/channel/UCnngLXpLSFsKkDhFoO9Ct3w?view_as=subscriber`,
-    },
-    { name: `Dev.to`, link: `https://dev.to/spences10` },
-    { name: `Twitter`, link: `https://twitter.com/spences10` },
-    {
-      name: `LinkedIn`,
-      link: `https://www.linkedin.com/in/spences10`,
-    },
-    { name: `Email`, link: `mailto:yo@scottspence.dev` },
-  ],
+  socialUserNames: {
+    devto: `spences10`,
+    github: `spences10`,
+    linkedin: `spences10`,
+    twitter: `spences10`,
+    youtube: ``,
+  },
   firstName: `Scott`,
   lastName: `Spence`,
   backgroundColour: `#663399`, // this is for favicon and manifest

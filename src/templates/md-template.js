@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import SEO from 'react-seo-component';
 import Layout from '../components/layout';
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import { useSiteMetadata } from '../hooks/use-site-metadata';
 
 const Template = ({ data }) => {
   const {
