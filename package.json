@@ -27,7 +27,7 @@
     "@nivo/calendar": "0.61.1",
     "@nivo/pie": "0.61.1",
     "@wesbos/dump": "0.1.1",
-    "babel-plugin-styled-components": "1.10.6",
+    "babel-plugin-styled-components": "1.10.7",
     "date-fns": "2.9.0",
     "gatsby": "2.19.5",
     "gatsby-image": "2.2.39",
