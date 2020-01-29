@@ -5965,12 +5965,6 @@ gatsby-plugin-page-creator@^2.1.38:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.1.40.tgz#96c817781dfb1f191570c69d2e9af114a3cd23df"
   integrity sha512-jwY8LTOOobrKUr1ph+/IHAHDuzjSrXsAu2YBqZg7wc/J6gre0YAgOU2yAxY34CadE34jieISO3FDIyHMii3vPg==
   dependencies:
-    "@babel/runtime" "^7.7.6"
-    bluebird "^3.7.2"
-    fs-exists-cached "^1.0.0"
-    gatsby-page-utils "^0.0.39"
-    glob "^7.1.6"
-    lodash "^4.17.15"
     micromatch "^3.1.10"
 
 gatsby-plugin-react-helmet@3.1.22:
@@ -6203,15 +6197,6 @@ gatsby@2.19.12:
     gatsby-telemetry "^1.1.49"
     glob "^7.1.6"
     got "8.3.2"
-    graphql "^14.5.8"
-    graphql-compose "^6.3.7"
-    graphql-playground-middleware-express "^1.7.12"
-    hasha "^5.1.0"
-    invariant "^2.2.4"
-    is-relative "^1.0.0"
-    is-relative-url "^3.0.0"
-    is-wsl "^2.1.1"
-    jest-worker "^24.9.0"
     json-loader "^0.5.7"
     json-stringify-safe "^5.0.1"
     lodash "^4.17.15"
