@@ -76,19 +76,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: siteMetadata.title,
-        short_name: siteMetadata.title,
-        start_url: `/`,
-        background_color: siteMetadata.backgroundColour,
-        theme_color: siteMetadata.themeColour,
-        display: `minimal-ui`,
-        icon: siteMetadata.faviconPng, // This path is relative to the root of the site.
-      },
-    },
-    `gatsby-plugin-offline`,
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `copy`,
@@ -108,13 +95,8 @@ module.exports = {
         extensions: [`.mdx`, `.md`],
         remarkPlugins: [remarkSlug],
         gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-autolink-headers`,
-            options: {
-              enableCustomId: true,
-              className: 'anchor-toc',
-            },
-          },
+          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-smartypants`,
           //   {
           //     resolve: `gatsby-remark-external-links`,
           //     options: {
@@ -122,7 +104,6 @@ module.exports = {
           //       rel: `noopener`,
           //     },
           //   },
-          `gatsby-remark-smartypants`,
           //   `gatsby-transformer-sharp`,
           //   `gatsby-plugin-sharp`,
         ],
@@ -156,11 +137,27 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-web-font-loader`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        google: {
-          families: ['Alatsi:400,700', 'Poppins:400,700'],
-        },
+        fonts: [
+          `alatsi\:400,700`,
+          `poppins\:400,700`,
+          `space mono\:400,700`,
+        ],
+        display: 'swap',
+      },
+    },
+    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: siteMetadata.title,
+        short_name: siteMetadata.title,
+        start_url: `/`,
+        background_color: siteMetadata.backgroundColour,
+        theme_color: siteMetadata.themeColour,
+        display: `minimal-ui`,
+        icon: siteMetadata.faviconPng, // This path is relative to the root of the site.
       },
     },
   ],
