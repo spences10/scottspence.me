@@ -1,7 +1,7 @@
 import { ResponsivePie } from '@nivo/pie';
 import React from 'react';
 import styled from 'styled-components';
-import { useGitHubRepositories } from '../hooks/useGitHubRepositories';
+import { useGitHubRepositories } from '../hooks/use-github-repositories';
 import { topLanguages } from '../services/data-massage';
 
 const LanguageWrapper = styled.div`

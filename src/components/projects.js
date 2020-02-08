@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useGraphCMSData } from '../hooks/useGraphCMSData';
+import { useGraphCMSData } from '../hooks/use-graphcms-data';
 import { ProjectCard } from './project-card';
 
 const ProjectWrapper = styled.div`
