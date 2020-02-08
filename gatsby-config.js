@@ -7,6 +7,8 @@ require('dotenv').config({
   path: `.env.${activeEnv}`,
 });
 
+const remarkSlug = require('remark-slug');
+
 const siteMetadata = {
   siteUrl: `https://scottspence.me`,
   title: `Scott Spence - Portfolio`,
@@ -104,8 +106,15 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
+        remarkPlugins: [remarkSlug],
         gatsbyRemarkPlugins: [
-          `gatsby-remark-autolink-headers`,
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              enableCustomId: true,
+              className: 'anchor-toc',
+            },
+          },
           //   {
           //     resolve: `gatsby-remark-external-links`,
           //     options: {

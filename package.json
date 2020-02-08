@@ -57,6 +57,7 @@
     "react-helmet": "5.2.1",
     "react-lottie": "1.2.3",
     "react-seo-component": "1.0.0",
+    "remark-slug": "5.1.2",
     "styled-breakpoints": "7.2.0",
     "styled-components": "5.0.0",
     "styled-reset": "4.1.0"

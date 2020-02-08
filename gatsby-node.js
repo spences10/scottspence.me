@@ -24,12 +24,12 @@ exports.createPages = ({ actions, graphql }) => {
 
     const pages = result.data.allMdx.nodes;
 
-    pages.forEach(post => {
+    pages.forEach(page => {
       createPage({
-        path: post.fields.slug,
+        path: page.fields.slug,
         component: mdTemplate,
         context: {
-          slug: post.fields.slug,
+          slug: page.fields.slug,
         },
       });
     });
