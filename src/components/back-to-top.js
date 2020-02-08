@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 import bttImg from '../../static/back-to-top.svg';
-import { useSmoothScroll } from '../hooks/useSmoothScroll';
+import { useSmoothScroll } from '../hooks/use-smooth-scroll';
 import { media } from '../theme/sizes';
 
 const Wrapper = styled.a`

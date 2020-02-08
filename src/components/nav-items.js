@@ -47,7 +47,7 @@ export const NavItems = () => {
   return (
     <NavWrapper aria-label={`Site navigation`}>
       <NavLink
-        href={`#about`}
+        href={`#hi-im-scott`}
         onClick={() => analytics.logNavigation('RC4QULF8')}
       >
         About
@@ -59,7 +59,7 @@ export const NavItems = () => {
         Portfolio
       </NavLink>
       <NavLink
-        href={`#now`}
+        href={`#what-im-doing-now`}
         onClick={() => analytics.logNavigation('WSZZMPAQ')}
       >
         Now

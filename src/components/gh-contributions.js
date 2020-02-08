@@ -3,7 +3,7 @@ import { subWeeks } from 'date-fns';
 import React from 'react';
 import { between, down, up } from 'styled-breakpoints';
 import styled from 'styled-components';
-import { useGitHubContributions } from '../hooks/useGitHubContributions';
+import { useGitHubContributions } from '../hooks/use-github-contributions';
 import { contributions } from '../services/data-massage';
 
 const Wrapper = styled.div`

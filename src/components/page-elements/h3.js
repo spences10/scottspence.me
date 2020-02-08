@@ -9,6 +9,6 @@ const StyledText = styled.h3`
   margin-top: 50px;
 `;
 
-export const H3 = ({ children }) => {
-  return <StyledText>{children}</StyledText>;
+export const H3 = props => {
+  return <StyledText {...props}>{props.children}</StyledText>;
 };

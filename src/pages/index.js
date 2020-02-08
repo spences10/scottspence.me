@@ -16,8 +16,6 @@ import { useSiteMetadata } from '../hooks/use-site-metadata';
 
 const Wrapper = styled.div``;
 
-const PageWrapper = styled.div``;
-
 export default () => {
   const {
     description,
@@ -48,18 +46,10 @@ export default () => {
               <NavItems />
             </LandingPage>
             <section id={`back-to-top-intersection`}>
-              <PageWrapper id={`about`}>
-                <About />
-              </PageWrapper>
-              <PageWrapper id={`portfolio`}>
-                <Portfolio />
-              </PageWrapper>
-              <PageWrapper id={`now`}>
-                <Now />
-              </PageWrapper>
-              <PageWrapper id={`uses`}>
-                <Uses />
-              </PageWrapper>
+              <About />
+              <Portfolio />
+              <Now />
+              <Uses />
             </section>
           </Wrapper>
         </Layout>
