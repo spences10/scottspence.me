@@ -45,7 +45,7 @@
     "gatsby-plugin-robots-txt": "1.5.0",
     "gatsby-plugin-sharp": "2.4.0",
     "gatsby-plugin-sitemap": "2.2.26",
-    "gatsby-plugin-styled-components": "3.1.17",
+    "gatsby-plugin-styled-components": "3.1.16",
     "gatsby-remark-autolink-headers": "2.1.23",
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-smartypants": "2.1.20",
@@ -59,7 +59,7 @@
     "react-seo-component": "1.0.0",
     "remark-slug": "5.1.2",
     "styled-breakpoints": "7.2.0",
-    "styled-components": "5.0.0",
+    "styled-components": "4.4.1",
     "styled-reset": "4.1.0"
   },
   "devDependencies": {
