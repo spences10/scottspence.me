@@ -57,6 +57,18 @@ export const theme = {
     extrabold: '800',
     black: '900',
   },
+  fontSize: {
+    xs: '0.75rem',
+    sm: '0.875rem',
+    base: '1rem',
+    lg: '1.125rem',
+    xl: '1.25rem',
+    '2xl': '1.5rem',
+    '3xl': '1.875rem',
+    '4xl': '2.25rem',
+    '5xl': '3rem',
+    '6xl': '4rem',
+  },
   letterSpacing: {
     tighter: '-0.05em',
     tight: '-0.025em',
@@ -117,13 +129,12 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: ${({ theme }) => theme.fonts.body};
+    font-size: ${({ theme }) => theme.fontSize.xl};
     color: ${({ theme }) => theme.colours.grey[900]};
   }
   body {
-    font-size: ${({ theme }) => theme.fontSizes.p};
-    font-weight: normal;
-    padding: 0;
-    margin: 0;
-    line-height: 1.9;
+    line-height: ${({ theme }) => theme.lineHeight.relaxed};
+    letter-spacing: ${({ theme }) => theme.letterSpacing.wide};
+    background-color: ${({ theme }) => theme.colours.grey[100]};
   }
 `;
