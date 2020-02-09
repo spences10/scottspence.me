@@ -2,10 +2,15 @@ import { TopLanguages } from '../src/components/gh-top-languages';
 import { Projects } from '../src/components/projects.js';
 import { DateUpdated } from '../src/components/date-updated';
 import { GitHubContributions } from '../src/components/gh-contributions';
+import { Small } from '../src/components/page-elements';
 
-# Portfolio
+## Portfolio
 
-## Top 5 Languages used:
+<Small>
+  Last updated: <DateUpdated date={`2020-02-09`} small={`true`} />
+</Small>
+
+### Top 5 Languages used:
 
 Here's my top 5 languages being used calculated from my GitHub
 commits.
@@ -18,7 +23,7 @@ The last build date was, <DateUpdated />.
 
 <TopLanguages />
 
-## Projects:
+### Projects:
 
 Currently under development...
 
@@ -26,7 +31,7 @@ Pretty pretty cards here soon 👀
 
 <!-- <Projects /> -->
 
-## Contributions:
+### Contributions:
 
 This is a rolling 53 week representation of my GitHub contributions
 chart taken from the GitHub GraphQL endpoint, this data was last
