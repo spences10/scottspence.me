@@ -27,17 +27,10 @@ export const theme = {
       900: '#1a202c',
     },
   },
-  fonts: {
+  font: {
     header: 'Alatsi, sans-serif',
     body: 'Poppins, sans, sans-serif',
-  },
-  fontSizes: {
-    h1: '40px',
-    h2: '26px',
-    h3: '24px',
-    h4: '21px',
-    p: '18px',
-    small: '11px',
+    monospace: '"Space Mono", monospace',
   },
   maxWidth: '580px',
   breakpoints: {
@@ -128,7 +121,7 @@ export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: ${({ theme }) => theme.fonts.body};
+    font-family: ${({ theme }) => theme.font.body};
     font-size: ${({ theme }) => theme.fontSize.xl};
     color: ${({ theme }) => theme.colours.grey[900]};
   }

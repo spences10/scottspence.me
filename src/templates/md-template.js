@@ -20,11 +20,13 @@ const Template = ({ data }) => {
     siteLocale,
     twitterUsername,
     developerName,
+    title: siteTitle,
   } = useSiteMetadata();
   return (
     <Layout>
       <SEO
         title={items[0].title}
+        titleTemplate={siteTitle}
         description={excerpt}
         image={`${siteUrl}${imageLink}`}
         pathname={`${siteUrl}${slug}`}

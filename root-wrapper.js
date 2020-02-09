@@ -23,6 +23,7 @@ const components = {
   li: props => <Li {...props} />,
   p: props => <P {...props} />,
   'p.a': props => <A {...props} />,
+  'li.em': props => <P {...props} />,
   small: props => <Small {...props} />,
   ul: props => <Ul {...props} />,
 };

@@ -4,8 +4,7 @@ import styled from 'styled-components';
 import { useSiteMetadata } from '../hooks/use-site-metadata';
 
 const StyledDate = styled.span`
-  ${({ small, theme }) =>
-    small && `font-size: ${theme.fontSizes.small}`}
+  ${({ small, theme }) => small && `font-size: ${theme.fontSize.xs}`}
 `;
 
 export const DateUpdated = ({ date, small }) => {
