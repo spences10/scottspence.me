@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import SEO from 'react-seo-component';
 import Layout from '../components/layout';
+import { Toc } from '../components/toc';
 import { useSiteMetadata } from '../hooks/use-site-metadata';
 
 const Template = ({ data }) => {
@@ -39,6 +40,7 @@ const Template = ({ data }) => {
         article={true}
       />
       <MDXRenderer>{body}</MDXRenderer>
+      <Toc items={items} />
     </Layout>
   );
 };
