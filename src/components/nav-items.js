@@ -37,9 +37,13 @@ const NavLink = styled.a`
   justify-content: center;
   flex: 1;
   text-decoration: none;
+  outline: none;
   ${media.desktop`
     margin: 0 10px;
   `};
+  &:focus {
+    box-shadow: ${({ theme }) => theme.boxShadow.outline};
+  }
 `;
 
 export const NavItems = () => {
