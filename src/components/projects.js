@@ -7,6 +7,7 @@ const ProjectWrapper = styled.div`
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
+  margin: 0 -50%;
 `;
 
 export const Projects = () => {
