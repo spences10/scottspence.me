@@ -38,8 +38,6 @@ const CardWrapper = styled.div`
 `;
 
 const StyledProjectCard = styled.div`
-  padding: 1.75rem;
-  margin: 0rem;
   border-radius: 5px 5px 0px 0px;
   color: ${({ theme }) => theme.colours.grey[200]};
   background-color: ${props =>
@@ -55,8 +53,10 @@ const ImageWrapper = styled.div`
 `;
 
 const StyledImage = styled.img`
-  max-height: 200px;
-  max-width: 200px;
+  max-width: 100%;
+  border-radius: ${({ theme }) => theme.borderRadius.lg};
+  box-shadow: ${({ theme }) => theme.boxShadow.lg};
+  overflow: hidden;
 `;
 
 const CardButton = styled(ButtonSmall)`
@@ -75,42 +75,37 @@ const ButtonsWrapper = styled.div`
   justify-content: center;
 `;
 
-export const ProjectCard = props => {
+export const ProjectCard = ({
+  id,
+  image,
+  name,
+  demo,
+  github,
+  desc,
+}) => {
   return (
-    <CardWrapper key={props.id} id={props.id}>
+    <CardWrapper key={id} id={id}>
       {/* <Dump props={props} /> */}
-      <StyledProjectCard id={props.id}>
+      <StyledProjectCard id={id}>
         <ImageWrapper>
           <StyledImage
-            style={{
-              borderRadius: '100%',
-              border: '2px solid white',
-            }}
-            src={props.image}
-            key={props.id}
-            alt={`${props.name}`}
+            src={image}
+            key={id}
+            alt={`${name}`}
             // resolutions={cis}
           />
         </ImageWrapper>
-        <Name>{props.name}</Name>
+        <Name>{name}</Name>
         <ButtonsWrapper>
-          <StyledLink
-            target="_blank"
-            rel="noopener"
-            href={props.demo}
-          >
+          <StyledLink target="_blank" rel="noopener" href={demo}>
             <CardButton>Demo</CardButton>
           </StyledLink>
-          <StyledLink
-            target="_blank"
-            rel="noopener"
-            href={props.github}
-          >
+          <StyledLink target="_blank" rel="noopener" href={github}>
             <CardButton>GitHub</CardButton>
           </StyledLink>
         </ButtonsWrapper>
       </StyledProjectCard>
-      <Desc>{props.desc}</Desc>
+      <Desc>{desc}</Desc>
     </CardWrapper>
   );
 };
