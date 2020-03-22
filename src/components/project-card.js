@@ -69,8 +69,20 @@ export const ProjectCard = ({
       </ImageWrapper>
       <Card>
         <div>
-          <a href={github}>GitHub</a>
-          <a href={demo}>Demo</a>
+          <a
+            href={github}
+            target="_blank"
+            relation="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href={demo}
+            target="_blank"
+            relation="noopener noreferrer"
+          >
+            Demo
+          </a>
           <h4>{name}</h4>
           <p>
             {desc.length > 65 ? `${desc.substring(0, 65)}...` : desc}
