@@ -141,7 +141,7 @@ module.exports = {
       options: {
         fonts: [
           `alatsi\:400,700`,
-          `poppins\:400,700`,
+          `poppins\:300,400,500,600,700`,
           `space mono\:400,700`,
         ],
         display: 'swap',
