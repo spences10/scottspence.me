@@ -7,7 +7,7 @@ import { Icons } from './social-icons';
 const FooterStyles = styled.footer`
   position: relative;
   margin-top: 2rem;
-  background: ${({ theme }) => theme.colours.primary[100]};
+  background: ${({ theme }) => theme.colours.primary[500]};
   color: ${({ theme }) => theme.fontDark};
   background-color: ${props => props.theme.primary};
   background-image: url("${PATTERNS.TOPOGRAPHY}");

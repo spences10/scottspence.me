@@ -4,15 +4,17 @@ import { useGraphCMSData } from '../hooks/use-graphcms-data';
 import { ProjectCard } from './project-card';
 
 const ProjectWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 -50%;
 `;
 
 export const Projects = () => {
   const { assets } = useGraphCMSData();
   return (
     <ProjectWrapper>
-      {assets.map(project => {
+      {assets.map((project, index) => {
         const {
           projectName,
           projectDescription,
@@ -23,6 +25,7 @@ export const Projects = () => {
         return (
           // <Dump prop={project.projectImageProject[0].projectName} />
           <ProjectCard
+            id={index}
             key={id}
             name={projectName}
             desc={projectDescription}
