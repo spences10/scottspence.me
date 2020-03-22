@@ -5,14 +5,14 @@ import styled from 'styled-components';
 export const StyledLink = styled(props => <Link {...props} />)`
   color: ${({ theme }) => theme.colours.grey[100]};
   &:focus {
-    outline: 3px dashed ${({ theme }) => theme.colours.primary[100]};
+    outline: 3px dashed ${({ theme }) => theme.colours.primary[500]};
   }
   padding: 3px;
   &:hover {
-    color: ${({ theme }) => theme.colours.primary[100]};
+    color: ${({ theme }) => theme.colours.primary[500]};
   }
   &:active {
-    color: ${({ theme }) => theme.colours.primary[100]};
+    color: ${({ theme }) => theme.colours.primary[500]};
   }
 `;
 
