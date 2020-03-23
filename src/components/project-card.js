@@ -1,120 +1,99 @@
+// import Dump from '@wesbos/dump';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
-import { PATTERNS } from '../theme/theme-constants';
-import { ButtonSmall } from './shared';
 
-const Name = styled.h3`
-  margin: 0.5rem;
-  padding: 0.5rem;
-  color: ${props => props.theme.fontWhite};
-  font-family: ${props => props.theme.fontHeader};
-  font-weight: 900;
-  text-align: center;
-`;
-
-const Desc = styled.div`
-  margin: 0rem;
-  padding: 1rem 0.5rem;
-  height: 7rem;
-  border-radius: 0px 0px 5px 5px;
-  color: ${props => props.theme.fontDark};
-  background-color: ${props => props.theme.foreground};
-  text-align: center;
-  font-family: ${props => props.theme.fontBody};
-  font-weight: 700;
-  line-height: 150%;
-`;
-
-const StyledLink = styled.a``;
-
-const CardWrapper = styled.div`
-  margin: 0rem;
-  padding: 0rem;
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-  background-color: ${props => props.theme.foreground};
-`;
-
-const StyledProjectCard = styled.div`
-  padding: 1.75rem;
-  margin: 0rem;
-  border-radius: 5px 5px 0px 0px;
-  color: ${({ theme }) => theme.colours.grey[200]};
-  background-color: ${props =>
-    props.id % 2 === 0
-      ? `${props.theme.colours.grey[200]}`
-      : `${props.theme.colours.grey[300]}}`};
-  background-image: url("${PATTERNS.WIGGLE}");
-`;
+const CardWrapper = styled.div``;
 
 const ImageWrapper = styled.div`
-  display: grid;
-  justify-items: center;
+  position: relative;
+  padding-bottom: 83.333333%;
+  img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: ${({ theme }) => theme.borderRadius.lg};
+    box-shadow: ${({ theme }) => theme.boxShadow.md};
+    filter: brightness(80%) saturate(60%);
+    &:hover {
+      filter: brightness(100%) saturate(100%);
+    }
+  }
 `;
 
-const StyledImage = styled.img`
-  max-height: 200px;
-  max-width: 200px;
+const Card = styled.div`
+  position: relative;
+  padding: ${({ theme }) => theme.spacing[4]};
+  margin-top: -${({ theme }) => theme.spacing[16]};
+  div {
+    background-color: ${({ theme }) => theme.colours.white};
+    padding: ${({ theme }) => theme.spacing[6]};
+    border-radius: ${({ theme }) => theme.borderRadius.lg};
+    box-shadow: ${({ theme }) => theme.boxShadow.lg};
+    h4 {
+      font-weight: 600;
+      font-size: ${({ theme }) => theme.fontSize.lg};
+      margin-bottom: ${({ theme }) => theme.spacing[2]};
+    }
+    a {
+      font-weight: 700;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      color: ${({ theme }) => theme.colours.grey[500]};
+      letter-spacing: ${({ theme }) => theme.letterSpacing.wide};
+      padding-right: ${({ theme }) => theme.spacing[2]};
+    }
+    p {
+      color: ${({ theme }) => theme.colours.grey[700]};
+      line-height: ${({ theme }) => theme.lineHeight.snug};
+      font-size: ${({ theme }) => theme.fontSize.sm};
+      max-height: ${({ theme }) => theme.spacing[16]};
+    }
+  }
 `;
 
-const CardButton = styled(ButtonSmall)`
-  text-transform: none;
-  border: 2px solid ${props => props.theme.fontWhite};
-  color: ${props => props.theme.fontWhite};
-  font-family: ${props => props.theme.fontBody};
-  font-weight: 700;
-  margin: 0.5rem 0.6rem 0.5rem 0.6rem;
-  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
-  border-radius: 50px;
-`;
-
-const ButtonsWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
-export const ProjectCard = props => {
+export const ProjectCard = ({
+  id,
+  image,
+  name,
+  demo,
+  github,
+  desc,
+}) => {
   return (
-    <CardWrapper key={props.id} id={props.id}>
-      {/* <Dump props={props} /> */}
-      <StyledProjectCard id={props.id}>
-        <ImageWrapper>
-          <StyledImage
-            style={{
-              borderRadius: '100%',
-              border: '2px solid white',
-            }}
-            src={props.image}
-            key={props.id}
-            alt={`${props.name}`}
-            // resolutions={cis}
-          />
-        </ImageWrapper>
-        <Name>{props.name}</Name>
-        <ButtonsWrapper>
-          <StyledLink
+    <CardWrapper>
+      <ImageWrapper>
+        <img src={image} alt={name} />
+      </ImageWrapper>
+      <Card>
+        <div>
+          <a
+            href={github}
             target="_blank"
-            rel="noopener"
-            href={props.demo}
+            relation="noopener noreferrer"
           >
-            <CardButton>Demo</CardButton>
-          </StyledLink>
-          <StyledLink
+            GitHub
+          </a>
+          <a
+            href={demo}
             target="_blank"
-            rel="noopener"
-            href={props.github}
+            relation="noopener noreferrer"
           >
-            <CardButton>GitHub</CardButton>
-          </StyledLink>
-        </ButtonsWrapper>
-      </StyledProjectCard>
-      <Desc>{props.desc}</Desc>
+            Demo
+          </a>
+          <h4>{name}</h4>
+          <p>
+            {desc.length > 65 ? `${desc.substring(0, 65)}...` : desc}
+          </p>
+        </div>
+      </Card>
     </CardWrapper>
   );
 };
 
-ProjectCard.propTypes = {
+Card.propTypes = {
   id: PropTypes.number,
   name: PropTypes.string,
   desc: PropTypes.string,

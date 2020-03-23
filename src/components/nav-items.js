@@ -26,8 +26,8 @@ const NavLink = styled.a`
   color: ${({ theme }) => theme.colours.grey[100]};
   background: linear-gradient(
     180turn,
-    ${({ theme }) => theme.colours.primary[100]},
-    ${({ theme }) => theme.colours.primary[600]}
+    ${({ theme }) => theme.colours.primary[500]},
+    ${({ theme }) => theme.colours.violet[500]}
   );
   height: 50px;
   border-radius: 50px;
