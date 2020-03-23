@@ -44,6 +44,7 @@ const Card = styled.div`
       color: ${({ theme }) => theme.colours.grey[500]};
       letter-spacing: ${({ theme }) => theme.letterSpacing.wide};
       padding-right: ${({ theme }) => theme.spacing[2]};
+      text-decoration: none;
     }
     p {
       color: ${({ theme }) => theme.colours.grey[700]};
@@ -69,13 +70,15 @@ export const ProjectCard = ({
       </ImageWrapper>
       <Card>
         <div>
-          <a
-            href={github}
-            target="_blank"
-            relation="noopener noreferrer"
-          >
-            GitHub
-          </a>
+          {github ? (
+            <a
+              href={github}
+              target="_blank"
+              relation="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          ) : null}
           <a
             href={demo}
             target="_blank"
