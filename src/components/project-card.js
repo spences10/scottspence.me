@@ -74,16 +74,12 @@ export const ProjectCard = ({
             <a
               href={github}
               target="_blank"
-              relation="noopener noreferrer"
+              rel="noopener noreferrer"
             >
               GitHub
             </a>
           ) : null}
-          <a
-            href={demo}
-            target="_blank"
-            relation="noopener noreferrer"
-          >
+          <a href={demo} target="_blank" rel="noopener noreferrer">
             Demo
           </a>
           <h4>{name}</h4>
