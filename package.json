@@ -1,7 +1,7 @@
 {
   "name": "scottspence.me",
   "description": "Personal portfolio with Gatsby",
-  "version": "3.0.71",
+  "version": "3.0.72",
   "author": "Scott Spence <yo@scottspence.dev>",
   "license": "MIT",
   "main": "n/a",
@@ -63,7 +63,7 @@
     "styled-reset": "4.1.2"
   },
   "devDependencies": {
-    "husky": "4.2.3",
+    "husky": "4.2.5",
     "prettier": "2.0.4",
     "pretty-quick": "2.0.1"
   },
