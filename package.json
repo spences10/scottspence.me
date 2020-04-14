@@ -21,6 +21,14 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
+  "prettier": {
+    "printWidth": 70,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "semi": false,
+    "arrowParens": "avoid",
+    "proseWrap": "always"
+  },
   "dependencies": {
     "@mdx-js/mdx": "1.5.7",
     "@mdx-js/react": "1.5.7",
