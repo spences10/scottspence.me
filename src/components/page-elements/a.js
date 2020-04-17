@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
+import { useAnalytics } from '../../contexts/fathom-event-tracking'
 
 export const StyledA = styled.a`
   color: ${({ theme }) => theme.colours.grey[900]};
@@ -8,8 +9,20 @@ export const StyledA = styled.a`
   &:hover {
     opacity: 0.5;
   }
-`;
+`
 
 export const A = props => {
-  return <StyledA {...props}>{props.children}</StyledA>;
-};
+  const fa = useAnalytics()
+  const onClick = () => {
+    if (props.href.includes(`goalId`)) {
+      const params = new URL(props.href).searchParams
+      fa.logLinkClick(params.get(`goalId`))
+    }
+  }
+
+  return (
+    <StyledA {...props} href={props.href} onClick={onClick}>
+      {props.children}
+    </StyledA>
+  )
+}
