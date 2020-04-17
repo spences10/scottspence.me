@@ -1,7 +1,7 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
-import React from 'react';
-import styled from 'styled-components';
+import { graphql, useStaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
+import React from 'react'
+import styled from 'styled-components'
 
 const ImageDiv = styled(Img)`
   margin: 0 auto;
@@ -9,14 +9,14 @@ const ImageDiv = styled(Img)`
   height: 200px;
   width: 200px;
   border-radius: 50%;
-`;
+`
 
 const Wrapper = styled.div`
   flex: 1 1 0%;
   display: flex;
   align-items: center;
   justify-content: center;
-`;
+`
 
 export const MugFace = () => {
   const data = useStaticQuery(graphql`
@@ -29,11 +29,14 @@ export const MugFace = () => {
         }
       }
     }
-  `);
+  `)
 
   return (
     <Wrapper>
-      <ImageDiv fluid={data.placeholderImage.childImageSharp.fluid} />
+      <ImageDiv
+        fluid={data.placeholderImage.childImageSharp.fluid}
+        alt='mug face image'
+      />
     </Wrapper>
-  );
-};
+  )
+}
