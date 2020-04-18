@@ -24,10 +24,12 @@ export const A = props => {
       url.searchParams.delete(`goalId`)
       setNewHref(url.href)
     }
-  }, [containsGoalId === true])
+  }, [containsGoalId, props.href])
 
   const onClick = () => {
-    fa.logLinkClick(goalId)
+    if (goalId) {
+      fa.logLinkClick(goalId)
+    }
   }
 
   return (
