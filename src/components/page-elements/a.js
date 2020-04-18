@@ -27,7 +27,9 @@ export const A = props => {
   }, [containsGoalId === true])
 
   const onClick = () => {
-    fa.logLinkClick(goalId)
+    if (goalId) {
+      fa.logLinkClick(goalId)
+    }
   }
 
   return (
