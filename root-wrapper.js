@@ -1,6 +1,7 @@
-import { MDXProvider } from '@mdx-js/react';
-import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import { MDXProvider } from '@mdx-js/react'
+import React from 'react'
+import { ThemeProvider } from 'styled-components'
+import Layout from './src/components/layout'
 import {
   A,
   H1,
@@ -11,8 +12,9 @@ import {
   P,
   Small,
   Ul,
-} from './src/components/page-elements';
-import { theme } from './src/theme/global-style';
+} from './src/components/page-elements'
+import { AnalyticsProvider } from './src/contexts/fathom-event-tracking'
+import { theme } from './src/theme/global-style'
 
 const components = {
   a: props => <A {...props} />,
@@ -26,10 +28,14 @@ const components = {
   'li.em': props => <P {...props} />,
   small: props => <Small {...props} />,
   ul: props => <Ul {...props} />,
-};
+}
 
 export const wrapRootElement = ({ element }) => (
-  <ThemeProvider theme={theme}>
-    <MDXProvider components={components}>{element}</MDXProvider>
-  </ThemeProvider>
-);
+  <AnalyticsProvider>
+    <ThemeProvider theme={theme}>
+      <MDXProvider components={components}>
+        <Layout>{element}</Layout>
+      </MDXProvider>
+    </ThemeProvider>
+  </AnalyticsProvider>
+)
