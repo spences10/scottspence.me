@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "build": {
+    "env": {
+      "GATSBY_SOURCE_GRAPHQL": "@gatsby_source_graphql",
+      "GATSBY_GITHUB_TOKEN": "@gatsby_github_token",
+      "GATSBY_FATHOM_TRACKING_ID_SCOTT_SPENCE_ME": "@gatsby_fathom_tracking_id_scott_spence_me"
+    }
+  },
+  "trailingSlash": false
+}

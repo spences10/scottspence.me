@@ -1,11 +1,11 @@
 const activeEnv =
-  process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development';
+  process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development'
 
-console.log(`Using environment config: '${activeEnv}'`);
+console.log(`Using environment config: '${activeEnv}'`)
 
 require('dotenv').config({
   path: `.env.${activeEnv}`,
-});
+})
 
 const siteMetadata = {
   siteUrl: `https://scottspence.me`,
@@ -35,7 +35,7 @@ const siteMetadata = {
   siteLanguage: `en-GB`,
   siteLocale: `en_gb`,
   lastBuildDate: new Date(Date.now()).toISOString(),
-};
+}
 
 module.exports = {
   siteMetadata: siteMetadata,
@@ -158,4 +158,4 @@ module.exports = {
       },
     },
   ],
-};
+}
