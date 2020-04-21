@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "build": {
+    "env": {
+      "NOW_SOURCE_GRAPHQL": "@now_source_graphql",
+      "NOW_GITHUB_TOKEN": "@now_github_token",
+      "NOW_FATHOM_TRACKING_ID_SCOTT_SPENCE_ME": "@now_fathom_tracking_id_scott_spence_me"
+    }
+  },
+  "trailingSlash": false
+}
