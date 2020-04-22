@@ -7,5 +7,23 @@
       "GATSBY_FATHOM_TRACKING_ID_SCOTT_SPENCE_ME": "@gatsby_fathom_tracking_id_scott_spence_me"
     }
   },
+  "redirects": [
+    {
+      "source": "/about",
+      "destination": "/#hi-im-scott"
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/#portfolio"
+    },
+    {
+      "source": "/now",
+      "destination": "/#what-im-doing-now"
+    },
+    {
+      "source": "/uses",
+      "destination": "/#uses"
+    }
+  ],
   "trailingSlash": false
 }

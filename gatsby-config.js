@@ -46,33 +46,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-robots-txt`,
-      options: {
-        host: siteMetadata.siteUrl,
-        sitemap: `${siteMetadata.siteUrl}/sitemap.xml`,
-        policy: [
-          {
-            userAgent: 'Googlebot',
-            allow: '/',
-            disallow: ['/about/', '/uses/', '/now/', '/portfolio/'],
-            crawlDelay: 2,
-          },
-          {
-            userAgent: 'OtherBot',
-            allow: '/',
-            disallow: ['/about/', '/uses/', '/now/', '/portfolio/'],
-            crawlDelay: 2,
-          },
-          {
-            userAgent: '*',
-            allow: '/',
-            disallow: ['/about/', '/uses/', '/now/', '/portfolio/'],
-            crawlDelay: 10,
-          },
-        ],
-      },
-    },
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -94,15 +68,15 @@ module.exports = {
         gatsbyRemarkPlugins: [
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-smartypants`,
-          //   {
-          //     resolve: `gatsby-remark-external-links`,
-          //     options: {
-          //       target: `_blank`,
-          //       rel: `noopener`,
-          //     },
-          //   },
-          //   `gatsby-transformer-sharp`,
-          //   `gatsby-plugin-sharp`,
+          `gatsby-transformer-sharp`,
+          `gatsby-plugin-sharp`,
+          {
+            resolve: `gatsby-remark-external-links`,
+            options: {
+              target: `_blank`,
+              rel: `noopener`,
+            },
+          },
         ],
       },
     },
