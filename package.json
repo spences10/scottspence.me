@@ -65,7 +65,7 @@
     "react-lottie": "1.2.3",
     "react-seo-component": "2.0.0",
     "styled-breakpoints": "8.1.0",
-    "styled-components": "4.4.1",
+    "styled-components": "5.1.0",
     "styled-reset": "4.1.4"
   },
   "devDependencies": {
