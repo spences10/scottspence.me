@@ -30,8 +30,8 @@
     "proseWrap": "always"
   },
   "dependencies": {
-    "@mdx-js/mdx": "1.5.7",
-    "@mdx-js/react": "1.5.7",
+    "@mdx-js/mdx": "1.5.9",
+    "@mdx-js/react": "1.5.9",
     "@nivo/calendar": "0.61.1",
     "@nivo/pie": "0.61.1",
     "@wesbos/dump": "0.1.1",
@@ -57,9 +57,9 @@
     "gatsby-source-filesystem": "2.2.4",
     "gatsby-source-graphql": "2.4.2",
     "gatsby-transformer-sharp": "2.4.6",
-    "react": "16.13.0",
-    "react-device-detect": "1.11.14",
-    "react-dom": "16.13.0",
+    "react": "16.13.1",
+    "react-device-detect": "1.12.0",
+    "react-dom": "16.13.1",
     "react-helmet": "5.2.1",
     "react-icons": "3.10.0",
     "react-lottie": "1.2.3",
