@@ -1,11 +1,10 @@
-import { graphql } from 'gatsby';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
-import PropTypes from 'prop-types';
-import React from 'react';
-import SEO from 'react-seo-component';
-import Layout from '../components/layout';
-import { Toc } from '../components/toc';
-import { useSiteMetadata } from '../hooks/use-site-metadata';
+import { graphql } from 'gatsby'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+import PropTypes from 'prop-types'
+import React from 'react'
+import SEO from 'react-seo-component'
+import { Toc } from '../components/toc'
+import { useSiteMetadata } from '../hooks/use-site-metadata'
 
 const Template = ({ data }) => {
   const {
@@ -13,7 +12,7 @@ const Template = ({ data }) => {
     excerpt,
     fields: { slug },
     tableOfContents: { items },
-  } = data.mdx;
+  } = data.mdx
   const {
     imageLink,
     siteUrl,
@@ -22,9 +21,9 @@ const Template = ({ data }) => {
     twitterUsername,
     developerName,
     title: siteTitle,
-  } = useSiteMetadata();
+  } = useSiteMetadata()
   return (
-    <Layout>
+    <>
       <SEO
         title={items[0].title}
         titleTemplate={siteTitle}
@@ -41,15 +40,15 @@ const Template = ({ data }) => {
       />
       <MDXRenderer>{body}</MDXRenderer>
       <Toc items={items} />
-    </Layout>
-  );
-};
+    </>
+  )
+}
 
-export default Template;
+export default Template
 
 Template.propTypes = {
   data: PropTypes.object,
-};
+}
 
 export const query = graphql`
   query PageBySlug($slug: String!) {
@@ -62,4 +61,4 @@ export const query = graphql`
       tableOfContents
     }
   }
-`;
+`
