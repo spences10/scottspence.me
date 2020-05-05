@@ -7,6 +7,7 @@ import Now from '../../copy/now'
 import Portfolio from '../../copy/portfolio'
 import Uses from '../../copy/uses'
 import { BackToTop } from '../components/back-to-top'
+import FavIcon from '../components/favicon'
 import { Footer } from '../components/footer'
 import { LandingPage } from '../components/landing-page'
 import { MugFace } from '../components/mug-face'
@@ -45,6 +46,7 @@ export default () => {
         twitterUsername={twitterUsername}
       />
       <Wrapper>
+        <FavIcon />
         <LandingPage>
           <MugFace />
           <NavItems />
