@@ -32,7 +32,7 @@
   "dependencies": {
     "@mdx-js/mdx": "1.6.5",
     "@mdx-js/react": "1.6.5",
-    "@nivo/calendar": "0.61.1",
+    "@nivo/calendar": "0.62.0",
     "@nivo/pie": "0.61.1",
     "@wesbos/dump": "0.1.1",
     "babel-plugin-styled-components": "1.10.7",
