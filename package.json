@@ -33,7 +33,7 @@
     "@mdx-js/mdx": "1.6.5",
     "@mdx-js/react": "1.6.5",
     "@nivo/calendar": "0.62.0",
-    "@nivo/pie": "0.61.1",
+    "@nivo/pie": "0.62.0",
     "@wesbos/dump": "0.1.1",
     "babel-plugin-styled-components": "1.10.7",
     "date-fns": "2.14.0",
