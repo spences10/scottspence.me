@@ -23,6 +23,26 @@
     {
       "source": "/uses",
       "destination": "/#uses"
+    },
+    {
+      "source": "/#hi-im-scott",
+      "destination": "https://scottspence.com/#hi-im-scott"
+    },
+    {
+      "source": "/#portfolio",
+      "destination": "https://scottspence.com/#portfolio"
+    },
+    {
+      "source": "/#now",
+      "destination": "https://scottspence.com/#what-im-doing-now"
+    },
+    {
+      "source": "/#uses",
+      "destination": "https://scottspence.com/#uses"
+    },
+    {
+      "source": "/faq",
+      "destination": "https://scottspence.com/faq"
     }
   ],
   "trailingSlash": false
