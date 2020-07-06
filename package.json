@@ -58,7 +58,7 @@
     "gatsby-source-graphql": "2.5.2",
     "gatsby-transformer-sharp": "2.5.3",
     "react": "16.13.1",
-    "react-device-detect": "1.12.1",
+    "react-device-detect": "1.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "6.0.0",
     "react-icons": "3.10.0",
