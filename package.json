@@ -30,8 +30,8 @@
     "proseWrap": "always"
   },
   "dependencies": {
-    "@mdx-js/mdx": "1.6.5",
-    "@mdx-js/react": "1.6.5",
+    "@mdx-js/mdx": "1.6.6",
+    "@mdx-js/react": "1.6.6",
     "@nivo/calendar": "0.62.0",
     "@nivo/pie": "0.62.0",
     "@wesbos/dump": "0.1.1",
