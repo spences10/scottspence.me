@@ -9,6 +9,11 @@
   },
   "redirects": [
     {
+      "source": "/",
+      "destination": "https://scottspence.com",
+      "statusCode": 301
+    },
+    {
       "source": "/about",
       "destination": "/#hi-im-scott"
     },
